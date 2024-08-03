@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+## todo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- now: search flow
+- then: set focus on query response = to searched thing
 
-## Available Scripts
+- write validation function to ensure that all entry names and all elements in "proof"
+  line up with each other, run it on the build script in package.json
 
-In the project directory, you can run:
+- get proof tree (complex)
+- get consequences (complex)
+- get connection (complex)
 
-### `yarn start`
+- highlight/colorize the source node that the user searched for?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- command+click allows for multi-selection of nodes.
+  see if we can disable this or if we want to use.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- get number of proof/consequence/connection trees
 
-### `yarn test`
+- text search that shows what entries include said concept
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- do Part I only for everything,
+  then do the rest of the book once all features are implemented
 
-### `yarn build`
+- plain version of the book, but any mentioned to previous text is a ling to that part of the book (or open a modal with that text?)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- highlight the path (or nodes?) that is common to all versions, when multiple are found
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- use gutenberg project for translations of the ethics;
+  email edwin curley (or someone) asking for permition to use edwin's translation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- give credit to all other tools, and gutenberg project
 
-### `yarn eject`
+- max zoom relative to number of nodes in results
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- start with plain text, but later move towards having react component (formatted and with links) that is later parsed when doing text search. (see chatgpt link for code samples)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+// function makeDomEntry(title: string, content: string) {
+// return `//   <div className="entry">
+//     <h3 className="entry-title"></h3>
+//     <p className="entry-text"></p>
+//   </div>
+//  `
+// }
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+// function stripHtmlWithDOMParser(html: string) {
+// const parser = new DOMParser()
+// const doc = parser.parseFromString(html, "text/html")
+// return doc.body.textContent || ""
+// }
