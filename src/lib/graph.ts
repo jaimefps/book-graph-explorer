@@ -1,6 +1,5 @@
 import { Proof, RenderData, TextMap } from "./types"
 import { book } from "./book"
-
 class GraphNode {
   children: string[] = []
   parents: Proof
@@ -172,5 +171,5 @@ function makeBookGraph() {
 }
 
 export const bookGraph = makeBookGraph()
-// export const result = bookGraph.getConnectionRenderData("e1def3", "e1p6")
-export const result = bookGraph.getAncestryRenderData("e1p6")
+export const result = bookGraph.getConnectionRenderData("e1def3", "e1p6")
+// export const result = bookGraph.getAncestryRenderData("e1p6")

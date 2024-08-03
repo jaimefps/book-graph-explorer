@@ -3,8 +3,7 @@
 - now: search flow
 - then: set focus on query response = to searched thing
 
-- write validation function to ensure that all entry names and all elements in "proof"
-  line up with each other, run it on the build script in package.json
+- run validation during build script
 
 - get proof tree (complex)
 - get consequences (complex)
