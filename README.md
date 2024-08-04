@@ -2,6 +2,20 @@
 
 ---
 
+BUGS:
+
+- improve canvas & button positioning, still poreventing canvas from taking over whiole screen on mobile.
+
+- descendancy (e1def3)
+
+1. multiple edge lines to same target
+2. some edge lines have no arrow
+
+- create hook to track changes to window size, consider
+  re-centering automatically when screen size changes
+
+---
+
 flow:
 
 A. show large button list:

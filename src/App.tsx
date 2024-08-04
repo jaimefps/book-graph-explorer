@@ -146,8 +146,10 @@ export const NodesPicker: React.FC<{
       </div>
 
       <div className="column-right">
-        <div className="title">{selection}</div>
-        <div className="text">{bookGraph.get(selection).text.en}</div>
+        <div className="column-right-title">{selection}</div>
+        <div className="column-right-text">
+          {bookGraph.get(selection).text.en}
+        </div>
       </div>
     </div>
   )
@@ -164,7 +166,6 @@ export const GraphDisplay: React.FC<{
 
   // helps to recenter by
   // remounting the component:
-  const [mountKey, setMountKey] = useState(0)
 
   useEffect(() => {
     if (cyRef.current) {
@@ -194,7 +195,7 @@ export const GraphDisplay: React.FC<{
   return (
     <div className="graph-container">
       <div className="graph-column">
-        <div className="graph-header">
+        <div className="graph-header" style={{ padding: 0, margin: 0 }}>
           {query.mode} ({query.nodes[0]})
         </div>
         <Button
@@ -209,7 +210,11 @@ export const GraphDisplay: React.FC<{
             zIndex: 100,
           }}
           variant="outlined"
-          onClick={reset}
+          onClick={() => {
+            if (window.confirm("Are you sure you want to reset?")) {
+              reset()
+            }
+          }}
         >
           reset
         </Button>
@@ -225,12 +230,14 @@ export const GraphDisplay: React.FC<{
             zIndex: 100,
           }}
           variant="outlined"
-          onClick={() => setMountKey((n) => n + 1)}
+          onClick={() => {
+            cyRef.current?.fit()
+            cyRef.current?.center()
+          }}
         >
           recenter
         </Button>
         <CytoscapeComponent
-          key={mountKey}
           elements={renderData}
           cy={(cy) => {
             cyRef.current = cy
@@ -278,8 +285,8 @@ export const GraphDisplay: React.FC<{
       </div>
       <div className="column-right">
         <div className="column-right-arrow" />
-        <div className="title">{focus}</div>
-        <div className="text">{bookGraph.get(focus).text.en}</div>
+        <div className="column-right-title">{focus}</div>
+        <div className="column-right-text">{bookGraph.get(focus).text.en}</div>
       </div>
     </div>
   )

@@ -124,11 +124,21 @@ body {
 }
 .graph-header {
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
   left: 1rem;
   z-index: 100;
   font-size: 2rem;
-  color: darkseagreen;
+  color: beige;
+}
+
+.column-right-arrow {
+  background: beige;
+  transform: rotate(45deg);
+  position: absolute;
+  top: calc(50% - 15px);
+  left: -15px;
+  height: 30px;
+  width: 30px;
 }
 
 /* SHARED CLASSNAME */
@@ -142,24 +152,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-
-  .title {
-    font-size: 100px;
-    font-weight: bold;
-    color: darkseagreen;
-  }
-  .text {
-    text-align: justify;
-  }
 }
-.column-right-arrow {
-  background: beige;
-  transform: rotate(45deg);
-  position: absolute;
-  top: calc(50% - 15px);
-  left: -15px;
-  height: 30px;
-  width: 30px;
+.column-right-title {
+  font-size: 100px;
+  font-weight: bold;
+  /* color: darkseagreen; */
+}
+.column-right-text {
+  text-align: justify;
 }
 
 @media (max-width: 850px) {
