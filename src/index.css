@@ -11,12 +11,6 @@ body {
   height: 100vh;
 }
 
-/* create vars */
-/* 
-  color: darkseagreen;
-  background: darkslategray;
-*/
-
 /* MODE PICKER */
 .mode-picker {
   height: 100%;
@@ -43,23 +37,19 @@ body {
   padding: 1rem 2rem;
   cursor: pointer;
   width: 350px;
-  color: gray;
+  color: darkslategray;
 }
 
 .mode-picker-button-label {
   font-size: 1.5rem;
-  font-weight: 900;
   color: darkseagreen;
+  font-weight: 900;
 }
 .mode-picker-button-description {
   font-size: 1rem;
 }
 
 /* NODE PICKER */
-/* 
-  color: darkseagreen;
-  background: darkslategray;
-*/
 .nodes-picker {
   height: 100%;
   display: flex;
@@ -104,7 +94,9 @@ body {
 }
 .node-picker-buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   gap: 1rem;
 }

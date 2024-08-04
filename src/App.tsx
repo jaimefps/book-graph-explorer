@@ -68,11 +68,11 @@ export const ModePicker: React.FC<{
 
 const sharedProps = {
   disableElevation: true,
-  size: "small",
   style: {
     flex: 1,
     textTransform: "none",
     fontWeight: 600,
+    width: 300,
   },
 } as const
 
@@ -103,7 +103,7 @@ export const NodesPicker: React.FC<{
           options={nodeOpts}
           value={selection}
           onChange={(e, value) => setSelection(value)}
-          style={{ width: "100%" }}
+          style={{ width: 300 }}
           renderInput={(props) => (
             <TextField
               {...props}
@@ -122,25 +122,26 @@ export const NodesPicker: React.FC<{
             {...sharedProps}
             style={{
               ...sharedProps.style,
-              borderColor: "darkseagreen",
-              color: "darkseagreen",
-            }}
-            variant="outlined"
-            onClick={reset}
-          >
-            reset
-          </Button>
-          <Button
-            {...sharedProps}
-            style={{
-              ...sharedProps.style,
               background: "darkseagreen",
               color: "darkslategray",
             }}
             variant="contained"
             onClick={() => setNodes([selection])}
           >
-            illustrate
+            submit
+          </Button>
+          <Button
+            {...sharedProps}
+            style={{
+              ...sharedProps.style,
+              borderColor: "darkseagreen",
+              color: "darkseagreen",
+              // opacity: 0.5,
+            }}
+            variant="outlined"
+            onClick={reset}
+          >
+            back
           </Button>
         </div>
       </div>
@@ -208,6 +209,7 @@ export const GraphDisplay: React.FC<{
             bottom: "1rem",
             left: "1rem",
             zIndex: 100,
+            width: "4rem",
           }}
           variant="outlined"
           onClick={() => {
