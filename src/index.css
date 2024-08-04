@@ -89,6 +89,7 @@ body {
   transform: rotate(45deg);
   height: 30px;
   width: 30px;
+  z-index: 100;
 }
 @media (max-width: 850px) {
   .nodes-picker {
@@ -112,33 +113,22 @@ body {
 .graph-container {
   height: 100%;
   display: flex;
+  position: relative;
 }
 .graph-column {
   flex: 1;
-  position: relative;
   background: darkslategray;
   padding: 2rem;
+  position: relative;
   overflow: hidden;
 }
-.graph-column-arrow {
-  background: darkslategray;
-  transform: rotate(45deg);
+.graph-header {
   position: absolute;
-  top: calc(50% - 15px);
-  right: -15px;
-  height: 30px;
-  width: 30px;
-}
-@media (max-width: 850px) {
-  .graph-container {
-    flex-direction: column;
-  }
-  .graph-column-arrow {
-    top: unset;
-    right: unset;
-    left: calc(50% - 15px);
-    bottom: -15px;
-  }
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  font-size: 2rem;
+  color: darkseagreen;
 }
 
 /* SHARED CLASSNAME */
@@ -160,5 +150,25 @@ body {
   }
   .text {
     text-align: justify;
+  }
+}
+.column-right-arrow {
+  background: beige;
+  transform: rotate(45deg);
+  position: absolute;
+  top: calc(50% - 15px);
+  left: -15px;
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 850px) {
+  .graph-container {
+    flex-direction: column;
+  }
+  .column-right-arrow {
+    top: unset;
+    left: calc(50% - 15px);
+    top: -15px;
   }
 }

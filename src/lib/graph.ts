@@ -117,6 +117,7 @@ class Graph {
           id: curr,
           label: curr,
         },
+        selected: curr === name,
         grabbable: false,
       })
       const children = graph.getChildren(curr)

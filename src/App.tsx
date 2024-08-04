@@ -160,8 +160,11 @@ export const GraphDisplay: React.FC<{
   const cyRef = useRef<cytoscape.Core>()
   const [lang, setlang] = useState<string>("la")
   const [focus, setFocus] = useState<string>(query.nodes[0])
-
   const [renderData] = useState(getRenderData(query))
+
+  // helps to recenter by
+  // remounting the component:
+  const [mountKey, setMountKey] = useState(0)
 
   useEffect(() => {
     if (cyRef.current) {
@@ -191,20 +194,43 @@ export const GraphDisplay: React.FC<{
   return (
     <div className="graph-container">
       <div className="graph-column">
-        <div className="graph-column-arrow" />
+        <div className="graph-header">
+          {query.mode} ({query.nodes[0]})
+        </div>
         <Button
           {...sharedProps}
           style={{
             ...sharedProps.style,
             borderColor: "darkseagreen",
             color: "darkseagreen",
+            position: "absolute",
+            bottom: "1rem",
+            left: "1rem",
+            zIndex: 100,
           }}
           variant="outlined"
           onClick={reset}
         >
           reset
         </Button>
+        <Button
+          {...sharedProps}
+          style={{
+            ...sharedProps.style,
+            borderColor: "darkseagreen",
+            color: "darkseagreen",
+            position: "absolute",
+            bottom: "1rem",
+            left: "6rem",
+            zIndex: 100,
+          }}
+          variant="outlined"
+          onClick={() => setMountKey((n) => n + 1)}
+        >
+          recenter
+        </Button>
         <CytoscapeComponent
+          key={mountKey}
           elements={renderData}
           cy={(cy) => {
             cyRef.current = cy
@@ -251,6 +277,7 @@ export const GraphDisplay: React.FC<{
         />
       </div>
       <div className="column-right">
+        <div className="column-right-arrow" />
         <div className="title">{focus}</div>
         <div className="text">{bookGraph.get(focus).text.en}</div>
       </div>
