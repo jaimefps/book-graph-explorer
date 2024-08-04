@@ -4,9 +4,11 @@ class GraphNode {
   children: string[] = []
   parents: Proof
   text: TextMap
-  constructor(text: TextMap, parents: Proof) {
+  entryIdx: number
+  constructor(text: TextMap, parents: Proof, entryIdx: number) {
     this.text = text
     this.parents = parents
+    this.entryIdx = entryIdx
   }
 }
 
@@ -17,8 +19,8 @@ class Graph {
     return this.nodes[name]
   }
 
-  addNode(name: string, text: TextMap, proof: Proof) {
-    this.nodes[name] = new GraphNode(text, proof)
+  addNode(name: string, text: TextMap, proof: Proof, idx: number) {
+    this.nodes[name] = new GraphNode(text, proof, idx)
     // add node edges:
     const parents = proof.flat()
     for (const parent of parents) {
@@ -164,10 +166,11 @@ class Graph {
 
 function makeBookGraph() {
   const graph = new Graph()
-  for (const entry of book) {
+  for (let i = 0; i < book.length; i++) {
+    const entry = book[i]
     const name = entry[0]
     const data = entry[1]
-    graph.addNode(name, data.text, data.proof)
+    graph.addNode(name, data.text, data.proof, i)
   }
   return graph
 }

@@ -2,6 +2,11 @@
 
 ---
 
+- add info icon with tooltip to the node selection header, explaining that
+  we already remove options that are not applicable to the desired query mode
+
+---
+
 BUGS:
 
 - improve canvas & button positioning, still poreventing canvas from taking over whiole screen on mobile.

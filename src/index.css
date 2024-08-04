@@ -36,12 +36,12 @@ body {
   gap: 0.5rem;
   padding: 1rem 2rem;
   cursor: pointer;
-  width: 350px;
+  width: 360px;
   color: darkslategray;
 }
 
 .mode-picker-button-label {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: darkseagreen;
   font-weight: 900;
 }

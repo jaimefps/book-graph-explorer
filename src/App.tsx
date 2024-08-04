@@ -102,6 +102,19 @@ export const NodesPicker: React.FC<{
           disableClearable
           options={nodeOpts}
           value={selection}
+          // filterOptions={(opts) => {
+          //   if (mode === "ancestry") {
+          //     // disable things without parents:
+          //     return opts.filter((opt) => bookGraph.getParents(opt).length)
+          //   }
+          //   if (mode === "descendancy") {
+          //     // disable things without children:
+          //     return opts.filter((opt) => bookGraph.getChildren(opt).length)
+          //   }
+          //   if (mode === "connection") {
+          //   }
+          //   return opts
+          // }}
           onChange={(e, value) => setSelection(value)}
           style={{ width: 300 }}
           renderInput={(props) => (
@@ -233,7 +246,7 @@ export const GraphDisplay: React.FC<{
           }}
           variant="outlined"
           onClick={() => {
-            cyRef.current?.fit()
+            cyRef.current?.fit(undefined, 16)
             cyRef.current?.center()
           }}
         >
