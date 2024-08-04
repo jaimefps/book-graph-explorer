@@ -90,6 +90,7 @@ class Graph {
           id: curr,
           label: curr,
         },
+        selected: curr === name,
         grabbable: false,
       })
       const parents = graph.getParents(curr)
@@ -173,3 +174,14 @@ function makeBookGraph() {
 export const bookGraph = makeBookGraph()
 export const result = bookGraph.getConnectionRenderData("e1def3", "e1p6")
 // export const result = bookGraph.getAncestryRenderData("e1p6")
+
+// const data = [
+//   { data: { id: "1", label: "1" }, grabbable: false },
+//   { data: { id: "2", label: "2" }, grabbable: false },
+//   { data: { id: "3", label: "3" }, grabbable: false },
+//   { data: { id: "4", label: "4" }, grabbable: false },
+//   { data: { source: "1", target: "2" } },
+//   { data: { source: "2", target: "3" } },
+//   { data: { source: "1", target: "3" } },
+//   { data: { source: "3", target: "4" } },
+// ]

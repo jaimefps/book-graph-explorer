@@ -1,7 +1,34 @@
 ## todo
 
-- now: search flow
-- then: set focus on query response = to searched thing
+---
+
+flow:
+
+A. show large button list:
+
+1. get ancestry tree
+2. get descendancy tree
+3. get connection tree
+4. free exploration (postpone)
+
+B. select statement
+
+- one (or two) dropdowns
+- book view on the right-hand side shows the text for the selected statement
+- clicking text links changes the selected statement un the dropdown
+- "Generate" button to pick and submit query
+
+C. show graph
+
+- auto focus on the root requested node
+- allow for modal when
+
+---
+
+- create controls on top of the canvas that use the "quickdial" component"
+- actions: reset, recenter, save
+
+---
 
 - run validation during build script
 

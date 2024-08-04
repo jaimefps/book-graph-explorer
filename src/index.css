@@ -11,18 +11,154 @@ body {
   height: 100vh;
 }
 
-.container {
+/* create vars */
+/* 
+  color: darkseagreen;
+  background: darkslategray;
+*/
+
+/* MODE PICKER */
+.mode-picker {
+  height: 100%;
+  background: darkslategray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.mode-picker-header {
+  font-size: 2rem;
+  min-width: 300px;
+  max-width: 400px;
+  color: darkseagreen;
+  text-align: center;
+}
+.mode-picker-button {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  width: 350px;
+  color: gray;
+}
+
+.mode-picker-button-label {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: darkseagreen;
+}
+.mode-picker-button-description {
+  font-size: 1rem;
+}
+
+/* NODE PICKER */
+/* 
+  color: darkseagreen;
+  background: darkslategray;
+*/
+.nodes-picker {
   height: 100%;
   display: flex;
 }
-
-.graph-display {
-  height: 100%;
+.node-picker-header {
+  font-size: 2rem;
+  width: 350px;
+  color: darkseagreen;
+  text-align: center;
+}
+.column-left {
   flex: 1;
+  position: relative;
+  background: darkslategray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.column-left-arrow {
+  position: absolute;
+  background: darkslategray;
+  top: calc(50% - 15px);
+  right: -15px;
+  transform: rotate(45deg);
+  height: 30px;
+  width: 30px;
+}
+@media (max-width: 850px) {
+  .nodes-picker {
+    flex-direction: column;
+  }
+  .column-left-arrow {
+    top: unset;
+    right: unset;
+    left: calc(50% - 15px);
+    bottom: -15px;
+  }
+}
+.node-picker-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
 }
 
-.text-display {
+/* GRAPH DISPLAY */
+.graph-container {
   height: 100%;
-  background: beige;
+  display: flex;
+}
+.graph-column {
   flex: 1;
+  position: relative;
+  background: darkslategray;
+  padding: 2rem;
+  overflow: hidden;
+}
+.graph-column-arrow {
+  background: darkslategray;
+  transform: rotate(45deg);
+  position: absolute;
+  top: calc(50% - 15px);
+  right: -15px;
+  height: 30px;
+  width: 30px;
+}
+@media (max-width: 850px) {
+  .graph-container {
+    flex-direction: column;
+  }
+  .graph-column-arrow {
+    top: unset;
+    right: unset;
+    left: calc(50% - 15px);
+    bottom: -15px;
+  }
+}
+
+/* SHARED CLASSNAME */
+.column-right {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  .title {
+    font-size: 100px;
+    font-weight: bold;
+    color: darkseagreen;
+  }
+  .text {
+    text-align: justify;
+  }
 }
