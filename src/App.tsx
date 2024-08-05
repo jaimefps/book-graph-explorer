@@ -1,11 +1,28 @@
 import { bookGraph } from "./lib/graph"
-import { GraphMode, GraphQuery, RenderData } from "./lib/types"
+import { GraphMode, GraphQuery, RenderData, Translation } from "./lib/types"
 import CytoscapeComponent from "react-cytoscapejs"
 import { useEffect, useMemo, useRef, useState } from "react"
 import AutoComplete from "@mui/material/Autocomplete"
 import TextField from "@mui/material/TextField"
 import Button from "@mui/material/Button"
 import { nodeOpts } from "./lib/book"
+
+function getBookText({
+  node,
+  trans = "en",
+}: {
+  node: string
+  trans?: Translation
+  onClickProof: (proofNode: string) => void
+}): string | JSX.Element {
+  // todo: handle languages:
+  const Res = bookGraph.get(node).text.en
+  return typeof Res === "string" ? (
+    Res
+  ) : (
+    <Res onClickProof={(proofNode) => console.log("clicked:", proofNode)} />
+  )
+}
 
 // import Modal from "@mui/material/Modal"
 
@@ -221,14 +238,25 @@ export const NodesPicker: React.FC<{
       <div className="column-right">
         <div className="column-right-title">{fromNode}</div>
         <div className="column-right-text">
-          {bookGraph.get(fromNode).text.en}
+          {/* {bookGraph.get(fromNode).text.en} */}
+          {getBookText({
+            node: fromNode,
+            onClickProof(proof) {
+              console.log("clicked:", proof)
+            },
+          })}
         </div>
         {mode === "connection" && (
           <>
             <hr className="styled-hr" />
             <div className="column-right-title">{toNode}</div>
             <div className="column-right-text">
-              {bookGraph.get(toNode).text.en}
+              {getBookText({
+                node: toNode,
+                onClickProof(proof) {
+                  console.log("clicked:", proof)
+                },
+              })}
             </div>
           </>
         )}
@@ -379,7 +407,14 @@ export const GraphDisplay: React.FC<{
       <div className="column-right">
         <div className="column-right-arrow" />
         <div className="column-right-title">{focus}</div>
-        <div className="column-right-text">{bookGraph.get(focus).text.en}</div>
+        <div className="column-right-text">
+          {getBookText({
+            node: focus,
+            onClickProof(proof) {
+              console.log("clicked:", proof)
+            },
+          })}
+        </div>
       </div>
     </div>
   )

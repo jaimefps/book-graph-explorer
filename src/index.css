@@ -120,7 +120,7 @@ body {
   top: 0.5rem;
   left: 1rem;
   z-index: 100;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: beige;
 }
 
@@ -170,4 +170,10 @@ body {
   border: none;
   border-top: 2px solid darkslategray;
   width: 80%;
+}
+
+.book-link {
+  color: orangered;
+  font-weight: 700;
+  cursor: pointer;
 }

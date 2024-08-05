@@ -1,4 +1,17 @@
-// entries: intro, def, ax, p, cor, sch, pcp (outside)
+import { Tooltip } from "@mui/material"
+
+export const BookLink: React.FC<{
+  node: string
+  onClickProof: (node: string) => void
+  children: React.ReactNode
+}> = ({ children, node, onClickProof }) => (
+  <Tooltip title={<span style={{ fontSize: 14 }}>{node}</span>}>
+    <span className="book-link" onClick={() => onClickProof(node)}>
+      {children}
+    </span>
+  </Tooltip>
+)
+
 export const book = [
   [
     "e1def1",
@@ -169,7 +182,20 @@ export const book = [
     "e1p1",
     {
       text: {
-        en: "Substance is by nature prior to its modifications. Proof.—This is clear from Deff. iii. and v.",
+        en: ({ onClickProof }: { onClickProof: (node: string) => void }) => (
+          <span>
+            Substance is by nature prior to its modifications. Proof.—This is
+            clear from Deff.{" "}
+            <BookLink node="e1def3" onClickProof={onClickProof}>
+              iii
+            </BookLink>
+            . and{" "}
+            <BookLink node="e1def5" onClickProof={onClickProof}>
+              v
+            </BookLink>
+            .
+          </span>
+        ),
         es: "",
         la: "Substantia prior est natura suis affectionibus.",
       },
