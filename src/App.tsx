@@ -178,9 +178,6 @@ export const GraphDisplay: React.FC<{
   const [focus, setFocus] = useState<string>(query.nodes[0])
   const [renderData] = useState(getRenderData(query))
 
-  // helps to recenter by
-  // remounting the component:
-
   useEffect(() => {
     if (cyRef.current) {
       const cy = cyRef.current
@@ -198,11 +195,8 @@ export const GraphDisplay: React.FC<{
       // background click
       // cy.on("click", (event) => {
       //   if (event.target === cy) {
-      //     setFocus(undefined)
       //   }
       // })
-
-      // todo: double click for zoom?
     }
   }, [])
 
@@ -243,6 +237,7 @@ export const GraphDisplay: React.FC<{
             bottom: "1rem",
             left: "6rem",
             zIndex: 100,
+            width: "8rem",
           }}
           variant="outlined"
           onClick={() => {
@@ -250,17 +245,18 @@ export const GraphDisplay: React.FC<{
             cyRef.current?.center()
           }}
         >
-          recenter
+          fit to screen
         </Button>
         <CytoscapeComponent
           elements={renderData}
-          cy={(cy) => {
-            cyRef.current = cy
-          }}
+          cy={(cy) => (cyRef.current = cy)}
+          minZoom={0.9}
           layout={{
             name: "breadthfirst",
             directed: true,
             grid: true,
+            avoidOverlap: true,
+            maximal: true,
             // nodeDimensionsIncludeLabels: true,
           }}
           style={{

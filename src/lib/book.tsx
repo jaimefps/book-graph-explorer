@@ -1,16 +1,4 @@
 // entries: intro, def, ax, p, cor, sch, pcp (outside)
-const sample = [
-  "",
-  {
-    text: {
-      en: "",
-      es: "",
-      la: "",
-    },
-    proof: [],
-  },
-]
-
 export const book = [
   [
     "e1def1",

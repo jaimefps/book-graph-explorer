@@ -5,11 +5,14 @@
 - add info icon with tooltip to the node selection header, explaining that
   we already remove options that are not applicable to the desired query mode
 
+- when a node is focused, all the edges that come OUT OF it should change color
+- when a node is focused, all the edges that come INTO it should change color?
+
 ---
 
 BUGS:
 
-- improve canvas & button positioning, still poreventing canvas from taking over whiole screen on mobile.
+- improve canvas & button positioning, still preventing canvas from taking over whole screen on mobile.
 
 - descendancy (e1def3)
 

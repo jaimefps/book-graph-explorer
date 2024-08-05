@@ -33,6 +33,7 @@ class Graph {
   }
 
   getParents(name: string) {
+    // todo: handle nested proofs:
     return this.nodes[name].parents.flat()
   }
 
@@ -72,20 +73,25 @@ class Graph {
     result[fromName] = descendants[fromName]
     result[toName] = ancestors[toName]
 
-    for (let key in descendants) {
+    const descKeys = Object.keys(descendants)
+    for (const key of descKeys) {
       if (ancestors[key]) {
         result[key] = descendants[key]
       }
     }
-    for (let key in result) {
+
+    const resKeys = Object.keys(result)
+    for (const key of resKeys) {
       result[key] = result[key].filter((k) => result[k])
     }
+
     return result
   }
 
   getAncestryRenderData(name: string) {
     const graph = this
     const result: RenderData = []
+    const visited: Record<string, 1> = {}
     function dfs(curr: string) {
       result.push({
         data: {
@@ -103,6 +109,10 @@ class Graph {
             target: curr,
           },
         })
+        // prevents creating the
+        // same edge more than once:
+        if (visited[parent]) continue
+        visited[parent] = 1
         dfs(parent)
       }
     }
@@ -113,6 +123,7 @@ class Graph {
   getDescendancyRenderData(name: string) {
     const graph = this
     const result: RenderData = []
+    const visited: Record<string, 1> = {}
     function dfs(curr: string) {
       result.push({
         data: {
@@ -130,6 +141,10 @@ class Graph {
             target: child,
           },
         })
+        // prevents creating the
+        // same edge more than once:
+        if (visited[child]) continue
+        visited[child] = 1
         dfs(child)
       }
     }
@@ -149,7 +164,7 @@ class Graph {
         grabbable: false,
       })
       // "connection" has descendants,
-      // not the "proof" like usual:
+      // not the "parents" like usual:
       const children = connection[curr]
       for (const child of children) {
         result.push({
@@ -176,16 +191,3 @@ function makeBookGraph() {
 }
 
 export const bookGraph = makeBookGraph()
-export const result = bookGraph.getConnectionRenderData("e1def3", "e1p6")
-// export const result = bookGraph.getAncestryRenderData("e1p6")
-
-// const data = [
-//   { data: { id: "1", label: "1" }, grabbable: false },
-//   { data: { id: "2", label: "2" }, grabbable: false },
-//   { data: { id: "3", label: "3" }, grabbable: false },
-//   { data: { id: "4", label: "4" }, grabbable: false },
-//   { data: { source: "1", target: "2" } },
-//   { data: { source: "2", target: "3" } },
-//   { data: { source: "1", target: "3" } },
-//   { data: { source: "3", target: "4" } },
-// ]
