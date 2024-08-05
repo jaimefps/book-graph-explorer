@@ -1,7 +1,7 @@
 import { bookGraph } from "./lib/graph"
 import { RenderData } from "./lib/types"
 import CytoscapeComponent from "react-cytoscapejs"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import AutoComplete from "@mui/material/Autocomplete"
 import TextField from "@mui/material/TextField"
 import Button from "@mui/material/Button"
@@ -41,7 +41,7 @@ export const ModePicker: React.FC<{
       >
         <div className="mode-picker-button-label">Ancestry</div>
         <div className="mode-picker-button-description">
-          Illustrate the complete chain of proofs for some statement.
+          Illustrate the complete chain of proofs for a single statement.
         </div>
       </button>
       <button
@@ -50,7 +50,7 @@ export const ModePicker: React.FC<{
       >
         <div className="mode-picker-button-label">Descendancy</div>
         <div className="mode-picker-button-description">
-          Illustrate the complete chain of consequences for some statement.
+          Illustrate the complete chain of consequences for a single statement.
         </div>
       </button>
       <button
@@ -59,7 +59,7 @@ export const ModePicker: React.FC<{
       >
         <div className="mode-picker-button-label">Connection</div>
         <div className="mode-picker-button-description">
-          Illustrate the chain of arguments that connects two entries.
+          Illustrate the chain of arguments that connects two statements.
         </div>
       </button>
     </div>
@@ -82,13 +82,38 @@ const modeOptMap = {
   connection: nodeOpts,
 }
 
+function withLabel(
+  node: React.ReactNode,
+  opts?: {
+    label: string
+    htmlFor: string
+  }
+) {
+  if (opts) {
+    return (
+      <label
+        htmlFor={opts.htmlFor}
+        style={{
+          fontWeight: "700",
+          color: "darkseagreen",
+        }}
+      >
+        {opts.label}
+        {node}
+      </label>
+    )
+  }
+  return node
+}
+
 export const NodesPicker: React.FC<{
   setNodes: (n: string[]) => void
   reset: VoidFunction
   mode: GraphMode
 }> = ({ setNodes, reset, mode }) => {
-  const defaultValue = modeOptMap[mode][0]
-  const [selection, setSelection] = useState<string>(defaultValue)
+  const fromPreview = modeOptMap[mode][0]
+  const [fromNode, setFromNode] = useState<string>(fromPreview)
+  const [toNode, setToNode] = useState<string>(modeOptMap[mode].slice(-1)[0])
 
   return (
     <div className="nodes-picker">
@@ -101,35 +126,59 @@ export const NodesPicker: React.FC<{
         <AutoComplete
           disableClearable
           options={nodeOpts}
-          value={selection}
-          // filterOptions={(opts) => {
-          //   if (mode === "ancestry") {
-          //     // disable things without parents:
-          //     return opts.filter((opt) => bookGraph.getParents(opt).length)
-          //   }
-          //   if (mode === "descendancy") {
-          //     // disable things without children:
-          //     return opts.filter((opt) => bookGraph.getChildren(opt).length)
-          //   }
-          //   if (mode === "connection") {
-          //   }
-          //   return opts
-          // }}
-          onChange={(e, value) => setSelection(value)}
+          value={fromNode}
+          onChange={(e, value) => setFromNode(value)}
           style={{ width: 300 }}
-          renderInput={(props) => (
-            <TextField
-              {...props}
-              size="small"
-              InputProps={{
-                ...props.InputProps,
-                style: {
-                  background: "white",
-                },
-              }}
-            />
-          )}
+          renderInput={(props) =>
+            withLabel(
+              <TextField
+                {...props}
+                id="fromNode"
+                size="small"
+                InputProps={{
+                  ...props.InputProps,
+                  style: {
+                    background: "white",
+                  },
+                }}
+              />,
+              mode === "connection"
+                ? {
+                    label: "starting from",
+                    htmlFor: "fromNode",
+                  }
+                : undefined
+            )
+          }
         />
+        {mode === "connection" && (
+          <AutoComplete
+            disableClearable
+            options={nodeOpts}
+            value={toNode}
+            onChange={(e, value) => setToNode(value)}
+            style={{ width: 300 }}
+            renderInput={(props) =>
+              withLabel(
+                <TextField
+                  {...props}
+                  id="toNode"
+                  size="small"
+                  InputProps={{
+                    ...props.InputProps,
+                    style: {
+                      background: "white",
+                    },
+                  }}
+                />,
+                {
+                  label: "ending at",
+                  htmlFor: "toNode",
+                }
+              )
+            }
+          />
+        )}
         <div className="node-picker-buttons">
           <Button
             {...sharedProps}
@@ -139,7 +188,20 @@ export const NodesPicker: React.FC<{
               color: "darkslategray",
             }}
             variant="contained"
-            onClick={() => setNodes([selection])}
+            onClick={() => {
+              if (mode === "connection") {
+                setNodes(
+                  // enforce having earlier entry as
+                  // the first element in the list:
+                  [fromNode, toNode].sort(
+                    (a, b) =>
+                      bookGraph.get(a).entryIdx - bookGraph.get(b).entryIdx
+                  )
+                )
+                return
+              }
+              setNodes([fromNode])
+            }}
           >
             submit
           </Button>
@@ -160,9 +222,9 @@ export const NodesPicker: React.FC<{
       </div>
 
       <div className="column-right">
-        <div className="column-right-title">{selection}</div>
+        <div className="column-right-title">{fromNode}</div>
         <div className="column-right-text">
-          {bookGraph.get(selection).text.en}
+          {bookGraph.get(fromNode).text.en}
         </div>
       </div>
     </div>
@@ -181,7 +243,6 @@ export const GraphDisplay: React.FC<{
   useEffect(() => {
     if (cyRef.current) {
       const cy = cyRef.current
-
       // single node click:
       cy.on("click", "node", (event) => {
         // Prevents the event from
@@ -191,8 +252,7 @@ export const GraphDisplay: React.FC<{
         const nodeId = node.id()
         setFocus(nodeId)
       })
-
-      // background click
+      // background click:
       // cy.on("click", (event) => {
       //   if (event.target === cy) {
       //   }
@@ -200,16 +260,33 @@ export const GraphDisplay: React.FC<{
     }
   }, [])
 
+  const hasEdges = useMemo(
+    () => renderData.find((n) => !!n.data.source),
+    [renderData]
+  )
+
   return (
     <div className="graph-container">
       <div className="graph-column">
         <div className="graph-header" style={{ padding: 0, margin: 0 }}>
-          {query.mode} ({query.nodes[0]})
+          {hasEdges ? (
+            <div className="query-header">
+              {query.mode} ({query.nodes[0]}
+              {query.mode === "connection" && `, ${query.nodes[1]}`})
+            </div>
+          ) : (
+            <div className="query-header">
+              {query.mode === "connection"
+                ? `no connections found between ${query.nodes[0]} and ${query.nodes[1]}`
+                : `no ${query.mode} found for ${query.nodes[0]}`}
+            </div>
+          )}
         </div>
         <Button
           {...sharedProps}
           style={{
             ...sharedProps.style,
+            backgroundColor: "darkslategray",
             borderColor: "darkseagreen",
             color: "darkseagreen",
             position: "absolute",
@@ -231,6 +308,7 @@ export const GraphDisplay: React.FC<{
           {...sharedProps}
           style={{
             ...sharedProps.style,
+            backgroundColor: "darkslategray",
             borderColor: "darkseagreen",
             color: "darkseagreen",
             position: "absolute",
@@ -250,14 +328,11 @@ export const GraphDisplay: React.FC<{
         <CytoscapeComponent
           elements={renderData}
           cy={(cy) => (cyRef.current = cy)}
-          minZoom={0.9}
           layout={{
             name: "breadthfirst",
             directed: true,
             grid: true,
-            avoidOverlap: true,
             maximal: true,
-            // nodeDimensionsIncludeLabels: true,
           }}
           style={{
             background: "darkslategray",

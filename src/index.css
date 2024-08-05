@@ -57,8 +57,9 @@ body {
 .node-picker-header {
   font-size: 2rem;
   width: 350px;
-  color: darkseagreen;
   text-align: center;
+  color: darkseagreen;
+  color: beige;
 }
 .column-left {
   flex: 1;
@@ -69,7 +70,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 2rem;
+  padding: 4rem;
 }
 .column-left-arrow {
   position: absolute;
@@ -110,7 +111,7 @@ body {
 .graph-column {
   flex: 1;
   background: darkslategray;
-  padding: 2rem;
+  padding: 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -136,7 +137,7 @@ body {
 /* SHARED CLASSNAME */
 .column-right {
   flex: 1;
-  padding: 2rem;
+  padding: 4rem;
   display: flex;
   position: relative;
   flex-direction: column;

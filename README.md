@@ -1,5 +1,8 @@
 ## todo
 
+- double preview UX
+- if in connection mode, show preview for both selected items:
+
 ---
 
 - add info icon with tooltip to the node selection header, explaining that
@@ -14,13 +17,8 @@ BUGS:
 
 - improve canvas & button positioning, still preventing canvas from taking over whole screen on mobile.
 
-- descendancy (e1def3)
-
-1. multiple edge lines to same target
-2. some edge lines have no arrow
-
 - create hook to track changes to window size, consider
-  re-centering automatically when screen size changes
+  re-centering automatically when screen size changes; only applied when screen is shrunk, not enlarged
 
 ---
 
@@ -43,11 +41,12 @@ B. select statement
 C. show graph
 
 - auto focus on the root requested node
-- allow for modal when
+- open modal when clicking text links
 
 ---
 
-- create controls on top of the canvas that use the "quickdial" component"
+- create controls on top of the canvas
+  that use the "quickdial" component
 - actions: reset, recenter, save
 
 ---
@@ -58,11 +57,6 @@ C. show graph
 - get consequences (complex)
 - get connection (complex)
 
-- highlight/colorize the source node that the user searched for?
-
-- command+click allows for multi-selection of nodes.
-  see if we can disable this or if we want to use.
-
 - get number of proof/consequence/connection trees
 
 - text search that shows what entries include said concept
@@ -70,12 +64,12 @@ C. show graph
 - do Part I only for everything,
   then do the rest of the book once all features are implemented
 
-- plain version of the book, but any mentioned to previous text is a ling to that part of the book (or open a modal with that text?)
+- plain version of the book, but any mentioned to previous text is a link to that part of the book (or open a modal with that text?)
 
 - highlight the path (or nodes?) that is common to all versions, when multiple are found
 
 - use gutenberg project for translations of the ethics;
-  email edwin curley (or someone) asking for permition to use edwin's translation
+  email edwin curley (or someone) asking for permission to use edwin's translation
 
 - give credit to all other tools, and gutenberg project
 

@@ -161,6 +161,7 @@ class Graph {
           id: curr,
           label: curr,
         },
+        selected: curr === fromName || curr === toName,
         grabbable: false,
       })
       // "connection" has descendants,
