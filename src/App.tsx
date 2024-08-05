@@ -1,5 +1,5 @@
 import { bookGraph } from "./lib/graph"
-import { RenderData } from "./lib/types"
+import { GraphMode, GraphQuery, RenderData } from "./lib/types"
 import CytoscapeComponent from "react-cytoscapejs"
 import { useEffect, useMemo, useRef, useState } from "react"
 import AutoComplete from "@mui/material/Autocomplete"
@@ -8,9 +8,6 @@ import Button from "@mui/material/Button"
 import { nodeOpts } from "./lib/book"
 
 // import Modal from "@mui/material/Modal"
-
-type GraphMode = "ancestry" | "descendancy" | "connection"
-type GraphQuery = { mode: GraphMode; nodes: string[] }
 
 function getRenderData(query: GraphQuery) {
   const methodMap: {
@@ -226,6 +223,15 @@ export const NodesPicker: React.FC<{
         <div className="column-right-text">
           {bookGraph.get(fromNode).text.en}
         </div>
+        {mode === "connection" && (
+          <>
+            <hr className="styled-hr" />
+            <div className="column-right-title">{toNode}</div>
+            <div className="column-right-text">
+              {bookGraph.get(toNode).text.en}
+            </div>
+          </>
+        )}
       </div>
     </div>
   )
@@ -270,16 +276,17 @@ export const GraphDisplay: React.FC<{
       <div className="graph-column">
         <div className="graph-header" style={{ padding: 0, margin: 0 }}>
           {hasEdges ? (
-            <div className="query-header">
+            <>
               {query.mode} ({query.nodes[0]}
               {query.mode === "connection" && `, ${query.nodes[1]}`})
-            </div>
+            </>
           ) : (
-            <div className="query-header">
+            <>
+              note:{" "}
               {query.mode === "connection"
                 ? `no connections found between ${query.nodes[0]} and ${query.nodes[1]}`
                 : `no ${query.mode} found for ${query.nodes[0]}`}
-            </div>
+            </>
           )}
         </div>
         <Button

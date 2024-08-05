@@ -1,47 +1,22 @@
 ## todo
 
-- double preview UX
-- if in connection mode, show preview for both selected items:
+NOW: text with link and modal for navigating content
 
 ---
 
-- add info icon with tooltip to the node selection header, explaining that
-  we already remove options that are not applicable to the desired query mode
-
-- when a node is focused, all the edges that come OUT OF it should change color
-- when a node is focused, all the edges that come INTO it should change color?
+- auto focus on the root requested node
+- open modal when clicking text links
 
 ---
-
-BUGS:
-
-- improve canvas & button positioning, still preventing canvas from taking over whole screen on mobile.
 
 - create hook to track changes to window size, consider
   re-centering automatically when screen size changes; only applied when screen is shrunk, not enlarged
 
 ---
 
-flow:
-
-A. show large button list:
-
-1. get ancestry tree
-2. get descendancy tree
-3. get connection tree
-4. free exploration (postpone)
-
-B. select statement
-
-- one (or two) dropdowns
-- book view on the right-hand side shows the text for the selected statement
-- clicking text links changes the selected statement un the dropdown
-- "Generate" button to pick and submit query
-
-C. show graph
-
-- auto focus on the root requested node
-- open modal when clicking text links
+- maybe auto-filter some elements from the autocomplete, if so add info-icon to the section header explaining why they are disabled or removed.
+- when a node is focused, all the edges that come OUT OF it should change color
+- when a node is focused, all the edges that come INTO it should change color?
 
 ---
 

@@ -120,7 +120,7 @@ body {
   top: 0.5rem;
   left: 1rem;
   z-index: 100;
-  font-size: 2rem;
+  font-size: 1rem;
   color: beige;
 }
 
@@ -164,4 +164,10 @@ body {
     left: calc(50% - 15px);
     top: -15px;
   }
+}
+
+.styled-hr {
+  border: none;
+  border-top: 2px solid darkslategray;
+  width: 80%;
 }
