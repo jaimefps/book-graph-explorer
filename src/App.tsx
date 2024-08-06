@@ -297,6 +297,10 @@ export const GraphDisplay: React.FC<{
     }
   }, [])
 
+  const edgeCount = useMemo(() => {
+    return renderData.filter((n) => !!n.data.source).length
+  }, [renderData])
+
   const hasEdges = useMemo(
     () => renderData.find((n) => !!n.data.source),
     [renderData]
@@ -369,7 +373,7 @@ export const GraphDisplay: React.FC<{
           layout={{
             name: "breadthfirst",
             avoidOverlap: true,
-            spacingFactor: 2,
+            spacingFactor: edgeCount > 25 ? 3 : 2,
             directed: true,
             maximal: true,
             grid: true,
@@ -398,7 +402,7 @@ export const GraphDisplay: React.FC<{
             {
               selector: "edge",
               style: {
-                width: 4,
+                width: 6,
                 "line-color": "#ccc",
                 "target-arrow-color": "#ccc",
                 "target-arrow-shape": "triangle",
@@ -409,7 +413,7 @@ export const GraphDisplay: React.FC<{
           ]}
         />
       </div>
-      <div className="column-right">
+      {/* <div className="column-right">
         <div className="column-right-arrow" />
         <div className="column-right-title">{focus}</div>
         <div className="column-right-text">
@@ -420,7 +424,7 @@ export const GraphDisplay: React.FC<{
             },
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

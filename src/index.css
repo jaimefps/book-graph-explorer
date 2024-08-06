@@ -153,6 +153,8 @@ body {
 }
 .column-right-text {
   text-align: justify;
+  flex: 1;
+  overflow: auto;
 }
 
 @media (max-width: 850px) {

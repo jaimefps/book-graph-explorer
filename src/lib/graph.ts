@@ -12,6 +12,11 @@ class GraphNode {
   }
 }
 
+const nodeHighlight = {
+  background: "orangered",
+  backgroundColor: "orangered",
+}
+
 class Graph {
   nodes: Record<string, GraphNode> = {}
 
@@ -93,12 +98,16 @@ class Graph {
     const result: RenderData = []
     const visited: Record<string, 1> = {}
     function dfs(curr: string) {
+      const shouldHighlight = curr === name
       result.push({
         data: {
           id: curr,
           label: curr,
         },
-        selected: curr === name,
+        style: {
+          ...(shouldHighlight ? nodeHighlight : null),
+        },
+        selected: shouldHighlight,
       })
       const parents = graph.getParents(curr)
       for (const parent of parents) {
@@ -108,8 +117,7 @@ class Graph {
             target: curr,
           },
         })
-        // prevents creating the
-        // same edge more than once:
+        // prevent edge duplication
         if (visited[parent]) continue
         visited[parent] = 1
         dfs(parent)
@@ -124,12 +132,16 @@ class Graph {
     const result: RenderData = []
     const visited: Record<string, 1> = {}
     function dfs(curr: string) {
+      const shouldHighlight = curr === name
       result.push({
         data: {
           id: curr,
           label: curr,
         },
-        selected: curr === name,
+        style: {
+          ...(shouldHighlight ? nodeHighlight : null),
+        },
+        selected: shouldHighlight,
       })
       const children = graph.getChildren(curr)
       for (const child of children) {
@@ -154,12 +166,16 @@ class Graph {
     const connection = this.getConnection(fromName, toName)
     const result: RenderData = []
     for (const curr in connection) {
+      const shouldHighlight = curr === fromName || curr === toName
       result.push({
         data: {
           id: curr,
           label: curr,
         },
-        selected: curr === fromName || curr === toName,
+        style: {
+          ...(shouldHighlight ? nodeHighlight : null),
+        },
+        selected: shouldHighlight,
       })
       // "connection" has descendants,
       // not the "parents" like usual:

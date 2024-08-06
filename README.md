@@ -6,21 +6,32 @@
 
 ## todo
 
-NOW: make notes (sch) into standalone nodes
+NOW: gather proofs
 
-- review all proofs that mention the parent of each SCH node.
-- book data: Part I
-- book data: Part II
 - book data: Part III
 - book data: Part IV
 - book data: Part V
 
-- review everything...
+- review everything using the spanish version here:
+  https://archive.org/details/etica-de-spinoza/page/n1/mode/2up
+
+---
+
+- script that merges all scholium and corollaries into the parent. Then parses all proofs to redirect 'sch' and 'cor' to the main parent as well. and write a validation script to ensure it worked...
+
+---
+
+- instead of <BookLink/>, just have a list of links ("shortcuts") that use the proof array to link to the dependencies. That way we can leave the raw text without adding markup to it.
 
 ---
 
 - make text portion into a drawer when in graph mode,
-  to allow for space more space for the graph
+  to allow for more space for the graph; when the drawer opens, it takes up half the screen,
+  and after the drawer is finished opening, it automatically fires the fitToScreen function
+
+---
+
+- maybe an input for degrees of search, e.g., so that we only get 3 degrees of ancestry
 
 ---
 
@@ -124,8 +135,29 @@ contact:
 
 ---
 
+main page tabs:
+
+- explorer
+- statistics
+- about
+- buy me coffee
+
+---
+
 - "about" page itself has tabs to split stuff up in:
   - about me
   - about reasoning
   - about other apps out there
   - about sources
+
+---
+
+question: are there any dead-end propositions besides the last one in the book? is it something to note as important that some statements are made just to reach them, and nothing afterwards?
+
+---
+
+book tests:
+
+- all members of proof exist as entry names
+- sch and cor contain their parent as proof
+- no repeated parents in proof list
