@@ -13,7 +13,7 @@ function validate() {
     }
     nodes[name] = 1
   }
-  console.log({ nodes })
+  console.log("validation passed!", { nodes })
 }
 
 validate()

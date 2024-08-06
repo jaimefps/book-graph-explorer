@@ -99,7 +99,6 @@ class Graph {
           label: curr,
         },
         selected: curr === name,
-        grabbable: false,
       })
       const parents = graph.getParents(curr)
       for (const parent of parents) {
@@ -131,7 +130,6 @@ class Graph {
           label: curr,
         },
         selected: curr === name,
-        grabbable: false,
       })
       const children = graph.getChildren(curr)
       for (const child of children) {
@@ -162,7 +160,6 @@ class Graph {
           label: curr,
         },
         selected: curr === fromName || curr === toName,
-        grabbable: false,
       })
       // "connection" has descendants,
       // not the "parents" like usual:

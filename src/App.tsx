@@ -6,22 +6,25 @@ import AutoComplete from "@mui/material/Autocomplete"
 import TextField from "@mui/material/TextField"
 import Button from "@mui/material/Button"
 import { nodeOpts } from "./lib/book"
+// import "./lib/validate"
 
 function getBookText({
   node,
   trans = "en",
+  onClickProof,
 }: {
   node: string
   trans?: Translation
   onClickProof: (proofNode: string) => void
 }): string | JSX.Element {
   // todo: handle languages:
-  const Res = bookGraph.get(node).text.en
-  return typeof Res === "string" ? (
-    Res
-  ) : (
-    <Res onClickProof={(proofNode) => console.log("clicked:", proofNode)} />
-  )
+  // const Res = bookGraph.get(node).text.en
+  // return typeof Res === "string" ? (
+  //   Res
+  // ) : (
+  //   <Res onClickProof={(proofNode) => console.log("clicked:", proofNode)} />
+  // )
+  return bookGraph.get(node).text[trans]
 }
 
 // import Modal from "@mui/material/Modal"
@@ -365,9 +368,11 @@ export const GraphDisplay: React.FC<{
           cy={(cy) => (cyRef.current = cy)}
           layout={{
             name: "breadthfirst",
+            avoidOverlap: true,
+            spacingFactor: 2,
             directed: true,
-            grid: true,
             maximal: true,
+            grid: true,
           }}
           style={{
             background: "darkslategray",
@@ -382,8 +387,8 @@ export const GraphDisplay: React.FC<{
                 "text-halign": "center",
                 // "border-color": "",
                 color: "#fff",
-                height: 75,
-                width: 75,
+                height: 99,
+                width: 99,
               },
             },
             {

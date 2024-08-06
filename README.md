@@ -1,6 +1,39 @@
+## life
+
+- cancel amazon prime
+- laundry
+- supermercado
+
 ## todo
 
-NOW: text with link and modal for navigating content
+NOW: make notes (sch) into standalone nodes
+
+- review all proofs that mention the parent of each SCH node.
+- book data: Part I
+- book data: Part II
+- book data: Part III
+- book data: Part IV
+- book data: Part V
+
+- review everything...
+
+---
+
+- make text portion into a drawer when in graph mode,
+  to allow for space more space for the graph
+
+---
+
+- sentry io & error boundary around whole app
+  (and report what query broke the app, likely based on the URL state)
+
+---
+
+- as part of the book feature, being able to leave bookmarks?
+
+---
+
+- consider if "notes" should be treated as standalone nodes, as we do with corollaries?
 
 ---
 
@@ -65,3 +98,34 @@ NOW: text with link and modal for navigating content
 // const doc = parser.parseFromString(html, "text/html")
 // return doc.body.textContent || ""
 // }
+
+---
+
+contact:
+
+- nadler
+- della rocca
+- don garrett
+- yove
+- rebbecca goldstein
+- antonio damasio
+- johnathan bennett
+- mathew stewart (the courier and the heretic)
+- melamed
+- clare carlisle
+- curley
+- isreal
+- mike g.
+- mi profe de la upr..
+- paco pepe
+- ettiene helmer
+- reddit philosophy channels
+- philosophy nous magazine or whoever published the thing about the previous app?
+
+---
+
+- "about" page itself has tabs to split stuff up in:
+  - about me
+  - about reasoning
+  - about other apps out there
+  - about sources
