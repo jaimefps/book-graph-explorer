@@ -11,6 +11,11 @@
 
 ---
 
+- handle graph state in a Context so that
+  it doesn't go away if they change tabs.
+
+---
+
 LATER: gather proofs
 
 - book data: Part III

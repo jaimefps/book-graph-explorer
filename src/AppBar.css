@@ -28,6 +28,11 @@
   display: none;
 }
 
+.bmc-icon {
+  height: 1rem;
+  vertical-align: middle;
+}
+
 @media (max-width: 625px) {
   .appbar-container {
     padding: 0 1rem;
@@ -43,9 +48,15 @@
     display: none;
   }
   .appbar-link-text-small {
-    display: block;
+    display: unset;
   }
   .appbar-link-arrow {
     display: block !important;
+  }
+  .MuiButton-startIcon {
+    display: none !important;
+  }
+  .appbar-book-fix {
+    margin-bottom: -5px;
   }
 }

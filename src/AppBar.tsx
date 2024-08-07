@@ -18,24 +18,20 @@ const LinkButton: React.FC<{
       className="app-bar-link"
       sx={{
         ":hover": {
-          opacity: "0.6 !important",
+          opacity: "0.7 !important",
         },
       }}
-      // todo: move to css file?
       style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        textTransform: "none",
         background: "beige",
+        textTransform: "none",
         color: "darkslategray",
         padding: "0 1rem",
         height: "2rem",
-        opacity: 0.8,
+        // opacity: 0.8,
       }}
     >
       <span className="appbar-link-text-large">{children}</span>
-      <span className="appbar-link-text-small">&gt;</span>
+      <span className="appbar-link-text-small">{icon}</span>
     </Button>
   )
 }
@@ -74,7 +70,9 @@ export const AppBar = () => {
         <div className="appbar-github">
           <LinkButton
             href="https://github.com/jaimefps/ethics-data"
-            icon={<AutoStoriesIcon fontSize="small" />}
+            icon={
+              <AutoStoriesIcon fontSize="small" className="appbar-book-fix" />
+            }
           >
             book data
           </LinkButton>
@@ -84,14 +82,9 @@ export const AppBar = () => {
             href="https://buymeacoffee.com/jaimefps"
             icon={
               <img
-                src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+                className="bmc-icon"
                 alt="Buy me a coffee"
-                style={{
-                  height: "1rem",
-                  boxShadow: "none",
-                  border: "none",
-                  verticalAlign: "middle",
-                }}
+                src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
               />
             }
           >

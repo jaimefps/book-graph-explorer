@@ -15,7 +15,7 @@ export const ModePicker: React.FC<{
       >
         <div className="mode-picker-button-label">Connection</div>
         <div className="mode-picker-button-description">
-          Illustrate the chain of arguments that connects two statements.
+          Illustrate the chain of arguments that connects any two statements.
         </div>
       </button>
       <button

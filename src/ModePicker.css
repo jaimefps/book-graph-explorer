@@ -13,6 +13,8 @@
   width: 500px;
   color: darkseagreen;
   text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .mode-picker-button {
@@ -41,5 +43,15 @@
   .mode-picker-header {
     font-size: 2rem;
     width: 400px;
+  }
+  .mode-picker-button {
+    padding: 0.6rem 1.2rem;
+    width: 325px;
+  }
+  .mode-picker-button-label {
+    font-size: 1rem;
+  }
+  .mode-picker-button-description {
+    font-size: 0.8rem;
   }
 }
