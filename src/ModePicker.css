@@ -18,6 +18,10 @@
 }
 
 .mode-picker-button {
+  all: unset;
+
+  background: beige;
+  border-radius: 4px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -27,6 +31,10 @@
   cursor: pointer;
   width: 360px;
   color: darkslategray;
+}
+
+.mode-picker-button:hover {
+  opacity: 0.8;
 }
 
 .mode-picker-button-label {

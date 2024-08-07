@@ -1,19 +1,9 @@
 import { GraphMode, GraphQuery, RenderData } from "./types"
 import "./Graph.css"
-import { Button } from "@mui/material"
+import { Button, Tooltip } from "@mui/material"
 import { useRef, useState, useEffect, useMemo } from "react"
 import CytoscapeComponent from "react-cytoscapejs"
 import { bookGraph } from "./lib/graph"
-
-const sharedProps = {
-  disableElevation: true,
-  style: {
-    flex: 1,
-    textTransform: "none",
-    fontWeight: 600,
-    width: 300,
-  },
-} as const
 
 function getRenderData(query: GraphQuery) {
   const methodMap: {
@@ -68,125 +58,103 @@ export const Graph: React.FC<{
     [renderData]
   )
 
+  const headerText = hasEdges ? (
+    <>
+      {query.mode} ({query.nodes[0]}
+      {query.mode === "connection" && `, ${query.nodes[1]}`})
+    </>
+  ) : (
+    <>
+      note:{" "}
+      {query.mode === "connection"
+        ? `no connections found between ${query.nodes[0]} and ${query.nodes[1]}`
+        : `no ${query.mode} found for ${query.nodes[0]}`}
+    </>
+  )
+
   return (
     <div className="graph-container">
-      <div className="graph-column">
-        <div className="graph-header" style={{ padding: 0, margin: 0 }}>
-          {hasEdges ? (
-            <>
-              {query.mode} ({query.nodes[0]}
-              {query.mode === "connection" && `, ${query.nodes[1]}`})
-            </>
-          ) : (
-            <>
-              note:{" "}
-              {query.mode === "connection"
-                ? `no connections found between ${query.nodes[0]} and ${query.nodes[1]}`
-                : `no ${query.mode} found for ${query.nodes[0]}`}
-            </>
-          )}
+      <div className="graph-header">
+        <Tooltip title={headerText} enterTouchDelay={0}>
+          <div className="graph-header-text">{headerText}</div>
+        </Tooltip>
+
+        <div className="graph-header-button-group">
+          <Button
+            style={{
+              width: "6rem",
+            }}
+            className="graph-button"
+            variant="outlined"
+            onClick={() => {
+              cyRef.current?.fit(undefined, 16)
+              cyRef.current?.center()
+            }}
+          >
+            recenter
+          </Button>
+          <Button
+            style={{
+              width: "4rem",
+            }}
+            className="graph-button"
+            variant="outlined"
+            onClick={() => {
+              if (window.confirm("Are you sure you want to reset?")) {
+                reset()
+              }
+            }}
+          >
+            reset
+          </Button>
         </div>
-        <Button
-          {...sharedProps}
-          style={{
-            ...sharedProps.style,
-            backgroundColor: "darkslategray",
-            borderColor: "darkseagreen",
-            color: "darkseagreen",
-            position: "absolute",
-            bottom: "1rem",
-            left: "1rem",
-            zIndex: 100,
-            width: "4rem",
-          }}
-          variant="outlined"
-          onClick={() => {
-            if (window.confirm("Are you sure you want to reset?")) {
-              reset()
-            }
-          }}
-        >
-          reset
-        </Button>
-        <Button
-          {...sharedProps}
-          style={{
-            ...sharedProps.style,
-            backgroundColor: "darkslategray",
-            borderColor: "darkseagreen",
-            color: "darkseagreen",
-            position: "absolute",
-            bottom: "1rem",
-            left: "6rem",
-            zIndex: 100,
-            width: "8rem",
-          }}
-          variant="outlined"
-          onClick={() => {
-            cyRef.current?.fit(undefined, 16)
-            cyRef.current?.center()
-          }}
-        >
-          fit to screen
-        </Button>
-        <CytoscapeComponent
-          elements={renderData}
-          cy={(cy) => (cyRef.current = cy)}
-          layout={{
-            name: "breadthfirst",
-            avoidOverlap: true,
-            spacingFactor: edgeCount > 25 ? 3 : 2,
-            directed: true,
-            maximal: true,
-            grid: true,
-          }}
-          style={{
-            background: "darkslategray",
-            height: "100%",
-          }}
-          stylesheet={[
-            {
-              selector: "node",
-              style: {
-                label: "data(id)",
-                "text-valign": "center",
-                "text-halign": "center",
-                // "border-color": "",
-                color: "#fff",
-                height: 99,
-                width: 99,
-              },
-            },
-            {
-              selector: "node.selected",
-              style: { color: "green" },
-            },
-            {
-              selector: "edge",
-              style: {
-                width: 6,
-                "line-color": "#ccc",
-                "target-arrow-color": "#ccc",
-                "target-arrow-shape": "triangle",
-                "curve-style": "bezier",
-                events: "no",
-              },
-            },
-          ]}
-        />
       </div>
-      {/* <div className="column-right">
-          <div className="column-right-arrow" />
-          <div className="column-right-title">{focus}</div>
-          <div className="column-right-text">
-            {getBookText({
-              node: focus,
-              onClickProof(proof) {
-                console.log("clicked:", proof)
-              },
-            })}
-          </div>
-        </div> */}
+
+      <CytoscapeComponent
+        elements={renderData}
+        cy={(cy) => (cyRef.current = cy)}
+        layout={{
+          name: "breadthfirst",
+          avoidOverlap: true,
+          spacingFactor: edgeCount > 25 ? 3 : 2,
+          directed: true,
+          maximal: true,
+          grid: true,
+        }}
+        style={{
+          height: "calc(100% - var(--graph-controls-height))",
+          background: "darkslategray",
+        }}
+        stylesheet={[
+          {
+            selector: "node",
+            style: {
+              label: "data(id)",
+              "text-valign": "center",
+              "text-halign": "center",
+              // "border-color": "",
+              color: "#fff",
+              height: 99,
+              width: 99,
+            },
+          },
+          {
+            selector: "node.selected",
+            style: { color: "green" },
+          },
+          {
+            selector: "edge",
+            style: {
+              width: 6,
+              "line-color": "#ccc",
+              "target-arrow-color": "#ccc",
+              "target-arrow-shape": "triangle",
+              "curve-style": "bezier",
+              events: "no",
+            },
+          },
+        ]}
+      />
     </div>
   )
 }

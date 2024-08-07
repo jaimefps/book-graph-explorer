@@ -1,61 +1,50 @@
 .graph-container {
   height: 100%;
-  position: relative;
-  display: flex;
-}
-.graph-column {
-  flex: 1;
-  background: darkslategray;
-  /* position: relative; */
-  padding: 4rem 0;
 }
 .graph-header {
-  position: absolute;
-  top: 0.5rem;
-  left: 1rem;
-  z-index: 100;
-  font-size: 1.5rem;
-  color: orange;
-  font-weight: 700;
-}
+  height: var(--graph-controls-height);
+  background: rgb(41, 69, 69);
+  padding: 0rem 2rem;
 
-.column-right-arrow {
-  background: beige;
-  transform: rotate(45deg);
-  position: absolute;
-  top: calc(50% - 15px);
-  left: -15px;
-  height: 30px;
-  width: 30px;
-}
-
-.column-right {
-  flex: 1;
-  padding: 4rem;
   display: flex;
-  position: relative;
-  flex-direction: column;
-  background-color: beige;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
-.column-right-title {
-  font-size: 100px;
-  font-weight: bold;
+.graph-header-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: orange;
+  text-align: center;
 }
-.column-right-text {
-  text-align: justify;
-  flex: 1;
+
+.graph-header-button-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.graph-button {
+  border-color: darkseagreen !important;
+  color: darkseagreen !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  height: 2rem !important;
 }
 
 @media (max-width: 850px) {
-  .graph-container {
-    flex-direction: column;
+  .graph-header {
+    padding: 0rem 1rem;
+    gap: 0.5rem;
   }
-  .column-right-arrow {
-    top: unset;
-    left: calc(50% - 15px);
-    top: -15px;
+  .graph-header-text {
+    font-size: 1rem;
+  }
+  .graph-button {
+    font-size: 0.8rem !important;
+    height: 1.8rem !important;
   }
 }
