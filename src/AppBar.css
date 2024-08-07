@@ -9,15 +9,6 @@
   color: beige;
 }
 
-.appbar-patreon-icon {
-  display: flex;
-  align-items: center;
-  height: 15px !important;
-  min-height: 15px !important;
-  width: 15px !important;
-  min-width: 15px !important;
-}
-
 .appbar-logo {
   margin-right: 1rem;
   font-weight: 900;
@@ -41,6 +32,20 @@
 
 .appbar-link-text-small {
   display: none;
+}
+
+.bmc-icon {
+  height: 1rem;
+  vertical-align: middle;
+}
+
+.appbar-patreon-icon {
+  display: flex;
+  align-items: center;
+  height: 15px !important;
+  min-height: 15px !important;
+  width: 15px !important;
+  min-width: 15px !important;
 }
 
 /* link buttons */

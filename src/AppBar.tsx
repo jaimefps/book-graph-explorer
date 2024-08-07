@@ -18,13 +18,16 @@ const LinkExternal: React.FC<{
       className="app-bar-link"
       sx={{
         ":hover": {
-          opacity: "0.7 !important",
+          opacity: "0.6 !important",
         },
       }}
       style={{
-        background: "beige",
+        color: "beige",
+        opacity: 0.8,
+        border: "1px solid beige",
+        fontWeight: 700,
+        fontSize: "0.8rem",
         textTransform: "none",
-        color: "darkslategray",
         padding: "0 1rem",
         height: "2rem",
       }}
@@ -67,6 +70,18 @@ export const AppBar = () => {
 
       <div className="appbar-col">
         <LinkExternal
+          href="https://buymeacoffee.com/jaimefps"
+          icon={
+            <img
+              className="bmc-icon"
+              alt="Buy me a coffee"
+              src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+            />
+          }
+        >
+          buy me coffee
+        </LinkExternal>
+        <LinkExternal
           href="https://www.patreon.com/jaimefps"
           icon={
             <svg
@@ -83,18 +98,6 @@ export const AppBar = () => {
           }
         >
           patreon
-        </LinkExternal>
-        <LinkExternal
-          href="https://buymeacoffee.com/jaimefps"
-          icon={
-            <img
-              className="bmc-icon"
-              alt="Buy me a coffee"
-              src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-            />
-          }
-        >
-          buy me coffee
         </LinkExternal>
         <LinkExternal
           href="https://github.com/jaimefps/ethics-data"
