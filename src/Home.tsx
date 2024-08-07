@@ -1,0 +1,57 @@
+import { Page } from "./Page"
+import "./Home.css"
+import Button from "@mui/material/Button"
+
+export const Home = () => {
+  return (
+    <Page>
+      <div className="home-container">
+        <div className="home-foreground">
+          <div className="home-brand-title">
+            spinoza<span className="home-brand-io">.io</span>
+          </div>
+          <div className="home-brand-subtitle">a philosophy app</div>
+          <div className="home-controls">
+            <Button
+              size="large"
+              variant="outlined"
+              href="/about"
+              sx={{
+                width: 200,
+                fontWeight: "bold",
+                textTransform: "none",
+                borderColor: "darkseagreen",
+                color: "darkseagreen",
+                ":focus": {
+                  borderColor: "darkseagreen",
+                },
+                ":hover": {
+                  borderColor: "darkseagreen",
+                },
+              }}
+            >
+              What is this?
+            </Button>
+            <Button
+              size="large"
+              variant="contained"
+              href="/graph"
+              sx={{
+                width: 200,
+                fontWeight: "bold",
+                textTransform: "none",
+                background: "darkseagreen",
+                color: "darkslategray",
+                ":focus": { background: "darkseagreen" },
+                ":hover": { background: "darkseagreen" },
+              }}
+            >
+              Get started
+            </Button>
+          </div>
+        </div>
+        <div className="home-background" />
+      </div>
+    </Page>
+  )
+}

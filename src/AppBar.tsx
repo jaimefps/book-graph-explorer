@@ -1,8 +1,8 @@
 import "./AppBar.css"
 import { AppLink } from "./AppLink"
 import Button from "@mui/material/Button"
-import GitHubIcon from "@mui/icons-material/GitHub"
 import { useMatch } from "react-router-dom"
+import AutoStoriesIcon from "@mui/icons-material/AutoStories"
 
 const LinkButton: React.FC<{
   href: string
@@ -74,7 +74,7 @@ export const AppBar = () => {
         <div className="appbar-github">
           <LinkButton
             href="https://github.com/jaimefps/ethics-data"
-            icon={<GitHubIcon fontSize="small" />}
+            icon={<AutoStoriesIcon fontSize="small" />}
           >
             book data
           </LinkButton>

@@ -1,0 +1,64 @@
+.home-container {
+  height: 100%;
+  background: darkslategray;
+  position: relative;
+  display: flex;
+}
+
+.home-foreground {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2rem;
+
+  background: linear-gradient(to right, darkslategray 15%, transparent 100%);
+  width: 100%;
+  z-index: 10;
+}
+
+.home-brand-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: beige;
+  margin-top: 15%;
+}
+.home-brand-io {
+  color: darkseagreen;
+}
+.home-brand-subtitle {
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: beige;
+}
+
+.home-controls {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.home-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-image: url("./assets/Spinoza-statue.jpg");
+  background-position: center 0px;
+  background-size: cover;
+}
+
+@media (max-width: 625px) {
+  .home-foreground {
+    padding: 1rem;
+  }
+  .home-brand-title {
+    font-size: 1.5rem;
+    margin-top: 50%;
+  }
+  .home-brand-subtitle {
+    font-size: 2rem;
+  }
+}

@@ -11,11 +11,11 @@ export const ModePicker: React.FC<{
       </h2>
       <button
         className="mode-picker-button"
-        onClick={() => setMode("ancestry")}
+        onClick={() => setMode("connection")}
       >
-        <div className="mode-picker-button-label">Ancestry</div>
+        <div className="mode-picker-button-label">Connection</div>
         <div className="mode-picker-button-description">
-          Illustrate the complete chain of proofs for a single statement.
+          Illustrate the chain of arguments that connects two statements.
         </div>
       </button>
       <button
@@ -29,11 +29,11 @@ export const ModePicker: React.FC<{
       </button>
       <button
         className="mode-picker-button"
-        onClick={() => setMode("connection")}
+        onClick={() => setMode("ancestry")}
       >
-        <div className="mode-picker-button-label">Connection</div>
+        <div className="mode-picker-button-label">Ancestry</div>
         <div className="mode-picker-button-description">
-          Illustrate the chain of arguments that connects two statements.
+          Illustrate the complete chain of proofs for a single statement.
         </div>
       </button>
     </div>
