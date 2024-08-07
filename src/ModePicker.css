@@ -9,9 +9,8 @@
 }
 
 .mode-picker-header {
-  font-size: 2rem;
-  min-width: 300px;
-  max-width: 400px;
+  font-size: 3rem;
+  width: 500px;
   color: darkseagreen;
   text-align: center;
 }
@@ -36,4 +35,11 @@
 
 .mode-picker-button-description {
   font-size: 1rem;
+}
+
+@media (max-width: 625px) {
+  .mode-picker-header {
+    font-size: 2rem;
+    width: 400px;
+  }
 }

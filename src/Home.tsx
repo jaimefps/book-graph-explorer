@@ -1,8 +1,10 @@
+import Button from "@mui/material/Button"
+import { useNavigate } from "react-router-dom"
 import { Page } from "./Page"
 import "./Home.css"
-import Button from "@mui/material/Button"
 
 export const Home = () => {
+  const navigate = useNavigate()
   return (
     <Page>
       <div className="home-container">
@@ -15,7 +17,9 @@ export const Home = () => {
             <Button
               size="large"
               variant="outlined"
-              href="/about"
+              onClick={() => {
+                navigate("/about")
+              }}
               sx={{
                 width: 200,
                 fontWeight: "bold",
@@ -35,7 +39,9 @@ export const Home = () => {
             <Button
               size="large"
               variant="contained"
-              href="/graph"
+              onClick={() => {
+                navigate("/graph")
+              }}
               sx={{
                 width: 200,
                 fontWeight: "bold",

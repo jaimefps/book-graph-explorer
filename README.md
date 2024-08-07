@@ -5,7 +5,13 @@
 
 ## todo
 
-NOW: gather proofs
+---
+
+- finish refactoring graph flow
+
+---
+
+LATER: gather proofs
 
 - book data: Part III
 - book data: Part IV

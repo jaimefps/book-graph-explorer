@@ -1,6 +1,3 @@
 .page-container {
   flex: 1;
-  /* if red is visible, it lets us 
-  know something is styled wrong */
-  background-color: red;
 }
