@@ -15,6 +15,8 @@ NOW: gather proofs
 - review everything using the spanish version here:
   https://archive.org/details/etica-de-spinoza/page/n1/mode/2up
 
+- use {{ | }} notation to add corrections to Elwes version;
+
 ---
 
 - script that merges all scholium and corollaries into the parent. Then parses all proofs to redirect 'sch' and 'cor' to the main parent as well. and write a validation script to ensure it worked...
