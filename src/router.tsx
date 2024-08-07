@@ -75,17 +75,17 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/sandbox",
-    element: (
-      <div
-        style={{
-          background: "red",
-          height: "100%",
-        }}
-      ></div>
-    ),
-  },
+  // {
+  //   path: "/sandbox",
+  //   element: (
+  //     <div
+  //       style={{
+  //         background: "red",
+  //         height: "100%",
+  //       }}
+  //     ></div>
+  //   ),
+  // },
 ])
 
 export const Router = () => <RouterProvider router={router} />
