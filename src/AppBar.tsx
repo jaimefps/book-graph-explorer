@@ -27,7 +27,6 @@ const LinkButton: React.FC<{
         color: "darkslategray",
         padding: "0 1rem",
         height: "2rem",
-        // opacity: 0.8,
       }}
     >
       <span className="appbar-link-text-large">{children}</span>

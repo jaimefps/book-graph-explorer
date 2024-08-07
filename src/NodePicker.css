@@ -1,0 +1,119 @@
+.node-picker {
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+.node-picker-header {
+  width: 350px;
+  text-wrap: wrap;
+  font-size: 2rem;
+  text-align: center;
+  color: beige;
+  margin: 0;
+}
+.mode-span {
+  text-decoration: underline;
+}
+
+.node-picker-col-left {
+  flex: 1;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  background: darkslategray;
+  z-index: 5; /* bottom index */
+}
+.node-picker-col-left-arrow {
+  position: absolute;
+  background: beige;
+  top: calc(50% - 15px);
+  right: -15px;
+  transform: rotate(45deg);
+  height: 30px;
+  width: 30px;
+  z-index: 10; /* middle index */
+}
+.node-picker-controls {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  max-width: 350px;
+  gap: 2rem;
+}
+.node-picker-autocomplete-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  gap: 1rem;
+}
+.node-picker-autocomplete {
+  width: 100%;
+}
+.node-picker-autocomplete-label {
+  font-weight: 700;
+  color: darkseagreen;
+}
+.node-picker-autocomplete-label-span {
+  margin-bottom: 2px;
+}
+
+.node-picker-button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.node-picker-button {
+  width: 100% !important;
+}
+
+.node-picker-col-right {
+  flex: 1;
+  background: beige;
+  z-index: 15; /* top index */
+}
+
+.styled-hr {
+  /* border: none;
+  border-top: 2px solid darkslategray;
+  width: 80%; */
+}
+
+@media (max-width: 900px) {
+  .node-picker {
+    flex-direction: column-reverse;
+  }
+  .node-picker-header {
+    font-size: 1.5rem;
+    width: 250px;
+  }
+
+  .node-picker-controls {
+    width: 80%;
+    gap: 1rem;
+  }
+  .node-picker-autocomplete-group {
+    flex-direction: row;
+  }
+  .node-picker-autocomplete-label-span {
+    margin-bottom: 2px;
+    font-size: 12px;
+  }
+
+  .node-picker-col-left-arrow {
+    top: -18px;
+    right: unset;
+    left: calc(50% - 15px);
+    bottom: -15px;
+  }
+}

@@ -1,11 +1,17 @@
 ## life
 
 - cancel amazon prime
-- supermercado
+- how much is namecheap charging me?
+- how much is heroku charging me?
+
+- need to make spreadsheet to track spending;
+  include chatgpt and midjourney
 
 ## todo
 
 ---
+
+NOW: node picker ux
 
 - finish refactoring graph flow
 
@@ -13,6 +19,11 @@
 
 - handle graph state in a Context so that
   it doesn't go away if they change tabs.
+
+---
+
+- needs a one-click demo/tutorial to help people
+  that know nothing of spinoza to use the app
 
 ---
 

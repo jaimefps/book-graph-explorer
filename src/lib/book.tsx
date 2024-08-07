@@ -2571,17 +2571,6 @@ export const book = [
       proof: ["e2p40sch1", "e2p40sch2", "e2p11cor", "e1p36", "e3def1", "e2p9"],
     },
   ],
-  [
-    "",
-    {
-      text: {
-        en: "",
-        es: "",
-        la: "",
-      },
-      proof: [],
-    },
-  ],
 ] as const
 
 export const nodeOpts = book.map((n) => n[0])

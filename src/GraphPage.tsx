@@ -3,6 +3,7 @@ import { Page } from "./Page"
 import { useState } from "react"
 import { GraphMode } from "./types"
 import { ModePicker } from "./Modepicker"
+import { NodePicker } from "./NodePicker"
 
 export const GraphPage = () => {
   const [nodes, setNodes] = useState<string[]>()
@@ -11,21 +12,24 @@ export const GraphPage = () => {
   return (
     <Page>
       {(function () {
+        // which states are defined and undefined
+        // imply what page we are meant to be on:
+
         if (!mode) {
           return <ModePicker setMode={setMode} />
         }
 
-        // if (!nodes?.length && mode) {
-        //   return (
-        //     <NodesPicker
-        //       mode={mode}
-        //       setNodes={setNodes}
-        //       reset={() => {
-        //         setMode(undefined)
-        //       }}
-        //     />
-        //   )
-        // }
+        if (!nodes?.length) {
+          return (
+            <NodePicker
+              mode={mode}
+              setNodes={setNodes}
+              reset={() => {
+                setMode(undefined)
+              }}
+            />
+          )
+        }
 
         // if (mode && nodes?.length) {
         //   return (

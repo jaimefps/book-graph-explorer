@@ -6,8 +6,8 @@ import {
 } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { GraphPage } from "./GraphPage"
-import { AppBar } from "./AppBar"
 import { Home } from "./Home"
+import { App } from "./App"
 
 const NoMatchRedirect = () => {
   const navigate = useNavigate()
@@ -46,12 +46,7 @@ const NoMatchRedirect = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div className="app-container">
-        <AppBar />
-        <Outlet />
-      </div>
-    ),
+    element: <App />,
     errorElement: <NoMatchRedirect />,
     children: [
       {

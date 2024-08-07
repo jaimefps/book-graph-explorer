@@ -54,6 +54,7 @@
 @media (max-width: 625px) {
   .home-foreground {
     padding: 1rem;
+    background: linear-gradient(to right, darkslategray 40%, transparent 100%);
   }
   .home-brand-title {
     font-size: 1.5rem;
