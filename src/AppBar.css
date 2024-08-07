@@ -43,11 +43,6 @@
   display: none;
 }
 
-.bmc-icon {
-  height: 1rem;
-  vertical-align: middle;
-}
-
 /* link buttons */
 @media (max-width: 725px) {
   .app-bar-link {
@@ -63,11 +58,13 @@
   .MuiButton-startIcon {
     display: none !important;
   }
-  .appbar-book-fix {
+  .appbar-book-icon {
     margin-bottom: -5px;
   }
   .bmc-icon {
     height: 1.2rem;
+    vertical-align: middle;
+    margin-top: -2px;
   }
   .appbar-logo > .applink-base,
   .appbar-graph > .applink-base,
