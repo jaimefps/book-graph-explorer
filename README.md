@@ -11,7 +11,7 @@
 
 ---
 
-NOW: graph view
+NOW: modal for book entries
 
 - move state to context
 

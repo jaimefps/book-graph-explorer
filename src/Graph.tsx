@@ -1,9 +1,13 @@
 import { GraphMode, GraphQuery, RenderData } from "./types"
-import "./Graph.css"
-import { Button, Tooltip } from "@mui/material"
-import { useRef, useState, useEffect, useMemo } from "react"
+import { useRef, useState, useEffect, useMemo, useCallback } from "react"
+import IconButton from "@mui/material/IconButton"
+import CloseIcon from "@mui/icons-material/Close"
 import CytoscapeComponent from "react-cytoscapejs"
+import Snackbar from "@mui/material/Snackbar"
+import Tooltip from "@mui/material/Tooltip"
+import Button from "@mui/material/Button"
 import { bookGraph } from "./lib/graph"
+import "./Graph.css"
 
 function getRenderData(query: GraphQuery) {
   const methodMap: {
@@ -28,6 +32,16 @@ export const Graph: React.FC<{
   const [lang, setlang] = useState<string>("la")
   const [focus, setFocus] = useState<string>(query.nodes[0])
   const [renderData] = useState(getRenderData(query))
+  const [openAlert, setOpenAlert] = useState(false)
+
+  const handleAlertClose = useCallback(
+    () => setOpenAlert(false),
+    [setOpenAlert]
+  )
+  useEffect(() => {
+    const t = setTimeout(() => setOpenAlert(true), 300)
+    return () => clearTimeout(t)
+  }, [])
 
   useEffect(() => {
     if (cyRef.current) {
@@ -74,6 +88,27 @@ export const Graph: React.FC<{
 
   return (
     <div className="graph-container">
+      <Snackbar
+        key="graph-zoom"
+        open={openAlert}
+        autoHideDuration={4000}
+        message="Scroll or pinch to zoom!"
+        onClose={handleAlertClose}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "center",
+        }}
+        action={
+          <IconButton
+            size="small"
+            aria-label="close"
+            color="inherit"
+            onClick={handleAlertClose}
+          >
+            <CloseIcon fontSize="small" />
+          </IconButton>
+        }
+      />
       <div className="graph-header">
         <Tooltip title={headerText} enterTouchDelay={0}>
           <div className="graph-header-text">{headerText}</div>
