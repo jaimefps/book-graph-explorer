@@ -9,6 +9,15 @@
   color: beige;
 }
 
+.appbar-patreon-icon {
+  display: flex;
+  align-items: center;
+  height: 15px !important;
+  min-height: 15px !important;
+  width: 15px !important;
+  min-width: 15px !important;
+}
+
 .appbar-logo {
   margin-right: 1rem;
   font-weight: 900;

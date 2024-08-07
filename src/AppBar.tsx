@@ -69,14 +69,7 @@ export const AppBar = () => {
         <LinkExternal
           href="https://www.patreon.com/jaimefps"
           icon={
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                height: 15,
-                width: 15,
-              }}
-            >
+            <div className="appbar-patreon-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 476">
                 <title>Patreon logo</title>
                 <path
