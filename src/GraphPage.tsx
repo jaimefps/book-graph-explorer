@@ -14,11 +14,9 @@ export const GraphPage = () => {
       {(function () {
         // which states are defined and undefined
         // imply what page we are meant to be on:
-
         if (!mode) {
           return <ModePicker setMode={setMode} />
         }
-
         if (!nodes?.length) {
           return (
             <NodePicker
@@ -30,7 +28,6 @@ export const GraphPage = () => {
             />
           )
         }
-
         // if (mode && nodes?.length) {
         //   return (
         //     <GraphDisplay
@@ -45,7 +42,6 @@ export const GraphPage = () => {
         //     />
         //   )
         // }
-
         return (
           <div>
             Oops! Something went wrong. We've been informed of the issue.

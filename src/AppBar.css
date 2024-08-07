@@ -1,5 +1,5 @@
 .appbar-container {
-  height: 3.5rem;
+  height: var(--bar-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,5 +58,8 @@
   }
   .appbar-book-fix {
     margin-bottom: -5px;
+  }
+  .bmc-icon {
+    height: 1.2rem;
   }
 }

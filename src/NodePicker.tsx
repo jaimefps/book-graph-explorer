@@ -1,10 +1,11 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { GraphMode, Translation } from "./types"
 import { nodeOpts } from "./lib/book"
 import { bookGraph } from "./lib/graph"
 import { TextField, Button } from "@mui/material"
 import AutoComplete from "@mui/material/Autocomplete"
 import "./NodePicker.css"
+import cs from "clsx"
 
 const modeOptMap = {
   ancestry: nodeOpts,
@@ -60,6 +61,10 @@ export const NodePicker: React.FC<{
 
   const [fromNode, setFromNode] = useState<string>(fromPreview)
   const [toNode, setToNode] = useState<string>(modeOptMap[mode].slice(-1)[0])
+
+  const [preview, setPreview] = useState(fromNode)
+  useEffect(() => setPreview(toNode), [toNode])
+  useEffect(() => setPreview(fromNode), [fromNode])
 
   return (
     <div className="node-picker">
@@ -173,33 +178,36 @@ export const NodePicker: React.FC<{
           </div>
         </div>
       </div>
-      <div className="node-picker-col-right"></div>
+      <div className="node-picker-col-right">
+        <div className="node-picker-entry-label-group">
+          <div
+            role="button"
+            onClick={() => setPreview(fromNode)}
+            className={cs("node-picker-entry-label", {
+              disabledPickerLabel: preview !== fromNode,
+              soloPickerLabel: mode !== "connection",
+            })}
+          >
+            {fromNode}
+          </div>
+          {mode === "connection" && (
+            <div
+              role="button"
+              onClick={() => setPreview(toNode)}
+              className={cs("node-picker-entry-label", {
+                disabledPickerLabel: preview !== toNode,
+              })}
+            >
+              {toNode}
+            </div>
+          )}
+        </div>
+        <div className="node-picker-entry-content">
+          {getNodeText({
+            node: preview,
+          })}
+        </div>
+      </div>
     </div>
   )
 }
-
-/*
-
-
-      <div className="column-right">
-        <div className="column-right-title">{fromNode}</div>
-        <div className="column-right-text">
-          {getNodeText({
-            node: fromNode,
-          })}
-        </div>
-        {mode === "connection" && (
-          <>
-            <hr className="styled-hr" />
-            <div className="column-right-title">{toNode}</div>
-            <div className="column-right-text">
-              {getNodeText({
-                node: toNode,
-              })}
-            </div>
-          </>
-        )}
-      </div>
-      
-      
-*/
