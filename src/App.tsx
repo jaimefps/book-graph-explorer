@@ -1,5 +1,5 @@
 import { bookGraph } from "./lib/graph"
-import { GraphMode, GraphQuery, RenderData, Translation } from "./lib/types"
+import { GraphMode, GraphQuery, RenderData, Translation } from "./types"
 import CytoscapeComponent from "react-cytoscapejs"
 import { useEffect, useMemo, useRef, useState } from "react"
 import AutoComplete from "@mui/material/Autocomplete"
@@ -7,6 +7,7 @@ import TextField from "@mui/material/TextField"
 import Button from "@mui/material/Button"
 import { nodeOpts } from "./lib/book"
 // import "./lib/validate"
+// import "./utils"
 
 function getBookText({
   node,
@@ -432,44 +433,6 @@ export const GraphDisplay: React.FC<{
 const App = () => {
   const [nodes, setNodes] = useState<string[]>()
   const [mode, setMode] = useState<GraphMode>()
-
-  if (!mode) {
-    return <ModePicker setMode={setMode} />
-  }
-
-  if (!nodes?.length && mode) {
-    return (
-      <NodesPicker
-        mode={mode}
-        setNodes={setNodes}
-        reset={() => {
-          setMode(undefined)
-        }}
-      />
-    )
-  }
-
-  if (mode && nodes?.length) {
-    return (
-      <GraphDisplay
-        query={{
-          mode,
-          nodes,
-        }}
-        reset={() => {
-          setMode(undefined)
-          setNodes(undefined)
-        }}
-      />
-    )
-  }
-
-  return (
-    <div>
-      Oops! Something went wrong. An engineer has been informed. Please click
-      here to try agin. Otherwise, we should have this fixed soon.
-    </div>
-  )
 }
 
 export default App

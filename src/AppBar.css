@@ -1,0 +1,51 @@
+.appbar-container {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: #182828;
+  background: darkslategray;
+  color: beige;
+}
+
+.appbar-logo {
+  margin-right: 1rem;
+  font-weight: 900;
+}
+.appbar-logo-io {
+  color: darkseagreen;
+}
+
+.appbar-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.appbar-link-text-small {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .appbar-container {
+    padding: 0 1rem;
+  }
+  .appbar-logo {
+    margin-right: 0;
+  }
+  .app-bar-link {
+    width: 3rem !important;
+    min-width: 3rem !important;
+  }
+  .appbar-link-text-large {
+    display: none;
+  }
+  .appbar-link-text-small {
+    display: block;
+  }
+  .appbar-link-arrow {
+    display: block !important;
+  }
+}

@@ -1,4 +1,5 @@
 import DOMPurify from "dompurify"
+import q from "query-string"
 
 // DOMPurify prevents script injections:
 export function handlebars(input: string) {

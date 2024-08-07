@@ -1,0 +1,8 @@
+.applink-base {
+  text-decoration: none;
+  color: beige;
+}
+.applink-base:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}

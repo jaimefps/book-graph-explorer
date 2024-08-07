@@ -1,7 +1,6 @@
 ## life
 
 - cancel amazon prime
-- laundry
 - supermercado
 
 ## todo

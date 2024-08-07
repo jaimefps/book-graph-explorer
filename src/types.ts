@@ -1,4 +1,4 @@
-import { book } from "./book"
+import { book } from "./lib/book"
 
 export type Proof = (typeof book)[number][1]["proof"]
 export type TextMap = (typeof book)[number][1]["text"]
