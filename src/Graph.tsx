@@ -1,11 +1,19 @@
-import { bookGraph } from "./lib/graph"
 import { GraphMode, GraphQuery, RenderData } from "./types"
+import "./Graph.css"
+import { Button } from "@mui/material"
+import { useRef, useState, useEffect, useMemo } from "react"
 import CytoscapeComponent from "react-cytoscapejs"
-import { useEffect, useMemo, useRef, useState } from "react"
-import Button from "@mui/material/Button"
-// import Modal from "@mui/material/Modal"
-// import "./lib/validate"
-// import "./utils"
+import { bookGraph } from "./lib/graph"
+
+const sharedProps = {
+  disableElevation: true,
+  style: {
+    flex: 1,
+    textTransform: "none",
+    fontWeight: 600,
+    width: 300,
+  },
+} as const
 
 function getRenderData(query: GraphQuery) {
   const methodMap: {
@@ -22,17 +30,7 @@ function getRenderData(query: GraphQuery) {
   return methodMap[query.mode](query.nodes)
 }
 
-const sharedProps = {
-  disableElevation: true,
-  style: {
-    flex: 1,
-    textTransform: "none",
-    fontWeight: 600,
-    width: 300,
-  },
-} as const
-
-export const GraphDisplay: React.FC<{
+export const Graph: React.FC<{
   query: GraphQuery
   reset: VoidFunction
 }> = ({ query, reset }) => {
@@ -178,17 +176,17 @@ export const GraphDisplay: React.FC<{
         />
       </div>
       {/* <div className="column-right">
-        <div className="column-right-arrow" />
-        <div className="column-right-title">{focus}</div>
-        <div className="column-right-text">
-          {getBookText({
-            node: focus,
-            onClickProof(proof) {
-              console.log("clicked:", proof)
-            },
-          })}
-        </div>
-      </div> */}
+          <div className="column-right-arrow" />
+          <div className="column-right-title">{focus}</div>
+          <div className="column-right-text">
+            {getBookText({
+              node: focus,
+              onClickProof(proof) {
+                console.log("clicked:", proof)
+              },
+            })}
+          </div>
+        </div> */}
     </div>
   )
 }

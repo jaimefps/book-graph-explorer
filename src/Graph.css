@@ -1,0 +1,61 @@
+.graph-container {
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.graph-column {
+  flex: 1;
+  background: darkslategray;
+  /* position: relative; */
+  padding: 4rem 0;
+}
+.graph-header {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 100;
+  font-size: 1.5rem;
+  color: orange;
+  font-weight: 700;
+}
+
+.column-right-arrow {
+  background: beige;
+  transform: rotate(45deg);
+  position: absolute;
+  top: calc(50% - 15px);
+  left: -15px;
+  height: 30px;
+  width: 30px;
+}
+
+.column-right {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.column-right-title {
+  font-size: 100px;
+  font-weight: bold;
+}
+.column-right-text {
+  text-align: justify;
+  flex: 1;
+}
+
+@media (max-width: 850px) {
+  .graph-container {
+    flex-direction: column;
+  }
+  .column-right-arrow {
+    top: unset;
+    left: calc(50% - 15px);
+    top: -15px;
+  }
+}

@@ -13,8 +13,8 @@ class GraphNode {
 }
 
 const nodeHighlight = {
-  background: "orangered",
-  backgroundColor: "orangered",
+  background: "orange",
+  backgroundColor: "orange",
 }
 
 class Graph {

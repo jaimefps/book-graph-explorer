@@ -11,14 +11,18 @@
 
 ---
 
-NOW: node picker ux
+NOW: graph view
 
-- finish refactoring graph flow
+- move state to context
 
 ---
 
 - handle graph state in a Context so that
   it doesn't go away if they change tabs.
+
+---
+
+- guided demo through the whole app. place absolutely positioned div on top of the whole app, then use a tooltip on different page/elements to guide the user through the app, and at the end, we reset the graph state so they can start again. they should be able to skip at any time.
 
 ---
 

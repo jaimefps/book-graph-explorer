@@ -24,6 +24,12 @@
   gap: 1rem;
 }
 
+.appbar-logo > .applink-base,
+.appbar-graph > .applink-base,
+.appbar-about > .applink-base {
+  font-size: 1.2rem;
+}
+
 .appbar-link-text-small {
   display: none;
 }
@@ -33,25 +39,17 @@
   vertical-align: middle;
 }
 
-@media (max-width: 625px) {
-  .appbar-container {
-    padding: 0 1rem;
-  }
-  .appbar-logo {
-    margin-right: 0;
-  }
+/* link buttons */
+@media (max-width: 725px) {
   .app-bar-link {
-    width: 3rem !important;
-    min-width: 3rem !important;
+    width: 2.5rem !important;
+    min-width: 2.5rem !important;
   }
   .appbar-link-text-large {
     display: none;
   }
   .appbar-link-text-small {
     display: unset;
-  }
-  .appbar-link-arrow {
-    display: block !important;
   }
   .MuiButton-startIcon {
     display: none !important;
@@ -61,5 +59,24 @@
   }
   .bmc-icon {
     height: 1.2rem;
+  }
+  .appbar-logo > .applink-base,
+  .appbar-graph > .applink-base,
+  .appbar-about > .applink-base {
+    font-size: unset;
+  }
+}
+
+/* everything else */
+@media (max-width: 625px) {
+  .app-bar-link {
+    width: 2rem !important;
+    min-width: 2rem !important;
+  }
+  .appbar-container {
+    padding: 0 1rem;
+  }
+  .appbar-logo {
+    margin-right: 0;
   }
 }
