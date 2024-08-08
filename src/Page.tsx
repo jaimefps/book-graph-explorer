@@ -2,6 +2,7 @@ import "./Page.css"
 import ScreenLockLandscapeIcon from "@mui/icons-material/ScreenLockLandscape"
 import StayCurrentLandscapeIcon from "@mui/icons-material/StayCurrentLandscape"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward"
+import { isMobile } from "react-device-detect"
 
 const Alert = () => {
   return (
@@ -39,7 +40,7 @@ export const Page: React.FC<{
   return (
     <div className="page-container">
       {children}
-      <Alert />
+      {isMobile && <Alert />}
     </div>
   )
 }

@@ -34,7 +34,7 @@
   gap: 1rem;
 }
 
-@media screen and (orientation: landscape) {
+@media (orientation: landscape) {
   .page-container-alert {
     display: flex;
   }
