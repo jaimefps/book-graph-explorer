@@ -74,7 +74,7 @@ export const Graph: React.FC<{
   reset: VoidFunction
 }> = ({ query, reset }) => {
   const cyRef = useRef<cytoscape.Core>()
-  const { mode, inputNodes, setFocusNode } = useExploreContext()
+  const { mode, inputNodes, focusNode, setFocusNode } = useExploreContext()
   const [openAlert, setOpenAlert] = useState(false)
 
   const handleAlertClose = useCallback(
@@ -133,19 +133,21 @@ export const Graph: React.FC<{
     }
   }, [])
 
-  const headerText =
-    edgeCount > 0 ? (
-      <>
-        {query.mode} ({query.nodes[0]}
-        {query.mode === "connection" && `, ${query.nodes[1]}`})
-      </>
-    ) : (
-      <>
-        {query.mode === "connection"
-          ? `no connection found (${query.nodes[0]}, ${query.nodes[1]})`
-          : `no ${query.mode} found (${query.nodes[0]})`}
-      </>
-    )
+  // const headerText =
+  //   edgeCount > 0 ? (
+  //     <>
+  //       {query.mode} ({query.nodes[0]}
+  //       {query.mode === "connection" && `, ${query.nodes[1]}`})
+  //     </>
+  //   ) : (
+  //     <>
+  //       {query.mode === "connection"
+  //         ? `no connection found (${query.nodes[0]}, ${query.nodes[1]})`
+  //         : `no ${query.mode} found (${query.nodes[0]})`}
+  //     </>
+  //   )
+
+  const headerText = focusNode ?? "nothing yet"
 
   return (
     <div className="graph-container">
