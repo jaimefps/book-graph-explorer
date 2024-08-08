@@ -5,6 +5,8 @@
 }
 
 .page-container-landscape {
+  z-index: 999; /* above all */
+
   display: flex;
   align-items: center;
   justify-content: center;
