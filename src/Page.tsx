@@ -21,6 +21,7 @@ const Alert = () => {
           style={{
             fontSize: "6rem",
             transform: "rotate(90deg)",
+            marginLeft: -16,
           }}
         />
       </div>
