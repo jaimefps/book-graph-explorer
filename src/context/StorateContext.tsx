@@ -17,7 +17,7 @@ const initStorage: Storage = {
 const StorageContext = React.createContext<{
   storage: Storage
   setBookmark: (n: string) => void
-  clearBookmark: (n: string) => void
+  clearBookmark: () => void
   setFavorite: (n: string) => void
   clearFavorite: (n: string) => void
 } | null>(null as any)
@@ -70,15 +70,12 @@ export const StorageProvider: React.FC<{
     [handleStorage]
   )
 
-  const clearBookmark = useCallback(
-    (node: string) => {
-      handleStorage((prev) => ({
-        ...prev,
-        bookmark: null,
-      }))
-    },
-    [handleStorage]
-  )
+  const clearBookmark = useCallback(() => {
+    handleStorage((prev) => ({
+      ...prev,
+      bookmark: null,
+    }))
+  }, [handleStorage])
 
   const setFavorite = useCallback(
     (node: string) => {
@@ -97,7 +94,7 @@ export const StorageProvider: React.FC<{
     (node: string) => {
       handleStorage((prev) => {
         delete prev.favorites[node]
-        return prev
+        return { ...prev }
       })
     },
     [handleStorage]
@@ -118,7 +115,7 @@ export const StorageProvider: React.FC<{
   )
 }
 
-export const useStorage = () => {
+export const useStorageContext = () => {
   const value = useContext(StorageContext)
   if (!value) {
     throw new Error("Called useStorage outside of context")

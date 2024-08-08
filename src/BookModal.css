@@ -72,12 +72,17 @@
   cursor: pointer;
 }
 .book-entry-content-text {
+  /* for readability */
+  max-width: 550px;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 500;
+
   flex: 1;
   width: 100%;
   background: beige;
   padding: 3.5rem 3rem;
-  text-align: justify;
-  line-height: 1.5;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   overflow: auto;
@@ -96,8 +101,9 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   background: white;
+  line-height: 0.9;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   gap: 0.5rem;

@@ -1,13 +1,18 @@
+import "./ModePicker.css"
+import { GraphMode } from "./types"
+import HubIcon from "@mui/icons-material/Hub"
 import { useExploreContext } from "./context/ExploreContext"
 import MenuBookIcon from "@mui/icons-material/MenuBook"
-import HubIcon from "@mui/icons-material/Hub"
-import { GraphMode } from "./types"
-import "./ModePicker.css"
+import { useStorageContext } from "./context/StorateContext"
+import { book } from "./lib/book"
 
 export const ModePicker: React.FC<{
   setMode: (m: GraphMode) => void
 }> = ({ setMode }) => {
+  const { storage } = useStorageContext()
   const { setFocusNode } = useExploreContext()
+  const openBookWith = storage.bookmark ?? book[0][0]
+
   return (
     <div className="mode-picker">
       <h2 className="mode-picker-header">
@@ -48,8 +53,7 @@ export const ModePicker: React.FC<{
       </button>
       <button
         className="mode-picker-button"
-        // todo: get this value from localStorage!!
-        onClick={() => setFocusNode("e1apx")}
+        onClick={() => setFocusNode(openBookWith)}
       >
         <div className="mode-picker-button-label">
           <MenuBookIcon fontSize="small" /> Book Reader

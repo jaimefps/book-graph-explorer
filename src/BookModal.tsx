@@ -13,6 +13,7 @@ import PassPageIcon from "@mui/icons-material/ArrowForwardIos"
 import { Tooltip } from "@mui/material"
 import { bookGraph, getNodeIdx, getNodeText } from "./lib/graph"
 import { book } from "./lib/book"
+import { useStorageContext } from "./context/StorateContext"
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & {
@@ -25,6 +26,8 @@ const Transition = forwardRef(function Transition(
 
 export const BookModal = () => {
   const { focusNode, setFocusNode, lang } = useExploreContext()
+  const { storage, setBookmark, clearBookmark, setFavorite, clearFavorite } =
+    useStorageContext()
 
   // todo: consider if there is
   // a better way than this:
@@ -34,6 +37,7 @@ export const BookModal = () => {
 
   const focusIdx = getNodeIdx(focusNode)
   const parents = bookGraph.getParents(focusNode)
+  const isFavorite = storage.favorites[focusNode]
 
   function handleClose() {
     setFocusNode(undefined)
@@ -70,19 +74,59 @@ export const BookModal = () => {
                 PopperProps={{ style: { width: 160 } }}
               >
                 <IconButton
-                  onClick={() => console.log("icon click")}
-                  aria-label="bookmark entry"
+                  aria-label="bookmark this entry"
+                  onClick={() => {
+                    if (storage.bookmark === null) {
+                      setBookmark(focusNode)
+                      return
+                    }
+
+                    if (storage.bookmark === focusNode) {
+                      const confirm = window.confirm(
+                        "Are you sure you want to clear your bookmark? You'll start from the beginning the next time you open the book reader."
+                      )
+                      if (confirm) clearBookmark()
+                      return
+                    }
+
+                    if (storage.bookmark !== null) {
+                      const confirm = window.confirm(
+                        `Are you sure you want to change your bookmark from ${storage.bookmark} to ${focusNode}?`
+                      )
+                      if (confirm) setBookmark(focusNode)
+                      return
+                    }
+                  }}
                 >
-                  <BookmarkIcon className="book-entry-name-icon" />
+                  <BookmarkIcon
+                    className="book-entry-name-icon"
+                    style={{
+                      color:
+                        storage.bookmark === focusNode
+                          ? "orangered"
+                          : undefined,
+                    }}
+                  />
                 </IconButton>
               </Tooltip>
               <div className="book-entry-name-text">{focusNode}</div>
               <Tooltip title="Save to favorites">
                 <IconButton
-                  onClick={() => console.log("icon click")}
                   aria-label="save to favorites"
+                  onClick={() => {
+                    if (storage.favorites[focusNode]) {
+                      clearFavorite(focusNode)
+                    } else {
+                      setFavorite(focusNode)
+                    }
+                  }}
                 >
-                  <StarIcon className="book-entry-name-icon" />
+                  <StarIcon
+                    className="book-entry-name-icon"
+                    style={{
+                      color: isFavorite ? "gold" : undefined,
+                    }}
+                  />
                 </IconButton>
               </Tooltip>
             </div>
@@ -91,16 +135,18 @@ export const BookModal = () => {
                 {getNodeText(focusNode, lang)}
                 {parents.length > 0 && (
                   <div className="book-entry-proof-group">
-                    <p className="book-proofs-label">Proofs:</p>{" "}
+                    <p className="book-proofs-label">proved via:</p>{" "}
                     {parents.map((proof, idx, list) => (
                       <>
-                        <button
-                          key={proof}
-                          className="book-entry-proof"
-                          onClick={() => setFocusNode(proof)}
-                        >
-                          {proof}
-                        </button>
+                        <Tooltip title="jump to entry">
+                          <button
+                            key={proof}
+                            className="book-entry-proof"
+                            onClick={() => setFocusNode(proof)}
+                          >
+                            {proof}
+                          </button>
+                        </Tooltip>
                         {idx < list.length - 1 && ","}
                       </>
                     ))}
