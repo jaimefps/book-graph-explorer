@@ -116,15 +116,20 @@ export const Graph: React.FC<{
   useEffect(() => {
     if (cyRef.current) {
       const cy = cyRef.current
+
       // single node click:
-      cy.on("click", "node", (event) => {
+      const handleSelect = (event: cytoscape.EventObject) => {
         // Prevents the event from
         // propagating to background:
         event.stopPropagation()
         const node = event.target
         const nodeId = node.id()
         setFocus.current(nodeId)
-      })
+      }
+
+      cy.on("click", "node", handleSelect)
+      cy.on("touchstart", "node", handleSelect)
+
       // background click:
       // cy.on("click", (event) => {
       //   if (event.target === cy) {
