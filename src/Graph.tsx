@@ -91,7 +91,7 @@ export const Graph: React.FC<{
       <Snackbar
         key="graph-zoom"
         open={openAlert}
-        autoHideDuration={4000}
+        autoHideDuration={6000}
         message="Scroll or pinch to zoom!"
         onClose={handleAlertClose}
         anchorOrigin={{
@@ -101,13 +101,22 @@ export const Graph: React.FC<{
         action={
           <IconButton
             size="small"
-            aria-label="close"
             color="inherit"
+            aria-label="close"
             onClick={handleAlertClose}
           >
             <CloseIcon fontSize="small" />
           </IconButton>
         }
+        ContentProps={{
+          style: {
+            color: "black",
+            background: "orange",
+            fontSize: "1.1rem",
+            textAlign: "center",
+            fontWeight: "bold",
+          },
+        }}
       />
       <div className="graph-header">
         <Tooltip title={headerText} enterTouchDelay={0}>
