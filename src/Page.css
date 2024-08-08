@@ -4,30 +4,29 @@
   overflow: hidden;
 }
 
-.page-container-landscape {
+.page-container-alert {
   z-index: 999; /* above all */
+  display: none; /* media query toggle */
+  background: darkslategray;
+  height: 100%;
 
-  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 2rem;
 
-  background: darkslategray;
   position: absolute;
-  display: none;
-  height: 100%;
-  width: 100%;
   left: 0;
   top: 0;
 
+  color: beige;
+  padding: 0 5rem;
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
-  color: beige;
-  padding: 2rem;
 }
 
-.page-container-landscape-icons {
+.page-container-alert-icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +34,7 @@
 }
 
 @media screen and (orientation: landscape) {
-  .page-container-landscape {
-    display: unset;
+  .page-container-alert {
+    display: flex;
   }
 }
