@@ -40,7 +40,11 @@
 .mode-picker-button-label {
   font-size: 1.2rem;
   color: darkseagreen;
-  font-weight: 900;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .mode-picker-button-description {

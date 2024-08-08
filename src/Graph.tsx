@@ -54,6 +54,7 @@ const ZoomAlert: React.FC<{
   )
 }
 
+// lazy me, isolates casting shenanigans:
 function getRenderData(query: GraphQuery) {
   const methodMap: {
     [k in GraphMode]: (nodes: string[]) => RenderData
@@ -65,17 +66,14 @@ function getRenderData(query: GraphQuery) {
     connection: (nodes: string[]) =>
       bookGraph.getConnectionRenderData(...(nodes as [string, string])),
   }
-
   return methodMap[query.mode](query.nodes)
 }
 
-export const Graph: React.FC<{
-  query: GraphQuery
-  reset: VoidFunction
-}> = ({ query, reset }) => {
+export const Graph = () => {
   const cyRef = useRef<cytoscape.Core>()
-  const { mode, inputNodes, focusNode, setFocusNode } = useExploreContext()
   const [openAlert, setOpenAlert] = useState(false)
+  const { mode, inputNodes, focusNode, setFocusNode, reset } =
+    useExploreContext()
 
   const handleAlertClose = useCallback(
     () => setOpenAlert(false),
@@ -117,18 +115,19 @@ export const Graph: React.FC<{
     if (cyRef.current) {
       const cy = cyRef.current
 
-      // single node click:
       const handleSelect = (event: cytoscape.EventObject) => {
-        // Prevents the event from
-        // propagating to background:
+        // prevent event from propagating
+        // to other graph event listeners:
         event.stopPropagation()
         const node = event.target
         const nodeId = node.id()
         setFocus.current(nodeId)
       }
 
-      cy.on("click", "node", handleSelect)
+      // handle mobile device "clicks":
       cy.on("touchstart", "node", handleSelect)
+      // regular mouse clicks:
+      cy.on("click", "node", handleSelect)
 
       // background click:
       // cy.on("click", (event) => {
@@ -138,26 +137,23 @@ export const Graph: React.FC<{
     }
   }, [])
 
-  // const headerText =
-  //   edgeCount > 0 ? (
-  //     <>
-  //       {query.mode} ({query.nodes[0]}
-  //       {query.mode === "connection" && `, ${query.nodes[1]}`})
-  //     </>
-  //   ) : (
-  //     <>
-  //       {query.mode === "connection"
-  //         ? `no connection found (${query.nodes[0]}, ${query.nodes[1]})`
-  //         : `no ${query.mode} found (${query.nodes[0]})`}
-  //     </>
-  //   )
-
-  const headerText = focusNode ?? "nothing yet"
+  const headerText =
+    edgeCount > 0 ? (
+      <>
+        {mode} ({inputNodes[0]}
+        {mode === "connection" && `, ${inputNodes[1]}`})
+      </>
+    ) : (
+      <>
+        {mode === "connection"
+          ? `no connection found (${inputNodes[0]}, ${inputNodes[1]})`
+          : `no ${mode} found (${inputNodes[0]})`}
+      </>
+    )
 
   return (
     <div className="graph-container">
       <ZoomAlert openAlert={openAlert} handleAlertClose={handleAlertClose} />
-      <BookModal />
 
       <div className="graph-header">
         <Tooltip title={headerText} enterTouchDelay={0}>
@@ -198,6 +194,8 @@ export const Graph: React.FC<{
       <CytoscapeComponent
         elements={renderData}
         cy={(cy) => (cyRef.current = cy)}
+        maxZoom={0.9}
+        minZoom={0.1}
         layout={{
           name: "breadthfirst",
           avoidOverlap: true,

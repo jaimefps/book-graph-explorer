@@ -11,10 +11,16 @@
 
 ---
 
-NOW: modal for book entries
+- localstorage context
+- bookmark, favorite, notes
 
-- move state to context
-- use context to track book modal state as well
+---
+
+MAIN TODOS:
+
+- book modal
+- about pages
+- demo flow
 
 ---
 

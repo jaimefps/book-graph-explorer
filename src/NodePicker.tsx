@@ -1,11 +1,12 @@
+import "./NodePicker.css"
 import { useEffect, useState } from "react"
-import { GraphMode, Translation } from "./types"
+import { GraphMode } from "./types"
 import { nodeOpts } from "./lib/book"
-import { bookGraph } from "./lib/graph"
+import { bookGraph, getNodeText } from "./lib/graph"
 import { TextField, Button } from "@mui/material"
 import AutoComplete from "@mui/material/Autocomplete"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
-import "./NodePicker.css"
+import { useExploreContext } from "./context/ExploreContext"
 import cs from "clsx"
 
 const modeOptMap = {
@@ -23,16 +24,6 @@ const sharedProps = {
     width: 300,
   },
 } as const
-
-function getNodeText({
-  node,
-  lang = "en",
-}: {
-  node: string
-  lang?: Translation
-}): string | JSX.Element {
-  return bookGraph.get(node).text[lang]
-}
 
 function withLabel(
   node: React.ReactNode,
@@ -57,6 +48,8 @@ export const NodePicker: React.FC<{
   reset: VoidFunction
   mode: GraphMode
 }> = ({ setNodes, reset, mode }) => {
+  const { lang } = useExploreContext()
+
   const fromPreview =
     mode === "ancestry" ? modeOptMap[mode].slice(-1)[0] : modeOptMap[mode][0]
 
@@ -212,9 +205,7 @@ export const NodePicker: React.FC<{
           )}
         </div>
         <div className="node-picker-entry-content">
-          {getNodeText({
-            node: preview,
-          })}
+          {getNodeText(preview, lang)}
         </div>
       </div>
     </div>

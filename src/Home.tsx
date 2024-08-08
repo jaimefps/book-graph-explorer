@@ -52,7 +52,7 @@ export const Home = () => {
                 ":hover": { background: "darkseagreen" },
               }}
             >
-              Get started
+              Generate graph
             </Button>
           </div>
         </div>

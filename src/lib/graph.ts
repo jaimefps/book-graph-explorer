@@ -1,12 +1,10 @@
-import { Proof, RenderData, TextMap } from "../types"
+import { Proof, RenderData, Translation } from "../types"
 import { book } from "./book"
 class GraphNode {
   children: string[] = []
   parents: Proof
-  text: TextMap
   entryIdx: number
-  constructor(text: TextMap, parents: Proof, entryIdx: number) {
-    this.text = text
+  constructor(parents: Proof, entryIdx: number) {
     this.parents = parents
     this.entryIdx = entryIdx
   }
@@ -24,8 +22,8 @@ class Graph {
     return this.nodes[name]
   }
 
-  addNode(name: string, text: TextMap, proof: Proof, idx: number) {
-    this.nodes[name] = new GraphNode(text, proof, idx)
+  addNode(name: string, proof: Proof, idx: number) {
+    this.nodes[name] = new GraphNode(proof, idx)
     // add node edges:
     const parents = proof.flat()
     for (const parent of parents) {
@@ -199,9 +197,19 @@ function makeBookGraph() {
     const entry = book[i]
     const name = entry[0]
     const data = entry[1]
-    graph.addNode(name, data.text, data.proof, i)
+    graph.addNode(name, data.proof, i)
   }
   return graph
 }
 
 export const bookGraph = makeBookGraph()
+
+// todo: consider moving
+// into book graph class:
+export function getNodeIdx(node: string) {
+  return bookGraph.get(node).entryIdx
+}
+
+export function getNodeText(node: string, lang: Translation) {
+  return book[getNodeIdx(node)][1].text[lang]
+}

@@ -39,8 +39,8 @@ const LinkExternal: React.FC<{
 }
 
 export const AppBar = () => {
-  const onabout = useMatch("/about/*")
-  const ongraph = useMatch("/graph/*")
+  const atAbout = useMatch("/about/*")
+  const atGraph = useMatch("/graph/*")
 
   return (
     <div className="appbar-container">
@@ -53,7 +53,7 @@ export const AppBar = () => {
         <div className="appbar-graph">
           <AppLink
             to="/graph"
-            style={{ fontWeight: ongraph ? "bold" : undefined }}
+            style={{ fontWeight: atGraph ? "bold" : undefined }}
           >
             graph
           </AppLink>
@@ -61,7 +61,7 @@ export const AppBar = () => {
         <div className="appbar-about">
           <AppLink
             to="/about"
-            style={{ fontWeight: onabout ? "bold" : undefined }}
+            style={{ fontWeight: atAbout ? "bold" : undefined }}
           >
             about
           </AppLink>

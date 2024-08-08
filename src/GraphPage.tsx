@@ -6,6 +6,8 @@ import { useExploreContext } from "./context/ExploreContext"
 import { Graph } from "./Graph"
 
 export const GraphPage = () => {
+  // todo: ModePicker & NodePicker
+  // use context hook internally:
   const { mode, setMode, inputNodes, setInputNodes, reset } =
     useExploreContext()
 
@@ -27,13 +29,7 @@ export const GraphPage = () => {
   }
   return (
     <Page>
-      <Graph
-        query={{
-          mode,
-          nodes: inputNodes,
-        }}
-        reset={reset}
-      />
+      <Graph />
     </Page>
   )
 }

@@ -35,7 +35,7 @@
 }
 
 .bmc-icon {
-  height: 1rem;
+  height: 1.1rem;
   vertical-align: middle;
 }
 
@@ -88,6 +88,9 @@
     padding: 0 1rem;
   }
   .appbar-logo {
-    margin-right: 0;
+    margin-right: 0.5rem;
+  }
+  .appbar-col {
+    gap: 0.5rem;
   }
 }
