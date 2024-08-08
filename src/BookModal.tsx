@@ -11,7 +11,7 @@ import MenuBookIcon from "@mui/icons-material/MenuBook"
 import IconButton from "@mui/material/IconButton"
 import PassPageIcon from "@mui/icons-material/ArrowForwardIos"
 import { Tooltip } from "@mui/material"
-import { getNodeIdx, getNodeText } from "./lib/graph"
+import { bookGraph, getNodeIdx, getNodeText } from "./lib/graph"
 import { book } from "./lib/book"
 
 const Transition = forwardRef(function Transition(
@@ -33,6 +33,7 @@ export const BookModal = () => {
   }
 
   const focusIdx = getNodeIdx(focusNode)
+  const parents = bookGraph.getParents(focusNode)
 
   function handleClose() {
     setFocusNode(undefined)
@@ -64,22 +65,22 @@ export const BookModal = () => {
         <div className="book-content">
           <div className="book-content-col-left">
             <div className="book-entry-name">
-              {focusNode}{" "}
               <Tooltip
                 title="Start from here the next time you open the Book Reader."
                 PopperProps={{ style: { width: 160 } }}
               >
                 <IconButton
                   onClick={() => console.log("icon click")}
-                  aria-label="close"
+                  aria-label="bookmark entry"
                 >
                   <BookmarkIcon className="book-entry-name-icon" />
                 </IconButton>
               </Tooltip>
+              <div className="book-entry-name-text">{focusNode}</div>
               <Tooltip title="Save to favorites">
                 <IconButton
                   onClick={() => console.log("icon click")}
-                  aria-label="close"
+                  aria-label="save to favorites"
                 >
                   <StarIcon className="book-entry-name-icon" />
                 </IconButton>
@@ -88,6 +89,23 @@ export const BookModal = () => {
             <div className="book-entry-content">
               <div className="book-entry-content-text">
                 {getNodeText(focusNode, lang)}
+                {parents.length > 0 && (
+                  <div className="book-entry-proof-group">
+                    <p className="book-proofs-label">Proofs:</p>{" "}
+                    {parents.map((proof, idx, list) => (
+                      <>
+                        <button
+                          key={proof}
+                          className="book-entry-proof"
+                          onClick={() => setFocusNode(proof)}
+                        >
+                          {proof}
+                        </button>
+                        {idx < list.length - 1 && ","}
+                      </>
+                    ))}
+                  </div>
+                )}
               </div>
               <div className="book-entry-button-group">
                 <Tooltip title="go to previous entry">

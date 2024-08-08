@@ -52,10 +52,10 @@ export const ModePicker: React.FC<{
         onClick={() => setFocusNode("e1apx")}
       >
         <div className="mode-picker-button-label">
-          <MenuBookIcon fontSize="small" /> Book reader
+          <MenuBookIcon fontSize="small" /> Book Reader
         </div>
         <div className="mode-picker-button-description">
-          You just want to read the Ethics, maybe take notes or save your
+          You just want to read the Ethics, maybe take notes, or save your
           favorite entries.
         </div>
       </button>

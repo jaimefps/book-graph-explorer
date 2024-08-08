@@ -44,8 +44,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: beige;
+  color: white;
   gap: 0.5rem;
+}
+.book-entry-name-text {
+  margin-top: -4px;
 }
 .book-entry-name-icon {
   font-size: 1.5rem !important;
@@ -55,7 +58,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto;
+  overflow: hidden;
   gap: 0.5rem;
 }
 .book-entry-button-group {
@@ -72,13 +75,44 @@
   flex: 1;
   width: 100%;
   background: beige;
-  border-radius: 20px;
   padding: 1rem;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
   overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.book-proofs-label {
+  opacity: 0.8;
+  margin: 0;
+}
+.book-entry-proof-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  background: white;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  gap: 0.5rem;
+}
+.book-entry-proof {
+  all: unset;
+  cursor: pointer;
+  font-weight: bold;
+  color: darkseagreen;
+  cursor: pointer;
+}
+.book-entry-proof:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
 .book-pagination-icon {
   font-size: 2rem !important;
-  color: greenyellow;
+  color: darkseagreen;
 }
 
 .book-content-col-right {
