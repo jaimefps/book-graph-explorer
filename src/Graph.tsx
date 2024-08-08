@@ -1,3 +1,4 @@
+import { isMobile } from "react-device-detect"
 import { GraphMode, GraphQuery, RenderData } from "./types"
 import { useRef, useState, useEffect, useMemo, useCallback } from "react"
 import IconButton from "@mui/material/IconButton"
@@ -92,7 +93,7 @@ export const Graph: React.FC<{
         key="graph-zoom"
         open={openAlert}
         autoHideDuration={6000}
-        message="Scroll or pinch to zoom!"
+        message={`${isMobile ? "Pinch" : "Scroll"} on the graph to change zoom`}
         onClose={handleAlertClose}
         anchorOrigin={{
           vertical: "bottom",
@@ -160,6 +161,8 @@ export const Graph: React.FC<{
         layout={{
           name: "breadthfirst",
           avoidOverlap: true,
+          animate: true,
+          animationDuration: 350,
           spacingFactor: edgeCount > 25 ? 3 : 2,
           directed: true,
           maximal: true,
