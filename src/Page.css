@@ -1,3 +1,39 @@
 .page-container {
   height: calc(100% - var(--bar-height));
+  position: relative;
+  overflow: hidden;
+}
+
+.page-container-landscape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  background: darkslategray;
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  color: beige;
+  padding: 2rem;
+}
+
+.page-container-landscape-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and (orientation: landscape) {
+  .page-container-landscape {
+    display: unset;
+  }
 }
