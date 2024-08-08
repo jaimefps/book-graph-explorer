@@ -4,6 +4,7 @@ import { nodeOpts } from "./lib/book"
 import { bookGraph } from "./lib/graph"
 import { TextField, Button } from "@mui/material"
 import AutoComplete from "@mui/material/Autocomplete"
+import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 import "./NodePicker.css"
 import cs from "clsx"
 
@@ -74,7 +75,6 @@ export const NodePicker: React.FC<{
           Which <span className="mode-span">{mode}</span> do you want to
           explore?
         </h2>
-
         <div className="node-picker-controls">
           <div className="node-picker-autocomplete-group">
             <AutoComplete
@@ -134,7 +134,6 @@ export const NodePicker: React.FC<{
               />
             )}
           </div>
-
           <div className="node-picker-button-group">
             <Button
               {...sharedProps}
@@ -188,6 +187,11 @@ export const NodePicker: React.FC<{
               soloPickerLabel: mode !== "connection",
             })}
           >
+            <ChevronRightIcon
+              fontSize="medium"
+              className={cs(preview !== fromNode && "node-picker-pulse")}
+              style={{ marginBottom: -6, marginRight: -6 }}
+            />{" "}
             {fromNode}
           </div>
           {mode === "connection" && (
@@ -198,6 +202,11 @@ export const NodePicker: React.FC<{
                 disabledPickerLabel: preview !== toNode,
               })}
             >
+              <ChevronRightIcon
+                fontSize="medium"
+                className={cs(preview !== toNode && "node-picker-pulse")}
+                style={{ marginBottom: -6, marginRight: -6 }}
+              />{" "}
               {toNode}
             </div>
           )}

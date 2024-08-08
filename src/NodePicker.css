@@ -167,3 +167,20 @@
     font-size: 2rem;
   }
 }
+
+@keyframes pulsate {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.node-picker-pulse {
+  transition: all 0.5s ease-in;
+  animation: pulsate 1.5s infinite;
+}
