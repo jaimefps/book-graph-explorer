@@ -1,14 +1,13 @@
 import "./GraphPage.css"
 import { Page } from "./Page"
-import { useState } from "react"
-import { GraphMode } from "./types"
 import { ModePicker } from "./ModePicker"
 import { NodePicker } from "./NodePicker"
+import { useExploreContext } from "./context/ExploreContext"
 import { Graph } from "./Graph"
 
 export const GraphPage = () => {
-  const [mode, setMode] = useState<GraphMode>()
-  const [nodes, setNodes] = useState<string[]>()
+  const { mode, setMode, inputNodes, setInputNodes, reset } =
+    useExploreContext()
 
   // which states are defined and undefined
   // imply what page we are meant to be on:
@@ -19,16 +18,10 @@ export const GraphPage = () => {
       </Page>
     )
   }
-  if (!nodes?.length) {
+  if (!inputNodes?.length) {
     return (
       <Page>
-        <NodePicker
-          mode={mode}
-          setNodes={setNodes}
-          reset={() => {
-            setMode(undefined)
-          }}
-        />
+        <NodePicker mode={mode} reset={reset} setNodes={setInputNodes} />
       </Page>
     )
   }
@@ -37,12 +30,9 @@ export const GraphPage = () => {
       <Graph
         query={{
           mode,
-          nodes,
+          nodes: inputNodes,
         }}
-        reset={() => {
-          setMode(undefined)
-          setNodes(undefined)
-        }}
+        reset={reset}
       />
     </Page>
   )

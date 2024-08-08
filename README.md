@@ -14,10 +14,23 @@
 NOW: modal for book entries
 
 - move state to context
+- use context to track book modal state as well
 
 ---
 
-- "go back to graph" button
+- replace "What is this?" with "Demo"
+- maybe just force the demo mode if first time visit tracked in localStorage
+- the Open source github should link to the spinoza.io webpage
+
+---
+
+- "go back to graph" button.
+- add feedback button on about
+  or maybe add a "Contact" tab.
+
+---
+
+- Error Boundary at the root at least
 
 ---
 

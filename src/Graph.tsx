@@ -7,8 +7,52 @@ import CytoscapeComponent from "react-cytoscapejs"
 import Snackbar from "@mui/material/Snackbar"
 import Tooltip from "@mui/material/Tooltip"
 import Button from "@mui/material/Button"
+import { BookModal } from "./BookModal"
 import { bookGraph } from "./lib/graph"
 import "./Graph.css"
+import { useExploreContext } from "./context/ExploreContext"
+
+const ZoomAlert: React.FC<{
+  openAlert: boolean
+  handleAlertClose: VoidFunction
+}> = ({ openAlert, handleAlertClose }) => {
+  return (
+    <Snackbar
+      key="graph-zoom"
+      open={openAlert}
+      autoHideDuration={6000}
+      message={`${isMobile ? "Pinch" : "Scroll"} on the graph to zoom`}
+      onClose={handleAlertClose}
+      anchorOrigin={{
+        vertical: "bottom",
+        horizontal: "center",
+      }}
+      action={
+        <IconButton
+          size="small"
+          color="inherit"
+          aria-label="close"
+          onClick={handleAlertClose}
+        >
+          <CloseIcon fontSize="small" />
+        </IconButton>
+      }
+      ContentProps={{
+        style: {
+          color: "black",
+          background: "orange",
+          fontSize: "1.1rem",
+          textAlign: "center",
+
+          height: "2.8rem",
+          display: "flex",
+          alignItems: "center",
+          padding: "0 1rem",
+        },
+      }}
+    />
+  )
+}
 
 function getRenderData(query: GraphQuery) {
   const methodMap: {
@@ -30,19 +74,44 @@ export const Graph: React.FC<{
   reset: VoidFunction
 }> = ({ query, reset }) => {
   const cyRef = useRef<cytoscape.Core>()
-  const [lang, setlang] = useState<string>("la")
-  const [focus, setFocus] = useState<string>(query.nodes[0])
-  const [renderData] = useState(getRenderData(query))
+  const { mode, inputNodes, setFocusNode } = useExploreContext()
   const [openAlert, setOpenAlert] = useState(false)
 
   const handleAlertClose = useCallback(
     () => setOpenAlert(false),
     [setOpenAlert]
   )
+
+  if (!mode || !inputNodes) {
+    // forces mode & inputNodes to
+    // seem defined in typescript:
+    throw new Error("Invalid state reached, cannot render Graph")
+  }
+
+  // stable reference:
+  const [renderData] = useState(() =>
+    getRenderData({
+      nodes: inputNodes,
+      mode: mode,
+    })
+  )
+
+  const edgeCount = useMemo(() => {
+    return renderData.filter((n) => !!n.data.source).length
+  }, [renderData])
+
   useEffect(() => {
     const t = setTimeout(() => setOpenAlert(true), 300)
     return () => clearTimeout(t)
   }, [])
+
+  // useRef to avoid linter issues
+  // in the useEffect dependencies:
+  const setFocus = useRef(setFocusNode)
+  useEffect(() => {
+    // ensure we don't go stale:
+    setFocus.current = setFocusNode
+  })
 
   useEffect(() => {
     if (cyRef.current) {
@@ -54,7 +123,7 @@ export const Graph: React.FC<{
         event.stopPropagation()
         const node = event.target
         const nodeId = node.id()
-        setFocus(nodeId)
+        setFocus.current(nodeId)
       })
       // background click:
       // cy.on("click", (event) => {
@@ -64,61 +133,25 @@ export const Graph: React.FC<{
     }
   }, [])
 
-  const edgeCount = useMemo(() => {
-    return renderData.filter((n) => !!n.data.source).length
-  }, [renderData])
-
-  const hasEdges = useMemo(
-    () => renderData.find((n) => !!n.data.source),
-    [renderData]
-  )
-
-  const headerText = hasEdges ? (
-    <>
-      {query.mode} ({query.nodes[0]}
-      {query.mode === "connection" && `, ${query.nodes[1]}`})
-    </>
-  ) : (
-    <>
-      note:{" "}
-      {query.mode === "connection"
-        ? `no connections found between ${query.nodes[0]} and ${query.nodes[1]}`
-        : `no ${query.mode} found for ${query.nodes[0]}`}
-    </>
-  )
+  const headerText =
+    edgeCount > 0 ? (
+      <>
+        {query.mode} ({query.nodes[0]}
+        {query.mode === "connection" && `, ${query.nodes[1]}`})
+      </>
+    ) : (
+      <>
+        {query.mode === "connection"
+          ? `no connection found (${query.nodes[0]}, ${query.nodes[1]})`
+          : `no ${query.mode} found (${query.nodes[0]})`}
+      </>
+    )
 
   return (
     <div className="graph-container">
-      <Snackbar
-        key="graph-zoom"
-        open={openAlert}
-        autoHideDuration={6000}
-        message={`${isMobile ? "Pinch" : "Scroll"} on the graph to zoom`}
-        onClose={handleAlertClose}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "center",
-        }}
-        action={
-          <IconButton
-            size="small"
-            color="inherit"
-            aria-label="close"
-            onClick={handleAlertClose}
-          >
-            <CloseIcon fontSize="small" />
-          </IconButton>
-        }
-        ContentProps={{
-          style: {
-            color: "black",
-            background: "orange",
-            fontSize: "1.1rem",
-            textAlign: "center",
-            fontWeight: "bold",
-          },
-        }}
-      />
+      <ZoomAlert openAlert={openAlert} handleAlertClose={handleAlertClose} />
+      <BookModal />
+
       <div className="graph-header">
         <Tooltip title={headerText} enterTouchDelay={0}>
           <div className="graph-header-text">{headerText}</div>
@@ -161,8 +194,6 @@ export const Graph: React.FC<{
         layout={{
           name: "breadthfirst",
           avoidOverlap: true,
-          animate: true,
-          animationDuration: 350,
           spacingFactor: edgeCount > 25 ? 3 : 2,
           directed: true,
           maximal: true,
@@ -179,10 +210,9 @@ export const Graph: React.FC<{
               label: "data(id)",
               "text-valign": "center",
               "text-halign": "center",
-              // "border-color": "",
               color: "#fff",
-              height: 99,
-              width: 99,
+              height: 105,
+              width: 105,
             },
           },
           {
