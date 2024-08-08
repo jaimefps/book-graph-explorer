@@ -93,7 +93,7 @@ export const Graph: React.FC<{
         key="graph-zoom"
         open={openAlert}
         autoHideDuration={6000}
-        message={`${isMobile ? "Pinch" : "Scroll"} on the graph to change zoom`}
+        message={`${isMobile ? "Pinch" : "Scroll"} on the graph to zoom`}
         onClose={handleAlertClose}
         anchorOrigin={{
           vertical: "bottom",
