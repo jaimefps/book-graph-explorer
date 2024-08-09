@@ -11,7 +11,7 @@ import MenuBookIcon from "@mui/icons-material/MenuBook"
 import IconButton from "@mui/material/IconButton"
 import PassPageIcon from "@mui/icons-material/ArrowForwardIos"
 import ChatIcon from "@mui/icons-material/Chat"
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward"
+import ArrowDownwardIcon from "@mui/icons-material/KeyboardArrowDown"
 import { bookGraph, getNodeIdx, getNodeText } from "./lib/graph"
 import { useStorageContext } from "./context/StorageContext"
 import PanToolAltIcon from "@mui/icons-material/PanToolAlt"
@@ -39,7 +39,18 @@ function getRandomPlaceholder() {
 const placeHolderItem = [
   {
     createdAt: 1,
-    text: "Take your first note below!",
+    text: (
+      <>
+        <PanToolAltIcon
+          fontSize="medium"
+          style={{
+            marginBottom: `-0.4rem`,
+            transform: "rotate(180deg)",
+          }}
+        />{" "}
+        Take your first note below.
+      </>
+    ),
   },
 ]
 
@@ -79,6 +90,15 @@ const Notes: React.FC<{
 
   useEffect(() => scrollToEnd(), [notes])
 
+  function handleSubmit(targetNode: string) {
+    if (!noteText.length) {
+      window.alert("Write something first!")
+      return
+    }
+    addNote(targetNode, noteText)
+    setNoteText("")
+  }
+
   return (
     <div className="book-entry-notes">
       <div ref={scrollRef} className="book-entry-notes-stored-group">
@@ -91,6 +111,7 @@ const Notes: React.FC<{
               key={thisKey}
               className="book-entry-notes-stored"
               style={{
+                // boxShadow: isPlaceholder ? "none" : undefined,
                 background: isPlaceholder ? "lightgray" : undefined,
                 color: isPlaceholder ? "gray" : undefined,
               }}
@@ -103,7 +124,7 @@ const Notes: React.FC<{
               </div>
 
               <div className="notes-stored-right">
-                {!isPlaceholder ? (
+                {!isPlaceholder && (
                   <IconButton
                     aria-label="delete note"
                     onClick={() => clearNote(focusNode, idx)}
@@ -115,14 +136,6 @@ const Notes: React.FC<{
                       fontSize="small"
                     />
                   </IconButton>
-                ) : (
-                  <PanToolAltIcon
-                    fontSize="large"
-                    style={{
-                      marginBottom: -20,
-                      transform: "rotate(180deg)",
-                    }}
-                  />
                 )}
               </div>
             </div>
@@ -135,6 +148,12 @@ const Notes: React.FC<{
           placeholder={getRandomPlaceholder()}
           className="book-entry-form-input"
           onChange={(ev) => setNoteText(ev.target.value)}
+          onKeyDown={(ev) => {
+            if (ev.key === "Enter") {
+              ev.preventDefault()
+              handleSubmit(focusNode)
+            }
+          }}
         />
         <IconButton
           size="medium"
@@ -143,14 +162,7 @@ const Notes: React.FC<{
             marginLeft: "0.8rem",
             background: "orange",
           }}
-          onClick={() => {
-            if (!noteText.length) {
-              window.alert("Write something first!")
-              return
-            }
-            addNote(focusNode, noteText)
-            setNoteText("")
-          }}
+          onClick={() => handleSubmit(focusNode)}
         >
           <AddCommentIcon style={{ color: "white" }} />
         </IconButton>
@@ -380,12 +392,14 @@ export const BookModal = () => {
                   {focusNode}
                 </b>
               </p>
-              <IconButton
-                aria-label="close notes drawer"
-                onClick={() => setOpenNotes(false)}
-              >
-                <ArrowDownwardIcon />
-              </IconButton>
+              <Tooltip title="hide notes">
+                <IconButton
+                  aria-label="close notes drawer"
+                  onClick={() => setOpenNotes(false)}
+                >
+                  <ArrowDownwardIcon />
+                </IconButton>
+              </Tooltip>
             </div>
             <Notes noteText={noteText} setNoteText={setNoteText} />
           </div>

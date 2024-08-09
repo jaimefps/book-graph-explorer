@@ -12,15 +12,13 @@
 ---
 
 - TODO:notes
-- NOTE: responsive notes & reader
-- implement not taker
 - apply portrait-only alert to book modal.
+- jump to favorite, bookmark, any entry
 
 ---
 
 MAIN TODOS:
 
-- book modal
 - about pages
 - demo flow
 

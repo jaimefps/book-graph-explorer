@@ -61,6 +61,7 @@
   gap: 0.5rem;
   border-radius: 12px;
   border-bottom-right-radius: 0;
+  box-shadow: 1px 1px 2px 2px rgb(44, 44, 44);
   background: darkslategray;
   padding: 1rem;
   color: white;
@@ -88,7 +89,7 @@
 }
 .book-entry-form-input {
   outline: none;
-  padding: 0.5rem;
+  padding: 1rem;
   font-size: 1rem;
   font-weight: 500;
   flex: 1;
@@ -295,7 +296,6 @@
   .book-pagination-icon {
     font-size: 1rem !important;
   }
-
   .book-content-col-right {
     display: none;
   }
