@@ -48,6 +48,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 1rem;
   overflow-y: auto !important;
 }
 .book-entry-notes-stored {
@@ -58,7 +59,7 @@
   font-weight: 600;
   line-height: 1.5;
   gap: 0.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
   border-bottom-right-radius: 0;
   background: darkslategray;
   padding: 1rem;
@@ -82,6 +83,8 @@
   width: 100%;
   align-items: center;
   border-top: 1px solid darkseagreen;
+  background-color: white;
+  padding-right: 1rem;
 }
 .book-entry-form-input {
   outline: none;
@@ -97,6 +100,7 @@
   border-radius: 4px;
   /* background: darkslategray; */
   height: 100px;
+  border-radius: 0;
 }
 /* prevent endAdornment from breaking */
 .notes-stored-right {
@@ -109,16 +113,19 @@
 .book-content-col-left,
 .book-content-col-right {
   flex: 1;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
+.book-content-col-left {
+  padding: 2rem;
+}
+
 .book-content-col-right {
   background: darkseagreen;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .book-entry-name {
@@ -206,7 +213,8 @@
   color: darkseagreen;
   cursor: pointer;
 }
-.book-entry-proof:hover {
+.book-entry-proof:hover,
+.book-entry-proof:focus {
   text-decoration: underline;
   opacity: 0.8;
 }
@@ -290,12 +298,5 @@
 
   .book-content-col-right {
     display: none;
-  }
-
-  .book-entry-notes-form {
-    padding-right: 1rem;
-  }
-  .book-entry-notes-stored-group {
-    padding: 1rem;
   }
 }

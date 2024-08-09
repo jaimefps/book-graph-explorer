@@ -33,7 +33,8 @@
   color: darkslategray;
 }
 
-.mode-picker-button:hover {
+.mode-picker-button:hover,
+.mode-picker-button:focus {
   opacity: 0.8;
 }
 
