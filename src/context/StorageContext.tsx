@@ -24,12 +24,6 @@ const StorageContext = React.createContext<{
 
 class StorageController {
   load(): Storage {
-    if (typeof window === "undefined") {
-      // If localStorage isn't available
-      // (e.g., SSR), return initStorage:
-      return initStorage
-    }
-
     const serial = localStorage.getItem(key)
     if (serial) {
       return JSON.parse(serial)
@@ -46,11 +40,10 @@ class StorageController {
   }
 }
 
-const controller = new StorageController()
-
 export const StorageProvider: React.FC<{
   children: React.ReactNode
 }> = ({ children }) => {
+  const [controller] = useState(new StorageController())
   const [storage, _setStorage] = useState(controller.load)
 
   const handleStorage = useCallback((update: (data: Storage) => Storage) => {
