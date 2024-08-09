@@ -4,19 +4,39 @@
   flex-direction: column;
 }
 
+.entry-menu-small {
+  display: none;
+}
+
 .book-appbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: var(--bar-height);
-  padding: 0 2rem;
+  padding: 0 1rem 0 2rem;
   background: darkslategray;
   color: white;
 }
 .book-appbar-reader-icon {
   font-size: 1.5rem;
 }
+
+.book-appbar-col-left,
+.book-appbar-col-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.book-appbar-col-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .book-appbar-col-left {
+  gap: 3rem;
+}
+
+.book-appbar-logo {
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -59,10 +79,9 @@
   font-weight: 600;
   line-height: 1.5;
   gap: 0.5rem;
-  border-radius: 12px;
+  border-radius: 6px;
   border-bottom-right-radius: 0;
-  box-shadow: 1px 1px 2px 2px rgb(44, 44, 44);
-  background: darkslategray;
+  background: rgb(31, 52, 52);
   padding: 1rem;
   color: white;
   width: 100%;
@@ -126,7 +145,8 @@
 
 .book-content-col-right {
   background: darkseagreen;
-  /* padding: 1rem; */
+  border-top-left-radius: 8px;
+  padding-top: 0.2rem;
 }
 
 .book-entry-name {
@@ -224,10 +244,6 @@
   color: darkseagreen;
 }
 
-.book-content-col-right {
-  border-top-left-radius: 20px;
-}
-
 .book-entry-notes-button {
   display: none !important;
 }
@@ -270,6 +286,7 @@
     color: darkslategray;
   }
   .book-appbar-col-left {
+    justify-content: space-between;
     font-weight: 700;
     font-size: 1rem;
     gap: 0.5rem;
@@ -298,5 +315,14 @@
   }
   .book-content-col-right {
     display: none;
+  }
+  .book-appbar-logo-ext {
+    display: none;
+  }
+  .entry-menu-large {
+    display: none;
+  }
+  .entry-menu-small {
+    display: unset;
   }
 }

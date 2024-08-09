@@ -18,6 +18,7 @@ import PanToolAltIcon from "@mui/icons-material/PanToolAlt"
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever"
 import AddCommentIcon from "@mui/icons-material/Save"
 import { Tooltip } from "@mui/material"
+import { EntryMenu } from "./EntryMenu"
 import { book } from "./lib/book"
 import cs from "clsx"
 
@@ -25,10 +26,7 @@ function getRandomPlaceholder() {
   const placeholders = [
     "Spot the hidden pattern in the chaos?",
     "Got a mind-blowing insight?",
-    "Unveil a curious observation...",
     "What's your latest epiphany?",
-    "Drop a thought-provoking nugget!",
-    "What’s your sharpest observation today?",
     "Seen anything intriguing lately?",
   ]
   const max = placeholders.length
@@ -112,8 +110,8 @@ const Notes: React.FC<{
               className="book-entry-notes-stored"
               style={{
                 // boxShadow: isPlaceholder ? "none" : undefined,
-                background: isPlaceholder ? "lightgray" : undefined,
-                color: isPlaceholder ? "gray" : undefined,
+                background: isPlaceholder ? "beige" : undefined,
+                color: isPlaceholder ? "darkslategray" : undefined,
               }}
             >
               <div className="notes-stored-left">
@@ -188,6 +186,12 @@ export const BookModal = () => {
   const { storage, setBookmark, clearBookmark, setFavorite, clearFavorite } =
     useStorageContext()
 
+  // if the focus node changes, make sure to hide
+  // the notes, to avoid adding notes to wrong entry:
+  useEffect(() => {
+    setOpenNotes(false)
+  }, [focusNode])
+
   // todo: consider if there is
   // a better way than this:
   if (!focusNode) {
@@ -215,8 +219,16 @@ export const BookModal = () => {
       <div className="book-modal">
         <div className="book-appbar">
           <div className="book-appbar-col-left">
-            <MenuBookIcon className="book-appbar-reader-icon" />
-            Book Reader
+            <div className="book-appbar-logo">
+              <MenuBookIcon className="book-appbar-reader-icon" />
+              <span className="book-appbar-logo-ext">Book</span> Reader
+            </div>
+            <div className="entry-menu-large">
+              <EntryMenu />
+            </div>
+          </div>
+          <div className="entry-menu-small">
+            <EntryMenu />
           </div>
           <div className="book-appbar-col-right">
             <IconButton

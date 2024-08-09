@@ -20,6 +20,10 @@
 MAIN TODOS:
 
 - about pages
+- route graph => explore
+- only a quick snackbar that alerts that the bookmark was updated
+- add a a middle step between clicking a node and opening the book reader...?
+- move book/opensource to about, then use that space for feedbackfish
 - demo flow
 
 ---
@@ -33,24 +37,6 @@ MAIN TODOS:
 - "go back to graph" button.
 - add feedback button on about
   or maybe add a "Contact" tab.
-
----
-
-- Error Boundary at the root at least
-
----
-
-- handle graph state in a Context so that
-  it doesn't go away if they change tabs.
-
----
-
-- guided demo through the whole app. place absolutely positioned div on top of the whole app, then use a tooltip on different page/elements to guide the user through the app, and at the end, we reset the graph state so they can start again. they should be able to skip at any time.
-
----
-
-- needs a one-click demo/tutorial to help people
-  that know nothing of spinoza to use the app
 
 ---
 
@@ -71,16 +57,6 @@ LATER: gather proofs
 
 ---
 
-- instead of <BookLink/>, just have a list of links ("shortcuts") that use the proof array to link to the dependencies. That way we can leave the raw text without adding markup to it.
-
----
-
-- make text portion into a drawer when in graph mode,
-  to allow for more space for the graph; when the drawer opens, it takes up half the screen,
-  and after the drawer is finished opening, it automatically fires the fitToScreen function
-
----
-
 - maybe an input for degrees of search, e.g., so that we only get 3 degrees of ancestry
 
 ---
@@ -90,75 +66,27 @@ LATER: gather proofs
 
 ---
 
-- as part of the book feature, being able to leave bookmarks?
-
----
-
-- consider if "notes" should be treated as standalone nodes, as we do with corollaries?
-
----
-
-- auto focus on the root requested node
-- open modal when clicking text links
-
----
-
-- create hook to track changes to window size, consider
-  re-centering automatically when screen size changes; only applied when screen is shrunk, not enlarged
-
----
-
-- maybe auto-filter some elements from the autocomplete, if so add info-icon to the section header explaining why they are disabled or removed.
 - when a node is focused, all the edges that come OUT OF it should change color
 - when a node is focused, all the edges that come INTO it should change color?
 
 ---
 
-- create controls on top of the canvas
-  that use the "quickdial" component
-- actions: reset, recenter, save
+- run validation during build script
 
 ---
-
-- run validation during build script
 
 - get proof tree (complex)
 - get consequences (complex)
 - get connection (complex)
-
+- highlight the path (or nodes?) that is common to all versions, when multiple are found
 - get number of proof/consequence/connection trees
-
 - text search that shows what entries include said concept
 
-- do Part I only for everything,
-  then do the rest of the book once all features are implemented
-
-- plain version of the book, but any mentioned to previous text is a link to that part of the book (or open a modal with that text?)
-
-- highlight the path (or nodes?) that is common to all versions, when multiple are found
-
-- use gutenberg project for translations of the ethics;
-  email edwin curley (or someone) asking for permission to use edwin's translation
+---
 
 - give credit to all other tools, and gutenberg project
 
-- max zoom relative to number of nodes in results
-
-- start with plain text, but later move towards having react component (formatted and with links) that is later parsed when doing text search. (see chatgpt link for code samples)
-
-// function makeDomEntry(title: string, content: string) {
-// return `//   <div className="entry">
-//     <h3 className="entry-title"></h3>
-//     <p className="entry-text"></p>
-//   </div>
-//  `
-// }
-
-// function stripHtmlWithDOMParser(html: string) {
-// const parser = new DOMParser()
-// const doc = parser.parseFromString(html, "text/html")
-// return doc.body.textContent || ""
-// }
+---
 
 ---
 
@@ -185,20 +113,14 @@ contact:
 
 ---
 
-main page tabs:
-
-- explorer
-- statistics
-- about
-- buy me coffee
-
----
-
 - "about" page itself has tabs to split stuff up in:
   - about me
-  - about reasoning
-  - about other apps out there
-  - about sources
+  - exegesis
+  - notation
+  - credits
+  - contact
+  - ?: about other apps out there
+  - ?: about further reading
 
 ---
 

@@ -55,7 +55,7 @@ export const AppBar = () => {
             to="/graph"
             style={{ fontWeight: atGraph ? "bold" : undefined }}
           >
-            graph
+            explore
           </AppLink>
         </div>
         <div className="appbar-about">
