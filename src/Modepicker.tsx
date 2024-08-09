@@ -54,8 +54,12 @@ export const ModePicker: React.FC<{
       <button
         className="mode-picker-button"
         onClick={() => setFocusNode(openBookWith)}
+        style={{ background: "darkseagreen" }}
       >
-        <div className="mode-picker-button-label">
+        <div
+          className="mode-picker-button-label"
+          style={{ color: "darkslategray" }}
+        >
           <MenuBookIcon fontSize="small" /> Book Reader
         </div>
         <div className="mode-picker-button-description">

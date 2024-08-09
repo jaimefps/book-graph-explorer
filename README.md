@@ -14,6 +14,7 @@
 - TODO:notes
 - NOTE: responsive notes & reader
 - implement not taker
+- apply portrait-only alert to book modal.
 
 ---
 

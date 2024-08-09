@@ -39,6 +39,8 @@ export const BookModal = () => {
   const focusIdx = getNodeIdx(focusNode)
   const parents = bookGraph.getParents(focusNode)
   const isFavorite = storage.favorites[focusNode]
+  const isFirstEntry = focusIdx === 0
+  const isLastEntry = focusIdx === book.length - 1
 
   function handleClose() {
     setFocusNode(undefined)
@@ -59,9 +61,9 @@ export const BookModal = () => {
           </div>
           <div className="book-appbar-col-right">
             <IconButton
-              onClick={handleClose}
               aria-label="close"
               style={{ color: "white" }}
+              onClick={handleClose}
             >
               <CloseIcon />
             </IconButton>
@@ -81,7 +83,6 @@ export const BookModal = () => {
                       setBookmark(focusNode)
                       return
                     }
-
                     if (storage.bookmark === focusNode) {
                       const confirm = window.confirm(
                         "Are you sure you want to clear your bookmark? You'll start from the beginning the next time you open Book Reader."
@@ -89,7 +90,6 @@ export const BookModal = () => {
                       if (confirm) clearBookmark()
                       return
                     }
-
                     if (storage.bookmark !== null) {
                       const confirm = window.confirm(
                         `Are you sure you want to change your bookmark from ${storage.bookmark} to ${focusNode}?`
@@ -137,6 +137,7 @@ export const BookModal = () => {
                 style={{
                   position: "absolute",
                   right: 0,
+                  top: 1,
                 }}
               >
                 <ChatIcon
@@ -170,31 +171,43 @@ export const BookModal = () => {
               </div>
               <div className="book-entry-button-group">
                 <Tooltip title="previous entry">
-                  <IconButton
-                    aria-label="go to previous entry"
-                    disabled={focusIdx === 0}
-                    onClick={() => {
-                      const newNodeName = book[focusIdx - 1][0]
-                      setFocusNode(newNodeName)
-                    }}
-                  >
-                    <PassPageIcon
-                      className="book-pagination-icon"
-                      style={{ transform: "rotate(180deg)" }}
-                    />
-                  </IconButton>
+                  <span>
+                    <IconButton
+                      aria-label="go to previous entry"
+                      disabled={isFirstEntry}
+                      onClick={() => {
+                        const newNodeName = book[focusIdx - 1][0]
+                        setFocusNode(newNodeName)
+                      }}
+                    >
+                      <PassPageIcon
+                        className="book-pagination-icon"
+                        style={{
+                          transform: "rotate(180deg)",
+                          opacity: isFirstEntry ? 0.3 : 1,
+                        }}
+                      />
+                    </IconButton>
+                  </span>
                 </Tooltip>
                 <Tooltip title="next entry">
-                  <IconButton
-                    aria-label="go to next entry"
-                    disabled={focusIdx === book.length - 1}
-                    onClick={() => {
-                      const newNodeName = book[focusIdx + 1][0]
-                      setFocusNode(newNodeName)
-                    }}
-                  >
-                    <PassPageIcon className="book-pagination-icon" />
-                  </IconButton>
+                  <span>
+                    <IconButton
+                      aria-label="go to next entry"
+                      disabled={isLastEntry}
+                      onClick={() => {
+                        const newNodeName = book[focusIdx + 1][0]
+                        setFocusNode(newNodeName)
+                      }}
+                    >
+                      <PassPageIcon
+                        className="book-pagination-icon"
+                        style={{
+                          opacity: isLastEntry ? 0.3 : 1,
+                        }}
+                      />
+                    </IconButton>
+                  </span>
                 </Tooltip>
               </div>
             </div>

@@ -20,14 +20,14 @@
 .mode-picker-button {
   all: unset;
 
-  background: beige;
+  background: ghostwhite;
   border-radius: 4px;
   text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.2rem;
   cursor: pointer;
   width: 360px;
   color: darkslategray;
