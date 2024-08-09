@@ -84,7 +84,7 @@ export const BookModal = () => {
 
                     if (storage.bookmark === focusNode) {
                       const confirm = window.confirm(
-                        "Are you sure you want to clear your bookmark? You'll start from the beginning the next time you open the book reader."
+                        "Are you sure you want to clear your bookmark? You'll start from the beginning the next time you open Book Reader."
                       )
                       if (confirm) clearBookmark()
                       return

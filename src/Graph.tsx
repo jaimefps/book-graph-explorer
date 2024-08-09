@@ -113,9 +113,25 @@ export const Graph = () => {
     if (cyRef.current) {
       const cy = cyRef.current
 
+      // const handleSelect = (event: cytoscape.EventObject) => {
+      //   // prevent event from propagating
+      //   // to other graph event listeners:
+      //   event.stopPropagation()
+      //   const node = event.target
+      //   const nodeId = node.id()
+      //   setFocus.current(nodeId)
+      // }
+
       const handleSelect = (event: cytoscape.EventObject) => {
-        // prevent event from propagating
-        // to other graph event listeners:
+        // Only proceed if there's a single touch point (not a pinch)
+        if (
+          event.originalEvent instanceof TouchEvent &&
+          event.originalEvent.touches.length > 1
+        ) {
+          return // Ignore multi-touch events
+        }
+
+        // prevent event from propagating to other graph event listeners:
         event.stopPropagation()
         const node = event.target
         const nodeId = node.id()
