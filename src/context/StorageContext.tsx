@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useState } from "react"
 
-const key = "SPINOZA_IO_STORAGE"
+const STORAGE_KEY = "SPINOZA_IO_STORAGE"
 
 type Storage = {
   bookmark: string | null
@@ -22,45 +22,40 @@ const StorageContext = React.createContext<{
   clearFavorite: (n: string) => void
 } | null>(null as any)
 
-class StorageController {
-  load(): Storage {
-    const serial = window.localStorage.getItem(key)
-    if (serial) {
-      return JSON.parse(serial)
-    } else {
-      // If first time visiting app,
-      // set the data for them:
-      this.save(initStorage)
-      return initStorage
-    }
-  }
-  save(payload: Storage) {
-    const data = JSON.stringify(payload)
-    window.localStorage.setItem(key, data)
+function saveStorage(payload: Storage) {
+  const data = JSON.stringify(payload)
+  window.localStorage.setItem(STORAGE_KEY, data)
+}
+
+function loadStorage(): Storage {
+  const serial = window.localStorage.getItem(STORAGE_KEY)
+  if (serial) {
+    return JSON.parse(serial)
+  } else {
+    // If first time visiting app,
+    // set the data for them:
+    saveStorage(initStorage)
+    return initStorage
   }
 }
 
 export const StorageProvider: React.FC<{
   children: React.ReactNode
 }> = ({ children }) => {
-  const [controller] = useState(new StorageController())
-  const [storage, _setStorage] = useState(controller.load)
+  const [storage, _setStorage] = useState(loadStorage)
 
-  const handleStorage = useCallback(
-    (update: (data: Storage) => Storage) => {
-      let prev: Storage
-      _setStorage((data) => {
-        prev = data
-        return update(data)
-      })
-      // @ts-ignore
-      if (!prev) {
-        throw new Error("Something went wrong during storage updates")
-      }
-      controller.save(update(prev))
-    },
-    [controller]
-  )
+  const handleStorage = useCallback((update: (data: Storage) => Storage) => {
+    let prev: Storage
+    _setStorage((data) => {
+      prev = data
+      return update(data)
+    })
+    // @ts-ignore
+    if (!prev) {
+      throw new Error("Something went wrong during storage updates")
+    }
+    saveStorage(update(prev))
+  }, [])
 
   const setBookmark = useCallback(
     (node: string) => {
