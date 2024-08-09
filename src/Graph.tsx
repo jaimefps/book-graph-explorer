@@ -113,41 +113,57 @@ export const Graph = () => {
     if (cyRef.current) {
       const cy = cyRef.current
 
-      // const handleSelect = (event: cytoscape.EventObject) => {
-      //   // prevent event from propagating
-      //   // to other graph event listeners:
-      //   event.stopPropagation()
-      //   const node = event.target
-      //   const nodeId = node.id()
-      //   setFocus.current(nodeId)
-      // }
+      let isDragging = false
 
-      const handleSelect = (event: cytoscape.EventObject) => {
+      const handleTouchStart = (event: cytoscape.EventObject) => {
         // Only proceed if there's a single touch point (not a pinch)
         if (
           event.originalEvent instanceof TouchEvent &&
           event.originalEvent.touches.length > 1
         ) {
+          isDragging = false // Don't allow dragging during multi-touch
           return // Ignore multi-touch events
         }
 
-        // prevent event from propagating to other graph event listeners:
+        isDragging = true // Assume intent to drag unless proven otherwise
+        event.target.grabbed()
+      }
+
+      const handleTouchMove = (event: cytoscape.EventObject) => {
+        if (isDragging) {
+          event.target.emit("drag") // Emit drag event to allow dragging
+        }
+      }
+
+      const handleTouchEnd = (event: cytoscape.EventObject) => {
+        if (!isDragging) return
+
+        // If dragging ends, check if the node should be selected
+        if (
+          event.originalEvent instanceof TouchEvent &&
+          event.originalEvent.changedTouches.length === 1
+        ) {
+          // Consider it a tap if dragging was minimal
+          const node = event.target
+          const nodeId = node.id()
+          setFocus.current(nodeId)
+        }
+
+        isDragging = false
+      }
+
+      // handle mobile device "clicks" and drag
+      cy.on("touchstart", "node", handleTouchStart)
+      cy.on("touchmove", "node", handleTouchMove)
+      cy.on("touchend", "node", handleTouchEnd)
+
+      // regular mouse clicks:
+      cy.on("click", "node", (event) => {
         event.stopPropagation()
         const node = event.target
         const nodeId = node.id()
         setFocus.current(nodeId)
-      }
-
-      // handle mobile device "clicks":
-      cy.on("touchstart", "node", handleSelect)
-      // regular mouse clicks:
-      cy.on("click", "node", handleSelect)
-
-      // background click:
-      // cy.on("click", (event) => {
-      //   if (event.target === cy) {
-      //   }
-      // })
+      })
     }
   }, [])
 
