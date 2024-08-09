@@ -24,14 +24,20 @@ const StorageContext = React.createContext<{
 
 class StorageController {
   load(): Storage {
+    if (typeof window === "undefined") {
+      // If localStorage isn't available
+      // (e.g., SSR), return initStorage:
+      return initStorage
+    }
+
     const serial = localStorage.getItem(key)
     if (serial) {
       return JSON.parse(serial)
     } else {
-      // if first time visiting app,
-      // we set the data for them:
+      // If first time visiting app,
+      // set the data for them:
       this.save(initStorage)
-      return this.load()
+      return initStorage
     }
   }
   save(payload: Storage) {
