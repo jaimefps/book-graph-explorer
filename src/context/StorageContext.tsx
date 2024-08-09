@@ -24,7 +24,7 @@ const StorageContext = React.createContext<{
 
 class StorageController {
   load(): Storage {
-    const serial = localStorage.getItem(key)
+    const serial = window.localStorage.getItem(key)
     if (serial) {
       return JSON.parse(serial)
     } else {
@@ -36,7 +36,7 @@ class StorageController {
   }
   save(payload: Storage) {
     const data = JSON.stringify(payload)
-    localStorage.setItem(key, data)
+    window.localStorage.setItem(key, data)
   }
 }
 
@@ -46,18 +46,21 @@ export const StorageProvider: React.FC<{
   const [controller] = useState(new StorageController())
   const [storage, _setStorage] = useState(controller.load)
 
-  const handleStorage = useCallback((update: (data: Storage) => Storage) => {
-    let prev: Storage
-    _setStorage((data) => {
-      prev = data
-      return update(data)
-    })
-    // @ts-ignore
-    if (!prev) {
-      throw new Error("Something went wrong during storage updates")
-    }
-    controller.save(update(prev))
-  }, [])
+  const handleStorage = useCallback(
+    (update: (data: Storage) => Storage) => {
+      let prev: Storage
+      _setStorage((data) => {
+        prev = data
+        return update(data)
+      })
+      // @ts-ignore
+      if (!prev) {
+        throw new Error("Something went wrong during storage updates")
+      }
+      controller.save(update(prev))
+    },
+    [controller]
+  )
 
   const setBookmark = useCallback(
     (node: string) => {
