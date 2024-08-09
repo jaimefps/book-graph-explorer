@@ -20,7 +20,9 @@ const ZoomAlert: React.FC<{
       key="graph-zoom"
       open={openAlert}
       autoHideDuration={6000}
-      message={`${isMobile ? "Pinch" : "Scroll"} on the graph to zoom`}
+      message={`${
+        isMobile ? "Pinch" : "Scroll"
+      } on the graph to zoom, or click on a node to read that entry in the book.`}
       onClose={handleAlertClose}
       anchorOrigin={{
         vertical: "bottom",
@@ -41,12 +43,6 @@ const ZoomAlert: React.FC<{
           color: "black",
           background: "darkseagreen",
           fontSize: "1.1rem",
-          textAlign: "center",
-
-          height: "2.8rem",
-          display: "flex",
-          alignItems: "center",
-          padding: "0 1rem",
         },
       }}
     />

@@ -5,7 +5,14 @@ const STORAGE_KEY = "SPINOZA_IO_STORAGE"
 type Storage = {
   bookmark: string | null
   favorites: { [k: string]: 1 }
-  notes: { [k: string]: string[] }
+  notes: {
+    [k: string]: {
+      text: string
+      // needed for uniqueness
+      // in react mapped lists:
+      createdAt: number
+    }[]
+  }
 }
 
 const initStorage: Storage = {
@@ -20,6 +27,8 @@ const StorageContext = React.createContext<{
   clearBookmark: () => void
   setFavorite: (n: string) => void
   clearFavorite: (n: string) => void
+  addNote: (n: string, note: string) => void
+  clearNote: (n: string, idx: number) => void
 } | null>(null as any)
 
 function saveStorage(payload: Storage) {
@@ -44,17 +53,19 @@ export const StorageProvider: React.FC<{
 }> = ({ children }) => {
   const [storage, _setStorage] = useState(loadStorage)
 
+  // single point of entry to
+  // write into localStorage:
   const handleStorage = useCallback((update: (data: Storage) => Storage) => {
-    let prev: Storage
+    let result: Storage
     _setStorage((data) => {
-      prev = data
-      return update(data)
+      result = update(data)
+      return result
     })
     // @ts-ignore
-    if (!prev) {
+    if (!result) {
       throw new Error("Something went wrong during storage updates")
     }
-    saveStorage(update(prev))
+    saveStorage(result)
   }, [])
 
   const setBookmark = useCallback(
@@ -91,7 +102,41 @@ export const StorageProvider: React.FC<{
     (node: string) => {
       handleStorage((prev) => {
         delete prev.favorites[node]
-        return { ...prev }
+        return {
+          ...prev,
+        }
+      })
+    },
+    [handleStorage]
+  )
+
+  const addNote = useCallback(
+    (node: string, note: string) => {
+      handleStorage((prev) => {
+        prev.notes[node] = [
+          ...(prev.notes?.[node] ?? []),
+          {
+            createdAt: Date.now(),
+            text: note,
+          },
+        ]
+        return {
+          ...prev,
+        }
+      })
+    },
+    [handleStorage]
+  )
+
+  const clearNote = useCallback(
+    (node: string, clearIdx: number) => {
+      handleStorage((prev) => {
+        prev.notes[node] = prev.notes[node]?.filter(
+          (_, itemIdx) => itemIdx !== clearIdx
+        )
+        return {
+          ...prev,
+        }
       })
     },
     [handleStorage]
@@ -105,6 +150,8 @@ export const StorageProvider: React.FC<{
         clearBookmark,
         setFavorite,
         clearFavorite,
+        addNote,
+        clearNote,
       }}
     >
       {children}

@@ -1,5 +1,5 @@
 import "./BookModal.css"
-import React, { forwardRef } from "react"
+import React, { forwardRef, useEffect, useRef, useState } from "react"
 import Slide from "@mui/material/Slide"
 import Dialog from "@mui/material/Dialog"
 import CloseIcon from "@mui/icons-material/Close"
@@ -11,10 +11,153 @@ import MenuBookIcon from "@mui/icons-material/MenuBook"
 import IconButton from "@mui/material/IconButton"
 import PassPageIcon from "@mui/icons-material/ArrowForwardIos"
 import ChatIcon from "@mui/icons-material/Chat"
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward"
 import { bookGraph, getNodeIdx, getNodeText } from "./lib/graph"
 import { useStorageContext } from "./context/StorageContext"
+import PanToolAltIcon from "@mui/icons-material/PanToolAlt"
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever"
+import AddCommentIcon from "@mui/icons-material/Save"
 import { Tooltip } from "@mui/material"
 import { book } from "./lib/book"
+import cs from "clsx"
+
+function getRandomPlaceholder() {
+  const placeholders = [
+    "Spot the hidden pattern in the chaos?",
+    "Got a mind-blowing insight?",
+    "Unveil a curious observation...",
+    "What's your latest epiphany?",
+    "Drop a thought-provoking nugget!",
+    "What’s your sharpest observation today?",
+    "Seen anything intriguing lately?",
+  ]
+  const max = placeholders.length
+  const idx = Math.floor(Math.random() * max)
+  return placeholders[idx]
+}
+
+const placeHolderItem = [
+  {
+    createdAt: 1,
+    text: "Take your first note below!",
+  },
+]
+
+function formatDate(createdAt: number) {
+  const theDate = new Date(createdAt)
+  const day = String(theDate.getDate()).padStart(2, "0")
+  const month = theDate.toLocaleString("en-US", { month: "short" })
+  const year = theDate.getFullYear()
+  return `${month}/${day}/${year}`
+}
+
+const Notes: React.FC<{
+  noteText: string
+  setNoteText: (s: string) => void
+}> = ({ noteText, setNoteText }) => {
+  const { storage, addNote, clearNote } = useStorageContext()
+  const { focusNode } = useExploreContext()
+
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const scrollToEnd = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current?.scrollHeight
+    }
+  }
+
+  // todo: consider if there is
+  // a better way than this:
+  if (!focusNode) {
+    throw new Error("Failed to render notes section")
+  }
+
+  // can have empty array after
+  // adding and deleting notes:
+  const notes = storage.notes[focusNode]?.length
+    ? storage.notes[focusNode]
+    : placeHolderItem
+
+  useEffect(() => scrollToEnd(), [notes])
+
+  return (
+    <div className="book-entry-notes">
+      <div ref={scrollRef} className="book-entry-notes-stored-group">
+        {notes.map((note, idx) => {
+          const thisKey = `${note.text}_${note.createdAt}`
+          const isPlaceholder = note.createdAt === 1
+          const dateStr = formatDate(note.createdAt)
+          return (
+            <div
+              key={thisKey}
+              className="book-entry-notes-stored"
+              style={{
+                background: isPlaceholder ? "lightgray" : undefined,
+                color: isPlaceholder ? "gray" : undefined,
+              }}
+            >
+              <div className="notes-stored-left">
+                <div>{note.text}</div>
+                {!isPlaceholder && (
+                  <div className="note-stored-date">{dateStr}</div>
+                )}
+              </div>
+
+              <div className="notes-stored-right">
+                {!isPlaceholder ? (
+                  <IconButton
+                    aria-label="delete note"
+                    onClick={() => clearNote(focusNode, idx)}
+                    style={{ border: "1px solid lightgray" }}
+                    size="small"
+                  >
+                    <DeleteForeverIcon
+                      style={{ color: "lightgray" }}
+                      fontSize="small"
+                    />
+                  </IconButton>
+                ) : (
+                  <PanToolAltIcon
+                    fontSize="large"
+                    style={{
+                      marginBottom: -20,
+                      transform: "rotate(180deg)",
+                    }}
+                  />
+                )}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+      <div className="book-entry-notes-form">
+        <textarea
+          value={noteText}
+          placeholder={getRandomPlaceholder()}
+          className="book-entry-form-input"
+          onChange={(ev) => setNoteText(ev.target.value)}
+        />
+        <IconButton
+          size="medium"
+          aria-label="save note for entry"
+          style={{
+            marginLeft: "0.8rem",
+            background: "orange",
+          }}
+          onClick={() => {
+            if (!noteText.length) {
+              window.alert("Write something first!")
+              return
+            }
+            addNote(focusNode, noteText)
+            setNoteText("")
+          }}
+        >
+          <AddCommentIcon style={{ color: "white" }} />
+        </IconButton>
+      </div>
+    </div>
+  )
+}
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & {
@@ -26,6 +169,9 @@ const Transition = forwardRef(function Transition(
 })
 
 export const BookModal = () => {
+  const [openNotes, setOpenNotes] = useState(false)
+  const [noteText, setNoteText] = useState("")
+
   const { focusNode, setFocusNode, lang } = useExploreContext()
   const { storage, setBookmark, clearBookmark, setFavorite, clearFavorite } =
     useStorageContext()
@@ -44,6 +190,7 @@ export const BookModal = () => {
 
   function handleClose() {
     setFocusNode(undefined)
+    setOpenNotes(false)
   }
 
   return (
@@ -130,22 +277,24 @@ export const BookModal = () => {
                   />
                 </IconButton>
               </Tooltip>
-              <IconButton
-                aria-label="open notes"
-                className="book-entry-notes-button"
-                onClick={() => console.log("notes")}
-                style={{
-                  position: "absolute",
-                  right: 0,
-                  top: 1,
-                }}
-              >
-                <ChatIcon
+              <Tooltip title="open notes">
+                <IconButton
+                  aria-label="open notes"
+                  className="book-entry-notes-button"
+                  onClick={() => setOpenNotes(true)}
                   style={{
-                    color: "darkseagreen",
+                    position: "absolute",
+                    right: 0,
+                    top: 1,
                   }}
-                />
-              </IconButton>
+                >
+                  <ChatIcon
+                    style={{
+                      color: "darkseagreen",
+                    }}
+                  />
+                </IconButton>
+              </Tooltip>
             </div>
             <div className="book-entry-content">
               <div className="book-entry-content-text">
@@ -212,11 +361,33 @@ export const BookModal = () => {
               </div>
             </div>
           </div>
+          <div className="book-content-col-right">
+            <Notes noteText={noteText} setNoteText={setNoteText} />
+          </div>
           <div
-            className="book-content-col-right"
-            style={{ background: "darkseagreen" }}
+            className={cs("book-notes-drawer", {
+              open: openNotes,
+            })}
           >
-            note taking here
+            <div className="book-notes-drawer-appbar">
+              <p className="book-notes-drawer-appbar-title">
+                notes on{" "}
+                <b
+                  style={{
+                    fontWeight: 900,
+                  }}
+                >
+                  {focusNode}
+                </b>
+              </p>
+              <IconButton
+                aria-label="close notes drawer"
+                onClick={() => setOpenNotes(false)}
+              >
+                <ArrowDownwardIcon />
+              </IconButton>
+            </div>
+            <Notes noteText={noteText} setNoteText={setNoteText} />
           </div>
         </div>
       </div>
