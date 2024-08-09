@@ -16,11 +16,62 @@ import { bookGraph, getNodeIdx, getNodeText } from "./lib/graph"
 import { useStorageContext } from "./context/StorageContext"
 import PanToolAltIcon from "@mui/icons-material/PanToolAlt"
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever"
+import Snackbar from "@mui/material/Snackbar"
 import AddCommentIcon from "@mui/icons-material/Save"
 import { Tooltip } from "@mui/material"
 import { EntryMenu } from "./EntryMenu"
+import { usePrevious } from "./lib/utils"
 import { book } from "./lib/book"
 import cs from "clsx"
+
+const UpdateAlert = () => {
+  const [alert, setAlert] = useState<any>(undefined)
+  const { storage } = useStorageContext()
+
+  const prev = usePrevious(storage.bookmark)
+  const curr = storage.bookmark
+
+  useEffect(() => {
+    if (prev && curr && prev !== curr) {
+      setAlert(
+        <>
+          Bookmark moved from <b>{prev}</b> to <b>{curr}</b>
+        </>
+      )
+    }
+  }, [prev, curr])
+
+  return (
+    <Snackbar
+      key="bookmark-update"
+      open={!!alert}
+      autoHideDuration={5000}
+      message={alert}
+      onClose={() => setAlert(undefined)}
+      anchorOrigin={{
+        vertical: "bottom",
+        horizontal: "center",
+      }}
+      action={
+        <IconButton
+          size="small"
+          color="inherit"
+          aria-label="close"
+          onClick={() => setAlert(undefined)}
+        >
+          <CloseIcon fontSize="small" />
+        </IconButton>
+      }
+      ContentProps={{
+        style: {
+          color: "black",
+          background: "darkseagreen",
+          fontSize: "1.1rem",
+        },
+      }}
+    />
+  )
+}
 
 function getRandomPlaceholder() {
   const placeholders = [
@@ -130,8 +181,10 @@ const Notes: React.FC<{
                     size="small"
                   >
                     <DeleteForeverIcon
-                      style={{ color: "lightgray" }}
-                      fontSize="small"
+                      style={{
+                        color: "lightgray",
+                        fontSize: "1rem",
+                      }}
                     />
                   </IconButton>
                 )}
@@ -216,6 +269,7 @@ export const BookModal = () => {
       onClose={handleClose}
       TransitionComponent={Transition}
     >
+      <UpdateAlert />
       <div className="book-modal">
         <div className="book-appbar">
           <div className="book-appbar-col-left">
@@ -286,16 +340,17 @@ export const BookModal = () => {
                       }
                       if (storage.bookmark === focusNode) {
                         const confirm = window.confirm(
-                          "Are you sure you want to clear your bookmark? You'll start from the beginning the next time you open Book Reader."
+                          "If you clear the bookmark, you'll start from the beginning the next time you open Book Reader."
                         )
                         if (confirm) clearBookmark()
                         return
                       }
                       if (storage.bookmark !== null) {
-                        const confirm = window.confirm(
-                          `Are you sure you want to change your bookmark from ${storage.bookmark} to ${focusNode}?`
-                        )
-                        if (confirm) setBookmark(focusNode)
+                        // const confirm = window.confirm(
+                        //   `Are you sure you want to change your bookmark from ${storage.bookmark} to ${focusNode}?`
+                        // )
+                        // if (confirm)
+                        setBookmark(focusNode)
                         return
                       }
                     }}

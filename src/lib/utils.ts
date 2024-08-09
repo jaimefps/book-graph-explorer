@@ -1,4 +1,5 @@
 import DOMPurify from "dompurify"
+import { useRef, useEffect } from "react"
 // import q from "query-string"
 
 // DOMPurify prevents script injections:
@@ -13,4 +14,12 @@ export function handlebars(input: string) {
       ${DOMPurify.sanitize(right.trim())}
     </span>`
   })
+}
+
+export function usePrevious(value: any) {
+  const ref = useRef()
+  useEffect(() => {
+    ref.current = value
+  }, [value])
+  return ref.current
 }

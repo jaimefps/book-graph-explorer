@@ -51,6 +51,7 @@ export const EntryMenu = () => {
           />
         }
         sx={{
+          fontSize: "0.9rem",
           textTransform: "none",
           color: "darkslategray",
           background: "beige",
