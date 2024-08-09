@@ -40,7 +40,7 @@ export const Home = () => {
               size="large"
               variant="contained"
               onClick={() => {
-                navigate("/graph")
+                navigate("/explore")
               }}
               sx={{
                 width: 200,

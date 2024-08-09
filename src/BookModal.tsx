@@ -158,7 +158,7 @@ const Notes: React.FC<{
           aria-label="save note for entry"
           style={{
             marginLeft: "0.8rem",
-            background: "orange",
+            background: "orangered",
           }}
           onClick={() => handleSubmit(focusNode)}
         >
@@ -243,82 +243,135 @@ export const BookModal = () => {
         <div className="book-content">
           <div className="book-content-col-left">
             <div className="book-entry-name">
-              <Tooltip
-                title="Start from here the next time you open the Book Reader."
-                PopperProps={{ style: { width: 160 } }}
+              <span className="book-pagination-large">
+                <Tooltip title="previous entry">
+                  <span>
+                    <IconButton
+                      aria-label="go to previous entry"
+                      disabled={isFirstEntry}
+                      onClick={() => {
+                        const newNodeName = book[focusIdx - 1][0]
+                        setFocusNode(newNodeName)
+                      }}
+                    >
+                      <PassPageIcon
+                        className="book-pagination-icon"
+                        style={{
+                          transform: "rotate(180deg)",
+                          opacity: isFirstEntry ? 0.3 : 1,
+                        }}
+                      />
+                    </IconButton>
+                  </span>
+                </Tooltip>
+              </span>
+              {/* SPLIT */}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                }}
               >
-                <IconButton
-                  aria-label="bookmark this entry"
-                  onClick={() => {
-                    if (storage.bookmark === null) {
-                      setBookmark(focusNode)
-                      return
-                    }
-                    if (storage.bookmark === focusNode) {
-                      const confirm = window.confirm(
-                        "Are you sure you want to clear your bookmark? You'll start from the beginning the next time you open Book Reader."
-                      )
-                      if (confirm) clearBookmark()
-                      return
-                    }
-                    if (storage.bookmark !== null) {
-                      const confirm = window.confirm(
-                        `Are you sure you want to change your bookmark from ${storage.bookmark} to ${focusNode}?`
-                      )
-                      if (confirm) setBookmark(focusNode)
-                      return
-                    }
-                  }}
+                <Tooltip
+                  title="Start from here the next time you open the Book Reader."
+                  PopperProps={{ style: { width: 160 } }}
                 >
-                  <BookmarkIcon
-                    className="book-entry-name-icon"
-                    style={{
-                      color:
-                        storage.bookmark === focusNode
-                          ? "orangered"
-                          : undefined,
+                  <IconButton
+                    aria-label="bookmark this entry"
+                    onClick={() => {
+                      if (storage.bookmark === null) {
+                        setBookmark(focusNode)
+                        return
+                      }
+                      if (storage.bookmark === focusNode) {
+                        const confirm = window.confirm(
+                          "Are you sure you want to clear your bookmark? You'll start from the beginning the next time you open Book Reader."
+                        )
+                        if (confirm) clearBookmark()
+                        return
+                      }
+                      if (storage.bookmark !== null) {
+                        const confirm = window.confirm(
+                          `Are you sure you want to change your bookmark from ${storage.bookmark} to ${focusNode}?`
+                        )
+                        if (confirm) setBookmark(focusNode)
+                        return
+                      }
                     }}
-                  />
-                </IconButton>
-              </Tooltip>
-              <div className="book-entry-name-text">{focusNode}</div>
-              <Tooltip title="Save to favorites">
-                <IconButton
-                  aria-label="save to favorites"
-                  onClick={() => {
-                    if (storage.favorites[focusNode]) {
-                      clearFavorite(focusNode)
-                    } else {
-                      setFavorite(focusNode)
-                    }
-                  }}
-                >
-                  <StarIcon
-                    className="book-entry-name-icon"
-                    style={{
-                      color: isFavorite ? "gold" : undefined,
+                  >
+                    <BookmarkIcon
+                      className="book-entry-name-icon"
+                      style={{
+                        color:
+                          storage.bookmark === focusNode
+                            ? "orangered"
+                            : undefined,
+                      }}
+                    />
+                  </IconButton>
+                </Tooltip>
+                <div className="book-entry-name-text">{focusNode}</div>
+                <Tooltip title="Save to favorites">
+                  <IconButton
+                    aria-label="save to favorites"
+                    onClick={() => {
+                      if (storage.favorites[focusNode]) {
+                        clearFavorite(focusNode)
+                      } else {
+                        setFavorite(focusNode)
+                      }
                     }}
-                  />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="open notes">
-                <IconButton
-                  aria-label="open notes"
-                  className="book-entry-notes-button"
-                  onClick={() => setOpenNotes(true)}
-                  style={{
-                    position: "absolute",
-                    right: 0,
-                    top: 1,
-                  }}
-                >
-                  <ChatIcon
+                  >
+                    <StarIcon
+                      className="book-entry-name-icon"
+                      style={{
+                        color: isFavorite ? "gold" : undefined,
+                      }}
+                    />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title="open notes">
+                  <IconButton
+                    aria-label="open notes"
+                    className="book-entry-notes-button"
+                    onClick={() => setOpenNotes(true)}
                     style={{
-                      color: "darkseagreen",
+                      position: "absolute",
+                      right: 0,
+                      top: 1,
                     }}
-                  />
-                </IconButton>
-              </Tooltip>
+                  >
+                    <ChatIcon
+                      style={{
+                        color: "darkseagreen",
+                      }}
+                    />
+                  </IconButton>
+                </Tooltip>
+              </div>
+              {/* SPLIT */}
+              <span className="book-pagination-large">
+                <Tooltip title="next entry">
+                  <span>
+                    <IconButton
+                      aria-label="go to next entry"
+                      disabled={isLastEntry}
+                      onClick={() => {
+                        const newNodeName = book[focusIdx + 1][0]
+                        setFocusNode(newNodeName)
+                      }}
+                    >
+                      <PassPageIcon
+                        className="book-pagination-icon"
+                        style={{
+                          opacity: isLastEntry ? 0.3 : 1,
+                        }}
+                      />
+                    </IconButton>
+                  </span>
+                </Tooltip>
+              </span>
             </div>
             <div className="book-entry-content">
               <div className="book-entry-content-text">

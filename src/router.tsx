@@ -54,7 +54,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/graph",
+        path: "/explore",
         element: <GraphPage />,
       },
       {

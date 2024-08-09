@@ -2248,15 +2248,7 @@ export const book = [
         la: "",
       },
       // scholium must have parent as proof
-      proof: [
-        "e2p40",
-        "e2p29cor",
-        "e2p18sch",
-        "e2p38cor",
-        "e2p39",
-        "e2p39cor",
-        "e2p40",
-      ],
+      proof: ["e2p40", "e2p29cor", "e2p18sch", "e2p38cor", "e2p39", "e2p39cor"],
       see: ["nineteenth proposition of the seventh book of Euclid"],
     },
   ],

@@ -40,7 +40,7 @@ const LinkExternal: React.FC<{
 
 export const AppBar = () => {
   const atAbout = useMatch("/about/*")
-  const atGraph = useMatch("/graph/*")
+  const atGraph = useMatch("/explore/*")
 
   return (
     <div className="appbar-container">
@@ -52,7 +52,7 @@ export const AppBar = () => {
         </div>
         <div className="appbar-graph">
           <AppLink
-            to="/graph"
+            to="/explore"
             style={{ fontWeight: atGraph ? "bold" : undefined }}
           >
             explore
