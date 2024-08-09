@@ -243,7 +243,7 @@ export const Graph = () => {
         layout={{
           name: "breadthfirst",
           avoidOverlap: true,
-          spacingFactor: edgeCount > 25 ? 3 : 2,
+          spacingFactor: edgeCount > 50 ? 4 : edgeCount > 25 ? 3 : 2,
           directed: true,
           maximal: true,
           grid: true,
@@ -265,10 +265,6 @@ export const Graph = () => {
             },
           },
           {
-            selector: "node.selected",
-            style: { color: "green" },
-          },
-          {
             selector: "edge",
             style: {
               width: 6,
@@ -277,6 +273,12 @@ export const Graph = () => {
               "target-arrow-shape": "triangle",
               "curve-style": "bezier",
               events: "no",
+            },
+          },
+          {
+            selector: "node[target]",
+            style: {
+              "background-color": "orange",
             },
           },
         ]}

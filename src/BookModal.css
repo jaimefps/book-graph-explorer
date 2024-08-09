@@ -69,7 +69,7 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
-  overflow-y: auto !important;
+  overflow-y: scroll;
 }
 .book-entry-notes-stored {
   display: flex;
@@ -199,7 +199,7 @@
   padding: 3.5rem 3rem 2rem 3rem;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
-  overflow: auto;
+  overflow: scroll;
 
   display: flex;
   flex-direction: column;

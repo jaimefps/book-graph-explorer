@@ -10,11 +10,6 @@ class GraphNode {
   }
 }
 
-const nodeHighlight = {
-  background: "orange",
-  backgroundColor: "orange",
-}
-
 class Graph {
   nodes: Record<string, GraphNode> = {}
 
@@ -101,9 +96,7 @@ class Graph {
         data: {
           id: curr,
           label: curr,
-        },
-        style: {
-          ...(shouldHighlight ? nodeHighlight : null),
+          ...(shouldHighlight ? { target: shouldHighlight } : {}),
         },
         selected: shouldHighlight,
       })
@@ -135,9 +128,7 @@ class Graph {
         data: {
           id: curr,
           label: curr,
-        },
-        style: {
-          ...(shouldHighlight ? nodeHighlight : null),
+          ...(shouldHighlight ? { target: shouldHighlight } : {}),
         },
         selected: shouldHighlight,
       })
@@ -169,9 +160,7 @@ class Graph {
         data: {
           id: curr,
           label: curr,
-        },
-        style: {
-          ...(shouldHighlight ? nodeHighlight : null),
+          ...(shouldHighlight ? { target: shouldHighlight } : {}),
         },
         selected: shouldHighlight,
       })

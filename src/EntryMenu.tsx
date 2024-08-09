@@ -1,6 +1,7 @@
 import "./EntryMenu.css"
 import { useState } from "react"
 import StarIcon from "@mui/icons-material/Star"
+import CommentIcon from "@mui/icons-material/Comment"
 import BookmarkIcon from "@mui/icons-material/Bookmark"
 import { useExploreContext } from "./context/ExploreContext"
 import { useStorageContext } from "./context/StorageContext"
@@ -79,7 +80,7 @@ export const EntryMenu = () => {
             style: {
               maxHeight: ITEM_HEIGHT * 6.5,
               marginTop: 3,
-              width: "18ch",
+              width: "25ch",
             },
           },
         }}
@@ -87,6 +88,7 @@ export const EntryMenu = () => {
         {options.map((option) => {
           const isFavorite = storage.favorites[option]
           const isBookmark = storage.bookmark === option
+          const hasNotes = storage.notes[option]?.length
           return (
             <MenuItem
               key={option}
@@ -103,7 +105,19 @@ export const EntryMenu = () => {
             >
               <>
                 {option}
-                <div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.4rem",
+                  }}
+                >
+                  <CommentIcon
+                    style={{
+                      color: hasNotes ? "darkseagreen" : "transparent",
+                    }}
+                    fontSize="small"
+                  />
                   <StarIcon
                     style={{ color: isFavorite ? "gold" : "transparent" }}
                     fontSize="small"

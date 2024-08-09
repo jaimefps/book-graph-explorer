@@ -11,15 +11,10 @@
 
 ---
 
-- TODO:notes
-- apply portrait-only alert to book modal.
-
----
-
-MAIN TODOS:
+TODOS:
 
 - about pages
-- route graph => explore
+- apply portrait-only alert to book modal (maybe to app as a whole).
 - only a quick snackbar that alerts that the bookmark was updated
 - add a a middle step between clicking a node and opening the book reader...?
 - move book/opensource to about, then use that space for feedbackfish
