@@ -27,7 +27,7 @@ const Alert = () => {
         />
       </div>
       <div>
-        This app does not work in landscape mode. To continue, please orient
+        This app does not support landscape mode. To continue, please orient
         your device to portrait mode.
       </div>
     </div>
