@@ -3,7 +3,7 @@ import { GraphMode } from "./types"
 import HubIcon from "@mui/icons-material/Hub"
 import { useExploreContext } from "./context/ExploreContext"
 import MenuBookIcon from "@mui/icons-material/MenuBook"
-import { useStorageContext } from "./context/StorateContext"
+import { useStorageContext } from "./context/StorageContext"
 import { book } from "./lib/book"
 
 export const ModePicker: React.FC<{

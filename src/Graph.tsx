@@ -1,5 +1,7 @@
+import "./Graph.css"
 import { isMobile } from "react-device-detect"
 import { GraphMode, GraphQuery, RenderData } from "./types"
+import { useExploreContext } from "./context/ExploreContext"
 import { useRef, useState, useEffect, useMemo, useCallback } from "react"
 import IconButton from "@mui/material/IconButton"
 import CloseIcon from "@mui/icons-material/Close"
@@ -7,10 +9,7 @@ import CytoscapeComponent from "react-cytoscapejs"
 import Snackbar from "@mui/material/Snackbar"
 import Tooltip from "@mui/material/Tooltip"
 import Button from "@mui/material/Button"
-import { BookModal } from "./BookModal"
 import { bookGraph } from "./lib/graph"
-import "./Graph.css"
-import { useExploreContext } from "./context/ExploreContext"
 
 const ZoomAlert: React.FC<{
   openAlert: boolean
@@ -40,7 +39,7 @@ const ZoomAlert: React.FC<{
       ContentProps={{
         style: {
           color: "black",
-          background: "orange",
+          background: "darkseagreen",
           fontSize: "1.1rem",
           textAlign: "center",
 
@@ -72,8 +71,7 @@ function getRenderData(query: GraphQuery) {
 export const Graph = () => {
   const cyRef = useRef<cytoscape.Core>()
   const [openAlert, setOpenAlert] = useState(false)
-  const { mode, inputNodes, focusNode, setFocusNode, reset } =
-    useExploreContext()
+  const { mode, inputNodes, setFocusNode, reset } = useExploreContext()
 
   const handleAlertClose = useCallback(
     () => setOpenAlert(false),
@@ -181,7 +179,10 @@ export const Graph = () => {
             className="graph-button"
             variant="outlined"
             onClick={() => {
-              if (window.confirm("Are you sure you want to reset?")) {
+              const confirm = window.confirm(
+                "Are you sure you want to leave this graph?"
+              )
+              if (confirm) {
                 reset()
               }
             }}

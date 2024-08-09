@@ -3,7 +3,7 @@ import { AppBar } from "./AppBar"
 import { BookModal } from "./BookModal"
 import { Outlet } from "react-router-dom"
 import { ExploreProvider } from "./context/ExploreContext"
-import { StorageProvider } from "./context/StorateContext"
+import { StorageProvider } from "./context/StorageContext"
 
 export const App = () => {
   return (

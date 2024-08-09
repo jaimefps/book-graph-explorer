@@ -1,5 +1,5 @@
 import "./BookModal.css"
-import { forwardRef } from "react"
+import React, { forwardRef } from "react"
 import Slide from "@mui/material/Slide"
 import Dialog from "@mui/material/Dialog"
 import CloseIcon from "@mui/icons-material/Close"
@@ -10,10 +10,11 @@ import StarIcon from "@mui/icons-material/Star"
 import MenuBookIcon from "@mui/icons-material/MenuBook"
 import IconButton from "@mui/material/IconButton"
 import PassPageIcon from "@mui/icons-material/ArrowForwardIos"
-import { Tooltip } from "@mui/material"
+import ChatIcon from "@mui/icons-material/Chat"
 import { bookGraph, getNodeIdx, getNodeText } from "./lib/graph"
+import { useStorageContext } from "./context/StorageContext"
+import { Tooltip } from "@mui/material"
 import { book } from "./lib/book"
-import { useStorageContext } from "./context/StorateContext"
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & {
@@ -129,18 +130,32 @@ export const BookModal = () => {
                   />
                 </IconButton>
               </Tooltip>
+              <IconButton
+                aria-label="open notes"
+                className="book-entry-notes-button"
+                onClick={() => console.log("notes")}
+                style={{
+                  position: "absolute",
+                  right: 0,
+                }}
+              >
+                <ChatIcon
+                  style={{
+                    color: "darkseagreen",
+                  }}
+                />
+              </IconButton>
             </div>
             <div className="book-entry-content">
               <div className="book-entry-content-text">
                 {getNodeText(focusNode, lang)}
                 {parents.length > 0 && (
                   <div className="book-entry-proof-group">
-                    <p className="book-proofs-label">proved via:</p>{" "}
+                    <p className="book-proofs-label">proved via:</p>
                     {parents.map((proof, idx, list) => (
-                      <>
+                      <React.Fragment key={proof}>
                         <Tooltip title="jump to entry">
                           <button
-                            key={proof}
                             className="book-entry-proof"
                             onClick={() => setFocusNode(proof)}
                           >
@@ -148,13 +163,13 @@ export const BookModal = () => {
                           </button>
                         </Tooltip>
                         {idx < list.length - 1 && ","}
-                      </>
+                      </React.Fragment>
                     ))}
                   </div>
                 )}
               </div>
               <div className="book-entry-button-group">
-                <Tooltip title="go to previous entry">
+                <Tooltip title="previous entry">
                   <IconButton
                     aria-label="go to previous entry"
                     disabled={focusIdx === 0}
@@ -169,7 +184,7 @@ export const BookModal = () => {
                     />
                   </IconButton>
                 </Tooltip>
-                <Tooltip title="go to next entry">
+                <Tooltip title="next entry">
                   <IconButton
                     aria-label="go to next entry"
                     disabled={focusIdx === book.length - 1}

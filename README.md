@@ -11,8 +11,9 @@
 
 ---
 
-- localstorage context
-- bookmark, favorite, notes
+- TODO:notes
+- NOTE: responsive notes & reader
+- implement not taker
 
 ---
 
