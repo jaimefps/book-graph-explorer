@@ -13,7 +13,6 @@
 
 - TODO:notes
 - apply portrait-only alert to book modal.
-- jump to favorite, bookmark, any entry
 
 ---
 
