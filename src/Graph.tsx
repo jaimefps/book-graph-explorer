@@ -114,9 +114,9 @@ export const Graph = () => {
       const cy = cyRef.current
 
       let isDragging = false
+      let startPosition = { x: 0, y: 0 }
 
       const handleTouchStart = (event: cytoscape.EventObject) => {
-        // Only proceed if there's a single touch point (not a pinch)
         if (
           event.originalEvent instanceof TouchEvent &&
           event.originalEvent.touches.length > 1
@@ -126,6 +126,10 @@ export const Graph = () => {
         }
 
         isDragging = true // Assume intent to drag unless proven otherwise
+        startPosition = {
+          x: event.position.x,
+          y: event.position.y,
+        } // Store the start position
         event.target.grabbed()
       }
 
@@ -138,12 +142,20 @@ export const Graph = () => {
       const handleTouchEnd = (event: cytoscape.EventObject) => {
         if (!isDragging) return
 
-        // If dragging ends, check if the node should be selected
-        if (
-          event.originalEvent instanceof TouchEvent &&
-          event.originalEvent.changedTouches.length === 1
-        ) {
-          // Consider it a tap if dragging was minimal
+        const endPosition = {
+          x: event.position.x,
+          y: event.position.y,
+        }
+
+        const distanceMoved = Math.sqrt(
+          Math.pow(endPosition.x - startPosition.x, 2) +
+            Math.pow(endPosition.y - startPosition.y, 2)
+        )
+
+        const movementThreshold = 10 // Define a small threshold
+
+        if (distanceMoved <= movementThreshold) {
+          // If the movement was minimal, treat it as a tap
           const node = event.target
           const nodeId = node.id()
           setFocus.current(nodeId)
@@ -159,10 +171,13 @@ export const Graph = () => {
 
       // regular mouse clicks:
       cy.on("click", "node", (event) => {
-        event.stopPropagation()
-        const node = event.target
-        const nodeId = node.id()
-        setFocus.current(nodeId)
+        if (!isDragging) {
+          // Only allow click if not dragging
+          event.stopPropagation()
+          const node = event.target
+          const nodeId = node.id()
+          setFocus.current(nodeId)
+        }
       })
     }
   }, [])
