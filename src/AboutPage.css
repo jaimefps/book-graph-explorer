@@ -81,7 +81,6 @@
 @media (max-width: 850px) {
   .about-appbar {
     padding: 0 1rem;
-    justify-content: center;
     gap: 1rem;
   }
   .about-tab {
