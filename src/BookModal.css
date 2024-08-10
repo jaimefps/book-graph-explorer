@@ -278,6 +278,10 @@
     top: 100vh;
     left: 0;
   }
+  .book-notes-drawer.instant {
+    /* avoid transitions during demo */
+    transition: none !important;
+  }
   .book-notes-drawer.open {
     top: 0;
   }
@@ -321,6 +325,7 @@
   .book-entry-content-text {
     font-size: 1rem;
     padding: 2rem 1.5rem;
+    border-radius: 16px;
   }
   .book-pagination-icon {
     font-size: 1.2rem !important;

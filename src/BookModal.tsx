@@ -23,6 +23,8 @@ import { EntryMenu } from "./EntryMenu"
 import { usePrevious } from "./lib/utils"
 import { book } from "./lib/book"
 import cs from "clsx"
+import { isMobile } from "react-device-detect"
+import { useDemo } from "./context/DemoContext"
 
 const UpdateAlert = () => {
   const [alert, setAlert] = useState<any>(undefined)
@@ -102,7 +104,8 @@ function formatDate(createdAt: number) {
 const Notes: React.FC<{
   noteText: string
   setNoteText: (s: string) => void
-}> = ({ noteText, setNoteText }) => {
+  demoId: string
+}> = ({ noteText, setNoteText, demoId }) => {
   const { storage, addNote, clearNote } = useStorageContext()
   const { focusNode } = useExploreContext()
 
@@ -137,7 +140,7 @@ const Notes: React.FC<{
   }
 
   return (
-    <div className="book-entry-notes">
+    <div data-demo={demoId} className="book-entry-notes">
       <div ref={scrollRef} className="book-entry-notes-stored-group">
         {notes.map((note, idx) => {
           const thisKey = `${note.text}_${note.createdAt}`
@@ -223,10 +226,10 @@ const Transition = forwardRef(function Transition(
 })
 
 export const BookModal = () => {
-  const [openNotes, setOpenNotes] = useState(false)
+  const { enabled } = useDemo()
   const [noteText, setNoteText] = useState("")
-
-  const { focusNode, setFocusNode, lang } = useExploreContext()
+  const { focusNode, setFocusNode, openNotes, setOpenNotes, lang } =
+    useExploreContext()
   const { storage, setBookmark, clearBookmark, setFavorite, clearFavorite } =
     useStorageContext()
 
@@ -234,7 +237,7 @@ export const BookModal = () => {
   // the notes, to avoid adding notes to wrong entry:
   useEffect(() => {
     setOpenNotes(false)
-  }, [focusNode])
+  }, [setOpenNotes, focusNode])
 
   // todo: consider if there is
   // a better way than this:
@@ -311,11 +314,17 @@ export const BookModal = () => {
               <MenuBookIcon className="book-appbar-reader-icon" />
               <span className="book-appbar-logo-ext">Book</span> Reader
             </div>
-            <div className="entry-menu-large">
+            <div
+              data-demo={isMobile ? undefined : "book-controls"}
+              className="entry-menu-large"
+            >
               <EntryMenu /> {jumpToBookmark}
             </div>
           </div>
-          <div className="entry-menu-small">
+          <div
+            data-demo={isMobile ? "book-controls" : undefined}
+            className="entry-menu-small"
+          >
             <EntryMenu /> {jumpToBookmark}
           </div>
           <div className="book-appbar-col-right">
@@ -330,7 +339,7 @@ export const BookModal = () => {
         </div>
         <div className="book-content">
           <div className="book-content-col-left">
-            <div className="book-entry-name">
+            <div data-demo="entry-header" className="book-entry-name">
               <span className="book-pagination-large">
                 <Tooltip title="previous entry">
                   <span>
@@ -355,6 +364,7 @@ export const BookModal = () => {
               </span>
               {/* SPLIT */}
               <div
+                id="demo-book-entry-name"
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -419,6 +429,7 @@ export const BookModal = () => {
                 </Tooltip>
                 <Tooltip title="open notes">
                   <IconButton
+                    data-demo="mobile-open-notes"
                     aria-label="open notes"
                     className="book-entry-notes-button"
                     onClick={() => setOpenNotes(true)}
@@ -463,7 +474,10 @@ export const BookModal = () => {
               <div className="book-entry-content-text">
                 {getNodeText(focusNode, lang)}
                 {parents.length > 0 && (
-                  <div className="book-entry-proof-group">
+                  <div
+                    data-demo="entry-proofs"
+                    className="book-entry-proof-group"
+                  >
                     <p className="book-proofs-label">proved via:</p>
                     {parents.map((proof, idx, list) => (
                       <React.Fragment key={proof}>
@@ -525,10 +539,15 @@ export const BookModal = () => {
             </div>
           </div>
           <div className="book-content-col-right">
-            <Notes noteText={noteText} setNoteText={setNoteText} />
+            <Notes
+              demoId={isMobile ? "" : "book-notes"}
+              noteText={noteText}
+              setNoteText={setNoteText}
+            />
           </div>
           <div
             className={cs("book-notes-drawer", {
+              instant: enabled,
               open: openNotes,
             })}
           >
@@ -552,7 +571,11 @@ export const BookModal = () => {
                 </IconButton>
               </Tooltip>
             </div>
-            <Notes noteText={noteText} setNoteText={setNoteText} />
+            <Notes
+              demoId={isMobile ? "book-notes" : ""}
+              noteText={noteText}
+              setNoteText={setNoteText}
+            />
           </div>
         </div>
       </div>

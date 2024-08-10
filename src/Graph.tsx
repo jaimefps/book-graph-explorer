@@ -198,10 +198,12 @@ export const Graph = () => {
 
       <div className="graph-header">
         <Tooltip title={headerText} enterTouchDelay={0}>
-          <div className="graph-header-text">{headerText}</div>
+          <div data-demo="query-details" className="graph-header-text">
+            {headerText}
+          </div>
         </Tooltip>
 
-        <div className="graph-header-button-group">
+        <div data-demo="graph-controls" className="graph-header-button-group">
           <Button
             style={{
               width: "6rem",

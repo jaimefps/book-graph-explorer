@@ -10,6 +10,8 @@ const ExploreContext = React.createContext<{
   setInputNodes: React.Dispatch<React.SetStateAction<string[] | undefined>>
   lang: Translation
   setLang: React.Dispatch<React.SetStateAction<Translation>>
+  openNotes: boolean
+  setOpenNotes: React.Dispatch<React.SetStateAction<boolean>>
   reset: VoidFunction
 } | null>(null)
 
@@ -19,11 +21,13 @@ export const ExploreProvider: React.FC<{
   const [mode, setMode] = useState<GraphMode>()
   const [focusNode, setFocusNode] = useState<string>()
   const [inputNodes, setInputNodes] = useState<string[]>()
+  const [openNotes, setOpenNotes] = useState(false)
   const [lang, setLang] = useState<Translation>("en")
 
   const reset = useCallback(() => {
     setInputNodes(undefined)
     setFocusNode(undefined)
+    setOpenNotes(false)
     setMode(undefined)
   }, [])
 
@@ -38,6 +42,8 @@ export const ExploreProvider: React.FC<{
         setInputNodes,
         lang,
         setLang,
+        openNotes,
+        setOpenNotes,
         reset,
       }}
     >

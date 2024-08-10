@@ -77,7 +77,10 @@ export const NodePicker: React.FC<{
           explore?
         </h2>
         <div className="node-picker-controls">
-          <div className="node-picker-autocomplete-group">
+          <div
+            data-demo="entry-pickers"
+            className="node-picker-autocomplete-group"
+          >
             <AutoComplete
               className="node-picker-autocomplete"
               disableClearable
@@ -138,7 +141,7 @@ export const NodePicker: React.FC<{
           <div className="node-picker-button-group">
             <Button
               {...sharedProps}
-              id="demo-submit"
+              data-demo="submit-query"
               style={{
                 ...sharedProps.style,
                 background: "darkseagreen",
@@ -180,7 +183,10 @@ export const NodePicker: React.FC<{
         </div>
       </div>
       <div className="node-picker-col-right">
-        <div className="node-picker-entry-label-group">
+        <div
+          data-demo="entry-preview-tabs"
+          className="node-picker-entry-label-group"
+        >
           <div
             role="button"
             onClick={() => setPreview(fromNode)}

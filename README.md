@@ -12,22 +12,24 @@
 ---
 
 - 0 welcome
-- 1 who spinoza is
+- 1 spinoza
 - 2 notation
 - 3 mode picker:book
 - 4 mode picker:connection
-- 5 node picker: inputs
+- 5 node picker: entry
 - 6 node picker: preview
-- 7 node picker: submit (node with proofs)
-- 8 graph: they can zoom or click node
-- 9 book: appbar controls
-- 10 book: appbar controls
-- 11 book: notes
-- 12 book: fav & bookmark
-- 13 graph: recenter & reset
-- 14 credits
+- 7 node picker: submit
+- 8 graph: query details
+- 9 book: show book page
+- 10 book: entry header (fav, etc)
+- 11 book: entry proofs
+- 12 book: appbar controls
+- 13 (mobile) open notes
+- 14 book: notes
+- 15 graph: recenter & reset
+- 16 credits
 
--- reset all states onExit and return to landing page
+-- reset all states onExit and go to /explore
 
 ---
 

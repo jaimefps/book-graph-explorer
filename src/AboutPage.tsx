@@ -18,17 +18,25 @@ const BaseLink: React.FC<{
 }
 
 export const Credits = () => {
-  return <div className="about-credits">credits</div>
+  return (
+    <div data-demo="credits" className="about-credits">
+      credits
+    </div>
+  )
 }
 
 export const Notation = () => {
-  return <div className="about-notation">notation</div>
+  return (
+    <div data-demo="notation" className="about-notation">
+      notation
+    </div>
+  )
 }
 
 export const Bio = () => {
   return (
     <div className="about-spinoza">
-      <div className="about-spinoza-col">
+      <div data-demo="spinoza" className="about-spinoza-col">
         <div className="about-header-row">
           <img
             src={spinozaHague}
