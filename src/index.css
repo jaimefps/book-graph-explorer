@@ -21,14 +21,6 @@ body {
   box-sizing: border-box;
 }
 
-/* INTROJS */
-/* prevent backwards navigation during
- demo for sake of simplicity */
-
-.introjs-prevbutton {
-  display: none;
-}
-
 /* SCROLLBAR */
 /* For WebKit browsers (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {

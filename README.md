@@ -11,6 +11,16 @@
 
 ---
 
+demo impacts:
+
+- location
+- setMode
+- setInputNodes
+- setFocusNode
+- setOpenNotes
+
+---
+
 - 0 welcome
 - 1 spinoza
 - 2 notation
@@ -30,6 +40,7 @@
 - 16 credits
 
 -- reset all states onExit and go to /explore
+-- shut down & reset demo if user clicks back.
 
 ---
 
