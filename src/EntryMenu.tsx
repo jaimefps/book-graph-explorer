@@ -45,7 +45,6 @@ export const EntryMenu = () => {
         endIcon={
           <MoreVertIcon
             style={{
-              // color: "darkseagreen",
               color: "darkslategray",
             }}
           />
@@ -53,19 +52,19 @@ export const EntryMenu = () => {
         sx={{
           textTransform: "none",
           color: "darkslategray",
-          background: "beige",
+          background: "ghostwhite",
           fontWeight: "bold",
           ":focus": {
-            background: "beige",
+            background: "ghostwhite",
             opacity: 0.8,
           },
           ":hover": {
-            background: "beige",
+            background: "ghostwhite",
             opacity: 0.8,
           },
         }}
       >
-        Entries
+        All entries
       </Button>
       <Menu
         id="long-menu"

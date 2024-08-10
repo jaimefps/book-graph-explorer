@@ -291,6 +291,10 @@
   .book-notes-drawer-appbar-title {
     color: darkslategray;
   }
+  .book-appbar-col-left,
+  .book-appbar-col-right {
+    flex: unset;
+  }
   .book-appbar-col-left {
     justify-content: space-between;
     font-weight: 700;

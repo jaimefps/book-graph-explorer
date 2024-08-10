@@ -73,18 +73,6 @@ const UpdateAlert = () => {
   )
 }
 
-function getRandomPlaceholder() {
-  const placeholders = [
-    "Spot the hidden pattern in the chaos?",
-    "Got a mind-blowing insight?",
-    "What's your latest epiphany?",
-    "Seen anything intriguing lately?",
-  ]
-  const max = placeholders.length
-  const idx = Math.floor(Math.random() * max)
-  return placeholders[idx]
-}
-
 const placeHolderItem = [
   {
     createdAt: 1,
@@ -163,7 +151,7 @@ const Notes: React.FC<{
                 // boxShadow: isPlaceholder ? "none" : undefined,
                 background: isPlaceholder ? "beige" : undefined,
                 color: isPlaceholder ? "darkslategray" : undefined,
-                opacity: isPlaceholder ? 0.5 : undefined,
+                opacity: isPlaceholder ? 0.2 : undefined,
               }}
             >
               <div className="notes-stored-left">
@@ -175,19 +163,21 @@ const Notes: React.FC<{
 
               <div className="notes-stored-right">
                 {!isPlaceholder && (
-                  <IconButton
-                    aria-label="delete note"
-                    onClick={() => clearNote(focusNode, idx)}
-                    style={{ border: "1px solid lightgray" }}
-                    size="small"
-                  >
-                    <DeleteForeverIcon
-                      style={{
-                        color: "lightgray",
-                        fontSize: "1rem",
-                      }}
-                    />
-                  </IconButton>
+                  <Tooltip title="delete note">
+                    <IconButton
+                      aria-label="delete note"
+                      onClick={() => clearNote(focusNode, idx)}
+                      style={{ border: "1px solid lightgray" }}
+                      size="small"
+                    >
+                      <DeleteForeverIcon
+                        style={{
+                          color: "lightgray",
+                          fontSize: "1rem",
+                        }}
+                      />
+                    </IconButton>
+                  </Tooltip>
                 )}
               </div>
             </div>
@@ -197,7 +187,7 @@ const Notes: React.FC<{
       <div className="book-entry-notes-form">
         <textarea
           value={noteText}
-          placeholder={getRandomPlaceholder()}
+          placeholder="Your insights here..."
           className="book-entry-form-input"
           onChange={(ev) => setNoteText(ev.target.value)}
           onKeyDown={(ev) => {
@@ -277,19 +267,19 @@ export const BookModal = () => {
       sx={{
         textTransform: "none",
         color: "darkslategray",
-        background: "beige",
+        background: "ghostwhite",
         fontWeight: "bold",
         ":focus": {
-          background: "beige",
+          background: "ghostwhite",
           opacity: 0.8,
         },
         ":hover": {
-          background: "beige",
+          background: "ghostwhite",
           opacity: 0.8,
         },
         ":disabled": {
           color: "darkslategray",
-          background: "beige",
+          background: "ghostwhite",
           opacity: 0.4,
         },
       }}
@@ -331,7 +321,7 @@ export const BookModal = () => {
           <div className="book-appbar-col-right">
             <IconButton
               aria-label="close"
-              style={{ color: "white" }}
+              style={{ color: "ghostwhite" }}
               onClick={handleClose}
             >
               <CloseIcon />
@@ -371,10 +361,7 @@ export const BookModal = () => {
                   gap: "0.5rem",
                 }}
               >
-                <Tooltip
-                  title="Start from here the next time you open the Book Reader."
-                  PopperProps={{ style: { width: 160 } }}
-                >
+                <Tooltip title="Bookmark this entry">
                   <IconButton
                     aria-label="bookmark this entry"
                     onClick={() => {
