@@ -3,7 +3,7 @@
 }
 .graph-header {
   height: var(--graph-controls-height);
-  background: rgb(41, 69, 69);
+  background: var(--dark-base);
   padding: 0rem 2rem;
 
   display: flex;

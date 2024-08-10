@@ -1,13 +1,14 @@
 import {
-  Outlet,
   useNavigate,
   RouterProvider,
   createBrowserRouter,
+  Navigate,
 } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { GraphPage } from "./GraphPage"
-import { Home } from "./Home"
+import { HomePage } from "./HomePage"
 import { App } from "./App"
+import { AboutPage, Bio } from "./AboutPage"
 
 const NoMatchRedirect = () => {
   const navigate = useNavigate()
@@ -51,7 +52,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <HomePage />,
       },
       {
         path: "/explore",
@@ -59,33 +60,28 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: (
-          <div>
-            <div className="about-header">about</div>
-            <div className="about-controls">controls</div>
-            <Outlet />
-          </div>
-        ),
+        element: <AboutPage />,
         children: [
           {
-            path: "/about/author",
-            element: <div>author</div>,
+            index: true,
+            element: <Navigate to="/about/spinoza" />,
+          },
+          {
+            path: "/about/spinoza",
+            element: <Bio />,
+          },
+          {
+            path: "/about/notation",
+            element: <div>notation</div>,
+          },
+          {
+            path: "/about/credits",
+            element: <div>credits</div>,
           },
         ],
       },
     ],
   },
-  // {
-  //   path: "/sandbox",
-  //   element: (
-  //     <div
-  //       style={{
-  //         background: "red",
-  //         height: "100%",
-  //       }}
-  //     ></div>
-  //   ),
-  // },
 ])
 
 export const Router = () => <RouterProvider router={router} />

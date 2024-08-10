@@ -13,6 +13,7 @@ import { nodeOpts } from "./lib/book"
 
 const options = nodeOpts
 
+const OFF = "#f3f3f3"
 const ITEM_HEIGHT = 48
 
 export const EntryMenu = () => {
@@ -51,7 +52,6 @@ export const EntryMenu = () => {
           />
         }
         sx={{
-          fontSize: "0.9rem",
           textTransform: "none",
           color: "darkslategray",
           background: "beige",
@@ -114,17 +114,15 @@ export const EntryMenu = () => {
                   }}
                 >
                   <CommentIcon
-                    style={{
-                      color: hasNotes ? "darkseagreen" : "transparent",
-                    }}
+                    style={{ color: hasNotes ? "darkseagreen" : OFF }}
                     fontSize="small"
                   />
                   <StarIcon
-                    style={{ color: isFavorite ? "gold" : "transparent" }}
+                    style={{ color: isFavorite ? "gold" : OFF }}
                     fontSize="small"
-                  />{" "}
+                  />
                   <BookmarkIcon
-                    style={{ color: isBookmark ? "orangered" : "transparent" }}
+                    style={{ color: isBookmark ? "orangered" : OFF }}
                     fontSize="small"
                   />
                 </div>

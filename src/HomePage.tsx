@@ -1,9 +1,9 @@
 import Button from "@mui/material/Button"
 import { useNavigate } from "react-router-dom"
 import { Page } from "./Page"
-import "./Home.css"
+import "./HomePage.css"
 
-export const Home = () => {
+export const HomePage = () => {
   const navigate = useNavigate()
   return (
     <Page>
@@ -34,7 +34,7 @@ export const Home = () => {
                 },
               }}
             >
-              What is this?
+              Demo
             </Button>
             <Button
               size="large"

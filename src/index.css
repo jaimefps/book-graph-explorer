@@ -1,6 +1,7 @@
 :root {
   --bar-height: 3.5rem;
   --graph-controls-height: 3.5rem;
+  --dark-base: rgb(26, 43, 43);
 }
 
 body {

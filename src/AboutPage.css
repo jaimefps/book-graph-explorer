@@ -1,0 +1,116 @@
+.about-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.about-appbar {
+  height: var(--bar-height);
+  background: darkslategray;
+  background: var(--dark-base);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.about-tab {
+  border-color: darkseagreen !important;
+  color: darkseagreen !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  height: 2rem !important;
+}
+.about-tab:hover,
+.about-tab:focus {
+  opacity: 0.8;
+}
+
+.about-content {
+  flex: 1;
+  overflow: hidden;
+  background-color: darkslategray;
+  color: beige;
+  padding: 2rem;
+}
+
+.about-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.about-header {
+  font-size: 70px;
+  margin: 0;
+}
+.about-pic {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+}
+.about-text {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about-spinoza {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-spinoza-col {
+  max-width: 750px;
+  overflow: scroll;
+}
+
+.base-link {
+  color: var(--dark-base);
+  color: darkseagreen;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+@media (max-width: 850px) {
+  .about-appbar {
+    padding: 0 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .about-tab {
+    font-size: 0.8rem !important;
+    padding: 0 0.5rem !important;
+    height: 1.8rem !important;
+  }
+  .about-content {
+    padding: 1rem;
+  }
+  .about-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .about-header {
+    font-size: 30px;
+    margin: 0;
+  }
+  .about-pic {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+  }
+  .about-spinoza {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}

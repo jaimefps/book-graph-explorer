@@ -21,6 +21,13 @@ TODOS:
 
 ---
 
+- "about" page itself has tabs to split stuff up in:
+  - spinoza
+  - notation
+  - credit
+
+---
+
 - replace "What is this?" with "Demo"
 - maybe just force the demo mode if first time visit tracked in localStorage
 - the Open source github should link to the spinoza.io webpage
@@ -103,17 +110,6 @@ contact:
 - ettiene helmer
 - reddit philosophy channels
 - philosophy nous magazine or whoever published the thing about the previous app?
-
----
-
-- "about" page itself has tabs to split stuff up in:
-  - about me
-  - exegesis
-  - notation
-  - credits
-  - contact
-  - ?: about other apps out there
-  - ?: about further reading
 
 ---
 
