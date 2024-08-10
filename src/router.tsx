@@ -8,7 +8,7 @@ import { useEffect, useState } from "react"
 import { GraphPage } from "./GraphPage"
 import { HomePage } from "./HomePage"
 import { App } from "./App"
-import { AboutPage, Bio } from "./AboutPage"
+import { AboutPage, Bio, Credits, Notation } from "./AboutPage"
 
 const NoMatchRedirect = () => {
   const navigate = useNavigate()
@@ -72,11 +72,11 @@ const router = createBrowserRouter([
           },
           {
             path: "/about/notation",
-            element: <div>notation</div>,
+            element: <Notation />,
           },
           {
             path: "/about/credits",
-            element: <div>credits</div>,
+            element: <Credits />,
           },
         ],
       },

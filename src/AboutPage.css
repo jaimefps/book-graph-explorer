@@ -9,7 +9,8 @@
   background: var(--dark-base);
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: flex-end;
+  gap: 0.5rem;
   padding: 0 2rem;
 }
 
