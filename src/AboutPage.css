@@ -29,6 +29,7 @@
   flex: 1;
   overflow: hidden;
   background-color: darkslategray;
+  background-color: var(--dark-base);
   color: beige;
   padding: 2rem;
 }

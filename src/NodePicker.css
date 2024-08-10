@@ -13,7 +13,7 @@
   align-items: center;
   gap: 2rem;
 
-  background: darkslategray;
+  background: var(--dark-base);
   z-index: 5; /* bottom index */
 }
 .node-picker-header {
@@ -121,7 +121,7 @@
 
 @media (max-width: 900px) {
   .node-picker {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .node-picker-col-left {
     gap: 1rem;
@@ -152,7 +152,7 @@
     font-size: 12px;
   }
   .node-picker-col-left-arrow {
-    top: -18px;
+    top: unset;
     right: unset;
     left: calc(50% - 15px);
     bottom: -15px;

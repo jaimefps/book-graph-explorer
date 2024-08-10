@@ -250,7 +250,7 @@ export const Graph = () => {
         }}
         style={{
           height: "calc(100% - var(--graph-controls-height))",
-          background: "darkslategray",
+          background: "var(--dark-base)",
         }}
         stylesheet={[
           {

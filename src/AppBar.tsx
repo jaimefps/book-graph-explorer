@@ -3,6 +3,7 @@ import { AppLink } from "./AppLink"
 import Button from "@mui/material/Button"
 import { useMatch } from "react-router-dom"
 import AutoStoriesIcon from "@mui/icons-material/AutoStories"
+import cs from "clsx"
 
 const LinkExternal: React.FC<{
   href: string
@@ -50,7 +51,8 @@ export const AppBar = () => {
             spinoza<span className="appbar-logo-io">.io</span>
           </AppLink>
         </div>
-        <div className="appbar-graph">
+        <div className="appbar-arrow-link">
+          <div className={cs("appbar-arrow", { active: atGraph })} />
           <AppLink
             to="/explore"
             style={{ fontWeight: atGraph ? "bold" : undefined }}
@@ -58,7 +60,8 @@ export const AppBar = () => {
             explore
           </AppLink>
         </div>
-        <div className="appbar-about">
+        <div className="appbar-arrow-link">
+          <div className={cs("appbar-arrow", { active: atAbout })} />
           <AppLink
             to="/about"
             style={{ fontWeight: atAbout ? "bold" : undefined }}

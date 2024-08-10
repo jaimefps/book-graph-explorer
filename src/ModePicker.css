@@ -1,6 +1,7 @@
 .mode-picker {
   height: 100%;
   background: darkslategray;
+  background: var(--dark-base);
   display: flex;
   flex-direction: column;
   justify-content: center;
