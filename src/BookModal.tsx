@@ -18,7 +18,7 @@ import PanToolAltIcon from "@mui/icons-material/PanToolAlt"
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever"
 import Snackbar from "@mui/material/Snackbar"
 import AddCommentIcon from "@mui/icons-material/Save"
-import { Tooltip } from "@mui/material"
+import { Button, Tooltip } from "@mui/material"
 import { EntryMenu } from "./EntryMenu"
 import { usePrevious } from "./lib/utils"
 import { book } from "./lib/book"
@@ -263,6 +263,49 @@ export const BookModal = () => {
     setOpenNotes(false)
   }
 
+  const disabledJump = !storage.bookmark || storage.bookmark === focusNode
+  const jumpToBookmark = (
+    <Button
+      onClick={() => {
+        if (storage.bookmark) {
+          setFocusNode(storage.bookmark)
+        }
+      }}
+      disabled={disabledJump}
+      size="small"
+      variant="contained"
+      sx={{
+        textTransform: "none",
+        color: "darkslategray",
+        background: "beige",
+        fontWeight: "bold",
+        ":focus": {
+          background: "beige",
+          opacity: 0.8,
+        },
+        ":hover": {
+          background: "beige",
+          opacity: 0.8,
+        },
+        ":disabled": {
+          color: "darkslategray",
+          background: "beige",
+          opacity: 0.4,
+        },
+      }}
+      endIcon={
+        <BookmarkIcon
+          style={{
+            color: "orangered",
+            opacity: disabledJump ? 0.5 : undefined,
+          }}
+        />
+      }
+    >
+      Go to
+    </Button>
+  )
+
   return (
     <Dialog
       fullScreen
@@ -279,11 +322,11 @@ export const BookModal = () => {
               <span className="book-appbar-logo-ext">Book</span> Reader
             </div>
             <div className="entry-menu-large">
-              <EntryMenu />
+              <EntryMenu /> {jumpToBookmark}
             </div>
           </div>
           <div className="entry-menu-small">
-            <EntryMenu />
+            <EntryMenu /> {jumpToBookmark}
           </div>
           <div className="book-appbar-col-right">
             <IconButton

@@ -33,7 +33,6 @@ export const EntryMenu = () => {
   return (
     <div>
       <Button
-        // disableElevation
         className="book-entries-menu"
         size="small"
         id="book-entries-list"
@@ -66,7 +65,7 @@ export const EntryMenu = () => {
           },
         }}
       >
-        All entries
+        Entries
       </Button>
       <Menu
         id="long-menu"

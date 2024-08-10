@@ -4,6 +4,12 @@
   flex-direction: column;
 }
 
+.entry-menu-large,
+.entry-menu-small {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .entry-menu-small {
   display: none;
 }
@@ -324,7 +330,9 @@
     display: none;
   }
   .entry-menu-small {
-    display: unset;
+    padding: 0 0.5rem;
+    display: flex;
+    gap: 0.5rem;
   }
   .book-entry-button-group {
     display: flex;
