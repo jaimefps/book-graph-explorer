@@ -18,11 +18,11 @@ const BaseLink: React.FC<{
 }
 
 export const Credits = () => {
-  return <div className="about-credits"></div>
+  return <div className="about-credits">credits</div>
 }
 
 export const Notation = () => {
-  return <div className="about-notation"></div>
+  return <div className="about-notation">notation</div>
 }
 
 export const Bio = () => {

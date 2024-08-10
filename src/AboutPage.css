@@ -115,3 +115,9 @@
     gap: 2rem;
   }
 }
+
+@media (max-width: 600px) {
+  .about-appbar {
+    justify-content: center;
+  }
+}
