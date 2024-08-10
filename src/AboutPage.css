@@ -38,11 +38,10 @@
 .about-header-row {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
 }
 .about-header {
-  font-size: 70px;
+  font-size: 60px;
   margin: 0;
 }
 .about-pic {
@@ -65,7 +64,7 @@
 }
 
 .about-spinoza-col {
-  max-width: 750px;
+  max-width: 700px;
   overflow: scroll;
 }
 

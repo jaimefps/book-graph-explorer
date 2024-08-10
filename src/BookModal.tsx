@@ -151,7 +151,7 @@ const Notes: React.FC<{
                 // boxShadow: isPlaceholder ? "none" : undefined,
                 background: isPlaceholder ? "beige" : undefined,
                 color: isPlaceholder ? "darkslategray" : undefined,
-                opacity: isPlaceholder ? 0.2 : undefined,
+                opacity: isPlaceholder ? 0.5 : undefined,
               }}
             >
               <div className="notes-stored-left">

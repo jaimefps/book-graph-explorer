@@ -202,6 +202,7 @@
   background: beige;
   padding: 3.5rem 3rem 2rem 3rem;
   border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   overflow: scroll;
 
   display: flex;

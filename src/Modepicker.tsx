@@ -19,6 +19,7 @@ export const ModePicker: React.FC<{
         What do you want to explore in the Ethics?
       </h2>
       <button
+        id="demo-connection"
         className="mode-picker-button"
         onClick={() => setMode("connection")}
       >
@@ -52,6 +53,7 @@ export const ModePicker: React.FC<{
         </div>
       </button>
       <button
+        id="demo-book"
         className="mode-picker-button"
         onClick={() => setFocusNode(openBookWith)}
         style={{ background: "darkseagreen" }}

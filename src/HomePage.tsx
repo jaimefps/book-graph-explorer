@@ -1,9 +1,11 @@
 import Button from "@mui/material/Button"
 import { useNavigate } from "react-router-dom"
+import { useDemo } from "./context/DemoContext"
 import { Page } from "./Page"
 import "./HomePage.css"
 
 export const HomePage = () => {
+  const { setEnabled } = useDemo()
   const navigate = useNavigate()
   return (
     <Page>
@@ -18,7 +20,7 @@ export const HomePage = () => {
               size="large"
               variant="outlined"
               onClick={() => {
-                navigate("/about")
+                setEnabled(true)
               }}
               sx={{
                 width: 200,

@@ -38,21 +38,30 @@ export const Bio = () => {
           <h2 className="about-header">Who was Spinoza?</h2>
         </div>
         <p className="about-text">
-          Baruch Spinoza (1632-1677), also known as Benedictus Spinoza, was a
-          Portuguese Jew from the Netherlands and a pivotal figure in Western
-          philosophy. His family, Sephardic Jews who fled persecution during the
-          Inquisition, settled in the tolerant environment of the Netherlands,
-          where Spinoza was born and raised. Excommunicated from the Jewish
-          community for his radical ideas, he lived a modest life as a lens
-          grinder while dedicating himself to philosophy. Spinoza's works,
-          particularly{" "}
+          Baruch Spinoza (1632-1677) was a Portuguese Jew from the Netherlands
+          and a pivotal figure in Western philosophy. His family, Sephardic Jews
+          who fled persecution during the Inquisition, settled in the tolerant
+          environment of the Netherlands, where Spinoza was born and raised.
+          Excommunicated from the Jewish community for his radical ideas, he
+          lived a modest life as a lens grinder while dedicating himself to
+          philosophy. His works, including Ethics, were published posthumously
+          in 1677. Almost immediately, his writings were met with fierce
+          opposition and swiftly banned by both the Catholic Church and the
+          States of Holland due to their controversial ideas, which challenged
+          established religious and philosophical doctrines. <br />
+          <br />
+          Spinoza's books survived in the form of contraband for decades.
+          Despite being banned, his writings circulated clandestinely, often
+          smuggled and read in secret by those drawn to his ideas. This
+          underground circulation helped ensure that Spinoza's philosophy
+          continued to influence thinkers across Europe, even in the face of
+          censorship. Ultimately, Spinoza's works, particularly{" "}
           <BaseLink href="https://en.wikipedia.org/wiki/Ethics_(Spinoza_book)">
             Ethics
           </BaseLink>
           , have had a lasting impact on modern thought, earning him recognition
           as one of the most profound philosophers in history. For further
-          reading and more detailed information, visit the Stanford Encyclopedia
-          of Philosophy entry on{" "}
+          reading, visit the Stanford Encyclopedia of Philosophy entry on{" "}
           <BaseLink href="https://plato.stanford.edu/entries/spinoza/">
             Spinoza
           </BaseLink>

@@ -21,17 +21,22 @@ body {
   box-sizing: border-box;
 }
 
-/* SCROLLBAR */
+/* INTROJS */
+/* prevent backwards navigation during
+ demo for sake of simplicity */
 
+.introjs-prevbutton {
+  display: none;
+}
+
+/* SCROLLBAR */
 /* For WebKit browsers (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
   width: 12px; /* Adjust scrollbar width if needed */
 }
-
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: rgba(
     0,
@@ -40,7 +45,6 @@ body {
     0.5
   ); /* You can adjust the thumb color or transparency here */
 }
-
 /* For Firefox */
 * {
   scrollbar-width: thin;

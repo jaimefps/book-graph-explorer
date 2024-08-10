@@ -11,10 +11,30 @@
 
 ---
 
+- 0 welcome
+- 1 who spinoza is
+- 2 notation
+- 3 mode picker:book
+- 4 mode picker:connection
+- 5 node picker: inputs
+- 6 node picker: preview
+- 7 node picker: submit (node with proofs)
+- 8 graph: they can zoom or click node
+- 9 book: appbar controls
+- 10 book: appbar controls
+- 11 book: notes
+- 12 book: fav & bookmark
+- 13 graph: recenter & reset
+- 14 credits
+
+-- reset all states onExit and return to landing page
+
+---
+
 TODOS:
 
+- demo flow (NOW)
 - about pages
-- demo flow
 - apply portrait-only alert to book modal (maybe to app as a whole).
 - move book/opensource to about, then use that space for feedbackfish
 - add a a middle step between clicking a node and opening the book reader...?

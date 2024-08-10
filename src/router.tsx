@@ -4,11 +4,11 @@ import {
   createBrowserRouter,
   Navigate,
 } from "react-router-dom"
+import { AboutPage, Bio, Credits, Notation } from "./AboutPage"
 import { useEffect, useState } from "react"
 import { GraphPage } from "./GraphPage"
 import { HomePage } from "./HomePage"
 import { App } from "./App"
-import { AboutPage, Bio, Credits, Notation } from "./AboutPage"
 
 const NoMatchRedirect = () => {
   const navigate = useNavigate()

@@ -7,6 +7,7 @@ import { TextField, Button } from "@mui/material"
 import AutoComplete from "@mui/material/Autocomplete"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 import { useExploreContext } from "./context/ExploreContext"
+import { useDemo } from "./context/DemoContext"
 import cs from "clsx"
 
 const modeOptMap = {
@@ -48,13 +49,20 @@ export const NodePicker: React.FC<{
   reset: VoidFunction
   mode: GraphMode
 }> = ({ setNodes, reset, mode }) => {
+  const { enabled: demoEnabled, demoNodes } = useDemo()
   const { lang } = useExploreContext()
 
   const fromPreview =
     mode === "ancestry" ? modeOptMap[mode].slice(-1)[0] : modeOptMap[mode][0]
 
-  const [fromNode, setFromNode] = useState<string>(fromPreview)
-  const [toNode, setToNode] = useState<string>(modeOptMap[mode].slice(-1)[0])
+  const toPreview = modeOptMap[mode].slice(-1)[0]
+
+  const [fromNode, setFromNode] = useState<string>(
+    demoEnabled ? demoNodes.from : fromPreview
+  )
+  const [toNode, setToNode] = useState<string>(
+    demoEnabled ? demoNodes.to : toPreview
+  )
 
   const [preview, setPreview] = useState(fromNode)
   useEffect(() => setPreview(toNode), [toNode])
@@ -130,6 +138,7 @@ export const NodePicker: React.FC<{
           <div className="node-picker-button-group">
             <Button
               {...sharedProps}
+              id="demo-submit"
               style={{
                 ...sharedProps.style,
                 background: "darkseagreen",
