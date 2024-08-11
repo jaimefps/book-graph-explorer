@@ -1,9 +1,30 @@
 import { Steps } from "intro.js-react"
 import { useEffect, useRef, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { useDemo } from "./context/DemoContext"
+import { useDemoContext } from "./context/DemoContext"
 import { useExploreContext } from "./context/ExploreContext"
-import { isMobile } from "react-device-detect"
+
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+async function waitForElementToLoad(
+  selector: string,
+  timeout = 3000,
+  interval = 50
+) {
+  const startTime = Date.now()
+  while (Date.now() - startTime < timeout) {
+    const element = document.querySelector(selector)
+    if (element) {
+      return element
+    }
+    await new Promise((resolve) => setTimeout(resolve, interval))
+  }
+  throw new Error(
+    `Element with selector "${selector}" did not load within ${timeout}ms`
+  )
+}
 
 // demo selector:
 function ds(demoId: string) {
@@ -58,35 +79,35 @@ const steps = [
   },
   {
     // 9
-    // intro.js can't select during transitions,
-    // will need to try something else later:
+    // transitions seem to break:
+    element: ds("book-entry-content"),
     intro: "you can read...blah blah",
   },
-  // {
-  //   // 10
-  //   element: ds("entry-header"),
-  //   intro: "you can mark or fave...blah blah",
-  // },
-  // {
-  //   // 11
-  //   element: ds("entry-proofs"),
-  //   intro: "jump to proof...blah blah",
-  // },
-  // {
-  //   // 12
-  //   element: ds("book-controls"),
-  //   intro: "you can teleport...blah blah",
-  // },
-  // {
-  //   // 13: trigger when small screen:
-  //   element: ds("small-open-notes"),
-  //   intro: "open notes...blah blah",
-  // },
-  // {
-  //   // 14
-  //   element: ds("book-notes"),
-  //   intro: "notes form...blah blah",
-  // },
+  {
+    // 10
+    element: ds("entry-header"),
+    intro: "you can mark or fave...blah blah",
+  },
+  {
+    // 11
+    element: ds("entry-proofs"),
+    intro: "jump to proof...blah blah",
+  },
+  {
+    // 12
+    element: ds("book-controls"),
+    intro: "you can teleport...blah blah",
+  },
+  {
+    // 13: only on small screens:
+    element: ds("mobile-open-notes"),
+    intro: "open notes...blah blah",
+  },
+  {
+    // 14
+    element: ds("book-notes"),
+    intro: "notes form...blah blah",
+  },
   // {
   //   // 15
   //   element: ds("graph-controls"),
@@ -101,18 +122,21 @@ const steps = [
 
 export const DemoSteps = () => {
   const navigate = useNavigate()
-  const [stepNum, setStepNum] = useState(0)
-  const { enabled, setEnabled, demoNodes } = useDemo()
+  const tourRef = useRef<Steps>(null)
+  const { enabled, setEnabled, demoNodes } = useDemoContext()
   const { setMode, reset, setInputNodes, setOpenNotes, setFocusNode } =
     useExploreContext()
 
-  const stepsRef = useRef<Steps>(null)
+  // counter must start at null to know if prev is nothing:
+  const [stepNum, setStepNum] = useState<null | number>(null)
 
   useEffect(() => {
-    if (enabled && stepsRef.current) {
-      stepsRef.current.updateStepElement(stepNum)
+    // induce
+    if (enabled && tourRef.current) {
+      tourRef.current.updateStepElement(stepNum ?? 0)
+
       // @ts-ignore
-      window._jaime = stepsRef.current?.introJs
+      window.jaime = tourRef.current.introJs
     }
   }, [enabled, stepNum])
 
@@ -120,69 +144,102 @@ export const DemoSteps = () => {
     <Steps
       options={{
         showProgress: true,
-        showBullets: false,
         disableInteraction: true,
         exitOnOverlayClick: false,
       }}
       steps={steps}
-      ref={stepsRef}
+      ref={tourRef}
       enabled={enabled}
-      initialStep={0}
-      onBeforeChange={(idx, step) => {
-        setStepNum(idx)
-        if (idx === 0) {
+      initialStep={0} // always from 0
+      onAfterChange={(step) => {
+        console.log("onafter", tourRef.current?.introJs._direction)
+        if (step === 13) {
+          const smallScreen = window.innerWidth < 850
+          if (!smallScreen) tourRef.current?.introJs.nextStep()
+        }
+      }}
+      onBeforeChange={async (step) => {
+        // force resync:
+        setStepNum(step)
+        // for conditional steps:
+        const smallScreen = window.innerWidth < 850
+
+        if (step === 0) {
           // do & undo
           navigate("/")
         }
-        if (idx === 1) {
+        if (step === 1) {
           // do & undo
           navigate("/about/spinoza")
         }
-        if (idx === 2) {
+        if (step === 2) {
           // do & undo
           navigate("/about/notation")
         }
-        if (idx === 3) {
+        if (step === 3) {
           // do & undo
           navigate("/explore")
         }
 
-        if (idx === 4) {
+        if (step === 4) {
           // undo 5
           setMode(undefined)
         }
-        if (idx === 5) {
+        if (step === 5) {
           // do
           setMode("connection")
         }
-        if (idx === 7) {
+        if (step === 7) {
           // undo 8
           setInputNodes(undefined)
         }
-        if (idx === 8) {
+        if (step === 8) {
           // undo 9
           setFocusNode(undefined)
           // do
           setInputNodes([demoNodes.from, demoNodes.to])
         }
-        if (idx === 9) {
-          // do
+        if (step === 9) {
           setFocusNode(demoNodes.to)
+          await waitForElementToLoad(ds("book-entry-content"))
+          await delay(500) // wait for transitions to finish
+          tourRef.current?.updateStepElement(step)
         }
 
-        // used for book modal:
-        // if we need to skip or apply a step.
-        const smallScreen = window.innerWidth < 850
+        if (step === 13) {
+          if (smallScreen) {
+            // undo 14
+            setOpenNotes(false)
+          }
+        }
 
-        // // handle open notes:
-        // if (small) {
-        //   if (idx === 13) {
+        if (step === 14) {
+          if (smallScreen) {
+            setOpenNotes(true)
+            await waitForElementToLoad(ds("book-notes"))
+            await delay(500) // wait for transition
+            tourRef.current?.updateStepElement(step)
+          }
+        }
+
+        // handle open notes:
+        // if (smallScreen) {
+        //   if (step === 13) {
         //     // undo
         //     setOpenNotes(false)
         //   }
-        //   if (idx === 14) {
+        //   if (step === 14) {
         //     // do
         //     setOpenNotes(true)
+        //   }
+        // } else {
+        //   // skip step based on nav direction:
+        //   if (step < (prevNumRef.current ?? 0)) {
+        //     // jump to 12
+        //     tourRef.current?.introJs.goToStep(12)
+        //   } else {
+        //     // jump to 14
+        //     tourRef.current?.introJs.goToStep(14)
         //   }
         // }
 
@@ -220,7 +277,7 @@ export const DemoSteps = () => {
       onExit={() => {
         navigate("/")
         setEnabled(false)
-        setStepNum(0)
+        setStepNum(null)
         reset()
       }}
     />

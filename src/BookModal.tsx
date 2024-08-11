@@ -24,7 +24,7 @@ import { usePrevious } from "./lib/utils"
 import { book } from "./lib/book"
 import cs from "clsx"
 import { isMobile } from "react-device-detect"
-import { useDemo } from "./context/DemoContext"
+import { useDemoContext } from "./context/DemoContext"
 
 const UpdateAlert = () => {
   const [alert, setAlert] = useState<any>(undefined)
@@ -226,7 +226,7 @@ const Transition = forwardRef(function Transition(
 })
 
 export const BookModal = () => {
-  const { enabled } = useDemo()
+  const { enabled } = useDemoContext()
   const [noteText, setNoteText] = useState("")
   const { focusNode, setFocusNode, openNotes, setOpenNotes, lang } =
     useExploreContext()
@@ -305,6 +305,7 @@ export const BookModal = () => {
       open={!!focusNode}
       onClose={handleClose}
       TransitionComponent={Transition}
+      transitionDuration={400}
     >
       <UpdateAlert />
       <div className="book-modal">
@@ -470,7 +471,7 @@ export const BookModal = () => {
                 </Tooltip>
               </span>
             </div>
-            <div className="book-entry-content">
+            <div data-demo="book-entry-content" className="book-entry-content">
               <div className="book-entry-content-text">
                 {getNodeText(focusNode, lang)}
                 {parents.length > 0 && (

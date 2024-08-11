@@ -7,7 +7,7 @@ import { TextField, Button } from "@mui/material"
 import AutoComplete from "@mui/material/Autocomplete"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 import { useExploreContext } from "./context/ExploreContext"
-import { useDemo } from "./context/DemoContext"
+import { useDemoContext } from "./context/DemoContext"
 import cs from "clsx"
 
 const modeOptMap = {
@@ -49,7 +49,7 @@ export const NodePicker: React.FC<{
   reset: VoidFunction
   mode: GraphMode
 }> = ({ setNodes, reset, mode }) => {
-  const { enabled: demoEnabled, demoNodes } = useDemo()
+  const { enabled: demoEnabled, demoNodes } = useDemoContext()
   const { lang } = useExploreContext()
 
   const fromPreview =

@@ -1,11 +1,11 @@
 import Button from "@mui/material/Button"
 import { useNavigate } from "react-router-dom"
-import { useDemo } from "./context/DemoContext"
+import { useDemoContext } from "./context/DemoContext"
 import { Page } from "./Page"
 import "./HomePage.css"
 
 export const HomePage = () => {
-  const { setEnabled } = useDemo()
+  const { setEnabled } = useDemoContext()
   const navigate = useNavigate()
   return (
     <Page>

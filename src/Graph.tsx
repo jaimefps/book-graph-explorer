@@ -3,6 +3,7 @@ import { isMobile } from "react-device-detect"
 import { GraphMode, GraphQuery, RenderData } from "./types"
 import { useExploreContext } from "./context/ExploreContext"
 import { useRef, useState, useEffect, useMemo, useCallback } from "react"
+import { useDemoContext } from "./context/DemoContext"
 import IconButton from "@mui/material/IconButton"
 import CloseIcon from "@mui/icons-material/Close"
 import CytoscapeComponent from "react-cytoscapejs"
@@ -69,6 +70,12 @@ export const Graph = () => {
   const [openAlert, setOpenAlert] = useState(false)
   const { mode, inputNodes, setFocusNode, reset } = useExploreContext()
 
+  const { enabled } = useDemoContext()
+  const demoRef = useRef(enabled)
+  useEffect(() => {
+    demoRef.current = enabled
+  })
+
   const handleAlertClose = useCallback(
     () => setOpenAlert(false),
     [setOpenAlert]
@@ -93,8 +100,10 @@ export const Graph = () => {
   }, [renderData])
 
   useEffect(() => {
-    const t = setTimeout(() => setOpenAlert(true), 300)
-    return () => clearTimeout(t)
+    if (!demoRef.current) {
+      const t = setTimeout(() => setOpenAlert(true), 300)
+      return () => clearTimeout(t)
+    }
   }, [])
 
   // useRef to avoid linter issues
