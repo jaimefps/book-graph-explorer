@@ -90,7 +90,7 @@ const steps = [
   {
     // 13: only on small screens:
     element: ds("mobile-open-notes"),
-    intro: "You can open the notes section with here.",
+    intro: "You can open the notes section here.",
   },
   {
     // 14
