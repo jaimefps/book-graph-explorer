@@ -3,7 +3,6 @@
 - cancel amazon prime
 - how much is namecheap charging me?
 - how much is heroku charging me?
-
 - need to make spreadsheet to track spending;
   include chatgpt and midjourney
 
@@ -13,8 +12,8 @@
 
 TODOS:
 
-- about pages (NOW)
-- apply portrait-only alert to book modal (maybe to app as a whole).
+- whole app has "portrait only" (NOW)
+- about pages
 - move book/opensource to about, then use that space for feedbackfish
 - add a a middle step between clicking a node and opening the book reader...?
 

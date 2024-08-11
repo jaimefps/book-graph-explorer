@@ -1,0 +1,35 @@
+.landscape-container-alert {
+  z-index: 999999; /* above all */
+  display: none; /* media query toggle */
+  background: darkslategray;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: beige;
+  padding: 0 5rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.landscape-container-alert-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkseagreen;
+  gap: 1rem;
+}
+
+@media (orientation: landscape) {
+  .landscape-container-alert {
+    display: flex;
+  }
+}

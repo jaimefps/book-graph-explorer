@@ -5,6 +5,8 @@ import { Outlet } from "react-router-dom"
 import { ExploreProvider } from "./context/ExploreContext"
 import { StorageProvider } from "./context/StorageContext"
 import { DemoProvider } from "./context/DemoContext"
+import { isMobile } from "react-device-detect"
+import { LandscapeLock } from "./LandscapeLock"
 import { DemoSteps } from "./DemoSteps"
 
 const Root = () => {
@@ -14,6 +16,7 @@ const Root = () => {
       <Outlet />
       <BookModal />
       <DemoSteps />
+      {isMobile && <LandscapeLock />}
     </div>
   )
 }
