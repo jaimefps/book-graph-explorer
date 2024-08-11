@@ -113,14 +113,19 @@ export const DemoSteps = () => {
   const [stepNum, setStepNum] = useState<null | number>(null)
 
   useEffect(() => {
-    // induce
+    // induce syncs between steps:
     if (enabled && tourRef.current) {
       tourRef.current.updateStepElement(stepNum ?? 0)
-
-      // @ts-ignore
-      window.jaime = tourRef.current.introJs
     }
   }, [enabled, stepNum])
+
+  useEffect(() => {
+    // if user clicks back at any time during
+    // the demo, we simply kill the demo:
+    const handleBackButton = () => setEnabled(false)
+    window.addEventListener("popstate", handleBackButton)
+    return () => window.removeEventListener("popstate", handleBackButton)
+  }, [setEnabled])
 
   return (
     <Steps
