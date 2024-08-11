@@ -23,7 +23,7 @@ const steps = [
     // 1
     element: ds("spinoza"),
     intro:
-      "If you don't know about Spinoza, I highly recommend you read a bit about him. You can start here on the 'about' tab, but let's move onto the features!",
+      "If you don't know about Spinoza, I highly recommend you read a bit about him. You can start here on the 'about' tab, but let's move on to the features!",
   },
   {
     // 2
@@ -34,7 +34,7 @@ const steps = [
   {
     // 3
     element: ds("book-picker"),
-    intro: "Over on the 'explore' tab, you can use the Reader..",
+    intro: "Over on the 'explore' tab, you can read the book...",
   },
   {
     // 4
