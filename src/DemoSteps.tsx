@@ -8,24 +8,6 @@ function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-async function waitForElementToLoad(
-  selector: string,
-  timeout = 3000,
-  interval = 50
-) {
-  const startTime = Date.now()
-  while (Date.now() - startTime < timeout) {
-    const element = document.querySelector(selector)
-    if (element) {
-      return element
-    }
-    await new Promise((resolve) => setTimeout(resolve, interval))
-  }
-  throw new Error(
-    `Element with selector "${selector}" did not load within ${timeout}ms`
-  )
-}
-
 // demo selector:
 function ds(demoId: string) {
   return `[data-demo="${demoId}"]`
@@ -108,16 +90,16 @@ const steps = [
     element: ds("book-notes"),
     intro: "notes form...blah blah",
   },
-  // {
-  //   // 15
-  //   element: ds("graph-controls"),
-  //   intro: "you can fix & reset...blah blah",
-  // },
-  // {
-  //   // 16
-  //   element: ds("credits"),
-  //   intro: "who and how...blah blah",
-  // },
+  {
+    // 15
+    element: ds("graph-controls"),
+    intro: "you can fix & reset...blah blah",
+  },
+  {
+    // 16
+    element: ds("credits"),
+    intro: "who and how...blah blah",
+  },
 ]
 
 export const DemoSteps = () => {
@@ -152,10 +134,12 @@ export const DemoSteps = () => {
       enabled={enabled}
       initialStep={0} // always from 0
       onAfterChange={(step) => {
-        console.log("onafter", tourRef.current?.introJs._direction)
-        if (step === 13) {
-          const smallScreen = window.innerWidth < 850
+        const smallScreen = window.innerWidth < 850
+        if (step === 13 && tourRef.current?.introJs._direction === "forward") {
           if (!smallScreen) tourRef.current?.introJs.nextStep()
+        }
+        if (step === 13 && tourRef.current?.introJs._direction === "backward") {
+          if (!smallScreen) tourRef.current?.introJs.previousStep()
         }
       }}
       onBeforeChange={async (step) => {
@@ -201,11 +185,12 @@ export const DemoSteps = () => {
         }
         if (step === 9) {
           setFocusNode(demoNodes.to)
-          await waitForElementToLoad(ds("book-entry-content"))
-          await delay(500) // wait for transitions to finish
+          await delay(525) // wait for transitions to finish
           tourRef.current?.updateStepElement(step)
         }
 
+        // how to open notes
+        // on small screen:
         if (step === 13) {
           if (smallScreen) {
             // undo 14
@@ -213,63 +198,37 @@ export const DemoSteps = () => {
           }
         }
 
+        // where to take notes,
+        // based on screen size:
         if (step === 14) {
+          // undo 15
+          if (tourRef.current?.introJs._direction === "backward") {
+            setFocusNode(demoNodes.to)
+            await delay(525) // transition
+            tourRef.current?.updateStepElement(step)
+          }
+
           if (smallScreen) {
+            // do & undo
             setOpenNotes(true)
-            await waitForElementToLoad(ds("book-notes"))
-            await delay(500) // wait for transition
+            await delay(525) // transition
             tourRef.current?.updateStepElement(step)
           }
         }
 
-        // handle open notes:
-        // if (smallScreen) {
-        //   if (step === 13) {
-        //     // undo
-        //     setOpenNotes(false)
-        //   }
-        //   if (step === 14) {
-        //     // do
-        //     setOpenNotes(true)
-        //   }
-        // } else {
-        //   // skip step based on nav direction:
-        //   if (step < (prevNumRef.current ?? 0)) {
-        //     // jump to 12
-        //     tourRef.current?.introJs.goToStep(12)
-        //   } else {
-        //     // jump to 14
-        //     tourRef.current?.introJs.goToStep(14)
-        //   }
-        // }
+        if (step === 15) {
+          // undo 16
+          navigate("/explore")
+          // do
+          setFocusNode(undefined)
+          setOpenNotes(false)
+          tourRef.current?.updateStepElement(step)
+        }
 
-        // // handle going back to graph:
-        // if (!small) {
-        //   if (idx === 14) {
-        //     // do
-        //     setFocusNode(undefined)
-        //     setOpenNotes(false)
-        //   }
-        // } else {
-        //   if (idx === 15) {
-        //     // do
-        //     setFocusNode(undefined)
-        //     setOpenNotes(false)
-        //   }
-        // }
-
-        // // handle going to credits view:
-        // if (!small) {
-        //   if (idx === 15) {
-        //     // do
-        //     navigate("/about/credits")
-        //   }
-        // } else {
-        //   if (idx === 16) {
-        //     // do
-        //     navigate("/about/credits")
-        //   }
-        // }
+        if (step === 16) {
+          // do
+          navigate("/about/credits")
+        }
       }}
       onStart={() => {
         reset()
