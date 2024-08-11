@@ -34,13 +34,13 @@ const steps = [
   {
     // 3
     element: ds("book-picker"),
-    intro: "You can freely explore the book here if you like.",
+    intro: "Over on the Explore tab, you can use the Reader..",
   },
   {
     // 4
     element: ds("connection-picker"),
     intro:
-      "Or, you can illustrate the logical structure of the book. Let's try to find a connection between entries!",
+      "or better yet, you can illustrate the logical structure of the book. Let's try to find a connection between entries!",
   },
   {
     // 5
