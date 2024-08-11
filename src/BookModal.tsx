@@ -21,7 +21,6 @@ import AddCommentIcon from "@mui/icons-material/Save"
 import { Button, Tooltip } from "@mui/material"
 import { EntryMenu } from "./EntryMenu"
 import { usePrevious } from "./lib/utils"
-import { useDemoContext } from "./context/DemoContext"
 import { isMobile } from "react-device-detect"
 import { book } from "./lib/book"
 import cs from "clsx"
@@ -226,7 +225,6 @@ const Transition = forwardRef(function Transition(
 })
 
 export const BookModal = () => {
-  const { enabled } = useDemoContext()
   const [noteText, setNoteText] = useState("")
   const { focusNode, setFocusNode, openNotes, setOpenNotes, lang } =
     useExploreContext()
@@ -305,7 +303,7 @@ export const BookModal = () => {
       open={!!focusNode}
       onClose={handleClose}
       TransitionComponent={Transition}
-      transitionDuration={400}
+      transitionDuration={300}
     >
       <UpdateAlert />
       <div className="book-modal">
@@ -548,7 +546,6 @@ export const BookModal = () => {
           </div>
           <div
             className={cs("book-notes-drawer", {
-              instant: enabled,
               open: openNotes,
             })}
           >

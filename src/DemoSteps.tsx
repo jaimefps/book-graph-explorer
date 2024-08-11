@@ -16,89 +16,99 @@ function ds(demoId: string) {
 const steps = [
   {
     // 0
-    // target nothing as it starts
-    intro: "welcome...blah blah",
+    intro:
+      "Welcome to a 1 min tour of the app. Just click 'next', and I'll take care of the rest.",
   },
   {
     // 1
     element: ds("spinoza"),
-    intro: "spinoza...blah blah",
+    intro:
+      "If you don't know about Spinoza, I highly recommend you read a bit about him later, you can start here on the 'about' sections, but let's move onto the features!",
   },
   {
     // 2
     element: ds("notation"),
-    intro: "notation...blah blah",
+    intro:
+      "This is the notation we follow when referencing entries in Spinoza's Ethics. For example, e1p2 means Proposition 2 of Part 1 of the Ethics.",
   },
   {
     // 3
     element: ds("book-picker"),
-    intro: "reader...blah blah",
+    intro: "You can freely explore the book here if you like.",
   },
   {
     // 4
     element: ds("connection-picker"),
-    intro: "graphs...blah blah",
+    intro:
+      "Or, you can illustrate the logical structure of the book. Let's try to find a connection between entries!",
   },
   {
     // 5
     element: ds("entry-pickers"),
-    intro: "picker...blah blah",
+    intro:
+      "Here you'd pick what entries you want illustrate via a logical dependency graph.",
   },
   {
     // 6
     element: ds("entry-preview-tabs"),
-    intro: "previews...blah blah",
+    intro: "You can preview any selected entries here.",
   },
   {
     // 7
     element: ds("submit-query"),
-    intro: "here we go!...blah blah",
+    intro: "And once you're satisfied, you can submit to generate.",
   },
   {
     // 8
     element: ds("query-details"),
-    intro: "a graph has appeared...blah blah",
+    intro:
+      "Woah, a graph has appeared! You can scroll on the graph to zoom, drag the nodes around, or click any node to open the Reader for it.",
   },
   {
     // 9
     // transitions seem to break:
     element: ds("book-entry-content"),
-    intro: "you can read...blah blah",
+    intro:
+      "When you click a node, you'll open the Reader where you can study that entry as well as a few other things.",
   },
   {
     // 10
     element: ds("entry-header"),
-    intro: "you can mark or fave...blah blah",
+    intro: "You can thumb through entries, bookmark, or set your favorites.",
   },
   {
     // 11
     element: ds("entry-proofs"),
-    intro: "jump to proof...blah blah",
+    intro:
+      "You can also skip over to any of the proofs for this specific entry.",
   },
   {
     // 12
     element: ds("book-controls"),
-    intro: "you can teleport...blah blah",
+    intro: "Or you can instantly navigate to any of the entries in the book.",
   },
   {
     // 13: only on small screens:
     element: ds("mobile-open-notes"),
-    intro: "open notes...blah blah",
+    intro: "You can open the notes section with here.",
   },
   {
     // 14
     element: ds("book-notes"),
-    intro: "notes form...blah blah",
+    intro:
+      "And take notes about this section, that will be stored locally on your browser/device.",
   },
   {
     // 15
     element: ds("graph-controls"),
-    intro: "you can fix & reset...blah blah",
+    intro:
+      "If you close the book, you can continue exploring the graph, or reset to explore some other structure.",
   },
   {
     // 16
     element: ds("credits"),
-    intro: "who and how...blah blah",
+    intro:
+      "And this is me. Thanks for going through that whole ordeal, hope you find this app useful. Bye 👋",
   },
 ]
 
@@ -191,7 +201,7 @@ export const DemoSteps = () => {
         }
         if (step === 9) {
           setFocusNode(demoNodes.to)
-          await delay(525) // wait for transitions to finish
+          await delay(400) // wait for transitions to finish
           tourRef.current?.updateStepElement(step)
         }
 
@@ -210,14 +220,14 @@ export const DemoSteps = () => {
           // undo 15
           if (tourRef.current?.introJs._direction === "backward") {
             setFocusNode(demoNodes.to)
-            await delay(525) // transition
+            await delay(400) // transition
             tourRef.current?.updateStepElement(step)
           }
 
           if (smallScreen) {
             // do & undo
             setOpenNotes(true)
-            await delay(525) // transition
+            await delay(400) // transition
             tourRef.current?.updateStepElement(step)
           }
         }

@@ -20,7 +20,7 @@ const BaseLink: React.FC<{
 export const Credits = () => {
   return (
     <div data-demo="credits" className="about-credits">
-      credits
+      todo: credits, dependencies, etc
     </div>
   )
 }
@@ -28,7 +28,7 @@ export const Credits = () => {
 export const Notation = () => {
   return (
     <div data-demo="notation" className="about-notation">
-      notation
+      todo: notation system illustration
     </div>
   )
 }

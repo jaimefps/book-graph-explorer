@@ -36,7 +36,7 @@ export const HomePage = () => {
                 },
               }}
             >
-              Demo
+              Walkthrough
             </Button>
             <Button
               size="large"
