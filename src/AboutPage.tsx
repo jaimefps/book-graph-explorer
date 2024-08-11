@@ -92,21 +92,21 @@ export const AboutPage = () => {
             className="about-tab"
             onClick={() => navigate("/about/spinoza")}
           >
-            Who was Spinoza?
+            who was Spinoza?
           </Button>
           <Button
             variant="outlined"
             className="about-tab"
             onClick={() => navigate("/about/notation")}
           >
-            Notation
+            notation
           </Button>
           <Button
             variant="outlined"
             className="about-tab"
             onClick={() => navigate("/about/credits")}
           >
-            Credits
+            credits
           </Button>
         </div>
         <div className="about-content">

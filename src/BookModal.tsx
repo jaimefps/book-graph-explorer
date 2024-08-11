@@ -293,7 +293,7 @@ export const BookModal = () => {
         />
       }
     >
-      Go to
+      go to
     </Button>
   )
 
@@ -311,7 +311,7 @@ export const BookModal = () => {
           <div className="book-appbar-col-left">
             <div className="book-appbar-logo">
               <MenuBookIcon className="book-appbar-reader-icon" />
-              <span className="book-appbar-logo-ext">Book</span> Reader
+              <span className="book-appbar-logo-ext">book</span> reader
             </div>
             <div
               data-demo={isMobile ? undefined : "book-controls"}
@@ -380,7 +380,7 @@ export const BookModal = () => {
                       }
                       if (storage.bookmark === focusNode) {
                         const confirm = window.confirm(
-                          "If you clear the bookmark, you'll start from the beginning the next time you open Book Reader."
+                          "If you clear the bookmark, you'll start from the beginning the next time you open the book reader."
                         )
                         if (confirm) clearBookmark()
                         return

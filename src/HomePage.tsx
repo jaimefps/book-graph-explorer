@@ -36,7 +36,7 @@ export const HomePage = () => {
                 },
               }}
             >
-              Walkthrough
+              walkthrough
             </Button>
             <Button
               size="large"
@@ -54,7 +54,7 @@ export const HomePage = () => {
                 ":hover": { background: "darkseagreen" },
               }}
             >
-              Get started
+              get started
             </Button>
           </div>
         </div>

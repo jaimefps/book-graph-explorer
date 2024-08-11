@@ -64,7 +64,7 @@ export const EntryMenu = () => {
           },
         }}
       >
-        All entries
+        all entries
       </Button>
       <Menu
         id="long-menu"

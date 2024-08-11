@@ -24,7 +24,7 @@ export const ModePicker: React.FC<{
         onClick={() => setMode("connection")}
       >
         <div className="mode-picker-button-label">
-          <HubIcon fontSize="small" /> Connection
+          <HubIcon fontSize="small" /> connection
         </div>
         <div className="mode-picker-button-description">
           Illustrate the chain of arguments that connects any two statements.
@@ -35,7 +35,7 @@ export const ModePicker: React.FC<{
         onClick={() => setMode("descendancy")}
       >
         <div className="mode-picker-button-label">
-          <HubIcon fontSize="small" /> Descendancy
+          <HubIcon fontSize="small" /> descendancy
         </div>
         <div className="mode-picker-button-description">
           Illustrate the complete chain of consequences for a single statement.
@@ -46,7 +46,7 @@ export const ModePicker: React.FC<{
         onClick={() => setMode("ancestry")}
       >
         <div className="mode-picker-button-label">
-          <HubIcon fontSize="small" /> Ancestry
+          <HubIcon fontSize="small" /> ancestry
         </div>
         <div className="mode-picker-button-description">
           Illustrate the complete chain of proofs for a single statement.
@@ -62,10 +62,10 @@ export const ModePicker: React.FC<{
           className="mode-picker-button-label"
           style={{ color: "darkslategray" }}
         >
-          <MenuBookIcon fontSize="small" /> Book Reader
+          <MenuBookIcon fontSize="small" /> book reader
         </div>
         <div className="mode-picker-button-description">
-          You just want to read the Ethics, maybe take notes, or save your
+          You just want to read the Ethics, maybe take notes, or mark your
           favorite entries.
         </div>
       </button>

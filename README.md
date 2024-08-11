@@ -11,43 +11,9 @@
 
 ---
 
-demo impacts:
-
-- location
-- setMode
-- setInputNodes
-- setFocusNode
-- setOpenNotes
-
----
-
-- 0 welcome
-- 1 spinoza
-- 2 notation
-- 3 mode picker:book
-- 4 mode picker:connection
-- 5 node picker: entry
-- 6 node picker: preview
-- 7 node picker: submit
-- 8 graph: query details
-- 9 book: show book page
-- 10 book: entry header (fav, etc)
-- 11 book: entry proofs
-- 12 book: appbar controls
-- 13 (mobile) open notes
-- 14 book: notes
-- 15 graph: recenter & reset
-- 16 credits
-
--- reset all states onExit and go to /explore
--- shut down & reset demo if user clicks back.
-
----
-
 TODOS:
 
-- demo flow (NOW)
-- about pages
+- about pages (NOW)
 - apply portrait-only alert to book modal (maybe to app as a whole).
 - move book/opensource to about, then use that space for feedbackfish
 - add a a middle step between clicking a node and opening the book reader...?

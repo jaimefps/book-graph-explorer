@@ -23,7 +23,7 @@ const steps = [
     // 1
     element: ds("spinoza"),
     intro:
-      "If you don't know about Spinoza, I highly recommend you read a bit about him later, you can start here on the 'about' sections, but let's move onto the features!",
+      "If you don't know about Spinoza, I highly recommend you read a bit about him. You can start here on the 'about' tab, but let's move onto the features!",
   },
   {
     // 2
@@ -34,7 +34,7 @@ const steps = [
   {
     // 3
     element: ds("book-picker"),
-    intro: "Over on the Explore tab, you can use the Reader..",
+    intro: "Over on the 'explore' tab, you can use the Reader..",
   },
   {
     // 4
@@ -46,7 +46,7 @@ const steps = [
     // 5
     element: ds("entry-pickers"),
     intro:
-      "Here you'd pick what entries you want illustrate via a logical dependency graph.",
+      "Here you can pick what entries you want to illustrate via a logical dependency graph.",
   },
   {
     // 6
