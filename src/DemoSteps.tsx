@@ -126,6 +126,7 @@ export const DemoSteps = () => {
     <Steps
       options={{
         showProgress: true,
+        showBullets: false,
         disableInteraction: true,
         exitOnOverlayClick: false,
       }}
