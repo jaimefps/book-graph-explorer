@@ -347,28 +347,26 @@ export const BookModal = () => {
         <div className="book-content">
           <div className="book-content-col-left">
             <div data-demo="entry-header" className="book-entry-name">
-              <span className="book-pagination-large">
-                <Tooltip title="previous entry">
-                  <span>
-                    <IconButton
-                      aria-label="go to previous entry"
-                      disabled={isFirstEntry}
-                      onClick={() => {
-                        const newNodeName = book[focusIdx - 1][0]
-                        setFocusNode(newNodeName)
+              <Tooltip title="previous entry">
+                <span>
+                  <IconButton
+                    aria-label="go to previous entry"
+                    disabled={isFirstEntry}
+                    onClick={() => {
+                      const newNodeName = book[focusIdx - 1][0]
+                      setFocusNode(newNodeName)
+                    }}
+                  >
+                    <PassPageIcon
+                      className="book-pagination-icon"
+                      style={{
+                        transform: "rotate(180deg)",
+                        opacity: isFirstEntry ? 0.3 : 1,
                       }}
-                    >
-                      <PassPageIcon
-                        className="book-pagination-icon"
-                        style={{
-                          transform: "rotate(180deg)",
-                          opacity: isFirstEntry ? 0.3 : 1,
-                        }}
-                      />
-                    </IconButton>
-                  </span>
-                </Tooltip>
-              </span>
+                    />
+                  </IconButton>
+                </span>
+              </Tooltip>
               {/* SPLIT */}
               <div
                 id="demo-book-entry-name"
@@ -436,46 +434,41 @@ export const BookModal = () => {
                 </Tooltip>
                 <Tooltip title="open notes">
                   <IconButton
+                    size="small"
                     data-demo="mobile-open-notes"
                     aria-label="open notes"
                     className="book-entry-notes-button"
                     onClick={() => setOpenNotes(true)}
-                    style={{
-                      position: "absolute",
-                      right: 0,
-                      top: 1,
-                    }}
                   >
                     <ChatIcon
                       style={{
                         color: "darkseagreen",
+                        marginBottom: -4,
                       }}
                     />
                   </IconButton>
                 </Tooltip>
               </div>
               {/* SPLIT */}
-              <span className="book-pagination-large">
-                <Tooltip title="next entry">
-                  <span>
-                    <IconButton
-                      aria-label="go to next entry"
-                      disabled={isLastEntry}
-                      onClick={() => {
-                        const newNodeName = book[focusIdx + 1][0]
-                        setFocusNode(newNodeName)
+              <Tooltip title="next entry">
+                <span>
+                  <IconButton
+                    aria-label="go to next entry"
+                    disabled={isLastEntry}
+                    onClick={() => {
+                      const newNodeName = book[focusIdx + 1][0]
+                      setFocusNode(newNodeName)
+                    }}
+                  >
+                    <PassPageIcon
+                      className="book-pagination-icon"
+                      style={{
+                        opacity: isLastEntry ? 0.3 : 1,
                       }}
-                    >
-                      <PassPageIcon
-                        className="book-pagination-icon"
-                        style={{
-                          opacity: isLastEntry ? 0.3 : 1,
-                        }}
-                      />
-                    </IconButton>
-                  </span>
-                </Tooltip>
-              </span>
+                    />
+                  </IconButton>
+                </span>
+              </Tooltip>
             </div>
             <div data-demo="book-entry-content" className="book-entry-content">
               <div className="book-entry-content-text">
@@ -501,47 +494,6 @@ export const BookModal = () => {
                     ))}
                   </div>
                 )}
-              </div>
-              <div className="book-entry-button-group">
-                <Tooltip title="previous entry">
-                  <span>
-                    <IconButton
-                      aria-label="go to previous entry"
-                      disabled={isFirstEntry}
-                      onClick={() => {
-                        const newNodeName = book[focusIdx - 1][0]
-                        setFocusNode(newNodeName)
-                      }}
-                    >
-                      <PassPageIcon
-                        className="book-pagination-icon"
-                        style={{
-                          transform: "rotate(180deg)",
-                          opacity: isFirstEntry ? 0.3 : 1,
-                        }}
-                      />
-                    </IconButton>
-                  </span>
-                </Tooltip>
-                <Tooltip title="next entry">
-                  <span>
-                    <IconButton
-                      aria-label="go to next entry"
-                      disabled={isLastEntry}
-                      onClick={() => {
-                        const newNodeName = book[focusIdx + 1][0]
-                        setFocusNode(newNodeName)
-                      }}
-                    >
-                      <PassPageIcon
-                        className="book-pagination-icon"
-                        style={{
-                          opacity: isLastEntry ? 0.3 : 1,
-                        }}
-                      />
-                    </IconButton>
-                  </span>
-                </Tooltip>
               </div>
             </div>
           </div>

@@ -105,6 +105,7 @@ const steps = [
     element: ds("graph-controls"),
     intro:
       "If you close the book, you can continue exploring the graph, or reset to generate different graphs.",
+    position: isMobile ? "bottom" : "left",
   },
   {
     // 16
