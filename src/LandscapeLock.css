@@ -2,7 +2,7 @@
   z-index: 999999; /* above all */
   display: none; /* media query toggle */
   background: darkslategray;
-  height: 100%;
+  height: 100% !important;
 
   align-items: center;
   justify-content: center;
@@ -18,6 +18,7 @@
   font-weight: bold;
   font-size: 1.7rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .landscape-container-alert-icons {
