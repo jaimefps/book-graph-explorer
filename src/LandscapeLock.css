@@ -2,7 +2,7 @@
   z-index: 999999; /* above all */
   display: none; /* media query toggle */
   background: darkslategray;
-  height: 100% !important;
+  height: 100vh;
 
   align-items: center;
   justify-content: center;

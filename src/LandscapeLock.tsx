@@ -7,7 +7,6 @@ import { useEffect } from "react"
 
 export const LandscapeLock = () => {
   const { setEnabled } = useDemoContext()
-  // kill demo if user flips phone:
   useEffect(() => setEnabled(false), [setEnabled])
 
   return (
