@@ -256,12 +256,6 @@ export const DemoSteps = () => {
         setEnabled(false)
         setStepNum(null)
         reset()
-
-        setTimeout(() => {
-          // scroll back to top of app:
-          const element = document.getElementsByClassName("app-container")[0]
-          if (element) element.scrollTop = 0
-        }, 100)
       }}
     />
   )

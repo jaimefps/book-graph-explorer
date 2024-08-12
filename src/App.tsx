@@ -11,7 +11,7 @@ import { DemoSteps } from "./DemoSteps"
 
 const Root = () => {
   return (
-    <div className="app-container">
+    <div id="app-container" className="app-container">
       <AppBar />
       <Outlet />
       <BookModal />

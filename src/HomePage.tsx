@@ -3,10 +3,18 @@ import { useNavigate } from "react-router-dom"
 import { useDemoContext } from "./context/DemoContext"
 import { Page } from "./Page"
 import "./HomePage.css"
+import { useEffect } from "react"
 
 export const HomePage = () => {
   const { setEnabled } = useDemoContext()
   const navigate = useNavigate()
+
+  useEffect(() => {
+    // try to scroll to top, so the appbar is visible:
+    const node = document.getElementById("app-container")
+    if (node) node.scrollTop = 0
+  }, [])
+
   return (
     <Page>
       <div className="home-container">
