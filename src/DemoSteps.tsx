@@ -96,7 +96,7 @@ const steps = [
     // 14
     element: ds("book-notes"),
     intro:
-      "And take notes about this section, that will be stored locally on your browser/device.",
+      "And take notes about the entry, which will be stored on your browser/device.",
   },
   {
     // 15

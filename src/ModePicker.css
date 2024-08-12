@@ -1,6 +1,5 @@
 .mode-picker {
   height: 100%;
-  background: darkslategray;
   background: var(--dark-base);
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@
 .mode-picker-button {
   all: unset;
 
-  background: ghostwhite;
+  background: darkseagreen;
   border-radius: 4px;
   text-align: left;
   display: flex;
@@ -41,7 +40,7 @@
 
 .mode-picker-button-label {
   font-size: 1.2rem;
-  color: darkseagreen;
+  color: var(--dark-base);
   font-weight: 700;
 
   display: flex;

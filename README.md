@@ -12,22 +12,12 @@
 
 TODOS:
 
-- whole app has "portrait only" (NOW)
-- about pages
+- about pages (now)
 - move book/opensource to about, then use that space for feedbackfish
 - add a a middle step between clicking a node and opening the book reader...?
 
 ---
 
-- "about" page itself has tabs to split stuff up in:
-  - spinoza
-  - notation
-  - credit
-
----
-
-- replace "What is this?" with "Demo"
-- maybe just force the demo mode if first time visit tracked in localStorage
 - the Open source github should link to the spinoza.io webpage
 
 ---

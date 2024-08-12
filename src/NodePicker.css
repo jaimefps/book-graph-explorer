@@ -97,7 +97,8 @@
   font-weight: bold;
   cursor: pointer;
   padding-bottom: 2px;
-  border-bottom: 3px solid darkslategray;
+  border-bottom: 3px solid var(--dark-base);
+  color: var(--dark-base);
 }
 .disabledPickerLabel {
   border-bottom: 3px solid transparent;

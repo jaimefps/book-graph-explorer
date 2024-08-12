@@ -50,13 +50,13 @@ export const Bio = () => {
           and a pivotal figure in Western philosophy. His family, Sephardic Jews
           who fled persecution during the Inquisition, settled in the tolerant
           environment of the Netherlands, where Spinoza was born and raised.
-          Excommunicated from the Jewish community for his radical ideas, he
-          lived a modest life as a lens grinder while dedicating himself to
-          philosophy. His works, including Ethics, were published posthumously
-          in 1677. Almost immediately, his writings were met with fierce
-          opposition and swiftly banned by both the Catholic Church and the
-          States of Holland due to their controversial ideas, which challenged
-          established religious and philosophical doctrines. <br />
+          Excommunicated from the Jewish community for his beliefs, he lived a
+          modest life as a lens grinder while dedicating himself to philosophy.
+          His works, including his <i>Ethics</i>, were published posthumously in
+          1677. Almost immediately, his writings were met with fierce opposition
+          and swiftly banned by both the Catholic Church and the States of
+          Holland due to their controversial ideas, which challenged established
+          religious and philosophical doctrines. <br />
           <br />
           Spinoza's books survived in the form of contraband for decades.
           Despite being banned, his writings circulated clandestinely, often
@@ -65,7 +65,7 @@ export const Bio = () => {
           continued to influence thinkers across Europe, even in the face of
           censorship. Ultimately, Spinoza's works, particularly{" "}
           <BaseLink href="https://en.wikipedia.org/wiki/Ethics_(Spinoza_book)">
-            Ethics
+            <i>Ethics</i>
           </BaseLink>
           , have had a lasting impact on modern thought, earning him recognition
           as one of the most profound philosophers in history. For further

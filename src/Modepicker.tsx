@@ -56,7 +56,7 @@ export const ModePicker: React.FC<{
         data-demo="book-picker"
         className="mode-picker-button"
         onClick={() => setFocusNode(openBookWith)}
-        style={{ background: "darkseagreen" }}
+        style={{ background: "beige" }}
       >
         <div
           className="mode-picker-button-label"

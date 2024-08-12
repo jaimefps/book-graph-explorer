@@ -177,6 +177,14 @@ const Notes: React.FC<{
                           color: "lightgray",
                           fontSize: "1rem",
                         }}
+                        sx={{
+                          ":focus": {
+                            opacity: 0.8,
+                          },
+                          ":hover": {
+                            opacity: 0.8,
+                          },
+                        }}
                       />
                     </IconButton>
                   </Tooltip>
