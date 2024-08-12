@@ -93,12 +93,19 @@
   padding: 0 2rem;
 }
 .node-picker-entry-label {
+  all: unset;
+  box-sizing: border-box;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
-  padding-bottom: 2px;
+  padding: 2px;
   border-bottom: 3px solid var(--dark-base);
   color: var(--dark-base);
+}
+.node-picker-entry-label:focus,
+.node-picker-entry-label:hover {
+  outline: 2px solid darkseagreen;
+  outline-offset: 4px;
 }
 .disabledPickerLabel {
   border-bottom: 3px solid transparent;

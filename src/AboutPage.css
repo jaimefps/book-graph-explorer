@@ -13,7 +13,6 @@
   gap: 0.5rem;
   padding: 0 2rem;
 }
-
 .about-tab {
   border-color: darkseagreen !important;
   color: darkseagreen !important;
@@ -25,7 +24,6 @@
 .about-tab:focus {
   opacity: 0.8;
 }
-
 .about-content {
   flex: 1;
   overflow: hidden;
@@ -34,12 +32,9 @@
   color: beige;
   padding: 2rem;
 }
-.about-text {
-  text-align: justify;
-  line-height: 1.5;
-}
 .about-header-row {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -47,11 +42,16 @@
   font-size: 60px;
   margin: 0;
 }
+.about-text {
+  text-align: justify;
+  line-height: 1.5;
+}
 .about-pic {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
+  min-height: 50px;
+  min-width: 50px;
   border-radius: 50%;
-  /* overflow: hidden; */
 }
 .about-icon {
   font-size: 35px !important;
@@ -59,15 +59,15 @@
   color: darkseagreen;
   border-radius: 50%;
   padding: 2px;
+  margin-bottom: -12px;
 }
 
 /* SPINOZA */
 .about-spinoza {
-  display: flex;
   height: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  align-items: start;
 }
 .about-spinoza-col {
   max-width: 725px;
@@ -79,16 +79,17 @@
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
   gap: 2px;
 }
 
 /* NOTATION */
 .about-notation {
-  display: flex;
   height: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  align-items: start;
 }
 .about-notation-col {
   max-width: 500px;
@@ -96,8 +97,9 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  padding: 0 0.5rem;
   gap: 1rem;
 }
 .notation-display {
@@ -129,6 +131,29 @@
   border-radius: 4px;
 }
 
+/* CREDITS */
+.about-credits {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.about-credits-col {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.about-credits-row {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  gap: 1rem;
+}
+
 @media (max-width: 850px) {
   .about-appbar {
     padding: 0 1rem;
@@ -142,21 +167,8 @@
   .about-content {
     padding: 1rem;
   }
-  .about-header-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
   .about-header {
-    font-size: 30px;
-    margin: 0;
-  }
-  .about-pic {
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-    /* overflow: hidden; */
+    font-size: 28px;
   }
   .about-spinoza {
     padding: 1rem;
@@ -164,6 +176,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+  .about-icon {
+    margin-bottom: -2px;
   }
 }
 

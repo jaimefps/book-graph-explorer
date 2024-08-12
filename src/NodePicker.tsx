@@ -187,8 +187,7 @@ export const NodePicker: React.FC<{
           data-demo="entry-preview-tabs"
           className="node-picker-entry-label-group"
         >
-          <div
-            role="button"
+          <button
             onClick={() => setPreview(fromNode)}
             className={cs("node-picker-entry-label", {
               disabledPickerLabel: preview !== fromNode,
@@ -201,10 +200,9 @@ export const NodePicker: React.FC<{
               style={{ marginBottom: -6, marginRight: -6 }}
             />{" "}
             {fromNode}
-          </div>
+          </button>
           {mode === "connection" && (
-            <div
-              role="button"
+            <button
               onClick={() => setPreview(toNode)}
               className={cs("node-picker-entry-label", {
                 disabledPickerLabel: preview !== toNode,
@@ -216,7 +214,7 @@ export const NodePicker: React.FC<{
                 style={{ marginBottom: -6, marginRight: -6 }}
               />{" "}
               {toNode}
-            </div>
+            </button>
           )}
         </div>
         <div className="node-picker-entry-content">

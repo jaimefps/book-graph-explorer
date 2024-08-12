@@ -4,8 +4,43 @@ import spinozaHague from "./assets/spinoza.png"
 import LaunchIcon from "@mui/icons-material/Launch"
 import { Outlet, useNavigate } from "react-router-dom"
 import FunctionsIcon from "@mui/icons-material/Functions"
+import GroupsIcon from "@mui/icons-material/Groups"
 import { Page } from "./Page"
 import React from "react"
+
+export const Credits = () => {
+  return (
+    <div data-demo="credits" className="about-credits">
+      <div className="about-credits-col">
+        <div className="about-header-row">
+          <GroupsIcon className="about-icon" />
+          <h2 className="about-header">credits</h2>
+        </div>
+        <div className="about-credits-col">
+          <div data-demo="about-me" className="about-credits-row">
+            <img
+              alt="Jaime Pericás"
+              src="https://avatars.githubusercontent.com/u/19941627?s=400&u=eeae622ad4551adb1aa7ae178060f37ec34cb010&v=4"
+              className="about-pic"
+            />
+            <p>
+              <b>Jaime Pericás Sáez</b> - student of philosophy turned into
+              software engineer. You can find me on{" "}
+              <BaseLink href="https://www.linkedin.com/in/jaime-pericas-saez/">
+                LinkedIn
+              </BaseLink>{" "}
+              or <BaseLink href="https://github.com/jaimefps">Github</BaseLink>.
+            </p>
+          </div>
+          <div className="about-credits-row">todo rest</div>
+          <div></div>
+          <div className="about-credits-tech"></div>
+          <div className="about-credits-resources"></div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const NotationItem: React.FC<{
   label: string
@@ -57,14 +92,6 @@ export const Notation = () => {
           </div>
         </div>
       </div>
-    </div>
-  )
-}
-
-export const Credits = () => {
-  return (
-    <div data-demo="credits" className="about-credits">
-      todo: credits, dependencies, etc
     </div>
   )
 }
