@@ -133,8 +133,8 @@ export const DemoSteps = () => {
   }, [enabled, stepNum])
 
   useEffect(() => {
-    // if user clicks back at any time during
-    // the demo, we simply kill the demo:
+    // if user clicks back during the
+    // demo, we simply kill the demo:
     const handleBackButton = () => setEnabled(false)
     window.addEventListener("popstate", handleBackButton)
     return () => window.removeEventListener("popstate", handleBackButton)
@@ -257,6 +257,12 @@ export const DemoSteps = () => {
         setEnabled(false)
         setStepNum(null)
         reset()
+
+        setTimeout(() => {
+          // scroll back to top of app:
+          const element = document.getElementsByClassName("app-container")[0]
+          if (element) element.scrollTop = 0
+        }, 100)
       }}
     />
   )
