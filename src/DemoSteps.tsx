@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { useDemoContext } from "./context/DemoContext"
 import { useExploreContext } from "./context/ExploreContext"
+import { isMobile } from "react-device-detect"
 
 function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
@@ -29,7 +30,7 @@ const steps = [
     // 2
     element: ds("notation"),
     intro:
-      "This is the notation we follow when referencing entries in Spinoza's Ethics. For example, e1p2 means Proposition 2 of Part 1 of the Ethics.",
+      "The 'about' tab also has a section explaining how we reference entries in Spinoza's Ethics. For example, e1p2 means Proposition 2 of Part 1 of the Ethics.",
   },
   {
     // 3
@@ -40,7 +41,7 @@ const steps = [
     // 4
     element: ds("connection-picker"),
     intro:
-      "or better yet, you can illustrate the logical structure of the book. Let's try to find a connection between entries!",
+      "or better yet, you can illustrate the logical structure of the book. Let's try to find a connection between two entries!",
   },
   {
     // 5
@@ -61,20 +62,21 @@ const steps = [
   {
     // 8
     element: ds("query-details"),
-    intro:
-      "Woah, a graph has appeared! You can scroll on the graph to zoom, drag the nodes around, or click any node to open the Reader for it.",
+    intro: `Woah, a graph has appeared! You can ${
+      isMobile ? "pinch" : "scroll"
+    } on the graph to zoom, drag the nodes around, or click any node to open the Reader for it.`,
   },
   {
     // 9
     // transitions seem to break:
     element: ds("book-entry-content"),
     intro:
-      "When you click a node, you'll open the Reader where you can study that entry as well as a few other things.",
+      "When you click a node, you'll open the Reader where you can study that entry as well as...",
   },
   {
     // 10
     element: ds("entry-header"),
-    intro: "You can thumb through entries, bookmark, or set your favorites.",
+    intro: "thumb through entries, bookmark, or set your favorites.",
   },
   {
     // 11
@@ -102,13 +104,13 @@ const steps = [
     // 15
     element: ds("graph-controls"),
     intro:
-      "If you close the book, you can continue exploring the graph, or reset to explore some other structure.",
+      "If you close the book, you can continue exploring the graph, or reset to generate different graphs.",
   },
   {
     // 16
     element: ds("credits"),
     intro:
-      "And this is me. Thanks for going through that whole ordeal, hope you find this app useful. Bye 👋",
+      "And this is me. Thanks for taking a look around. I hope you find this app useful. Bye!",
   },
 ]
 

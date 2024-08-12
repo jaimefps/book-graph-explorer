@@ -34,11 +34,14 @@
   color: beige;
   padding: 2rem;
 }
-
+.about-text {
+  text-align: justify;
+  line-height: 1.5;
+}
 .about-header-row {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .about-header {
   font-size: 60px;
@@ -50,11 +53,15 @@
   border-radius: 50%;
   /* overflow: hidden; */
 }
-.about-text {
-  text-align: justify;
-  line-height: 1.5;
+.about-icon {
+  font-size: 35px !important;
+  border: 1px solid darkseagreen;
+  color: darkseagreen;
+  border-radius: 50%;
+  padding: 2px;
 }
 
+/* SPINOZA */
 .about-spinoza {
   display: flex;
   height: 100%;
@@ -62,12 +69,10 @@
   align-items: center;
   overflow: hidden;
 }
-
 .about-spinoza-col {
-  max-width: 700px;
+  max-width: 725px;
   overflow: scroll;
 }
-
 .base-link {
   color: var(--dark-base);
   color: darkseagreen;
@@ -75,6 +80,53 @@
   display: inline-flex;
   align-items: center;
   gap: 2px;
+}
+
+/* NOTATION */
+.about-notation {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.about-notation-col {
+  max-width: 500px;
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.notation-display {
+  display: flex;
+  gap: 3.5rem;
+}
+.notation-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.notation-chip-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 135px;
+}
+.notation-chip {
+  display: inline-block;
+  width: 2.5rem;
+  text-align: center;
+  background: beige;
+  color: var(--dark-base);
+  padding: 2px 0;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 4px;
 }
 
 @media (max-width: 850px) {
