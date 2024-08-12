@@ -109,7 +109,7 @@ const steps = [
   },
   {
     // 16
-    element: ds("credits"),
+    element: ds("about-me"),
     intro:
       "And this is me. Thanks for taking a look around. I hope you find this app useful. Bye!",
   },
