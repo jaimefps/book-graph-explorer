@@ -156,6 +156,7 @@ const Notes: React.FC<{
                 opacity: isPlaceholder ? 0.5 : undefined,
               }}
             >
+              <div className="note-triangle-corner" />
               <div className="notes-stored-left">
                 <div>{note.text}</div>
                 {!isPlaceholder && (

@@ -78,6 +78,7 @@
   overflow-y: scroll;
 }
 .book-entry-notes-stored {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -98,6 +99,17 @@
   min-width: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+.note-triangle-corner {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 30px solid var(--dark-base);
+  transform: rotate(109deg);
+  position: absolute;
+  bottom: -10px;
+  right: -5px;
 }
 .note-stored-date {
   font-weight: unset;
