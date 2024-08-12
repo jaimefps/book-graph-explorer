@@ -1,5 +1,5 @@
 import { Steps } from "intro.js-react"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { useDemoContext } from "./context/DemoContext"
 import { useExploreContext } from "./context/ExploreContext"
@@ -204,6 +204,12 @@ export const DemoSteps = () => {
         if (step === 9) {
           setFocusNode(demoNodes.to)
           await delay(400) // wait for transitions to finish
+          tourRef.current?.updateStepElement(step)
+        }
+        if (step === 12) {
+          await delay(100)
+          // having issues finding the top controls
+          // half the time, maybe this helps...
           tourRef.current?.updateStepElement(step)
         }
 
