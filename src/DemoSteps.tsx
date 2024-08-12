@@ -117,8 +117,7 @@ const steps = [
 
 export const DemoSteps = () => {
   const navigate = useNavigate()
-  const tourRef = useRef<Steps>(null)
-  const { enabled, setEnabled, demoNodes } = useDemoContext()
+  const { tourRef, enabled, setEnabled, demoNodes } = useDemoContext()
   const { setMode, reset, setInputNodes, setOpenNotes, setFocusNode } =
     useExploreContext()
 
@@ -130,15 +129,15 @@ export const DemoSteps = () => {
     if (enabled && tourRef.current) {
       tourRef.current.updateStepElement(stepNum ?? 0)
     }
-  }, [enabled, stepNum])
+  }, [enabled, stepNum, tourRef])
 
   useEffect(() => {
     // if user clicks back during the
     // demo, we simply kill the demo:
-    const handleBackButton = () => setEnabled(false)
+    const handleBackButton = () => tourRef.current?.introJs.exit()
     window.addEventListener("popstate", handleBackButton)
     return () => window.removeEventListener("popstate", handleBackButton)
-  }, [setEnabled])
+  }, [tourRef])
 
   return (
     <Steps

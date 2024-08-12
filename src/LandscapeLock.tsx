@@ -3,11 +3,31 @@ import ScreenLockLandscapeIcon from "@mui/icons-material/ScreenLockLandscape"
 import StayCurrentLandscapeIcon from "@mui/icons-material/StayCurrentLandscape"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward"
 import { useDemoContext } from "./context/DemoContext"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import { isMobile } from "react-device-detect"
+
+const useOrientation = () => {
+  const [isLandscape, setIsLandscape] = useState(
+    window.innerWidth > window.innerHeight
+  )
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLandscape(window.innerWidth > window.innerHeight)
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+  return isLandscape && isMobile
+}
 
 export const LandscapeLock = () => {
-  const { setEnabled } = useDemoContext()
-  useEffect(() => setEnabled(false), [setEnabled])
+  const { tourRef } = useDemoContext()
+  const isLandscape = useOrientation()
+  useEffect(() => {
+    if (isLandscape) {
+      tourRef.current?.introJs?.exit()
+    }
+  }, [tourRef, isLandscape])
 
   return (
     <div className="landscape-container-alert">

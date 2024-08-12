@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react"
+import { Steps } from "intro.js-react"
+import React, { useContext, useRef, useState } from "react"
 
 const demoNodes = {
   from: "e1def3",
@@ -9,18 +10,21 @@ const DemoContext = React.createContext<{
   enabled: boolean
   setEnabled: React.Dispatch<React.SetStateAction<boolean>>
   demoNodes: typeof demoNodes
+  tourRef: React.RefObject<Steps>
 } | null>(null)
 
 export const DemoProvider: React.FC<{
   children: React.ReactNode
 }> = ({ children }) => {
   const [enabled, setEnabled] = useState(false)
+  const tourRef = useRef<Steps>(null)
   return (
     <DemoContext.Provider
       value={{
         enabled,
         setEnabled,
         demoNodes,
+        tourRef,
       }}
     >
       {children}
