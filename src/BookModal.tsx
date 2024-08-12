@@ -156,7 +156,12 @@ const Notes: React.FC<{
                 opacity: isPlaceholder ? 0.5 : undefined,
               }}
             >
-              <div className="note-triangle-corner" />
+              <div
+                className="note-triangle-corner"
+                style={{
+                  borderBottomColor: isPlaceholder ? "beige" : undefined,
+                }}
+              />
               <div className="notes-stored-left">
                 <div>{note.text}</div>
                 {!isPlaceholder && (

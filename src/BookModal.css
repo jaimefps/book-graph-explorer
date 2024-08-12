@@ -109,7 +109,7 @@
   transform: rotate(109deg);
   position: absolute;
   bottom: -10px;
-  right: -5px;
+  right: -7px;
 }
 .note-stored-date {
   font-weight: unset;
@@ -162,10 +162,9 @@
   gap: 1.5rem;
 }
 
-.book-content-col-left {
-}
-
 .book-content-col-right {
+  background: #7f967f;
+  border-top-left-radius: 16px;
 }
 
 .book-entry-name {
