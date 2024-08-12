@@ -2,8 +2,14 @@ import "./LandscapeLock.css"
 import ScreenLockLandscapeIcon from "@mui/icons-material/ScreenLockLandscape"
 import StayCurrentLandscapeIcon from "@mui/icons-material/StayCurrentLandscape"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward"
+import { useDemoContext } from "./context/DemoContext"
+import { useEffect } from "react"
 
 export const LandscapeLock = () => {
+  const { setEnabled } = useDemoContext()
+  // kill demo if user flips phone:
+  useEffect(() => setEnabled(false), [setEnabled])
+
   return (
     <div className="landscape-container-alert">
       <div className="landscape-container-alert-icons">
