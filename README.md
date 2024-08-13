@@ -12,19 +12,18 @@
 
 TODOS:
 
-- about pages (now)
+- sentry io & error boundary around whole app
+  (and report what query broke the app, likely based on the URL state)
+
+- firebase analytics
+
+- about page (about me)
+- add feedback button on about
 - move book/opensource to about, then use that space for feedbackfish
-- add a a middle step between clicking a node and opening the book reader...?
 
 ---
 
 - the Open source github should link to the spinoza.io webpage
-
----
-
-- "go back to graph" button.
-- add feedback button on about
-  or maybe add a "Contact" tab.
 
 ---
 
@@ -48,9 +47,6 @@ LATER: gather proofs
 - maybe an input for degrees of search, e.g., so that we only get 3 degrees of ancestry
 
 ---
-
-- sentry io & error boundary around whole app
-  (and report what query broke the app, likely based on the URL state)
 
 ---
 

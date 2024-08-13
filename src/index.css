@@ -21,6 +21,24 @@ body {
   box-sizing: border-box;
 }
 
+.error-fallback-container {
+  height: 100%;
+  background: orange;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  padding: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.error-fallback-text {
+  text-align: center;
+}
+
 /* SCROLLBAR */
 /* For WebKit browsers (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {

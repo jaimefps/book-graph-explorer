@@ -84,4 +84,6 @@ const router = createBrowserRouter([
   },
 ])
 
-export const Router = () => <RouterProvider router={router} />
+export const Router = () => {
+  return <RouterProvider router={router} />
+}
