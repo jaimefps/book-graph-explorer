@@ -206,10 +206,13 @@ export const DemoSteps = () => {
           await delay(400) // wait for transitions to finish
           tourRef.current?.updateStepElement(step)
         }
+
         if (step === 12) {
-          await delay(100)
           // having issues finding the top controls
           // half the time, maybe this helps...
+          await delay(300)
+          tourRef.current?.updateStepElement(step)
+          await delay(300)
           tourRef.current?.updateStepElement(step)
         }
 
