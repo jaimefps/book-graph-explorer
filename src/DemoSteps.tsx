@@ -25,7 +25,7 @@ const steps = [
     // 1
     element: ds("spinoza"),
     intro:
-      "If you don't know about Spinoza, I highly recommend you read a bit about him. You can start here on the 'about' tab, but let's move on to the features!",
+      "If you don't know about Spinoza, I highly recommend you read about him, but let's move on to the app!",
   },
   {
     // 2
@@ -36,7 +36,7 @@ const steps = [
   {
     // 3
     element: ds("book-picker"),
-    intro: "Over on the 'explore' tab, you can read the book...",
+    intro: "Over on the 'explore' tab, you can read the Ethics...",
   },
   {
     // 4
@@ -81,17 +81,17 @@ const steps = [
   {
     // 11
     element: ds("entry-proofs"),
-    intro: "Skip over to any of the proofs for this specific entry.",
+    intro: "You can skip over to any of the proofs for this specific entry.",
   },
   {
     // 12
     element: ds("book-controls"),
-    intro: "Instantly navigate to any of the entries in the book.",
+    intro: "Or instantly navigate to any of the entries in the book.",
   },
   {
     // 13: only on small screens:
     element: ds("mobile-open-notes"),
-    intro: "Open the notes section here.",
+    intro: "You can open the notes section here.",
   },
   {
     // 14
@@ -110,7 +110,7 @@ const steps = [
     // 16
     element: ds("about-me"),
     intro:
-      "And this is me. Thanks for taking a look around. I hope you find this app useful. Bye!",
+      "And this is me! Thanks for taking a look around. I hope you find this app useful. Bye!",
   },
 ]
 

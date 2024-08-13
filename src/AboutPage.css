@@ -104,7 +104,9 @@
 }
 .notation-display {
   display: flex;
-  gap: 3.5rem;
+  width: 100%;
+  max-width: 380px;
+  justify-content: space-between;
 }
 .notation-col {
   display: flex;

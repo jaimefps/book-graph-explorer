@@ -9,6 +9,7 @@ import CloseIcon from "@mui/icons-material/Close"
 import CytoscapeComponent from "react-cytoscapejs"
 import Snackbar from "@mui/material/Snackbar"
 import Tooltip from "@mui/material/Tooltip"
+import { logAnalytics } from "./analytics"
 import Button from "@mui/material/Button"
 import { bookGraph } from "./lib/graph"
 
@@ -164,6 +165,7 @@ export const Graph = () => {
           const node = event.target
           const nodeId = node.id()
           setFocus.current(nodeId)
+          logAnalytics("graph-press-node(finger)")
         }
 
         isDragging = false
@@ -177,6 +179,7 @@ export const Graph = () => {
       // regular mouse clicks:
       cy.on("click", "node", (event) => {
         if (!isDragging) {
+          logAnalytics("graph-press-node(mouse)")
           // Only allow click if not dragging
           event.stopPropagation()
           const node = event.target
@@ -214,9 +217,7 @@ export const Graph = () => {
 
         <div data-demo="graph-controls" className="graph-header-button-group">
           <Button
-            style={{
-              width: "6rem",
-            }}
+            style={{ width: "6rem" }}
             className="graph-button"
             variant="outlined"
             onClick={() => {

@@ -24,8 +24,8 @@ export const Credits = () => {
               className="about-pic"
             />
             <p>
-              <b>Jaime Pericás Sáez</b> - student of philosophy turned into
-              software engineer. You can find me on{" "}
+              <b>Jaime Pericás</b> - student of philosophy turned software{" "}
+              engineer. You can find me on{" "}
               <BaseLink href="https://www.linkedin.com/in/jaime-pericas-saez/">
                 LinkedIn
               </BaseLink>{" "}
