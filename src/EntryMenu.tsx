@@ -22,7 +22,7 @@ export const EntryMenu = () => {
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   const open = Boolean(anchorEl)
-
+  const disabledJump = !storage.bookmark || storage.bookmark === focusNode
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget)
   }
@@ -31,7 +31,7 @@ export const EntryMenu = () => {
   }
 
   return (
-    <div>
+    <div data-demo="book-controls" className="entry-menu-container">
       <Button
         className="book-entries-menu"
         size="small"
@@ -129,6 +129,45 @@ export const EntryMenu = () => {
           )
         })}
       </Menu>
+      <Button
+        onClick={() => {
+          if (storage.bookmark) {
+            setFocusNode(storage.bookmark)
+          }
+        }}
+        disabled={disabledJump}
+        size="small"
+        variant="contained"
+        sx={{
+          textTransform: "none",
+          color: "darkslategray",
+          background: "ghostwhite",
+          fontWeight: "bold",
+          ":focus": {
+            background: "ghostwhite",
+            opacity: 0.8,
+          },
+          ":hover": {
+            background: "ghostwhite",
+            opacity: 0.8,
+          },
+          ":disabled": {
+            color: "darkslategray",
+            background: "ghostwhite",
+            opacity: 0.4,
+          },
+        }}
+        endIcon={
+          <BookmarkIcon
+            style={{
+              color: "orangered",
+              opacity: disabledJump ? 0.5 : undefined,
+            }}
+          />
+        }
+      >
+        go to
+      </Button>
     </div>
   )
 }

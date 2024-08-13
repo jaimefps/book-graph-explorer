@@ -327,19 +327,9 @@ export const BookModal = () => {
               <MenuBookIcon className="book-appbar-reader-icon" />
               <span className="book-appbar-logo-ext">book</span> reader
             </div>
-            <div
-              data-demo={isMobile ? undefined : "book-controls"}
-              className="entry-menu-large"
-            >
-              <EntryMenu /> {jumpToBookmark}
-            </div>
+            <EntryMenu />
           </div>
-          <div
-            data-demo={isMobile ? "book-controls" : undefined}
-            className="entry-menu-small"
-          >
-            <EntryMenu /> {jumpToBookmark}
-          </div>
+
           <div className="book-appbar-col-right">
             <IconButton
               aria-label="close"

@@ -4,16 +4,6 @@
   flex-direction: column;
 }
 
-.entry-menu-large,
-.entry-menu-small {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.entry-menu-small {
-  display: none;
-}
-
 .book-appbar {
   display: flex;
   align-items: center;
@@ -340,14 +330,7 @@
   .book-appbar-logo-ext {
     display: none;
   }
-  .entry-menu-large {
-    display: none;
-  }
-  .entry-menu-small {
-    padding: 0 0.5rem;
-    display: flex;
-    gap: 0.5rem;
-  }
+
   .book-entry-button-group {
     display: flex;
     justify-content: space-evenly;
