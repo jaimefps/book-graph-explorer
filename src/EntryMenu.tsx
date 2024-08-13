@@ -31,7 +31,7 @@ export const EntryMenu = () => {
   }
 
   return (
-    <div data-demo="book-controls" className="entry-menu-container">
+    <div className="entry-menu-container">
       <Button
         className="book-entries-menu"
         size="small"
