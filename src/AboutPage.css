@@ -54,7 +54,7 @@
   border-radius: 50%;
 }
 .about-icon {
-  font-size: 35px !important;
+  font-size: 50px !important;
   border: 1px solid darkseagreen;
   color: darkseagreen;
   border-radius: 50%;
@@ -72,16 +72,6 @@
 .about-spinoza-col {
   max-width: 725px;
   overflow: scroll;
-}
-.base-link {
-  color: var(--dark-base);
-  color: darkseagreen;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  gap: 2px;
 }
 
 /* NOTATION */
@@ -141,19 +131,33 @@
   align-items: start;
 }
 .about-credits-col {
-  max-width: 500px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 .about-credits-row {
   display: flex;
   align-items: center;
-  text-align: justify;
+  justify-content: start;
+  width: 100%;
   gap: 1rem;
+
+  p {
+    margin: 0;
+  }
+}
+.base-link {
+  color: darkseagreen;
+  text-decoration: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 850px) {
@@ -179,8 +183,18 @@
     align-items: center;
     gap: 2rem;
   }
+  .about-pic {
+    height: 35px;
+    width: 35px;
+    max-height: 35px;
+    max-width: 35px;
+  }
   .about-icon {
+    font-size: 35px !important;
     margin-bottom: -2px;
+  }
+  .about-credits-col {
+    gap: 1.2rem;
   }
 }
 

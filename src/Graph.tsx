@@ -318,20 +318,20 @@ export const Graph = () => {
               "background-color": "orange",
             },
           },
-          {
-            selector: "edge[into]",
-            style: {
-              "line-color": "crimson",
-              "target-arrow-color": "crimson",
-            },
-          },
-          {
-            selector: "edge[exit]",
-            style: {
-              "line-color": "blue",
-              "target-arrow-color": "blue",
-            },
-          },
+          // {
+          //   selector: "edge[into]",
+          //   style: {
+          //     "line-color": "green",
+          //     "target-arrow-color": "green",
+          //   },
+          // },
+          // {
+          //   selector: "edge[exit]",
+          //   style: {
+          //     "line-color": "lightblue",
+          //     "target-arrow-color": "lightblue",
+          //   },
+          // },
         ]}
       />
     </div>

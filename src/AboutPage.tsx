@@ -4,6 +4,9 @@ import spinozaHague from "./assets/spinoza.png"
 import LaunchIcon from "@mui/icons-material/Launch"
 import { Outlet, useNavigate } from "react-router-dom"
 import FunctionsIcon from "@mui/icons-material/Functions"
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism"
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks"
+import GitHubIcon from "@mui/icons-material/GitHub"
 import GroupsIcon from "@mui/icons-material/Groups"
 import { Page } from "./Page"
 import React from "react"
@@ -16,26 +19,81 @@ export const Credits = () => {
           <GroupsIcon className="about-icon" />
           <h2 className="about-header">credits</h2>
         </div>
-        <div className="about-credits-col">
-          <div data-demo="about-me" className="about-credits-row">
+        <div data-demo="about-me" className="about-credits-col">
+          <div className="about-credits-row">
             <img
               alt="Jaime Pericás"
               src="https://avatars.githubusercontent.com/u/19941627?s=400&u=eeae622ad4551adb1aa7ae178060f37ec34cb010&v=4"
               className="about-pic"
             />
             <p>
-              <b>Jaime Pericás</b> - student of philosophy turned software{" "}
-              engineer. You can find me on{" "}
+              <b>Built by</b> Jaime Pericás — student of philosophy turned
+              software engineer. You can find me on{" "}
               <BaseLink href="https://www.linkedin.com/in/jaime-pericas-saez/">
                 LinkedIn
               </BaseLink>{" "}
               or <BaseLink href="https://github.com/jaimefps">Github</BaseLink>.
             </p>
           </div>
-          <div className="about-credits-row">todo rest</div>
-          <div></div>
-          <div className="about-credits-tech"></div>
-          <div className="about-credits-resources"></div>
+          <div className="about-credits-row">
+            <GitHubIcon sx={{ fontSize: 45 }} />
+            <p>
+              <b>Built with</b>{" "}
+              <BaseLink href="https://react.dev/">ReactJs</BaseLink>,{" "}
+              <BaseLink href="https://js.cytoscape.org/">Cytoscape</BaseLink>,{" "}
+              <BaseLink href="https://introjs.com/">Intro.js</BaseLink>
+            </p>
+          </div>
+          <div className="about-credits-row">
+            <LibraryBooksIcon sx={{ fontSize: 45 }} />
+            <p>
+              <b>Text sourced</b> from publicly licensed sources:
+              <BaseLink href="https://www.thelatinlibrary.com/spinoza.ethica1.html">
+                The Latin Library
+              </BaseLink>
+              ,{" "}
+              <BaseLink href="https://www.gutenberg.org/cache/epub/3800/pg3800-images.html">
+                Project Gutenberg
+              </BaseLink>
+              ,{" "}
+              <BaseLink href="https://archive.org/details/etica-de-spinoza/mode/2up">
+                Epub Libre
+              </BaseLink>
+              .
+            </p>
+          </div>
+          <div className="about-credits-row" style={{ textAlign: "justify" }}>
+            <p>
+              I'm also working on an open-source project focused on tracking the
+              dependency graph of Ethics; it would be great to bring everything
+              together in one place for easier sharing and discussion:{" "}
+              <BaseLink href="https://github.com/jaimefps/ethics-data">
+                <i>Ethics data</i>
+              </BaseLink>{" "}
+              project.
+            </p>
+          </div>
+          <div className="about-credits-row">
+            <VolunteerActivismIcon
+              sx={{
+                fontSize: 40,
+                background: "beige",
+                borderRadius: "50%",
+                color: "var(--dark-base)",
+              }}
+            />
+            <p>
+              <b>Support this</b> project if you find it useful by:{" "}
+              <BaseLink href="https://buymeacoffee.com/jaimefps">
+                getting me coffee
+              </BaseLink>{" "}
+              or{" "}
+              <BaseLink href="https://www.patreon.com/jaimefps">
+                giving it long term support
+              </BaseLink>
+              .
+            </p>
+          </div>
         </div>
       </div>
     </div>
