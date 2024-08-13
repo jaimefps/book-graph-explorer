@@ -12,21 +12,12 @@
 
 TODOS:
 
-- about page (about me)
 - add feedback button on about
 - move book/opensource to about, then use that space for feedbackfish
 - the Open source github should link to the spinoza.io webpage
-- give credit to all other tools, and gutenberg project
-- detect onhover an use that for edge colors?
-  onDrag for mobile can behave as hover trigger
+- on desktop: book opens as a side-drawer
 
 ---
-
-LATER: gather proofs
-
-- book data: Part III
-- book data: Part IV
-- book data: Part V
 
 - review everything using the spanish version here:
   https://archive.org/details/etica-de-spinoza/page/n1/mode/2up

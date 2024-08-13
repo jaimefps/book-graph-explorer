@@ -1,12 +1,8 @@
 import "./AboutPage.css"
 import { Button } from "@mui/material"
 import spinozaHague from "./assets/spinoza.png"
-import LaunchIcon from "@mui/icons-material/Launch"
 import { Outlet, useNavigate } from "react-router-dom"
 import FunctionsIcon from "@mui/icons-material/Functions"
-import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism"
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks"
-import GitHubIcon from "@mui/icons-material/GitHub"
 import GroupsIcon from "@mui/icons-material/Groups"
 import { Page } from "./Page"
 import React from "react"
@@ -21,33 +17,25 @@ export const Credits = () => {
         </div>
         <div data-demo="about-me" className="about-credits-col">
           <div className="about-credits-row">
-            <img
-              alt="Jaime Pericás"
-              src="https://avatars.githubusercontent.com/u/19941627?s=400&u=eeae622ad4551adb1aa7ae178060f37ec34cb010&v=4"
-              className="about-pic"
-            />
-            <p>
+            <p
+              style={{
+                margin: 0,
+                fontSize: "1.1rem",
+                textAlign: "justify",
+                lineHeight: 1.2,
+              }}
+            >
               <b>Built by</b> Jaime Pericás — student of philosophy turned
               software engineer. You can find me on{" "}
               <BaseLink href="https://www.linkedin.com/in/jaime-pericas-saez/">
                 LinkedIn
               </BaseLink>{" "}
-              or <BaseLink href="https://github.com/jaimefps">Github</BaseLink>.
-            </p>
-          </div>
-          <div className="about-credits-row">
-            <GitHubIcon sx={{ fontSize: 45 }} />
-            <p>
+              or <BaseLink href="https://github.com/jaimefps">Github</BaseLink>.{" "}
               <b>Built with</b>{" "}
               <BaseLink href="https://react.dev/">ReactJs</BaseLink>,{" "}
               <BaseLink href="https://js.cytoscape.org/">Cytoscape</BaseLink>,{" "}
-              <BaseLink href="https://introjs.com/">Intro.js</BaseLink>
-            </p>
-          </div>
-          <div className="about-credits-row">
-            <LibraryBooksIcon sx={{ fontSize: 45 }} />
-            <p>
-              <b>Text sourced</b> from publicly licensed sources:
+              <BaseLink href="https://introjs.com/">Intro.js</BaseLink>{" "}
+              <b>Text sourced</b> from:{" "}
               <BaseLink href="https://www.thelatinlibrary.com/spinoza.ethica1.html">
                 The Latin Library
               </BaseLink>
@@ -60,36 +48,25 @@ export const Credits = () => {
                 Epub Libre
               </BaseLink>
               .
-            </p>
-          </div>
-          <div className="about-credits-row" style={{ textAlign: "justify" }}>
-            <p>
-              I'm also working on an open-source project focused on tracking the
-              dependency graph of Ethics; it would be great to bring everything
-              together in one place for easier sharing and discussion:{" "}
+              <br />
+              <br />
+              I'm working on an open-source project focused on tracking the
+              dependency graph of the <i>Ethics</i>; it would be great to bring
+              everything together in one place for easier sharing and
+              discussion: hence the{" "}
               <BaseLink href="https://github.com/jaimefps/ethics-data">
                 <i>Ethics data</i>
               </BaseLink>{" "}
               project.
-            </p>
-          </div>
-          <div className="about-credits-row">
-            <VolunteerActivismIcon
-              sx={{
-                fontSize: 40,
-                background: "beige",
-                borderRadius: "50%",
-                color: "var(--dark-base)",
-              }}
-            />
-            <p>
-              <b>Support this</b> project if you find it useful by:{" "}
-              <BaseLink href="https://buymeacoffee.com/jaimefps">
-                getting me coffee
-              </BaseLink>{" "}
-              or{" "}
+              <br />
+              <br />
+              <b>Support these</b> projects if you find them useful by:{" "}
               <BaseLink href="https://www.patreon.com/jaimefps">
                 giving it long term support
+              </BaseLink>{" "}
+              or{" "}
+              <BaseLink href="https://buymeacoffee.com/jaimefps">
+                getting me coffee
               </BaseLink>
               .
             </p>
@@ -159,9 +136,11 @@ const BaseLink: React.FC<{
   href: string
 }> = ({ children, href }) => {
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="base-link">
-      {children} <LaunchIcon style={{ fontSize: "1rem" }} />
-    </a>
+    <>
+      <a href={href} target="_blank" rel="noreferrer" className="base-link">
+        {children}
+      </a>
+    </>
   )
 }
 

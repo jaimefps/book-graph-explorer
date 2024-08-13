@@ -153,9 +153,6 @@
 .base-link {
   color: darkseagreen;
   text-decoration: none;
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 2px;
   padding: 0;
   margin: 0;
 }
