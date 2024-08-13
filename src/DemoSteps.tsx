@@ -80,14 +80,13 @@ const steps = [
   },
   {
     // 11
-    element: ds("entry-proofs"),
-    intro:
-      "You can also skip over to any of the proofs for this specific entry.",
+    element: ds("book-controls"),
+    intro: "You can also instantly navigate to any of the entries in the book.",
   },
   {
     // 12
-    element: ds("book-controls"),
-    intro: "Or you can instantly navigate to any of the entries in the book.",
+    element: ds("entry-proofs"),
+    intro: "Or you can skip over to any of the proofs for this specific entry.",
   },
   {
     // 13: only on small screens:
@@ -203,7 +202,7 @@ export const DemoSteps = () => {
         }
         if (step === 9) {
           setFocusNode(demoNodes.to)
-          await delay(400) // wait for transitions to finish
+          await delay(500) // wait for transitions to finish
           tourRef.current?.updateStepElement(step)
         }
 
