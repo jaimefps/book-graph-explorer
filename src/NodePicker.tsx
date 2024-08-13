@@ -9,6 +9,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 import { useExploreContext } from "./context/ExploreContext"
 import { useDemoContext } from "./context/DemoContext"
 import cs from "clsx"
+import { logAnalytics } from "./analytics"
 
 const modeOptMap = {
   ancestry: nodeOpts,
@@ -150,6 +151,7 @@ export const NodePicker: React.FC<{
               className="node-picker-button node-picker-button-submit"
               variant="contained"
               onClick={() => {
+                logAnalytics("graph-created")
                 if (mode === "connection") {
                   setNodes(
                     // enforce having earlier entry as

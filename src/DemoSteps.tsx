@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { useDemoContext } from "./context/DemoContext"
 import { useExploreContext } from "./context/ExploreContext"
 import { isMobile } from "react-device-detect"
+import { logAnalytics } from "./analytics"
 
 function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
@@ -251,6 +252,7 @@ export const DemoSteps = () => {
         if (step === 16) {
           // do
           navigate("/about/credits")
+          logAnalytics("tour-complete")
         }
       }}
       onStart={() => {

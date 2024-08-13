@@ -1,9 +1,9 @@
-import Button from "@mui/material/Button"
+import "./HomePage.css"
+import { Page } from "./Page"
+import { logAnalytics } from "./analytics"
 import { useNavigate } from "react-router-dom"
 import { useDemoContext } from "./context/DemoContext"
-// import { useEffect } from "react"
-import { Page } from "./Page"
-import "./HomePage.css"
+import Button from "@mui/material/Button"
 
 export const HomePage = () => {
   const { setEnabled } = useDemoContext()
@@ -22,6 +22,7 @@ export const HomePage = () => {
               size="large"
               variant="outlined"
               onClick={() => {
+                logAnalytics("tour-init")
                 setEnabled(true)
               }}
               sx={{
@@ -44,6 +45,7 @@ export const HomePage = () => {
               size="large"
               variant="contained"
               onClick={() => {
+                logAnalytics("explore-init")
                 navigate("/explore")
               }}
               sx={{

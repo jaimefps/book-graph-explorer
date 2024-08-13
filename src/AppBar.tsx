@@ -3,16 +3,21 @@ import { AppLink } from "./AppLink"
 import Button from "@mui/material/Button"
 import { useMatch } from "react-router-dom"
 import AutoStoriesIcon from "@mui/icons-material/AutoStories"
+import { logAnalytics } from "./analytics"
 import cs from "clsx"
 
 const LinkExternal: React.FC<{
+  id: string
   href: string
   icon: React.ReactNode
   children: React.ReactNode
-}> = ({ children, icon, href }) => {
+}> = ({ id, children, icon, href }) => {
   return (
     <Button
       href={href}
+      onClick={() => {
+        logAnalytics(`link-external:${id}`)
+      }}
       rel="noreferrer"
       target="_blank"
       startIcon={icon}
@@ -55,6 +60,7 @@ export const AppBar = () => {
           <div className={cs("appbar-arrow", { active: atGraph })} />
           <AppLink
             to="/explore"
+            onClick={() => logAnalytics("tabs-explore")}
             style={{ fontWeight: atGraph ? "bold" : undefined }}
           >
             explore
@@ -64,6 +70,7 @@ export const AppBar = () => {
           <div className={cs("appbar-arrow", { active: atAbout })} />
           <AppLink
             to="/about"
+            onClick={() => logAnalytics("tabs-about")}
             style={{ fontWeight: atAbout ? "bold" : undefined }}
           >
             about
@@ -73,6 +80,7 @@ export const AppBar = () => {
 
       <div className="appbar-col">
         <LinkExternal
+          id="buy-me-coffee"
           href="https://buymeacoffee.com/jaimefps"
           icon={
             <img
@@ -85,6 +93,7 @@ export const AppBar = () => {
           buy me coffee
         </LinkExternal>
         <LinkExternal
+          id="patreon"
           href="https://www.patreon.com/jaimefps"
           icon={
             <svg
@@ -103,6 +112,7 @@ export const AppBar = () => {
           patreon
         </LinkExternal>
         <LinkExternal
+          id="opensource-book"
           href="https://github.com/jaimefps/ethics-data"
           icon={
             <AutoStoriesIcon fontSize="small" className="appbar-book-icon" />

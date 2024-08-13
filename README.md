@@ -12,11 +12,6 @@
 
 TODOS:
 
-- sentry io & error boundary around whole app
-  (and report what query broke the app, likely based on the URL state)
-
-- firebase analytics
-
 - about page (about me)
 - add feedback button on about
 - move book/opensource to about, then use that space for feedbackfish

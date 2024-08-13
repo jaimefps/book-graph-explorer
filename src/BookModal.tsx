@@ -24,6 +24,7 @@ import { usePrevious } from "./lib/utils"
 import { isMobile } from "react-device-detect"
 import { book } from "./lib/book"
 import cs from "clsx"
+import { logAnalytics } from "./analytics"
 
 const UpdateAlert = () => {
   const [alert, setAlert] = useState<any>(undefined)
@@ -134,6 +135,7 @@ const Notes: React.FC<{
       window.alert("Write something first!")
       return
     }
+    logAnalytics("take-notes")
     addNote(targetNode, noteText)
     setNoteText("")
   }
@@ -416,6 +418,7 @@ export const BookModal = () => {
                   <IconButton
                     aria-label="save to favorites"
                     onClick={() => {
+                      logAnalytics("favorite-entry")
                       if (storage.favorites[focusNode]) {
                         clearFavorite(focusNode)
                       } else {

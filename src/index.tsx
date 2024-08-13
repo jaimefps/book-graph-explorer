@@ -1,16 +1,18 @@
 import "./alerting"
+import "./index.css"
+import "intro.js/introjs.css"
 import ReactDOM from "react-dom/client"
-// import reportWebVitals from "./reportWebVitals"
 import { ErrorBoundary } from "react-error-boundary"
 import WarningAmberIcon from "@mui/icons-material/WarningAmber"
+// import reportWebVitals from "./reportWebVitals"
+import { logAnalytics } from "./analytics"
 import * as Sentry from "@sentry/browser"
 import { Button } from "@mui/material"
 import { Router } from "./router"
-import "intro.js/introjs.css"
-import "./index.css"
+
+logAnalytics("page-view")
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
-
 root.render(
   <ErrorBoundary
     fallbackRender={({ error, resetErrorBoundary }) => {

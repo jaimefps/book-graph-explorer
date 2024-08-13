@@ -5,6 +5,7 @@ import { useExploreContext } from "./context/ExploreContext"
 import MenuBookIcon from "@mui/icons-material/MenuBook"
 import { useStorageContext } from "./context/StorageContext"
 import { book } from "./lib/book"
+import { logAnalytics } from "./analytics"
 
 export const ModePicker: React.FC<{
   setMode: (m: GraphMode) => void
@@ -21,7 +22,10 @@ export const ModePicker: React.FC<{
       <button
         data-demo="connection-picker"
         className="mode-picker-button"
-        onClick={() => setMode("connection")}
+        onClick={() => {
+          logAnalytics("mode-connection")
+          setMode("connection")
+        }}
       >
         <div className="mode-picker-button-label">
           <HubIcon fontSize="small" /> connection
@@ -32,7 +36,10 @@ export const ModePicker: React.FC<{
       </button>
       <button
         className="mode-picker-button"
-        onClick={() => setMode("descendancy")}
+        onClick={() => {
+          logAnalytics("mode-descendancy")
+          setMode("descendancy")
+        }}
       >
         <div className="mode-picker-button-label">
           <HubIcon fontSize="small" /> descendancy
@@ -43,7 +50,10 @@ export const ModePicker: React.FC<{
       </button>
       <button
         className="mode-picker-button"
-        onClick={() => setMode("ancestry")}
+        onClick={() => {
+          logAnalytics("mode-ancestry")
+          setMode("ancestry")
+        }}
       >
         <div className="mode-picker-button-label">
           <HubIcon fontSize="small" /> ancestry
@@ -55,7 +65,10 @@ export const ModePicker: React.FC<{
       <button
         data-demo="book-picker"
         className="mode-picker-button"
-        onClick={() => setFocusNode(openBookWith)}
+        onClick={() => {
+          logAnalytics("mode-book")
+          setFocusNode(openBookWith)
+        }}
         style={{ background: "beige" }}
       >
         <div

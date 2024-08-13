@@ -10,6 +10,7 @@ import MenuItem from "@mui/material/MenuItem"
 import Button from "@mui/material/Button"
 import Menu from "@mui/material/Menu"
 import { nodeOpts } from "./lib/book"
+import { logAnalytics } from "./analytics"
 
 const options = nodeOpts
 
@@ -132,6 +133,7 @@ export const EntryMenu = () => {
       <Button
         onClick={() => {
           if (storage.bookmark) {
+            logAnalytics("go-to-bookmark")
             setFocusNode(storage.bookmark)
           }
         }}
