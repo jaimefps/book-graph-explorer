@@ -206,15 +206,6 @@ export const DemoSteps = () => {
           tourRef.current?.updateStepElement(step)
         }
 
-        // if (step === 12) {
-        //   // having issues finding the top controls
-        //   // half the time, maybe this helps...
-        //   await delay(300)
-        //   tourRef.current?.updateStepElement(step)
-        //   await delay(300)
-        //   tourRef.current?.updateStepElement(step)
-        // }
-
         // how to open notes
         // on small screen:
         if (step === 13) {
