@@ -1,15 +1,15 @@
 import "./NodePicker.css"
-import { useEffect, useState } from "react"
-import { GraphMode } from "./types"
 import { nodeOpts } from "./lib/book"
-import { bookGraph, getNodeText } from "./lib/graph"
+import { GraphMode } from "./lib/types"
+import { useEffect, useState } from "react"
 import { TextField, Button } from "@mui/material"
+import { bookGraph, getNodeText } from "./lib/graph"
 import AutoComplete from "@mui/material/Autocomplete"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 import { useExploreContext } from "./context/ExploreContext"
 import { useDemoContext } from "./context/DemoContext"
+import { logAnalytics } from "./lib/analytics"
 import cs from "clsx"
-import { logAnalytics } from "./analytics"
 
 const modeOptMap = {
   ancestry: nodeOpts,

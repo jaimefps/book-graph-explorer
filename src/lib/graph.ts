@@ -1,4 +1,4 @@
-import { Proof, RenderData, Translation } from "../types"
+import { Proof, RenderData, Translation } from "./types"
 import { book } from "./book"
 class GraphNode {
   children: string[] = []

@@ -1,6 +1,6 @@
 import "./Graph.css"
 import { isMobile } from "react-device-detect"
-import { GraphMode, GraphQuery, RenderData } from "./types"
+import { GraphMode, GraphQuery, RenderData } from "./lib/types"
 import { useExploreContext } from "./context/ExploreContext"
 import { useRef, useState, useEffect, useMemo, useCallback } from "react"
 import { useDemoContext } from "./context/DemoContext"
@@ -9,7 +9,7 @@ import CloseIcon from "@mui/icons-material/Close"
 import CytoscapeComponent from "react-cytoscapejs"
 import Snackbar from "@mui/material/Snackbar"
 import Tooltip from "@mui/material/Tooltip"
-import { logAnalytics } from "./analytics"
+import { logAnalytics } from "./lib/analytics"
 import Button from "@mui/material/Button"
 import { bookGraph } from "./lib/graph"
 
@@ -69,7 +69,8 @@ function getRenderData(query: GraphQuery) {
 export const Graph = () => {
   const cyRef = useRef<cytoscape.Core>()
   const [openAlert, setOpenAlert] = useState(false)
-  const { mode, inputNodes, setFocusNode, reset } = useExploreContext()
+  const { mode, inputNodes, focusNode, setFocusNode, reset } =
+    useExploreContext()
 
   const { enabled } = useDemoContext()
   const demoRef = useRef(enabled)
@@ -204,6 +205,30 @@ export const Graph = () => {
       </>
     )
 
+  const [latest, setLatest] = useState(inputNodes?.[0])
+  useEffect(() => {
+    if (focusNode) {
+      setLatest(focusNode)
+    }
+  }, [focusNode])
+
+  const withColorEdges = useMemo(() => {
+    return renderData.map((el) => {
+      if (el.data.source && el.data.source === latest) {
+        el.data.exit = true
+      } else {
+        delete el.data.exit
+      }
+
+      if (el.data.target && el.data.target === latest) {
+        el.data.into = true
+      } else {
+        delete el.data.into
+      }
+      return el
+    })
+  }, [renderData, latest])
+
   return (
     <div className="graph-container">
       <ZoomAlert openAlert={openAlert} handleAlertClose={handleAlertClose} />
@@ -248,7 +273,7 @@ export const Graph = () => {
       </div>
 
       <CytoscapeComponent
-        elements={renderData}
+        elements={withColorEdges}
         cy={(cy) => (cyRef.current = cy)}
         maxZoom={0.9}
         minZoom={0.1}
@@ -291,6 +316,20 @@ export const Graph = () => {
             selector: "node[target]",
             style: {
               "background-color": "orange",
+            },
+          },
+          {
+            selector: "edge[into]",
+            style: {
+              "line-color": "crimson",
+              "target-arrow-color": "crimson",
+            },
+          },
+          {
+            selector: "edge[exit]",
+            style: {
+              "line-color": "blue",
+              "target-arrow-color": "blue",
             },
           },
         ]}

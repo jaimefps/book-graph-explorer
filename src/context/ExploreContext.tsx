@@ -1,4 +1,4 @@
-import { GraphMode, Translation } from "../types"
+import { GraphMode, Translation } from "../lib/types"
 import React, { useCallback, useContext, useState } from "react"
 
 const ExploreContext = React.createContext<{

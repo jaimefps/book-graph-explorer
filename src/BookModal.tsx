@@ -21,10 +21,10 @@ import AddCommentIcon from "@mui/icons-material/Save"
 import { Button, Tooltip } from "@mui/material"
 import { EntryMenu } from "./EntryMenu"
 import { usePrevious } from "./lib/utils"
+import { logAnalytics } from "./lib/analytics"
 import { isMobile } from "react-device-detect"
 import { book } from "./lib/book"
 import cs from "clsx"
-import { logAnalytics } from "./analytics"
 
 const UpdateAlert = () => {
   const [alert, setAlert] = useState<any>(undefined)

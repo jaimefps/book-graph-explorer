@@ -15,10 +15,10 @@ TODOS:
 - about page (about me)
 - add feedback button on about
 - move book/opensource to about, then use that space for feedbackfish
-
----
-
 - the Open source github should link to the spinoza.io webpage
+- give credit to all other tools, and gutenberg project
+- detect onhover an use that for edge colors?
+  onDrag for mobile can behave as hover trigger
 
 ---
 
@@ -43,13 +43,6 @@ LATER: gather proofs
 
 ---
 
----
-
-- when a node is focused, all the edges that come OUT OF it should change color
-- when a node is focused, all the edges that come INTO it should change color?
-
----
-
 - run validation during build script
 
 ---
@@ -60,12 +53,6 @@ LATER: gather proofs
 - highlight the path (or nodes?) that is common to all versions, when multiple are found
 - get number of proof/consequence/connection trees
 - text search that shows what entries include said concept
-
----
-
-- give credit to all other tools, and gutenberg project
-
----
 
 ---
 

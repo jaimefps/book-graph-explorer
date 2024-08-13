@@ -6,11 +6,11 @@ import BookmarkIcon from "@mui/icons-material/Bookmark"
 import { useExploreContext } from "./context/ExploreContext"
 import { useStorageContext } from "./context/StorageContext"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
+import { logAnalytics } from "./lib/analytics"
 import MenuItem from "@mui/material/MenuItem"
 import Button from "@mui/material/Button"
 import Menu from "@mui/material/Menu"
 import { nodeOpts } from "./lib/book"
-import { logAnalytics } from "./analytics"
 
 const options = nodeOpts
 

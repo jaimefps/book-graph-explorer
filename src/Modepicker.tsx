@@ -1,11 +1,11 @@
 import "./ModePicker.css"
-import { GraphMode } from "./types"
+import { GraphMode } from "./lib/types"
 import HubIcon from "@mui/icons-material/Hub"
 import { useExploreContext } from "./context/ExploreContext"
 import MenuBookIcon from "@mui/icons-material/MenuBook"
 import { useStorageContext } from "./context/StorageContext"
+import { logAnalytics } from "./lib/analytics"
 import { book } from "./lib/book"
-import { logAnalytics } from "./analytics"
 
 export const ModePicker: React.FC<{
   setMode: (m: GraphMode) => void

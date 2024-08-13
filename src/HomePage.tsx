@@ -1,6 +1,6 @@
 import "./HomePage.css"
 import { Page } from "./Page"
-import { logAnalytics } from "./analytics"
+import { logAnalytics } from "./lib/analytics"
 import { useNavigate } from "react-router-dom"
 import { useDemoContext } from "./context/DemoContext"
 import Button from "@mui/material/Button"

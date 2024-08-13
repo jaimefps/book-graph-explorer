@@ -3,7 +3,7 @@ import { AppLink } from "./AppLink"
 import Button from "@mui/material/Button"
 import { useMatch } from "react-router-dom"
 import AutoStoriesIcon from "@mui/icons-material/AutoStories"
-import { logAnalytics } from "./analytics"
+import { logAnalytics } from "./lib/analytics"
 import cs from "clsx"
 
 const LinkExternal: React.FC<{

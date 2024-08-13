@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { useDemoContext } from "./context/DemoContext"
 import { useExploreContext } from "./context/ExploreContext"
 import { isMobile } from "react-device-detect"
-import { logAnalytics } from "./analytics"
+import { logAnalytics } from "./lib/analytics"
 
 function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
