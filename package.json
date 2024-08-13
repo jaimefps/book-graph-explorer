@@ -7,6 +7,7 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.6",
     "@mui/material": "^5.16.6",
+    "@sentry/cli": "^2.33.1",
     "@sentry/react": "^8.25.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -36,10 +37,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn sentry:sourcemaps",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "release": "yarn build && firebase deploy && git add . && git commit -m 'deployment'"
+    "release": "yarn build && firebase deploy && git add . && git commit -m 'deployment'",
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org superuser-v0 --project spinozaio build && sentry-cli sourcemaps upload --org superuser-v0 --project spinozaio build"
   },
   "eslintConfig": {
     "extends": [
