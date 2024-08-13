@@ -1,5 +1,5 @@
 import { Steps } from "intro.js-react"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { useDemoContext } from "./context/DemoContext"
 import { useExploreContext } from "./context/ExploreContext"
@@ -68,7 +68,6 @@ const steps = [
   },
   {
     // 9
-    // transitions seem to break:
     element: ds("book-entry-content"),
     intro:
       "When you click a node, you'll open the Reader where you can study that entry as well as...",
@@ -80,18 +79,18 @@ const steps = [
   },
   {
     // 11
-    element: ds("book-controls"),
-    intro: "You can also instantly navigate to any of the entries in the book.",
+    element: ds("entry-proofs"),
+    intro: "Skip over to any of the proofs for this specific entry.",
   },
   {
     // 12
-    element: ds("entry-proofs"),
-    intro: "Or you can skip over to any of the proofs for this specific entry.",
+    element: ds("book-controls"),
+    intro: "Instantly navigate to any of the entries in the book.",
   },
   {
     // 13: only on small screens:
     element: ds("mobile-open-notes"),
-    intro: "You can open the notes section here.",
+    intro: "Open the notes section here.",
   },
   {
     // 14
@@ -116,12 +115,10 @@ const steps = [
 
 export const DemoSteps = () => {
   const navigate = useNavigate()
-  const { tourRef, enabled, setEnabled, demoNodes } = useDemoContext()
   const { setMode, reset, setInputNodes, setOpenNotes, setFocusNode } =
     useExploreContext()
-
-  // counter must start at null to know if prev is nothing:
-  const [stepNum, setStepNum] = useState<null | number>(null)
+  const { tourRef, enabled, setEnabled, demoNodes, stepNum, setStepNum } =
+    useDemoContext()
 
   useEffect(() => {
     // induce syncs between steps:
@@ -150,7 +147,7 @@ export const DemoSteps = () => {
       ref={tourRef}
       enabled={enabled}
       initialStep={0} // always from 0
-      onAfterChange={(step) => {
+      onAfterChange={async (step) => {
         const smallScreen = window.innerWidth < 850
         if (step === 13 && tourRef.current?.introJs._direction === "forward") {
           if (!smallScreen) tourRef.current?.introJs.nextStep()
@@ -206,6 +203,15 @@ export const DemoSteps = () => {
           tourRef.current?.updateStepElement(step)
         }
 
+        if (step === 12) {
+          // safari on iOS is shit and breaks on this step.
+          // careful if order of steps is changed, as
+          // this error will pop up somewhere else:
+          window.scrollTo(0, 0)
+          await delay(100)
+          tourRef.current?.updateStepElement(step)
+        }
+
         // how to open notes
         // on small screen:
         if (step === 13) {
@@ -220,14 +226,14 @@ export const DemoSteps = () => {
         if (step === 14) {
           // undo 15
           if (tourRef.current?.introJs._direction === "backward") {
-            setFocusNode(demoNodes.to)
+            setFocusNode(demoNodes.to) // open book
             await delay(400) // transition
             tourRef.current?.updateStepElement(step)
           }
 
           if (smallScreen) {
             // do & undo
-            setOpenNotes(true)
+            setOpenNotes(true) // open notes
             await delay(400) // transition
             tourRef.current?.updateStepElement(step)
           }
@@ -237,9 +243,9 @@ export const DemoSteps = () => {
           // undo 16
           navigate("/explore")
           // do
-          setFocusNode(undefined)
-          setOpenNotes(false)
-          tourRef.current?.updateStepElement(step)
+          setOpenNotes(false) // close notes
+          setFocusNode(undefined) // close book
+          // tourRef.current?.updateStepElement(step)
         }
 
         if (step === 16) {
@@ -253,7 +259,7 @@ export const DemoSteps = () => {
       onExit={() => {
         navigate("/")
         setEnabled(false)
-        setStepNum(null)
+        setStepNum(0)
         reset()
       }}
     />

@@ -11,11 +11,15 @@ const DemoContext = React.createContext<{
   setEnabled: React.Dispatch<React.SetStateAction<boolean>>
   demoNodes: typeof demoNodes
   tourRef: React.RefObject<Steps>
+  stepNum: number
+  setStepNum: React.Dispatch<React.SetStateAction<number>>
 } | null>(null)
 
 export const DemoProvider: React.FC<{
   children: React.ReactNode
 }> = ({ children }) => {
+  // counter must start at null to know if prev is nothing:
+  const [stepNum, setStepNum] = useState<number>(0)
   const [enabled, setEnabled] = useState(false)
   const tourRef = useRef<Steps>(null)
   return (
@@ -25,6 +29,8 @@ export const DemoProvider: React.FC<{
         setEnabled,
         demoNodes,
         tourRef,
+        stepNum,
+        setStepNum,
       }}
     >
       {children}

@@ -11,16 +11,13 @@ import { DemoSteps } from "./DemoSteps"
 
 const Root = () => {
   return (
-    <>
-      <div id="app-container" className="app-container">
-        <AppBar />
-        <Outlet />
-        <BookModal />
-        {isMobile && <LandscapeLock />}
-      </div>
-      {/* keep outside of app container */}
+    <div id="app-container" className="app-container">
+      <AppBar />
+      <Outlet />
+      <BookModal />
       <DemoSteps />
-    </>
+      {isMobile && <LandscapeLock />}
+    </div>
   )
 }
 
