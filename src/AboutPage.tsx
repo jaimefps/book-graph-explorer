@@ -5,6 +5,7 @@ import { Outlet, useNavigate } from "react-router-dom"
 import FunctionsIcon from "@mui/icons-material/Functions"
 import GroupsIcon from "@mui/icons-material/Groups"
 import { FeedbackFish } from "@feedback-fish/react"
+import { logAnalytics } from "./lib/analytics"
 import { Page } from "./Page"
 import React from "react"
 
@@ -84,7 +85,7 @@ export const Credits = () => {
                   ":hover": { borderColor: "darkseagreen", opacity: 0.8 },
                 }}
               >
-                send feedback
+                share feedback
               </Button>
             </FeedbackFish>
           </div>
@@ -155,7 +156,15 @@ const BaseLink: React.FC<{
 }> = ({ children, href }) => {
   return (
     <>
-      <a href={href} target="_blank" rel="noreferrer" className="base-link">
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className="base-link"
+        onClick={() => {
+          logAnalytics("about-page:link-click")
+        }}
+      >
         {children}
       </a>
     </>
@@ -221,7 +230,7 @@ export const AboutPage = () => {
             className="about-tab"
             onClick={() => navigate("/about/spinoza")}
           >
-            who was Spinoza?
+            Who was Spinoza?
           </Button>
           <Button
             variant="outlined"

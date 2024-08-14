@@ -12,10 +12,8 @@
 
 TODOS:
 
-- add feedback button on about
-- move book/opensource to about, then use that space for feedbackfish
+- add text to app
 - the Open source github should link to the spinoza.io webpage
-- on desktop: book opens as a side-drawer
 
 ---
 
@@ -30,6 +28,7 @@ TODOS:
 
 ---
 
+- on desktop: book opens as a side-drawer
 - maybe an input for degrees of search, e.g., so that we only get 3 degrees of ancestry
 
 ---
