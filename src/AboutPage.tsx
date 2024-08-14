@@ -113,8 +113,8 @@ export const Notation = () => {
           <div className="notation-col">
             <NotationItem label="Ethics" tag="e" />
             <NotationItem label="Preface" tag="pref" />
-            <NotationItem label="Axiom" tag="ax" />
             <NotationItem label="Definition" tag="def" />
+            <NotationItem label="Axiom" tag="ax" />
             <NotationItem label="Proposition" tag="p" />
           </div>
           <div className="notation-col">
@@ -123,7 +123,7 @@ export const Notation = () => {
             <NotationItem label="Appendix" tag="apx" />
             <NotationItem label="Lemma" tag="lem" />
             <NotationItem label="Postulate" tag="post" />
-            <NotationItem label="Affect" tag="aff" />
+            <NotationItem label="Affect Def." tag="aff" />
           </div>
         </div>
       </div>
