@@ -1,4 +1,5 @@
 .mode-picker {
+  position: relative;
   height: 100%;
   background: var(--dark-base);
   display: flex;
@@ -66,5 +67,67 @@
   }
   .mode-picker-button-description {
     font-size: 0.8rem;
+  }
+}
+
+.history-drawer {
+  transition: all 0.3s;
+  background: #7f967f;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 205px;
+  right: -205px;
+  top: 0;
+  z-index: 10;
+}
+.history-drawer.open {
+  right: 0px;
+}
+.history-open-button {
+  position: absolute;
+  top: 2rem !important;
+  right: 2rem !important;
+}
+.history-drawer-appbar {
+  background: beige;
+  color: var(--dark-base);
+  font-weight: 700;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.history-drawer-list {
+  height: calc(100% - 50px);
+  overflow-y: scroll;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.history-item {
+  all: unset;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  padding: 0.5rem;
+  background: var(--dark-base);
+  color: beige;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.history-item:focus,
+.history-item:hover {
+  opacity: 0.8;
+}
+@media (max-width: 625px) {
+  .history-open-button {
+    top: 1rem !important;
+    right: 1rem !important;
   }
 }

@@ -6,6 +6,7 @@ import { TextField, Button } from "@mui/material"
 import { bookGraph, getNodeText } from "./lib/graph"
 import AutoComplete from "@mui/material/Autocomplete"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
+import { useStorageContext } from "./context/StorageContext"
 import { useExploreContext } from "./context/ExploreContext"
 import { useDemoContext } from "./context/DemoContext"
 import { logAnalytics } from "./lib/analytics"
@@ -51,6 +52,7 @@ export const NodePicker: React.FC<{
   mode: GraphMode
 }> = ({ setNodes, reset, mode }) => {
   const { enabled: demoEnabled, demoNodes } = useDemoContext()
+  const { pushHistory } = useStorageContext()
   const { lang } = useExploreContext()
 
   const fromPreview =
@@ -153,6 +155,7 @@ export const NodePicker: React.FC<{
               onClick={() => {
                 logAnalytics("graph-created")
                 if (mode === "connection") {
+                  pushHistory(mode, [fromNode, toNode])
                   setNodes(
                     // enforce having earlier entry as
                     // the first element in the list:
@@ -161,9 +164,10 @@ export const NodePicker: React.FC<{
                         bookGraph.get(a).entryIdx - bookGraph.get(b).entryIdx
                     )
                   )
-                  return
+                } else {
+                  pushHistory(mode, [fromNode])
+                  setNodes([fromNode])
                 }
-                setNodes([fromNode])
               }}
             >
               submit

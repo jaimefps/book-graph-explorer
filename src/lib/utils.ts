@@ -23,3 +23,11 @@ export function usePrevious(value: any) {
   }, [value])
   return ref.current
 }
+
+export function formatDate(createdAt: number) {
+  const theDate = new Date(createdAt)
+  const day = String(theDate.getDate()).padStart(2, "0")
+  const month = theDate.toLocaleString("en-US", { month: "short" })
+  const year = theDate.getFullYear()
+  return `${month}/${day}/${year}`
+}

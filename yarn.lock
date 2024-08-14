@@ -1404,6 +1404,11 @@
   resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
   integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
+"@feedback-fish/react@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@feedback-fish/react/-/react-1.2.2.tgz#88e51bc611d205dca18c00d5eee8c4124db43b3f"
+  integrity sha512-T6VxMM8nNsD3b5ulVsrcvcrNDAc4d73RLYK8Iw+6PFPIdMU2I/mOiuAHvfGauBVIWYHflja4VOdjm3z4CtlvYQ==
+
 "@firebase/analytics-compat@0.2.13":
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/@firebase/analytics-compat/-/analytics-compat-0.2.13.tgz#de8858e578616c4b7a2e209ba14d21cef03e0f9d"

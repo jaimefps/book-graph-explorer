@@ -1,4 +1,5 @@
 import React, { useCallback, useContext, useState } from "react"
+import { GraphMode } from "../lib/types"
 
 const STORAGE_KEY = "SPINOZA_IO_STORAGE"
 
@@ -6,19 +7,29 @@ type Storage = {
   bookmark: string | null
   favorites: { [k: string]: 1 }
   notes: {
-    [k: string]: {
+    [k: string]: Array<{
       text: string
       // needed for uniqueness
       // in react mapped lists:
       createdAt: number
-    }[]
+    }>
   }
+  // was added later, so it is optional so
+  // downstream code handles correctly:
+  history?: Array<{
+    mode: GraphMode
+    inputNodes: string[]
+    // needed for uniqueness
+    // in react mapped lists:
+    createdAt: number
+  }>
 }
 
 const initStorage: Storage = {
   bookmark: null,
   favorites: {},
   notes: {},
+  history: [],
 }
 
 const StorageContext = React.createContext<{
@@ -29,6 +40,8 @@ const StorageContext = React.createContext<{
   clearFavorite: (n: string) => void
   addNote: (n: string, note: string) => void
   clearNote: (n: string, idx: number) => void
+  pushHistory: (mode: GraphMode, inputNodes: string[]) => void
+  removeHistory: (idx: number) => void
 } | null>(null as any)
 
 function saveStorage(payload: Storage) {
@@ -142,6 +155,33 @@ export const StorageProvider: React.FC<{
     [handleStorage]
   )
 
+  const pushHistory = useCallback(
+    (mode: GraphMode, inputNodes: string[]) => {
+      handleStorage((prev) => {
+        return {
+          ...prev,
+          history: [
+            ...(prev.history ?? []),
+            { mode, inputNodes, createdAt: Date.now() },
+          ],
+        }
+      })
+    },
+    [handleStorage]
+  )
+
+  const removeHistory = useCallback(
+    (idx: number) => {
+      handleStorage((prev) => {
+        return {
+          ...prev,
+          history: (prev.history ?? []).filter((_, n) => n !== idx),
+        }
+      })
+    },
+    [handleStorage]
+  )
+
   return (
     <StorageContext.Provider
       value={{
@@ -152,6 +192,8 @@ export const StorageProvider: React.FC<{
         clearFavorite,
         addNote,
         clearNote,
+        pushHistory,
+        removeHistory,
       }}
     >
       {children}

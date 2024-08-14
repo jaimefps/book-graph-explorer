@@ -4,6 +4,7 @@ import spinozaHague from "./assets/spinoza.png"
 import { Outlet, useNavigate } from "react-router-dom"
 import FunctionsIcon from "@mui/icons-material/Functions"
 import GroupsIcon from "@mui/icons-material/Groups"
+import { FeedbackFish } from "@feedback-fish/react"
 import { Page } from "./Page"
 import React from "react"
 
@@ -16,62 +17,79 @@ export const Credits = () => {
           <h2 className="about-header">credits</h2>
         </div>
         <div data-demo="about-me" className="about-credits-col">
-          <div className="about-credits-row">
-            <p
-              style={{
-                margin: 0,
-                fontSize: "1.1rem",
-                textAlign: "justify",
-                lineHeight: 1.2,
-              }}
-            >
-              <b>Built by</b> Jaime Pericás — student of philosophy turned
-              software engineer. You can find me on{" "}
-              <BaseLink href="https://www.linkedin.com/in/jaime-pericas-saez/">
-                LinkedIn
-              </BaseLink>{" "}
-              or <BaseLink href="https://github.com/jaimefps">Github</BaseLink>.{" "}
-              <b>Built with</b>{" "}
-              <BaseLink href="https://react.dev/">ReactJs</BaseLink>,{" "}
-              <BaseLink href="https://js.cytoscape.org/">Cytoscape</BaseLink>,{" "}
-              <BaseLink href="https://introjs.com/">Intro.js</BaseLink>{" "}
-              <b>Text sourced</b> from:{" "}
-              <BaseLink href="https://www.thelatinlibrary.com/spinoza.ethica1.html">
-                The Latin Library
-              </BaseLink>
-              ,{" "}
-              <BaseLink href="https://www.gutenberg.org/cache/epub/3800/pg3800-images.html">
-                Project Gutenberg
-              </BaseLink>
-              ,{" "}
-              <BaseLink href="https://archive.org/details/etica-de-spinoza/mode/2up">
-                Epub Libre
-              </BaseLink>
-              .
-              <br />
-              <br />
-              I'm working on an open-source project focused on tracking the
-              dependency graph of the <i>Ethics</i>; it would be great to bring
-              everything together in one place for easier sharing and
-              discussion: hence the{" "}
-              <BaseLink href="https://github.com/jaimefps/ethics-data">
-                <i>Ethics data</i>
-              </BaseLink>{" "}
-              project.
-              <br />
-              <br />
-              <b>Support these</b> projects if you find them useful by:{" "}
-              <BaseLink href="https://www.patreon.com/jaimefps">
-                giving it long term support
-              </BaseLink>{" "}
-              or{" "}
-              <BaseLink href="https://buymeacoffee.com/jaimefps">
-                getting me coffee
-              </BaseLink>
-              .
-            </p>
+          {/* <div className="about-credits-row"> */}
+          <p
+            style={{
+              margin: 0,
+              fontSize: "1.1rem",
+              textAlign: "justify",
+              lineHeight: 1.2,
+            }}
+          >
+            <b>Built by</b> Jaime Pericás — student of philosophy turned
+            software engineer. You can find me on{" "}
+            <BaseLink href="https://www.linkedin.com/in/jaime-pericas-saez/">
+              LinkedIn
+            </BaseLink>{" "}
+            or <BaseLink href="https://github.com/jaimefps">Github</BaseLink>.{" "}
+            <b>Built with</b>{" "}
+            <BaseLink href="https://react.dev/">ReactJs</BaseLink>,{" "}
+            <BaseLink href="https://js.cytoscape.org/">Cytoscape</BaseLink>,{" "}
+            <BaseLink href="https://introjs.com/">Intro.js</BaseLink>{" "}
+            <b>Text sourced</b> from:{" "}
+            <BaseLink href="https://www.thelatinlibrary.com/spinoza.ethica1.html">
+              The Latin Library
+            </BaseLink>
+            ,{" "}
+            <BaseLink href="https://www.gutenberg.org/cache/epub/3800/pg3800-images.html">
+              Project Gutenberg
+            </BaseLink>
+            ,{" "}
+            <BaseLink href="https://archive.org/details/etica-de-spinoza/mode/2up">
+              Epub Libre
+            </BaseLink>
+            .
+            <br />
+            <br />
+            I'm working on an open-source project focused on tracking the
+            dependency graph of the <i>Ethics</i>; it would be great to bring
+            everything together in one place for easier sharing and discussion:
+            hence the{" "}
+            <BaseLink href="https://github.com/jaimefps/ethics-data">
+              <i>Ethics data</i>
+            </BaseLink>{" "}
+            project.
+            <br />
+            <br />
+            <b>Support these</b> projects if you find them useful by:{" "}
+            <BaseLink href="https://www.patreon.com/jaimefps">
+              giving it long term support
+            </BaseLink>{" "}
+            or{" "}
+            <BaseLink href="https://buymeacoffee.com/jaimefps">
+              getting me coffee
+            </BaseLink>
+            .
+          </p>
+          <div>
+            <FeedbackFish projectId="13ad8b26700cb2">
+              <Button
+                size="small"
+                variant="outlined"
+                sx={{
+                  textTransform: "none",
+                  color: "darkseagreen",
+                  borderColor: "darkseagreen",
+                  ":focus": { borderColor: "darkseagreen", opacity: 0.8 },
+                  ":hover": { borderColor: "darkseagreen", opacity: 0.8 },
+                }}
+              >
+                send feedback
+              </Button>
+            </FeedbackFish>
           </div>
         </div>
+        {/* </div> */}
       </div>
     </div>
   )

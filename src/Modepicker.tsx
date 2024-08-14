@@ -4,18 +4,95 @@ import HubIcon from "@mui/icons-material/Hub"
 import { useExploreContext } from "./context/ExploreContext"
 import MenuBookIcon from "@mui/icons-material/MenuBook"
 import { useStorageContext } from "./context/StorageContext"
+import HistoryIcon from "@mui/icons-material/HistoryToggleOff"
+import { IconButton, Tooltip } from "@mui/material"
 import { logAnalytics } from "./lib/analytics"
+import Close from "@mui/icons-material/Close"
+import { formatDate } from "./lib/utils"
+import React, { useState } from "react"
 import { book } from "./lib/book"
+import cs from "clsx"
+
+const History: React.FC<{
+  show: boolean
+  hide: () => void
+}> = ({ show, hide }) => {
+  const { storage } = useStorageContext()
+  const { setMode, setInputNodes } = useExploreContext()
+  return (
+    <div
+      className={cs("history-drawer", {
+        open: show,
+      })}
+    >
+      <div className="history-drawer-appbar">
+        <div>history</div>
+        <IconButton size="small" onClick={hide} disabled={!show}>
+          <Close fontSize="small" />
+        </IconButton>
+      </div>
+      <div className="history-drawer-list">
+        {storage.history?.map((el) => (
+          <button
+            key={el.createdAt}
+            className="history-item"
+            disabled={!show}
+            onClick={() => {
+              logAnalytics("apply-history")
+              setInputNodes(el.inputNodes)
+              setMode(el.mode)
+            }}
+          >
+            <div>
+              <b>{el.mode}</b>
+            </div>
+            <div>
+              <i>{el.inputNodes[0]}</i>{" "}
+              {el.mode === "connection" && (
+                <>
+                  - <i>{el.inputNodes[1]}</i>
+                </>
+              )}
+            </div>
+            <div
+              style={{
+                fontSize: "0.7rem",
+                color: "darkseagreen",
+              }}
+            >
+              {formatDate(el.createdAt)}
+            </div>
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 export const ModePicker: React.FC<{
   setMode: (m: GraphMode) => void
 }> = ({ setMode }) => {
   const { storage } = useStorageContext()
   const { setFocusNode } = useExploreContext()
+  const [showHistory, setShowHistory] = useState(false)
   const openBookWith = storage.bookmark ?? book[0][0]
-
   return (
     <div className="mode-picker">
+      <Tooltip title="history">
+        <span className="history-open-button">
+          <IconButton
+            size="small"
+            disabled={!storage.history?.length}
+            onClick={() => setShowHistory(true)}
+            sx={{
+              color: "darkseagreen",
+              background: "darkslategray",
+            }}
+          >
+            <HistoryIcon fontSize="small" />
+          </IconButton>
+        </span>
+      </Tooltip>
       <h2 className="mode-picker-header">
         What do you want to explore in the Ethics?
       </h2>
@@ -82,6 +159,7 @@ export const ModePicker: React.FC<{
           favorite entries.
         </div>
       </button>
+      <History show={showHistory} hide={() => setShowHistory(false)} />
     </div>
   )
 }

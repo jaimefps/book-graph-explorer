@@ -18,9 +18,9 @@ import PanToolAltIcon from "@mui/icons-material/PanToolAlt"
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever"
 import Snackbar from "@mui/material/Snackbar"
 import AddCommentIcon from "@mui/icons-material/Save"
-import { Button, Tooltip } from "@mui/material"
+import { Tooltip } from "@mui/material"
 import { EntryMenu } from "./EntryMenu"
-import { usePrevious } from "./lib/utils"
+import { formatDate, usePrevious } from "./lib/utils"
 import { logAnalytics } from "./lib/analytics"
 import { isMobile } from "react-device-detect"
 import { book } from "./lib/book"
@@ -92,14 +92,6 @@ const placeHolderItem = [
     ),
   },
 ]
-
-function formatDate(createdAt: number) {
-  const theDate = new Date(createdAt)
-  const day = String(theDate.getDate()).padStart(2, "0")
-  const month = theDate.toLocaleString("en-US", { month: "short" })
-  const year = theDate.getFullYear()
-  return `${month}/${day}/${year}`
-}
 
 const Notes: React.FC<{
   noteText: string
@@ -269,49 +261,6 @@ export const BookModal = () => {
     setFocusNode(undefined)
     setOpenNotes(false)
   }
-
-  const disabledJump = !storage.bookmark || storage.bookmark === focusNode
-  const jumpToBookmark = (
-    <Button
-      onClick={() => {
-        if (storage.bookmark) {
-          setFocusNode(storage.bookmark)
-        }
-      }}
-      disabled={disabledJump}
-      size="small"
-      variant="contained"
-      sx={{
-        textTransform: "none",
-        color: "darkslategray",
-        background: "ghostwhite",
-        fontWeight: "bold",
-        ":focus": {
-          background: "ghostwhite",
-          opacity: 0.8,
-        },
-        ":hover": {
-          background: "ghostwhite",
-          opacity: 0.8,
-        },
-        ":disabled": {
-          color: "darkslategray",
-          background: "ghostwhite",
-          opacity: 0.4,
-        },
-      }}
-      endIcon={
-        <BookmarkIcon
-          style={{
-            color: "orangered",
-            opacity: disabledJump ? 0.5 : undefined,
-          }}
-        />
-      }
-    >
-      go to
-    </Button>
-  )
 
   return (
     <Dialog

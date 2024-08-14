@@ -129,6 +129,10 @@
   display: flex;
   justify-content: center;
   align-items: start;
+
+  p {
+    margin: 0;
+  }
 }
 .about-credits-col {
   max-width: 450px;
@@ -145,10 +149,6 @@
   justify-content: start;
   width: 100%;
   gap: 1rem;
-
-  p {
-    margin: 0;
-  }
 }
 .base-link {
   color: darkseagreen;
