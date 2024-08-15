@@ -177,6 +177,7 @@ export const Bio = () => {
       <div className="about-spinoza-col">
         <div data-demo="spinoza" className="about-header-row">
           <img
+            loading="lazy"
             src={spinozaHague}
             className="about-pic"
             alt="Spinoza's statue in The Hague"

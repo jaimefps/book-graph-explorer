@@ -84,6 +84,7 @@ export const AppBar = () => {
           href="https://buymeacoffee.com/jaimefps"
           icon={
             <img
+              loading="lazy"
               className="bmc-icon"
               alt="Buy me a coffee"
               src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
