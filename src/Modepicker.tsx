@@ -34,17 +34,16 @@ const History: React.FC<{
       </div>
       <div className="history-drawer-list">
         {storage.history?.map((el, idx) => (
-          <button
-            key={el.createdAt}
-            className="history-item"
-            disabled={!show}
-            onClick={() => {
-              logAnalytics("apply-history")
-              setInputNodes(el.inputNodes)
-              setMode(el.mode)
-            }}
-          >
-            <div className="history-item-col-left">
+          <div key={el.createdAt} className="history-item-wrapper">
+            <button
+              className="history-item"
+              disabled={!show}
+              onClick={() => {
+                logAnalytics("apply-history")
+                setInputNodes(el.inputNodes)
+                setMode(el.mode)
+              }}
+            >
               <div>
                 <b>{el.mode}</b>
               </div>
@@ -64,30 +63,32 @@ const History: React.FC<{
               >
                 {formatDate(el.createdAt)}
               </div>
-            </div>
-            <div className="history-item-col-right">
-              <IconButton
-                size="small"
-                onClick={(e) => {
-                  e.stopPropagation()
-                  logAnalytics("remove-history")
-                  removeHistory(idx)
+            </button>
+            <IconButton
+              size="small"
+              onClick={(e) => {
+                logAnalytics("remove-history")
+                removeHistory(idx)
+              }}
+              sx={{
+                ":focus": { opacity: 0.5 },
+                ":hover": { opacity: 0.5 },
+                position: "absolute",
+                right: 4,
+                top: 4,
+              }}
+            >
+              <DeleteForever
+                fontSize="small"
+                sx={{
+                  color: "beige",
+                  border: "1px solid beige",
+                  borderRadius: "50%",
+                  padding: "2px",
                 }}
-              >
-                <DeleteForever
-                  fontSize="small"
-                  sx={{
-                    color: "beige",
-                    border: "1px solid beige",
-                    borderRadius: "50%",
-                    padding: "2px",
-                    ":focus": { opacity: 0.5 },
-                    ":hover": { opacity: 0.5 },
-                  }}
-                />
-              </IconButton>
-            </div>
-          </button>
+              />
+            </IconButton>
+          </div>
         ))}
       </div>
     </div>

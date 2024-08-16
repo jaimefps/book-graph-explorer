@@ -107,6 +107,9 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+.history-item-wrapper {
+  position: relative;
+}
 .history-item {
   all: unset;
   width: 100%;
@@ -118,24 +121,14 @@
   color: beige;
   border-radius: 4px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   gap: 0.2rem;
 }
 .history-item:focus,
 .history-item:hover {
   opacity: 0.9;
 }
-.history-item-col-left {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.history-item-col-right {
-  display: flex;
-  align-items: flex-start;
-  height: 100%;
-}
+
 @media (max-width: 625px) {
   .history-open-button {
     top: 1rem !important;
