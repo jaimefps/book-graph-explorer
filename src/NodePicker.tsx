@@ -10,6 +10,7 @@ import { useStorageContext } from "./context/StorageContext"
 import { useExploreContext } from "./context/ExploreContext"
 import { useDemoContext } from "./context/DemoContext"
 import { logAnalytics } from "./lib/analytics"
+import { Translations } from "./Translations"
 import cs from "clsx"
 
 const modeOptMap = {
@@ -189,6 +190,7 @@ export const NodePicker: React.FC<{
         </div>
       </div>
       <div className="node-picker-col-right">
+        <Translations />
         <div
           data-demo="entry-preview-tabs"
           className="node-picker-entry-label-group"

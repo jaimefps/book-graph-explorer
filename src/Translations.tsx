@@ -8,9 +8,9 @@ import { logAnalytics } from "./lib/analytics"
 const ITEM_HEIGHT = 48
 
 const opts = [
+  { label: "Latin", value: "la" },
   { label: "English", value: "en" },
   { label: "Español", value: "es" },
-  { label: "Latin", value: "la" },
 ] as const
 
 export const Translations = () => {
@@ -34,6 +34,7 @@ export const Translations = () => {
           onClick={handleClick}
           data-demo="translations"
           aria-expanded={open ? "true" : undefined}
+          aria-controls={open ? "translations-menu" : undefined}
           sx={{ border: "1px solid darkseagreen" }}
           aria-label="pick translation"
           aria-haspopup="true"
@@ -42,7 +43,7 @@ export const Translations = () => {
         </IconButton>
       </Tooltip>
       <Menu
-        id="long-menu"
+        id="translations-menu"
         MenuListProps={{
           "aria-labelledby": "book-entries-list",
         }}
@@ -63,6 +64,7 @@ export const Translations = () => {
           return (
             <MenuItem
               key={option.value}
+              className="translation-item"
               selected={option.value === lang}
               onClick={() => {
                 logAnalytics(`pick-translation:${option.label}`)

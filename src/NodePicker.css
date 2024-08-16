@@ -85,6 +85,7 @@
   gap: 1rem;
 
   z-index: 15; /* top index */
+  position: relative;
 }
 .node-picker-entry-label-group {
   display: flex;
@@ -117,6 +118,7 @@
 .node-picker-entry-content {
   overflow: scroll;
   font-size: 1.2rem;
+  text-align: justify;
   line-height: 1.4;
   flex: 1;
 }
