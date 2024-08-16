@@ -63,9 +63,10 @@ contact:
 - mike g.
 - mi profe de la upr..
 - paco pepe
-- ettiene helmer
+- (el profe de madrid en el 2009)
 - reddit philosophy channels
 - philosophy nous magazine or whoever published the thing about the previous app?
+- spinoza-app supervisor: https://www.bc.edu/bc-web/schools/morrissey/departments/philosophy/people/faculty-directory/jean-luc-solere.html
 
 ---
 

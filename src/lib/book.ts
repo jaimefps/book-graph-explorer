@@ -1913,16 +1913,16 @@ export const book = [
       proof: ["e2p1", "e2p3", "e2p11", "e2p9", "e2p7"],
     },
   ],
-  // continue from here
   [
     "e2p21",
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Esta idea del alma está unida al alma de la misma manera que el alma está unida al cuerpo. Demostración: Hemos mostrado que el alma está unida al cuerpo a partir del hecho de que el cuerpo es el objeto del alma (ver Proposiciones 12 y 13 de esta Parte); y así, por esta misma razón, la idea del alma debe estar unida a su objeto, esto es, al alma misma, de la misma manera que el alma está unida al cuerpo. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2p12", "e2p13"],
+      // the schollium says that e2p7exp ios also a good proof of this
+      proof: ["e2p12", "e2p13", "e2p7exp"],
     },
   ],
   [
@@ -1930,9 +1930,12 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Esta Proposición se entiende mucho más claramente por lo dicho en el Escolio de la Proposición 7 de esta Parte; allí hemos mostrado, en efecto, que la idea del cuerpo y el cuerpo, esto es (por la Proposición 13 de esta Parte), el alma y el cuerpo, son un solo y mismo individuo, al que se concibe, ya bajo el atributo del Pensamiento, ya bajo el atributo de la Extensión; por lo cual, la idea del alma y el alma misma son una sola y misma cosa, concebida bajo un solo y mismo atributo, a saber, el del Pensamiento. Digo, pues, que la idea del alma y el alma misma resultan darse en Dios, con la misma necesidad, a partir de la misma potencia del pensar. Pues, en realidad, la idea del alma — esto es, la idea de la idea— no es otra cosa que la forma de la idea, en cuanto ésta es considerada como un modo del pensar sin relación con su objeto. En efecto, en cuanto alguien sabe algo, sabe sin más que lo sabe, y sabe a la vez que sabe lo que sabe, y así hasta el infinitol. Pero de esto hablaremos más adelante.`,
         la: ``,
       },
+      // we push e2p7exp into the parent proofs since
+      // it says that it is a proof of that, and we still
+      // get it as a proxy proof here via the parent.
       // "explanation" must include parent as proof
       proof: ["e2p21", "e2p13"],
     },
@@ -1942,11 +1945,11 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El alma humana percibe, no sólo las afecciones del cuerpo, sino también las ideas de esas afecciones. Demostración: Las ideas de las ideas de las afecciones se siguen en Dios de la misma manera, y se refieren a Dios de la misma manera, que las ideas mismas de las afecciones; lo que se demuestra del mismo modo que la Proposición 20 de esta Parte. Ahora bien: las ideas de las afecciones del cuerpo se dan en el alma humana (por la Proposición 12 de esta Parte), esto es (por el Corolario de la Proposición 11 de esta Parte), en Dios, en cuanto constituye la esencia del alma humana. Por consiguiente, las ideas de esas ideas se darán en Dios, en cuanto tiene conocimiento, o sea, idea del alma humana; esto es (por la Proposición 21 de esta Parte), se darán en el alma humana misma, que, por ello, no sólo percibe las afecciones del cuerpo, sino también las ideas de éstas. Q.E.D.`,
         la: ``,
       },
       // e2p20 is a proxy proof
-      proof: ["e2p20", "e2p12", "e2p21"],
+      proof: ["e2p20", "e2p12", "e2p11cor", "e2p21"],
     },
   ],
   [
@@ -1954,10 +1957,10 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El alma no se conoce a sí misma sino en cuanto percibe las ideas de las afecciones del cuerpo. Demostración: La idea o conocimiento del alma (por la Proposición 20 de esta Parte) se sigue en Dios de la misma manera, y se refiere a Dios de la misma manera, que la idea o conocimiento del cuerpo. Ahora bien, puesto que (por la Proposición 19 de esta Parte) el alma humana no conoce el cuerpo humano mismo, es decir (por el Corolario de la Proposición 11 de esta Parte), puesto que el conocimiento del cuerpo humano no se refiere a Dios en cuanto Este constituye la naturaleza del alma humana, entonces tampoco el conocimiento del alma se refiere a Dios en cuanto Éste constituye la esencia del alma humana; y, por tanto (por el mismo Corolario de la Proposición 11), en ese sentido, el alma humana no se conoce a sí misma. Además, las ideas de las afecciones por las que es afectado el cuerpo implican la naturaleza del cuerpo humano mismo (por la Proposición 16 de esta Parte), esto es (por la Proposición 13 de esta Parte), concuerdan con la naturaleza del alma; por lo cual el conocimiento de estas ideas implicará necesariamente el conocimiento del alma. Ahora bien (por la Proposición anterior), de tales ideas hay conocimiento en el alma. Por consiguiente, sólo en ese sentido el alma se conoce a sí misma. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2p20", "e2p19", "e2p11cor", "e2p16", "e2p13"],
+      proof: ["e2p20", "e2p19", "e2p11cor", "e2p16", "e2p13", "e2p22"],
     },
   ],
   [
@@ -1965,7 +1968,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El alma humana no implica el conocimiento adecuado de las Partes que componen el cuerpo humano. Demostración: Las partes componentes del cuerpo humano no pertenecen a la esencia de dicho cuerpo sino en cuanto que se comunican unas a otras sus movimientos según cierta relación (ver la Definición que sigue al Corolario del Lema 3), y no en cuanto pueden ser consideradas como individuos, al margen de su relación con el cuerpo humano. Las partes del cuerpo humano (por el Postulado 1), son, efectivamente, individuos muy compuestos, cuyas partes (por el Lema 4) pueden separarse del cuerpo humano y comunicar sus movimientos (ver Axioma 1 que sigue al Lema 3) a otros cuerpos según otra relación, conservando el cuerpo enteramente su naturaleza y forma; y de esta suerte (por la Proposición 3 de esta Parte), la idea o conocimiento de una parte cualquiera se dará en Dios (por la Proposición 9 de esta Parte) en cuanto se lo considera afectado por otra idea de cosa singular, cuya cosa singular es, en el orden de la naturaleza, anterior a la parte misma (por la Proposición 7 de esta Parte). Esto mismo debe también decirse de cualquier parte de ese individuo componente del cuerpo humano; y, de esta suerte, el conocimiento de cualquier parte componente del cuerpo humano se da en Dios en cuanto es afectado por un gran número de ideas de cosas, y no en cuanto tiene sólo la idea del cuerpo humano, esto es (por la Proposición 13 de esta Parte), la idea que constituye la naturaleza del alma humana; y, por lo tanto (Corolario de la Proposición 11 de esta Parte), el alma humana no implica el conocimiento adecuado de las partes que componen el cuerpo humano. Q.E.D.!*`,
         la: ``,
       },
       proof: [
@@ -1986,10 +1989,10 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La idea de una afección cualquiera del cuerpo humano no implica el conocimiento adecuado del cuerpo exterior. Demostración: Hemos mostrado (ver Proposición 16 de esta Parte) que la idea de una afección del cuerpo humano implica la naturaleza del cuerpo exterior, en tanto en cuanto ese cuerpo exterior determina de cierta manera al cuerpo humano mismo. Ahora bien, en la medida en que el cuerpo exterior es un individuo no relacionado con el cuerpo humano, su idea o conocimiento se da en Dios (por la Proposición 9 de esta Parte) en cuanto se considera a Dios afectado por la idea de otra cosa, la cual (por la Proposición 7 de esta Parte) es anterior, por naturaleza, al cuerpo exterior mismo. Por ello, no hay en Dios conocimiento adecuado del cuerpo exterior en cuanto tiene la idea de una afección del cuerpo humano; o sea, la idea de una afección del cuerpo humano no implica el conocimiento adecuado del cuerpo exterior. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2p9", "e2p7"],
+      proof: ["e2p16", "e2p9", "e2p7"],
     },
   ],
   [
@@ -1997,10 +2000,10 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El alma humana no percibe ningún cuerpo exterior como existente en acto sino por obra de las ideas de las afecciones de su propio cuerpo. Demostración: Si el cuerpo humano no es afectado en modo alguno por ningún cuerpo exterior, entonces (por la Proposición 7 de esta Parte) tampoco la idea del cuerpo humano, es decir (por la Proposición 13 de esta Parte), tampoco el alma humana, es afectada en modo alguno por la idea de la existencia de ese cuerpo, o sea, no percibe en modo alguno la existencia de dicho cuerpo exterior. Pero en cuanto el cuerpo humano es afectado de algún modo por un cuerpo exterior, en esa medida (por la Proposición 16 de esta Parte, con su Corolario 1) percibe el cuerpo exterior. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2p7", "e2p16", "e2p16cor1"],
+      proof: ["e2p7", "e2p13", "e2p16", "e2p16cor1"],
     },
   ],
   [
@@ -2008,11 +2011,11 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: En tanto el alma humana imagina un cuerpo exterior, no tiene de él un conocimiento adecuado. Demostración: Cuando el alma humana considera los cuerpos exteriores por obra de las ideas de las afecciones de su propio cuerpo, decimos entonces que «imagina» (ver Escolio de la Proposición 17 de esta Parte); y el alma no puede imaginar de otra forma (por la Proposición anterior) los cuerpos exteriores como existentes en acto. Así, pues (por la Proposición 25 de esta Parte), en cuanto el alma imagina los cuerpos exteriores, no tiene de ellos conocimiento adecuado. Q.E.D.`,
         la: ``,
       },
       // "corollary" must include parent as proof
-      proof: ["e2p26", "e2p7exp", "e2p25"],
+      proof: ["e2p26", "e2p17exp", "e2p25"],
     },
   ],
   [
@@ -2020,10 +2023,10 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La idea de una afección cualquiera del cuerpo humano no implica el conocimiento adecuado del cuerpo humano mismo. Demostración: "Toda idea de una afección cualquiera del cuerpo humano implica la naturaleza de dicho cuerpo en tanto en cuanto se lo considera afectado de cierta manera (ver Proposición 16 de esta Parte). Pero en cuanto el cuerpo humano es un individuo, que puede ser afectado de muchas otras maneras, su idea, etc. Ver Demostración de la Proposición 25 de esta Parte.`,
         la: ``,
       },
-      proof: ["e2p16"],
+      proof: ["e2p16", "e2p25"],
     },
   ],
   [
@@ -2031,7 +2034,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Las ideas de las afecciones del cuerpo humano, en cuanto referidas sólo al alma humana, no son claras y distintas, sino confusas. Demostración: En efecto, las ideas de las afecciones del cuerpo humano implican la naturaleza, tanto de los cuerpos exteriores, como del cuerpo humano mismo (por la Proposición 16 de esta Parte), y deben implicar no sólo la naturaleza del cuerpo humano, sino también la de sus partes, ya que las afecciones (por el Postulado 3) son modos por los que son afectadas las partes del cuerpo humano y, consiguientemente, el cuerpo entero. Ahora bien (por las Proposiciones 24 y 25 de esta Parte), no se da en Dios un conocimiento adecuado de los cuerpos exteriores, ni de las partes componentes del cuerpo humano, en cuanto se le considera afectado por el alma humana, sino en cuanto se le considera afectado por otras ideas. Por consiguiente, dichas ideas de afecciones, en cuanto referidas sólo al alma humana, son como consecuencias sin premisas, es decir (como es por sí notorio), ideas confusas. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p16", "e2post3", "e2p24", "e2p25"],
@@ -2042,7 +2045,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Se demuestra de la misma manera que la idea que constituye la naturaleza del alma humana no es, considerada en sí sola, clara y distinta; como tampoco lo son la idea del alma humana y las ideas de las ideas de las afecciones del cuerpo humano, en cuanto referidas sólo al alma, lo cual comprenderán todos con facilidad.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -2054,7 +2057,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La idea de la idea de una afección cualquiera del cuerpo humano no implica el conocimiento adecuado del alma humana. Demostración: En efecto, la idea de una afección del cuerpo humano (por la Proposición 27 de esta Parte) no implica el conocimiento adecuado del cuerpo mismo, o sea, no expresa adecuadamente su naturaleza; es decir (por la Proposición 13 de esta Parte), no concuerda adecuadamente con la naturaleza del alma; y así (por el Axioma 6 de la Parte IT), la idea de esta idea no expresa adecuadamente la naturaleza del alma humana, o sea, no implica el conocimiento adecuado de ésta. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p27", "e2p13", "e1ax6"],
@@ -2065,11 +2068,21 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: De aquí se sigue que el alma humana, cuantas veces percibe las cosas según el orden común de la naturaleza, no tiene un conocimiento adecuado ni de sí misma, ni de su cuerpo, ni de los cuerpos exteriores, sino tan sólo un conocimiento confuso y mutilado. Pues el alma no se conoce a sí misma sino en cuanto percibe las ideas de las afecciones del cuerpo (por la Proposición 23 de esta Parte); pero, a su vez, este cuerpo suyo (por la Proposición 19 de esta Parte) no lo percibe sino por obra de esas mismas ideas de las afecciones, por sólo las cuales, a su vez también, percibe los cuerpos exteriores (por la Proposición 26 de esta Parte); y así, en cuanto tiene esas ideas, no tiene ni de sí misma (por la Proposición 29 de esta Parte), ni de su cuerpo (por la Proposición 27 de esta Parte), ni de los cuerpos exteriores (por la Proposición 25 de esta Parte), un conocimiento adecuado, sino sólo (por la Proposición 28 de esta Parte, con su Escolio) mutilado y confuso. Q.E.D.`,
         la: ``,
       },
       // "corollary" must include parent as proof
-      proof: ["e2p29", "e2p23", "e2p19", "e2p27", "e2p25", "e2p28", "e2p28exp"],
+      proof: [
+        "e2p29",
+        "e2p23",
+        "e2p19",
+        "e2p26",
+        "e2p29",
+        "e2p25",
+        "e2p27",
+        "e2p28",
+        "e2p28exp",
+      ],
     },
   ],
   [
@@ -2077,7 +2090,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Digo expresamente que el alma no tiene ni de sí misma, ni de su cuerpo, ni de los cuerpos exteriores un conocimiento adecuado, sino sólo confuso y mutilado, cuantas veces percibe las cosas según el orden común de la naturaleza, esto es, siempre que es determinada de un modo externo, a saber, según la fortuita presentación de las cosas, a considerar esto o aquello; y no cuantas veces es determinada de un modo interno —a saber, en virtud de la consideración de muchas cosas a la vez— a entender sus concordancias, diferencias y oposiciones, pues siempre que está internamente dispuesta, de ese modo o de otro, entonces considera las cosas clara y distintamente, como mostraré más adelante.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -2089,7 +2102,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Acerca de la duración de nuestro cuerpo no podemos tener sino un conocimiento muy inadecuado. Demostración: La duración de nuestro cuerpo no depende de su esencia (por el Axioma 1 de esta Parte), ni tampoco de la naturaleza de Dios, considerada en términos absolutos (por la Proposición 21 de la Parte 1), sino que (por la Proposición 28 de la Parte I) es determinado a existir y obrar por causas tales que, a su vez, han sido también determinadas por otras a existir y obrar de cierta y determinada manera, y éstas a su vez por otras, y así hasta el infinito. Así pues, la duración de nuestro cuerpo depende del orden común de la naturaleza y de la constitución de las cosas. Ahora bien, en Dios hay conocimiento adecuado acerca del modo que tienen las cosas de constituirse, en cuanto que tiene ideas de todas ellas, y no en cuanto tiene la idea del solo cuerpo humano (por el Corolario de la Proposición 9 de esta Parte). Por ello, el conocimiento de la duración de nuestro cuerpo es en Dios muy inadecuado, en cuanto se lo considera como constituyendo solamente la naturaleza del alma humana, esto es (por el Corolario de la Proposición 11 de esta Parte), tal conocimiento es, en nuestra alma, muy inadecuado. Q.E.D.`,
         la: ``,
       },
       proof: ["e2ax1", "e1p21", "e1p28", "e2p9cor", "e2p11cor"],
@@ -2100,7 +2113,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Acerca de la duración de las cosas singulares que existen fuera de nosotros no podemos tener sino un conocimiento muy inadecuado. Demostración: En efecto, cada cosa singular, al igual que el cuerpo humano, debe ser determinada a existir y obrar de cierta y determinada manera por otra cosa singular, y ésta a SU Vez por otra, y así hasta el infinito (por la Proposición 28 de la Parte 1), Ahora bien, puesto que hemos demostrado en la Proposición anterior, a partir de dicha propiedad común a las cosas singulares, que nosotros no tenemos, acerca de la duración de nuestro cuerpo, sino un conocimiento muy inadecuado, deberá seguirse, acerca de la duración de las cosas singulares, la misma conclusión, a saber: que no podemos tener de ella sino un conocimiento muy inadecuado. Q.E.D. `,
         la: ``,
       },
       proof: ["e1p28"],
@@ -2111,11 +2124,11 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: De aquí se sigue que todas las cosas particulares son contingentes y corruptibles, ya que acerca de su duración no podemos tener conocimiento adecuado alguno (por la Proposición anterior), y eso es lo que debemos entender por «contingencia» y posibilidad de «corrupción» de las cosas (ver Escolio 1 de la Proposición 33 de la Parte 1). Pues en ningún otro sentido, aparte de éste, hay nada contingente (por la Proposición 29 de la Parte 1).`,
         la: ``,
       },
       // "corollary" must include parent as proof
-      proof: ["e2p31", "e2p30", "e1p33exp1", "e1p29"],
+      proof: ["e2p31", "e1p33exp1", "e1p29"],
     },
   ],
   [
@@ -2123,7 +2136,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Todas las ideas, en cuanto referidas a Dios, son verdaderas. Demostración: En efecto, todas las ideas que se dan en Dios son por completo conformes con lo ideado por ellas (por el Corolario de la Proposición 7 de esta Parte), y, de esta suerte (por el Axioma 6 de la Parte 1), son todas verdaderas. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p7cor", "e1ax6"],
@@ -2134,7 +2147,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `En las ideas no hay nada positivo en cuya virtud se digan falsas. Demostración: Si lo negáis, concebid, si es posible, un modo positivo del pensar que revista la forma del error, o sea, de la falsedad. Tal modo del pensar no puede darse en Dios (por la Proposición anterior); pero fuera de Dios tampoco puede darse ni ser concebido (por la Proposición 15 de la Parte I). Y, de esta suerte, nada positivo puede haber en las ideas en cuya virtud se digan falsas. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p32", "e1p15"],
@@ -2145,7 +2158,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Toda idea que en nosotros es absoluta, o sea, adecuada y perfecta, es verdadera. Demostración: Cuando decimos que se da en nosotros una idea adecuada y perfecta, no decimos otra cosa (por el Corolario de la Proposición 11 de esta Parte) sino que se da una idea adecuada y perfecta en Dios, en cuanto que constituye la esencia de nuestra alma, y, por consiguiente (por la Proposición 32 de esta Parte), no decimos sino que tal idea es verdadera. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p11cor", "e2p32"],
@@ -2156,7 +2169,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La falsedad consiste en una privación de conocimiento, implícita en las ideas inadecuadas, o sea, mutiladas y confusas. Demostración: En las ideas no se da nada positivo que revista la forma de la falsedad (por la Proposición 33 de esta Parte); y la falsedad no puede consistir en una privación absoluta (efectivamente, se dice que yerran o se equivocan las almas, no los cuerpos), ni tampoco en una absoluta ignorancia, pues ignorar y errar son cosas distintas. Por ello, consiste en una privación de conocimiento, implícita en el conocimiento inadecuado de las cosas, o sea, en las ideas inadecuadas y confusas. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p33"],
@@ -2167,11 +2180,11 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: En el Escolio de la Proposición 17 de esta Parte he explicado en qué sentido el error consiste en una privación de conocimiento; pero para una más amplia explicación de este asunto daré un ejemplo, a saber: los hombres se equivocan al creerse libres, opinión que obedece al solo hecho de que son conscientes de sus acciones e ignorantes de las causas que las determinan. Y, por tanto, su idea de «libertad» se reduce al desconocimiento de las causas de sus acciones, pues todo eso que dicen de que las acciones humanas dependen de la voluntad son palabras, sin idea alguna que les corresponda. Efectivamente, todos ignoran lo que es la voluntad y cómo mueve el cuerpo, y quienes se jactan de otra cosa e inventan residencias y moradas del alma suelen mover a risa O a asco. Así también, cuando miramos el Sol, imaginamos que dista de nosotros unos doscientos pies, error que no consiste en esa imaginación en cuanto tal, sino en el hecho de que, al par que lo imaginamos así, ignoramos su verdadera distancia y la causa de esa imaginación. Pues, aunque sepamos más tarde que dista de nosotros más de 600 diámetros terrestres, no por ello dejaremos de imaginar que está cerca; en efecto, no imaginamos que el Sol esté tan cerca porque ignoremos su verdadera distancia, sino porque la esencia del Sol, en cuanto que éste afecta a nuestro cuerpo, está implícita en una afección de ese cuerpo nuestro.`,
         la: ``,
       },
       // "explanation" must include parent as proof
-      proof: ["e2p35", "e2p17"],
+      proof: ["e2p35", "e2p17exp"],
     },
   ],
   [
@@ -2179,7 +2192,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Las ideas inadecuadas y confusas se siguen unas de otras con la misma necesidad que las ideas adecuadas, es decir, claras y distintas. Demostración: “Todas las ideas son en Dios (por la Proposición 15 de la Parte 1); y, en cuanto referidas a Dios, son verdaderas (por la Proposición 32 de esta Parte) y adecuadas (por el Corolario de la Proposición 7 de esta Parte); y, por tanto, ninguna es inadecuada ni confusa, sino en cuanto considerada en relación con el alma singular de alguien (acerca de esto, ver Proposiciones 24 y 28 de esta Parte). Y, de esta suene, todas, tanto las adecuadas como las inadecuadas, se siguen unas de otras con la misma necesidad (por el Corolario de la Proposición 6 de esta Parte). Q.E.D.`,
         la: ``,
       },
       // the Elwes translation has a mistake here,
@@ -2192,12 +2205,12 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Aquello que es común a todas las cosas (acerca de esto, ver anteriormente el Lema 2), y que está igualmente en la parte y en el todo, no constituye la esencia de ninguna cosa singular. Demostración: Si lo negáis, concebid, si es posible, que esto constituya la esencia de alguna cosa singular, por ejemplo, la de B. En tal cosa (por la Definición 2 de esta Parte), eso no podrá ser ni concebirse sin B. Ahora bien, esto va en contra de la hipótesis. Luego, aquello no pertenece a la esencia de B, ni constituye la esencia de otra cosa singular. Q.E.D.`,
         la: ``,
       },
       // though e2p13lem2 is mentioned in the proposition and
       // not the proof, it seems to satisfy the role of a proof:
-      proof: ["e2def2", "e2p13lem2"],
+      proof: ["e2p13lem2", "e2def2"],
     },
   ],
   [
@@ -2205,7 +2218,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Aquello que es común a todas las cosas, y que está igualmente en la parte y en el todo, no puede ser concebido sino adecuadamente. Demostración: Sea A algo común a todos los cuerpos, y que se da igualmente en la parte de un cuerpo cualquiera y en el todo. Digo que A no puede ser concebido sino adecuadamente. Pues su idea (por el Corolario de la Proposición 7 de esta Parte) será en Dios, necesariamente, adecuada, tanto en cuanto tiene la idea del cuerpo humano como en cuanto tiene las ideas de las afecciones del mismo, cuyas ideas (por las Proposiciones 16,25 y 27 de esta Parte) implican en parte tanto la naturaleza del cuerpo humano como la de los cuerpos exteriores; es decir (por las Proposiciones 12 y 13 de esta Parte), dicha idea será en Dios necesariamente adecuada, en cuanto que Éste constituye el alma humana, o sea en cuanto que tiene ideas que se dan en el alma humana. Así pues, el alma (por el Corolario de la Proposición 11 de esta Parte) percibe A de un modo necesariamente adecuado, y ello tanto en cuanto se percibe a sí misma, como en cuanto percibe su cuerpo a cualquier cuerpo exterior, y A no puede ser concebido ce otra manera. Q.E.D.`,
         la: ``,
       },
       proof: [
@@ -2224,7 +2237,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: De aquí se sigue que hay ciertas ideas o nociones comunes a todos los hombres. Pues (por el Lema 2) todos los cuerpos concuerdan en ciertas cosas, las cuales (por la Proposición anterior) deben ser percibidas por todos adecuadamente, o sea, clara y distintamente.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -2236,7 +2249,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `De aquello que es común y propio del cuerpo humano y de cienos cuerpos exteriores por los que el cuerpo humano suele ser afectado, y que se da igualmente en la parte y en el todo de cualquiera de ellos, habrá también en el alma una idea adecuada. Demostración: Sea A aquello que es común y propio del cuerpo humano y de ciertos cuerpos exteriores, y que se da igualmente en el cuerpo humano y en dichos cuerpos exteriores, e igualmente, asimismo en el todo y en la parte de cualquier cuerpo exterior. De A se dará una idea adecuada en Dios (por el Corolario de la Proposición 7 de esta Parte), tanto en cuanto tiene la idea del cuerpo humano, como en cuanto tiene las ideas de los cuerpos exteriores supuestos. Supóngase ahora que el cuerpo humano es afectado por un cuerpo exterior en virtud de aquello que tiene en común con él, es decir, en virtud de A; la idea de esta afección implicará la propiedad A (por la Proposición 16 de esta Parte), y de esta suerte (por el mismo Corolario de la Proposición 7 de esta Parte), en cuanto implica la propiedad A, será en Dios adecuada en cuanto está afectado por la idea del cuerpo humano, esto es (por la Proposición 13 de esta Parte), en cuanto constituye la naturaleza del alma humana; y así (por el Corolario de la Proposición 11 de esta Parte), esa idea es también adecuada en el alma humana. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p7cor", "e2p16", "e2p13", "e2p11cor"],
@@ -2247,7 +2260,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: De aquí se sigue que el alma es tanto más apta para percibir adecuadamente muchas cosas, cuanto más cosas en común tiene su cuerpo con otros cuerpos.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -2259,7 +2272,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Todas las ideas que se siguen en el alma de ideas que en ella son adecuadas, son también adecuadas. Demostración: Ello es evidente. Pues cuando decimos que una idea se sigue, en el alma humana, de ideas que en ella son adecuadas, no decimos otra cosa (por el Corolario de la Proposición 11 de esta Parte) sino que se da en el entendimiento divino una idea cuya causa es Dios, no en cuanto es infinito, ni en cuanto es afectado por las ideas de muchísimas cosas singulares, sino en cuanto constituye solamente la esencia del alma humana.`,
         la: ``,
       },
       proof: ["e2p11cor"],
@@ -2270,7 +2283,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio I: Con lo dicho he explicado la causa de las nociones llamadas comunes, y que son los fundamentos de nuestro raciocinio. Ahora bien, hay otras causas de ciertos axiomas O nociones que sería oportuno explicar según nuestro método, ya que en virtud de esas causas constaría qué nociones son más útiles que las demás, y cuáles tienen apenas alguna utilidad. Además, quedaría claro cuáles son comunes, cuáles son claras y distintas sólo para aquellos que carecen de prejuicios, y cuáles, en fin, están mal fundadas. Asimismo constaría de dónde han tomado su origen esas nociones que llaman segundas, y, por consiguiente, los axiomas que en ellas se fundan, y otras cosas que acerca de estos temas he meditado algunas veces. Pero, puesto que he reservado todo eso para otro tratado, y también para no ocasionar fastidio a causa de una excesiva prolijidad en esta materia, he decidido prescindir aquí de ello. Con todo, para no omitir nada que sea preciso saber, añadiré alguna cosa acerca de las causas de que han tomado origen los términos llamados trascendentales, como «ser», «cosa», «algo». Esos términos se originan en el hecho de que el cuerpo humano, por ser limitado, es capaz de formar, distinta y simultáneamente, sólo un cierto número de imágenes (he explicado qué es «imagen» en el Escolio de la Proposición 17 de esta Parte); si ese número es sobrepasado, las imágenes empezarán a confundirse, y si el número de imágenes que el cuerpo es capaz de formar distinta y simultáneamente es sobrepasado con mucho, se confundirán todas completamente entre sí. Siendo ello así, es evidente, por el Corolario de la Proposición 17 y por la Proposición 18 de esta Parte, que el alma humana podrá imaginar distinta y simultáneamente tantos cuerpos, cuantas imágenes puedan formarse simultáneamente en su propio cuerpo. Ahora bien, si las imágenes están por completo confundidas en el cuerpo, el alma imaginará asimismo todos los cuerpos confusamente, sin distinción alguna, y los considerará agrupándolos, en cierto modo, bajo un solo atributo, a saber: bajo el atributo de «Ser», de «Cosa», etc. Ello puede también ser consecuencia del hecho de que las imágenes no tienen siempre igual vigor, y de otras causas análogas a éstas, que no es necesario explicar aquí, pues para el fin que perseguimos nos basta con tener en cuenta una sola, ya que todas vienen a parar a lo mismo: que dichos términos remiten a ideas sumamente confusas. De causas similares han surgido también las nociones llamadas universales, como «hombre», «caballo», «perro», etc., a saber: porque en el cuerpo humano se han formado simultáneamente tantas imágenes —por ejemplo-de hombres, que la capacidad de imaginar queda, si no del todo, sí lo bastante desbordada como para que el alma no pueda imaginar las pequeñas diferencias entre los seres singulares (como el color o el tamaño de cada uno, etc.), ni tampoco el número preciso de ellos, y sólo imagine de un modo distinto aquello en que todos concuerdan en la medida en que afectan al cuerpo (ya que es en virtud de ello como cada cosa singular afecta sobre todo al cuerpo), y eso es lo que el alma expresa con la palabra «hombre», predicándolo de infinitos seres singulares. Pues, como hemos dicho, no puede imaginar un número determinado de seres singulares. Ahora bien, debe notarse que esas nociones no son formadas por todos de la misma manera, sino que varían en cada cual a tenor de la cosa por la que el cuerpo ha sido más a menudo afectado, y que el alma imagina o recuerda más fácilmente. Quienes, por ejemplo, hayan reparado con admiración, más que nada, en la bipedestación humana, entenderán por la palabra «hombre» un animal de posición erecta; pero quienes están habituados a considerar Otra cosa, formarán de los hombres otra imagen común, a saber: que el hombre es un animal que ríe, un bípedo sin plumas, un animal racional, y, de esta suerte, formará cada cual, según la disposición de su cuerpo, imágenes universales acerca de las demás cosas. Por ello no es de extrañar que hayan surgido tantas controversias entre los filósofos que han querido explicar las cosas naturales por medio de las solas imágenes de éstas.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -2282,7 +2295,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio II: En virtud de todo lo antedicho, resulta claro que percibimos muchas cosas y formamos nociones universales: primero, a partir de las cosas singulares, que nos son representadas por medio de los sentidos, de un modo mutilado, confuso y sin orden respecto del entendimiento (ver Corolario de la Proposición 29 de esta Parte): y por eso suelo llamar a tales percepciones «conocimiento por experiencia vaga»; segundo, a partir de signos; por ejemplo, de que al oír o leer ciertas palabras nos acordamos de las cosas, y formamos ciertas ideas semejantes a ellas, por medio de las cuales imaginamos esas cosas (ver Escolio de la Proposición 18 de esta Parte). En adelante, llamaré, tanto al primer modo de considerar las cosas como a este segundo, «conocimiento del primer género», «Opinión» O «imaginación»; tercero, a partir, por último, del hecho de que tenemos nociones comunes e ideas adecuadas de las propiedades de las cosas (ver Corolario de la Proposición 38; Proposición 39 con su Corolario y Proposición 40 de esta Parte); y a este modo de conocer lo llamaré «razón» y «conocimiento del segundo género». Además de estos dos géneros de conocimiento, hay un tercero —como mostraré más adelante—, al que llamaremos «ciencia intuitiva». Y este género de conocimiento progresa, a partir de la idea adecuada de la esencia formal de ciertos atributos de Dios, hacia el conocimiento adecuado de la esencia de las cosas. Explicaré todo esto con un solo ejemplo. Dados tres números, se trata de obtener un cuarto que sea al tercero como el segundo es al primero. Los mercaderes no dudan en multiplicar el segundo por el tercero y dividir el producto por el primero, y ello, o bien porque no han echado en olvido aún lo que aprendieron, sin demostración alguna, de su maestro, o bien porque lo han practicado muchas veces con números muy sencillos, o bien por la fuerza de la Demostración de la Proposición 19 del Libro 7 de Euclides, a saber, por la propiedad común de los números proporcionales. Ahora bien, cuando se trata de números muy sencillos, nada de esto es necesario. Por ejemplo: dados los números 1, 2 y 3, no hay nadie que no vea que el cuarto número proporcional es 6, y ello con absoluta claridad, porque de la relación que, de una ojeada, vemos que tienen el primero con el segundo, concluimos el cuarto.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -2295,7 +2308,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El conocimiento del primer género es la única causa de la falsedad; en cambio, el del segundo y el tercero es verdadero necesariamente. Demostración: Hemos dicho en el Escolio anterior que al primer género de conocimiento pertenecen todas aquellas ideas que son inadecuadas y confusas, y, de esta suerte (por la Proposición 35 de esta Parte), este conocimiento es la única causa de la falsedad. Además, hemos dicho que al conocimiento del segundo y tercer género pertenecen las que son adecuadas; y, de este modo (por la Proposición 34 de esta Parte), es verdadero necesariamente. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p35", "e2p34"],
@@ -2306,7 +2319,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El conocimiento del segundo y tercer género, y no el del primero, nos enseña a distinguir lo verdadero de lo falso. Demostración: Esta Proposición es evidente por sí misma. En efecto: quien sabe distinguir entre lo verdadero y lo falso debe tener una idea adecuada de lo verdadero y lo falso, esto es (por el Escolio 2 de la Proposición 40 de esta Parte), conocer lo verdadero y lo falso por el segundo o el tercer género de conocimiento.`,
         la: ``,
       },
       proof: ["e2p40exp2"],
@@ -2317,7 +2330,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Quien tiene una idea verdadera, sabe al mismo tiempo que tiene una idea verdadera, y no puede dudar de la verdad de eso que conoce. Demostración: Una idea verdadera en nosotros es aquella que, en Dios, es adecuada, en cuanto Dios se explica por la naturaleza del alma humana (por el Corolario de la Proposición 11 de esta Parte). Supongamos, pues, que se da en Dios, en cuanto se explica por la naturaleza del alma humana, la idea adecuada A. De esta idea debe darse también, necesariamente, una idea de Dios, referida a Dios del mismo modo que la idea A (por la Proposición 20 de esta Parte, cuya Demostración es universal). Ahora bien, se supone que la idea A está referida a Dios en cuanto que se explica por la naturaleza del alma humana; luego la idea de la idea A debe estar referida a Dios del mismo modo, es decir (por el mismo Corolario de la Proposición 11 de esta Parte), que esa idea adecuada de la idea A se dará en la misma alma que posee la idea adecuada A; por tanto, quien tiene una idea adecuada, o sea (por la Proposición 34 de esta Parte), quien conoce verdaderamente una cosa, debe tener al mismo tiempo una idea adecuada de su conocimiento, o sea, un conocimiento verdadero; dicho de otro modo (como es manifiesto de por sí), debe al mismo tiempo estar cierto de ello. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p11cor", "e2p20", "e2p34"],
@@ -2328,7 +2341,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: En el Escolio de la Proposición 21 de esta Parte he explicado qué es «la idea de la idea»; pero debe notarse que la Proposición anterior es lo bastante evidente por sí sola. Pues nadie que tenga una idea verdadera ignora que la idea verdadera implica una certeza suma; y pues tener una idea verdadera no significa sino que se conoce una cosa perfectamente, o sea, del mejor modo posible, y nadie puede dudar de ello, a no ser que piense que una idea es algo mudo como una pintura sobre un lienzo, y no un modo del pensar, a saber, el hecho mismo de entender, pregunto entonces: ¿quién puede saber que entiende una cosa, a no ser que la entienda previamente? Esto es: ¿quién puede saber que tiene certeza acerca de una cosa, si previamente no la tiene? Y, en fin: ¿qué puede haber más claro y cierto, como norma de verdad, que la idea verdadera? Ciertamente, la verdad es norma de sí misma y de lo falso, al modo como la luz se revela a sí misma y revela las tinieblas. Y, con esto, creo haber respondido a las siguientes cuestiones, a saber: si la idea verdadera se distingue de la falsa sólo, según se dice, en la medida en que se adecúa a aquello de lo que es idea, entonces ¿la idea verdadera no tiene mayor realidad o perfección que la falsa (ya que se distinguen sólo por una denominación extrínseca), y, por tanto, tampoco un hombre que tiene ideas verdaderas aventaja a quien las tiene sólo falsas? Además, ¿de dónde proviene que los hombres tengan ideas falsas? Y, por último, ¿en virtud de qué puede alguien saber que tiene ideas que se adecúan a aquello de lo que son ideas? Como digo, creo que he respondido ya a estas cuestiones. Por lo que atañe a la diferencia entre idea verdadera y falsa, consta por la Proposición 35 de esta Parte que están en la misma relación que el ser y el no-ser. En cuanto a las causas de la falsedad, las he mostrado muy claramente desde la Proposición 19 hasta la 35 con su Escolio. Por ellas se ve también en qué se diferencia un hombre que tiene ideas verdaderas de otro que no las tiene más que falsas. Y por lo que atañe a lo último, a saber, cómo puede un hombre conocer que tiene una idea que se adecúa a aquello de lo que es idea, acabo de mostrar más que suficientemente que ello surge del solo hecho de que efectivamente la tiene, o sea, surge de que la verdad es norma de sí misma. Añádase a ello que nuestra alma, en cuanto percibe verdaderamente las cosas, es una parte del entendimiento infinito de Dios (por el Corolario de la Proposición 11 de esta Parte); y, por tanto, es tan necesario que sean verdaderas las ideas claras y distintas del alma como que lo sean las ideas de Dios.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -2340,7 +2353,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `No es propio de la naturaleza de la razón considerar las cosas como contingentes, sino como necesarias. Demostración: Es propio de la naturaleza de la razón percibir las cosas verdaderamente (por la Proposición 41 de esta Parte), es decir (por el Axioma 6 de la Parte 1), tal como son en sí, esto es (por la Proposición 29 de la Parte 1), no como contingentes, sino como necesarias. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p41", "e1ax6", "e1p29"],
@@ -2351,7 +2364,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario I: De aquí se sigue que depende sólo de la imaginación el que consideremos las cosas como contingentes tanto respecto del pasado como del futuro.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -2363,7 +2376,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Explicaré en pocas palabras por qué razón ocurre esto. Hemos mostrado anteriormente (Proposición 17 de esta Parte, con su Corolario) que el alma imagina siempre las cosas como estándole presentes, aunque no existan, salvo que sobrevengan causas que excluyan la existencia presente de aquéllas. Hemos mostrado además (Proposición 18 de esta Parte) que, si el cuerpo humano ha sido una vez afectado al mismo tiempo por dos cuerpos exteriores, en cuanto el alma imagine después uno de ellos, recordará inmediatamente al otro, esto es, considerará a ambos como estándole presentes, salvo que intervengan causas que excluyan su existencia presente. Por otra parte, nadie duda de que imaginamos también el tiempo, y ello a partir del hecho de que imaginamos que los cuerpos se mueven más lentamente, más rápidamente o con igual celeridad unos que otros. Supongamos, entonces, un niño que haya visto ayer por la mañana por primera vez a Pedro; al mediodía, a Pablo; por la tarde, a Simeón, y hoy de nuevo, por la mañana, a Pedro. Por la Proposición 18 de esta Parte es evidente que, tan pronto como vea la luz de la mañana, imaginará el Sol recorriendo la misma parte del cielo que le vio recorrer el día anterior, O sea, imaginará el día entero, y, en él, a Pedro por la mañana, a Pablo al mediodía y a Simeón por la tarde; es decir, imaginará la existencia de Pablo y Simeón con relación a un tiempo futuro; y, por contra, si ve a Simeón por la tarde, relacionará a Pedro y Pablo con un tiempo pasado, imaginándolos al mismo tiempo que el pasado, y ello de un modo tanto más constante cuanto más a menudo los haya visto en ese mismo orden. Pero si sucede alguna vez que otra tarde ve, en lugar de Simeón, a Jacobo, entonces, a la mañana siguiente, imaginará junto con la tarde ya a Simeón, ya a Jacobo, pero no a ambos a la vez, pues se supone que ha visto por la tarde a uno solo de ellos, no a los dos a la vez. Así pues, fluctuará su imaginación, y, cuando imagine las futuras tardes, imaginará junto con ellas ya a uno, ya a otro, es decir: no considerará el futuro de ambos como algo cierto, sino como contingente. Esta fluctuación de la imaginación será la misma si la imaginación versa sobre cosas consideradas del mismo modo con relación al pasado o al presente, y, por consiguiente, imaginaremos las cosas referidas, tanto al presente como al pasado o al futuro, como contingentes.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -2375,7 +2388,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario II: Es propio de la naturaleza de la razón percibir las cosas desde una cierta perspectiva de eternidad. Demostración: En efecto, es propio de la naturaleza de la razón considerar las cosas como necesarias, y no como contingentes (por la Proposición anterior). La razón percibe esta necesidad de las cosas verdaderamente (por la Proposición 41 de esta Parte), es decir (por el Axioma 6 de la Parte 1), tal como es en sí. Ahora bien (por la Proposición 16 de la Parte I): esta necesidad de las cosas es la necesidad misma de la naturaleza eterna de Dios; luego es propio de la naturaleza de la razón considerar las cosas desde esa perspectiva de eternidad. Añádase que los fundamentos de la razón son nociones (por la Proposición 38 de esta Parte) que explican lo que es común a todas las cosas, y que (por la Proposición 37 de esta Parte) no explican la esencia de ninguna cosa singular; por ello, deben ser concebidos sin referencia alguna al tiempo, sino desde una cierta perspectiva de eternidad. Q.E.D.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -2387,10 +2400,10 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Cada idea de un cuerpo cualquiera, o de una cosa singular existente en acto, implica necesariamente la esencia eterna e infinita de Dios. Demostración: La idea de una cosa singular existente en acto implica necesariamente tanto la esencia como la existencia de esa cosa (por el Corolario de la Proposición 8 de esta Parte); ahora bien, las cosas singulares (por la Proposición 15 de la Parte I) no pueden concebirse sin Dios; pero, puesto que (por la Proposición 6 de esta Parte) tienen a Dios por causa, en cuanto se le considera bajo el atributo del que esas cosas son modos, sus ideas deben necesariamente implicar (por el Axioma 4 de la Parte I) el concepto de ese atributo, es decir (por la Definición 6 de la Parte I), la esencia eterna e infinita de Dios. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2p8", "e1p15", "e2p6", "e1ax4", "e1p6"],
+      proof: ["e2p8cor", "e1p15", "e2p6", "e1ax4", "e1p6"],
     },
   ],
   [
@@ -2398,7 +2411,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Por «existencia» no entiendo aquí la duración, esto es, la existencia en cuanto concebida abstractamente y como si fuese una especie de cantidad. Pues hablo de la naturaleza misma de la existencia, que se atribuye a las cosas singulares porque de la eterna necesidad de la naturaleza de Dios se siguen infinitas cosas de infinitos modos (ver Proposición 16 de la Parte I) . Digo que hablo de la existencia misma de las cosas singulares, en cuanto son en Dios, pues, aunque cada una sea determinada por otra cosa singular a existir de cierta manera, sin embargo, la fuerza en cuya virtud cada una de ellas persevera en la existencia se sigue de la eterna necesidad de la naturaleza de Dios. Acerca de ello, ver el Corolario de la Proposición 24 de la Parte 1.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -2410,7 +2423,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El conocimiento de la esencia eterna e infinita de Dios, implícito en toda idea, es adecuado y perfecto. Demostración: La Demostración de la Proposición anterior es universal, y, ya se considere una cosa como parte o como todo, su idea, sea la del todo o la de la parte, implicará (por la Proposición anterior) la esencia eterna e infinita de Dios. Por ello, lo que proporciona el conocimiento de la esencia eterna e infinita de Dios es común a todos, y se da igualmente en la Parte y en el todo, y, por consiguiente (por la Proposición 38 de esta Parte), dicho conocimiento será adecuado. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p45", "e2p38"],
@@ -2421,7 +2434,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El alma humana tiene un conocimiento adecuado de la eterna e infinita esencia de Dios. Demostración: El alma humana tiene ideas (por la Proposición 22 de esta Parte), en cuya virtud (por la Proposición 23 de esta Parte) se percibe a sí misma, a su cuerpo (por la Proposición 19 de esta Parte), y a los cuerpos exteriores (por el Corolario 1 de la Proposición 16 y por la Proposición 17 de esta Parte), como existentes en acto; de este modo (por las Proposiciones 45 y 46 de esta Parte) tiene un conocimiento adecuado de la esencia eterna e infinita de Dios. Q.E.D.`,
         la: ``,
       },
       proof: [
@@ -2440,7 +2453,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Según esto, vemos que la esencia infinita de Dios, y su eternidad, son conocidas de todos. Ahora bien, como todo es en Dios y se concibe por Dios, se sigue que de tal conocimiento podemos deducir muchísimas cosas que conoceremos adecuadamentel””], formando así ese tercer género de conocimiento del que hemos hablado en el Escolio 2 de la Proposición 40 de esta Parte, y de cuya excelencia y utilidad tendremos ocasión de hablar en la Quinta Parte. Y si los hombres no tienen de Dios un conocimiento tan claro como el que tienen de las nociones comunes, ello se debe a que no pueden imaginar a Dios como imaginan los cuerpos y a que han unido al nombre de «Dios» imágenes de las cosas que suelen ver: lo que difícilmente pueden los hombres evitar, pues son continuamente afectados por cuerpos exteriores. Pues, en verdad, la mayor parte de los errores consisten simplemente en que no aplicamos con corrección los nombres a las cosas. En efecto, cuando alguien dice que las líneas trazadas desde el centro de un círculo a su circunferencia son desiguales, entiende por «círculo», en ese momento al menos, algo ciertamente distinto a lo que entienden los matemáticos. Asimismo, cuando los hombres yerran en un cálculo, tienen en la mente otros números que en el papel. Por lo cual, si se atiende sólo a dicha mente, no se puede decir que cometen error; sin embargo, parecen cometerlo, porque creemos que tienen en la mente los mismos números que están en el papel. Si no fuese así, no creeríamos en absoluto que yerran, como no he creído que erraba uno a quien hace poco he oído gritar que «su patio había volado a la gallina del vecino», pues la intención de su pensamiento me parecía lo bastante clara. Y de aquí surgen la mayor parte de las controversias, a saber, de que los hombres no expresan correctamente su pensamiento, o bien de que interpretan mal el pensamiento ajeno. Pues, en realidad, cuando más se están contradiciendo, o están pensando lo mismo, o están pensando cada uno en una cosa distinta, de modo que lo que estiman ser errores o absurdos del otro, no lo son.`,
         la: ``,
       },
       // Elwes translation is missing that Spinoza
@@ -2454,7 +2467,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `No hay en el alma ninguna voluntad absoluta o libre, sino que el alma es determinada a querer esto o aquello por una causa, que también es determinada por otra, y ésta a su vez por otra, y así hasta el infinito. Demostración: El alma es un cierto y determinado modo del pensar (por la Proposición 11 de esta Parte), y de esta suerte (por el Corolario 2 de la Proposición 17 de la Parte I), no puede ser causa libre de sus acciones, o sea, no puede tener una facultad absoluta de querer y no querer, sino que (por la Proposición 28 de la Parte 1) debe ser determinada a querer esto o aquello por una causa, la cual también es determinada por otra, y ésta a su vez por otra, etc. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p11", "e1p17cor2", "e1p28"],
@@ -2465,7 +2478,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: De la misma manera se demuestra que no hay en el alma ninguna facultad absoluta de entender, desear, amar, etc. De donde se sigue que estas facultades, u otras semejantes, o son completamente ficticias, o no son más que entes metafísicos, o sea, universales, que solemos formar a partir de los particulares. De modo que el entendimiento y la voluntad se relacionan con tal y cual idea, o con tal y cual volición, de la misma manera que «lo pétreo» con tal y cual piedra, o «el hombre» con Pedro y Pablo. En cuanto a la causa por la que los hombres creen ser libres, la hemos explicado en el Apéndice de la Parte Primera. Pero antes de seguir adelante, viene a cuento advertir aquí que entiendo por «voluntad» la facultad de afirmar y negar, y no el deseo; es decir, entiendo aquella facultad por la que el alma afirma o niega lo verdadero o lo falso, y no el deseo, por el que el alma apetece o aborrece las cosas. Ahora bien, tras haber demostrado que estas facultades son nociones universales, que no se distinguen de las cosas singulares a partir de las cuales las formamos, es preciso averiguar ahora si las voliciones mismas son algo más que las ideas mismas de las cosas. Es decir, es preciso averiguar si se da en el alma otra afirmación o negación aparte de la que está implícita en la idea, en cuanto que es idea; acerca de ello, y para evitar que por «pensamiento» se entienda una «pintura», véase la Proposición siguiente, así como la Definición 3 de esta Parte. Pues no entiendo por «ideas» las imágenes que se forman en el fondo del ojo, o, si se quiere, en medio del cerebro, sino los conceptos del pensamiento.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -2480,10 +2493,10 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `En el alma no se da ninguna volición, en el sentido de afirmación y negación, aparte de aquella que está implícita en la idea en cuanto que es idea. Demostración: En el alma (por la Proposición anterior) no hay ninguna facultad absoluta de querer y no querer, sino tan sólo voliciones singulares, a saber: tal y cual afirmación, y tal y cual negación. Siendo así, concibamos una volición singular, por ejemplo un modo del pensar por el que el alma afirme que los tres ángulos de un triángulo valen dos rectos. Esta afirmación implica el concepto, o sea, la idea del triángulo; esto es, no puede ser concebida sin la idea del triángulo, pues es lo mismo decir que A debe implicar el concepto de B que decir que A no puede concebirse sin B. Por ello, dicha afirmación (por el Axioma 3 de esta Parte) no puede darse tampoco sin la idea del triángulo. Por consiguiente, esa afirmación no puede ser, ni ser concebida, sin la idea del triángulo. Además, esa idea del triángulo debe implicar la misma afirmación, a saber: que sus tres ángulos valen dos rectos. Y viceversa: tal idea del triángulo no puede ser ni ser concebida sin dicha afirmación. De esta suerte (por la Definición 2 de esta Parte), esa afirmación pertenece a la esencia de la idea del triángulo, y no es otra cosa que ella misma. Y lo que hemos dicho de esta volición (supuesto que la hemos escogido a capricho) debe también decirse de una volición cualquiera; a saber: que no es sino la misma idea. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2ax3"],
+      proof: ["e2p48", "e2ax3", "e2def2"],
     },
   ],
   [
@@ -2491,7 +2504,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: La voluntad y el entendimiento son uno y lo mismo. Demostración: La voluntad y el entendimiento no son sino las mismas voliciones e ideas singulares (por la Proposición 48 de esta Parte y su Escolio). Ahora bien: una volición singular y una idea singular son uno y lo mismo (por la Proposición anterior). Luego la voluntad y el entendimiento son uno y lo mismo. Q.E.D.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -2503,7 +2516,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Con esto hemos suprimido la que comúnmente se dice ser causa del error. De todas formas, hemos mostrado más arriba que la falsedad consiste sólo en una privación, implícita en las ideas mutiladas y confusas. Por eso una idea falsa, en cuanto que es falsa, no implica certidumbre. Así pues, cuando decimos que un hombre da aquiescencia a lo falso y no duda de ello, no por eso decimos que posee certeza, sino tan sólo que no duda o que da aquiescencia a lo falso, ya que no hay ninguna causa que haga fluctuar su imaginación. Sobre esto, véase el Escolio de la Proposición 44 de esta Parte. De este modo, por mucho que se suponga que un hombre se adhiere a cosas falsas nunca diremos, con todo, que posee certeza. Pues por «certeza» entendemos algo positivo (ver Proposición 43 de esta Parte, con su Escolio), y no la ausencia de duda. En cambio, sí entendernos por «privación de certeza» la falsedad. Pero quedan por hacer algunas advertencias, para una más amplia explicación de lo que precede. Quedan, además, por responder, las posibles objeciones a esta doctrina nuestra; y, en fin, para conseguir que se deseche todo escrúpulo, he pensado que merecía la pena indicar algunas ventajas de esta doctrina. Digo «algunas», pues las principales se entenderán mejor en virtud de lo que diremos en la Quinta Parte. Empiezo, pues, por lo primero, y advierto a los lectores que distingan cuidadosamente entre la idea, o sea, un concepto del alma, y las imágenes de las cosas que imaginamos. Además, es necesario que distingan entre las ideas y las palabras con las que significamos las cosas. Pues muchos ignoran por completo esta doctrina acerca de la voluntad —de conocimiento absolutamente obligado, tanto para la especulación como para ordenar sabiamente la vida— porque confunden completamente esas tres cosas —a saber: imágenes, palabras e ideas— o bien porque no las distinguen con el cuidado y cautela suficientes. Quienes creen que las ideas consisten en imágenes que se forman en nosotros al ser afectados por los cuerpos, se persuaden de que aquellas ideas de cosas de las que no podemos formar imagen alguna semejante no son ideas, sino sólo ficciones que forjamos en virtud del libre arbitrio de la voluntad; así pues, consideran las ideas como pinturas mudas en un lienzo, y, estorbados por este prejuicio, no ven que la idea, en cuanto que es idea, implica afirmación o negación. Por otra parte, quienes confunden las palabras con la idea, o con la afirmación misma implícita en la idea, creen que pueden querer contrariamente a como sienten, cuando afirman o niegan algo contrario a lo que sienten con meras palabras. Pero de tales prejuicios podrá desembarazarse fácilmente quien atienda a la naturaleza del conocimiento, la cual no implica en absoluto el concepto de la extensión, y entenderá así claramente que la idea (supuesto que es un modo del pensar) no consiste ni en palabras, ni en la imagen de alguna cosa. Pues la esencia de las palabras y de las imágenes está constituida por los solos movimientos corpóreos, que no implican en absoluto el concepto del pensamiento. Y baste con estas pocas advertencias en torno a este punto; paso, pues, a hablar de las objeciones a que me he referido. La primera de ellas consiste en estimar como algo bien establecido que la voluntad tiene más extensión que el entendimiento y, por ello, que es distinta de él. La razón por la que estiman que la voluntad tiene más extensión que el entendimiento es la de que dicen saber por experiencia que ellos no necesitan una facultad de asentir, o sea, de afirmar y negar, mayor de la que tenemos, para asentir a las infinitas cosas que no percibimos, mientras que sí necesitaríamos una mayor facultad de entender. Por consiguiente, la voluntad se distingue del entendimiento en que éste es finito y aquélla infinita. En segundo lugar, puede objetársenos que nada enseña la experiencia más claramente que el hecho de que podemos suspender nuestro juicio y no asentir a las cosas que percibimos; ello se confirma también por el hecho de que no se dice de nadie que se equivoca en cuanto que percibe algo, sino sólo en la medida en que asiente o disiente. Por ejemplo: quien imagina un caballo con alas, no por ello concede que exista un caballo con alas, esto es, no por ello se equivoca, salvo que conceda a un tiempo que existe un caballo con alas. Así pues, nada parece enseñar la experiencia más claramente que el hecho de que la voluntad, o sea, la facultad de asentir, es libre, y distinta de la facultad de entender. En tercer lugar, puede objetarse que una afirmación no parece contener más realidad que otra, esto es: no parece que necesitemos una potencia mayor para afirmar que es verdadero lo que es verdadero, que para afirmar que es verdadero algo que es falso. Ahora bien, percibimos que una idea tiene más realidad o perfección que otra, pues cuanto más excelentes sean unos objetos que otros, tanto más perfectas serán las ideas de los unos que las de los otros. En virtud de esto, también parece poder establecerse una diferencia entre voluntad y entendimiento. En cuarto lugar, puede objetarse que si el hombre no obra en virtud de la libertad de su voluntad, ¿qué sucederá si está en equilibrio, como el asno de Buridán?!”!!. ¿Perecerá de hambre y sed? Si lo admito, parecería que pienso en un asno, o en una estatua de hombre, y no en un hombre, pero si lo niego, entonces el hombre se determinará a sí mismo y, por consiguiente, tendrá la facultad de dirigirse a donde quiera y hacer lo que quiera. Quizá puedan hacerse otras objeciones aparte de éstas, pero puesto que no tengo la obligación de insertar aquí los sueños de cada cual, procuraré responder sólo a las objeciones antedichas, y lo más brevemente que pueda. Tocante a la primera, concedo que la voluntad tiene más extensión que el entendimiento, si por «entendimiento» se entienden solamente las ideas claras y distintas, pero niego que la voluntad tenga más extensión que las percepciones, o sea, que la facultad de concebir, y no veo, en realidad, por qué la facultad de querer ha de ser declarada infinita más bien que la facultad de sentir: en efecto, así como en virtud de la facultad de querer podemos afirmar infinitas cosas (una tras otra, desde luego, ya que no podemos afirmar infinitas cosas a la vez), también podemos sentir o percibir infinitos cuerpos (uno tras otro, por supuesto) en virtud de la facultad de sentir. ¿Se dirá que hay infinitas cosas que no podemos percibir? Replico que nosotros no podemos alcanzar esas cosas con pensamiento alguno y, por consiguiente, con ninguna facultad de querer. Dirán, con todo: si Dios quisiera hacer que las percibiésemos, debería darnos, sin duda, una mayor facultad de percibir, pero no una facultad de querer mayor de la que nos ha dado; ello es lo mismo que si dijesen: si Dios quisiera hacer que entendiéramos una infinidad de otros seres, sería necesario sin duda que nos diese un mayor entendimiento, pero no una idea de ser más universal de la que nos ha dado, para abarcar esos infinitos seres. En efecto: hemos mostrado que la voluntad es un ser universal, o sea, una idea por la que explicarnos todas las voliciones singulares, es decir, aquello que es común a todas ellas. Siendo así que creen que esa idea universal o común a todas las voliciones es una facultad, no es nada extraño que afirmen que esa facultad se extiende hasta el infinito, más allá de los límites del entendimiento. «Universal», en efecto, se dice igualmente de uno, de muchos y de infinitos individuos. A la segunda objeción respondo negando que nosotros tengamos una libre potestad de suspender el juicio. Pues cuando decimos que alguien suspende el juicio, no decimos sino que él ve que no percibe adecuadamente la cosa. Así pues, la suspensión del juicio es, en realidad, una percepción, y no una voluntad libre. Para entender esto con claridad, supongamos que un niño imagina un caballo alado, sin que perciba ninguna otra cosa. Puesto que tal imaginación del caballo implica la existencia (por el Corolario de la Proposición 17 de esta Parte), y puesto que el niño no percibe nada que excluya la existencia del caballo, considerará necesariamente al caballo como presente, y no podrá dudar de su existencia, aunque no tenga la certeza de ella. Esto lo experimentamos todos los días en los sueños, y no creo que haya alguien que piense que, mientras sueña, tiene libre potestad de suspender el juicio acerca de las cosas que sueña, y de hacer que no sueñe lo que sueña que ve; y, sin embargo, acontece que también en los sueños suspendemos el juicio, a saber, cuando soñamos que soñamos. Concedo, además, que, en la medida en que percibe, nadie se equivoca; esto es, concedo que las imaginaciones del alma, en sí mismas consideradas, no implican ninguna clase de error (ver Escolio de la Proposición 17 de esta Parte); pero niego que un hombre nada afirme en la medida en que percibe. Pues ¿qué es «percibir» un caballo alado, sino afirmar del caballo que tiene alas? En efecto: si el alma, aparte del caballo alado, no percibiera otra cosa, lo consideraría como algo que le está presente, y no tendría causa alguna para dudar de su existencia, ni facultad alguna para disentir, salvo si la imaginación del caballo se une a una idea que excluya la existencia de ese caballo, o salvo que el alma perciba que la idea que tiene del caballo alado es inadecuada, y entonces, o bien negará necesariamente la existencia del caballo, o dudará necesariamente de ella. Y con esto creo haber respondido también a la tercera objeción: la voluntad es algo universal, que se predica de todas las ideas y sólo significa lo que es común a todas ellas, a saber, la afirmación, cuya esencia adecuada, en cuanto abstractamente concebida, debe darse en todas y cada una de las ideas, y sólo en este sentido es la misma en todas, pero no en cuanto se la piensa como constituyendo la esencia de la idea, pues, en ese caso, las afirmaciones singulares difieren entre sí como las ideas mismas. Por ejemplo, la afirmación que implica la idea del círculo difiere de la que implica la idea del triángulo, como la idea del círculo difiere de la idea del triángulo. Además, niego absolutamente que nosotros necesitemos igual potencia de pensamiento para afirmar que es verdadero lo que es verdadero, que para afirmar que es verdadero lo que es falso. Pues estas dos «afirmaciones», en cuanto a su sentido, están entre sí en la relación del ser y el no-ser; en efecto, en las ideas no hay nada positivo que revista la forma de la falsedad (ver la Proposición 35 de esta Parte con su Escolio, y el Escolio de la Proposición 47 de esta Parte). Por lo cual es oportuno notar aquí, ante todo, cuan fácilmente nos equivocamos, cuando confundimos los universales con los singulares, y los entes de razón y abstractos con los reales. Por lo que atañe, en fin, a la cuarta objeción, concedo por completo que un hombre, puesto en tal equilibrio (a saber, sin otras percepciones que las de la sed y el hambre, y las de tal y cual comida y bebida que están a igual distancia de él), perecerá de hambre y sed. Si me preguntan: ¿acaso tal hombre no debe ser estimado más bien como un asno que como un hombre?, respondo que no lo sé, como tampoco sé cómo ha de ser estimado el que se ahorca, o cómo han de ser estimados los niños, los necios, los locos, etc. Queda sólo por indicar cuan útil es para la vida el conocimiento de esta doctrina, lo que advertiremos fácilmente por lo que sigue, a saber: 1. En cuanto nos enseña que obramos por el solo mandato de Dios, y somos partícipes de la naturaleza divina, y ello tanto más cuanto más perfectas acciones llevamos a cabo, y cuanto más y más entendemos a Dios. Por consiguiente, esta doctrina, además de conferir al ánimo un completo sosiego, tiene también la ventaja de que nos enseña en qué consiste nuestra más alta felicidad o beatitud, a saber: en el solo conocimiento de Dios, por el cual somos inducidos a hacer tan sólo aquello que el amor y el sentido del deber aconsejan!”?], Por ello entendemos claramente cuánto se alejan de una verdadera estimación de la virtud aquellos que esperan de Dios una gran recompensa en pago a su virtud y sus buenas acciones, como si se tratase de recompensar una estrecha servidumbre, siendo así que la virtud y el servicio de Dios son ellos mismos la felicidad y la suprema libertad. 2. En cuanto enseña cómo debemos comportarnos ante los sucesos de la fortuna (los que no caen bajo nuestra potestad, o sea, no se siguen de nuestra naturaleza), a saber: contemplando y soportando con ánimo equilibrado las dos caras de la suerte, ya que de los eternos decretos de Dios se siguen todas las cosas con la misma necesidad con que se sigue de la esencia del triángulo que sus tres ángulos valen dos rectos. 3. Esta doctrina es útil para la vida social, en cuanto enseña a no odiar ni despreciar a nadie, a no burlarse de nadie ni encolerizarse contra nadie, a no envidiar a nadie. Además es útil en cuanto enseña a cada uno a contentarse con lo suyo, y a auxiliar al prójimo, no por mujeril misericordia, ni por parcialidad o superstición, sino sólo por la guía de la razón, según lo demanden el tiempo y las circunstancias, como mostraré en la Cuarta Parte. 4. Por último, esta doctrina es también de no poca utilidad para la sociedad civil, en cuanto enseña de qué modo han de ser gobernados y dirigidos los ciudadanos, a saber: no para que sean siervos, sino para que hagan libremente lo mejor. Y con ello he terminado lo que me había propuesto tratar en este Escolio, y pongo fin a nuestra Segunda Parte, en la que creo haber explicado la naturaleza del alma humana y sus propiedades con bastante amplitud y, en cuanto lo permite la dificultad de la cuestión, con bastante claridad, y creo haber expuesto cosas tales que de ellas pueden concluirse otras muy notables, sumamente útiles, y de necesario conocimiento, como constará, en parte, por lo que sigue.`,
         la: ``,
       },
       proof: [
@@ -2513,6 +2526,7 @@ export const book = [
         "e2p43exp",
         "e2p17cor",
         "e2p17exp",
+        "e2p35",
         "e2p35exp",
         "e2p47exp",
       ],
@@ -2523,12 +2537,13 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La mayor parte de los que han escrito acerca de los afectos y la conducta humana, parecen tratar no de cosas naturales que siguen las leyes ordinarias de la naturaleza, sino de cosas que están fuera de ésta. Más aún: parece que conciben al hombre, dentro de la naturaleza, como un imperio dentro de otro imperio. Pues creen que el hombre perturba, más bien que sigue, el orden de la naturaleza que tiene una absoluta potencia sobre sus acciones y que sólo es determinado por sí mismo. Atribuyen además la causa de la impotencia e inconstancia humanas, no a la potencia común de la naturaleza, sino a no sé qué vicio de la naturaleza humana, a la que, por este motivo, deploran, ridiculizan, desprecian o, lo que es más frecuente, detestan; y se tiene por divino a quien sabe denigrar con mayor elocuencia o sutileza la impotencia del alma humana. No han faltado, con todo, hombres muy eminentes (a cuya labor y celo confesamos deber mucho), que han escrito muchas cosas preclaras acerca de la recta conducta, y han dado a los mortales consejos llenos de prudencia, pero nadie, que yo sepa, ha determinado la naturaleza y la fuerza de los afectos, ni lo que puede el alma, por su parte, para moderarlos. Ya sé que el celebérrimo Descartes, aun creyendo que el alma tiene una potencia absoluta sobre sus acciones, ha intentado, sin embargo, explicar los afectos humanos por sus primeras causas, y mostrar, a un tiempo, por qué vía puede el alma tener un imperio absoluto sobre los afectos; pero, a mi parecer al menos, no ha mostrado nada más que la agudeza de su gran genio, como demostraré en su lugar. Ahora quiero volver a los que prefieren, tocante a los efectos y actos humanos, detestarlos y ridiculizarlos más bien que entenderlos. A ésos, sin duda, les parecerá chocante que yo aborde la cuestión de los vicios y sinrazones humanas al modo de la geometría, y pretenda demostrar, siguiendo un razonamiento cierto, lo que ellos proclaman que repugna a la razón, y que es vano, absurdo o digno de horror. Pero mis razones para proceder así son éstas: nada ocurre en la naturaleza que pueda atribuirse a vicio de ella; la naturaleza es siempre la misma, y es siempre la misma, en todas partes, su eficacia y potencia de obrar; es decir, son siempre las mismas, en todas partes, las leyes y reglas naturales según las cuales ocurren las cosas y pasan de unas formas a otras; por tanto, uno y el mismo debe ser también el camino para entender la naturaleza de las cosas, cualesquiera que sean, a saber: por medio de las leyes y reglas universales de la naturaleza. Siendo así, los afectos tales como el odio, la ira, la envidia, etcétera, considerados en sí, se siguen de la misma necesidad y eficacia de la naturaleza que las demás cosas singulares, y, por ende, reconocen ciertas causas, en cuya virtud son entendidos, y tienen ciertas propiedades, tan dignas de que las conozcamos como las propiedades de cualquier otra cosa en cuya contemplación nos deleitemos. Así pues, trataré de la naturaleza y fuerza de los afectos, y de la potencia del alma sobre ellos, con el mismo método con que en las Partes anteriores he tratado de Dios y del alma, y considerar los actos y apetitos humanos como si fuese cuestión de líneas, superficies o cuerpos.`,
         la: ``,
       },
       proof: [],
     },
   ],
+  // continue here
   [
     "e3def1",
     {

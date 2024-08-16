@@ -22,7 +22,9 @@ export const ExploreProvider: React.FC<{
   const [focusNode, setFocusNode] = useState<string>()
   const [inputNodes, setInputNodes] = useState<string[]>()
   const [openNotes, setOpenNotes] = useState(false)
-  const [lang, setLang] = useState<Translation>("en")
+
+  // todo: start with english:
+  const [lang, setLang] = useState<Translation>("es")
 
   const reset = useCallback(() => {
     setInputNodes(undefined)
