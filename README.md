@@ -1,6 +1,5 @@
 ## life
 
-- cancel amazon prime
 - how much is namecheap charging me?
 - how much is heroku charging me?
 - need to make spreadsheet to track spending;
@@ -12,6 +11,7 @@
 
 TODOS:
 
+- language switcher
 - add text to app
 - the Open source github should link to the spinoza.io webpage
 

@@ -9,7 +9,7 @@
   background: var(--dark-base);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0 2rem;
 }
@@ -39,7 +39,7 @@
   gap: 1rem;
 }
 .about-header {
-  font-size: 60px;
+  font-size: 52px;
   margin: 0;
 }
 .about-text {
@@ -70,7 +70,7 @@
   align-items: start;
 }
 .about-spinoza-col {
-  max-width: 725px;
+  max-width: 575px;
   overflow: scroll;
 }
 
@@ -192,11 +192,5 @@
   }
   .about-credits-col {
     gap: 1.2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-appbar {
-    justify-content: center;
   }
 }
