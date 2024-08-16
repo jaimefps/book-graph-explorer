@@ -76,8 +76,8 @@
   height: 100%;
   position: absolute;
   overflow: hidden;
-  width: 205px;
-  right: -205px;
+  width: 215px;
+  right: -215px;
   top: 0;
   z-index: 10;
 }

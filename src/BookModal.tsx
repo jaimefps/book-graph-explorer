@@ -16,6 +16,7 @@ import { bookGraph, getNodeIdx, getNodeText } from "./lib/graph"
 import { useStorageContext } from "./context/StorageContext"
 import PanToolAltIcon from "@mui/icons-material/PanToolAlt"
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever"
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined"
 import Snackbar from "@mui/material/Snackbar"
 import AddCommentIcon from "@mui/icons-material/Save"
 import { Tooltip } from "@mui/material"
@@ -26,6 +27,7 @@ import { isMobile } from "react-device-detect"
 import { Translations } from "./Translations"
 import { book } from "./lib/book"
 import cs from "clsx"
+import { FeedbackFish } from "@feedback-fish/react"
 
 const UpdateAlert = () => {
   const [alert, setAlert] = useState<any>(undefined)
@@ -430,6 +432,43 @@ export const BookModal = () => {
                     data-demo="entry-proofs"
                     className="book-entry-proof-group"
                   >
+                    <div className="book-entry-proof-info">
+                      <Tooltip
+                        arrow
+                        title={
+                          <div
+                            style={{
+                              textAlign: "justify",
+                            }}
+                          >
+                            If the proof list seems incorrect, please verify
+                            against the Latin version of the text. Translations
+                            sometimes include mistakes. Otherwise, feel free to{" "}
+                            <FeedbackFish projectId="13ad8b26700cb2">
+                              <button
+                                style={{
+                                  all: "unset",
+                                  color: "rgb(102, 179, 255)",
+                                  cursor: "pointer",
+                                }}
+                              >
+                                share feedback
+                              </button>
+                            </FeedbackFish>
+                            .
+                          </div>
+                        }
+                      >
+                        <InfoOutlinedIcon
+                          fontSize="small"
+                          sx={{
+                            color: "darkseagreen",
+                            background: "white",
+                            borderRadius: "50%",
+                          }}
+                        />
+                      </Tooltip>
+                    </div>
                     <p className="book-proofs-label">depends on:</p>
                     {parents.map((proof, idx, list) => (
                       <React.Fragment key={proof}>

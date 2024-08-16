@@ -232,6 +232,12 @@
   border-radius: 8px;
   font-size: 0.8rem;
   gap: 0.5rem;
+  position: relative;
+}
+.book-entry-proof-info {
+  position: absolute;
+  right: -6px;
+  top: -6px;
 }
 .book-entry-proof {
   all: unset;

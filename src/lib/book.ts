@@ -341,7 +341,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Escolio 2: No dudo que sea difícil concebir la demostración de la Proposición 7 para todos los que juzgan confusamente de las cosas y no están acostumbrados a conocerlas por sus primeras causas; y ello porque no distinguen entre las modificaciones de las substancias y las substancias mismas, ni saben cómo se producen las cosas. De donde resulta que imaginen para las substancias un principio como el que ven que tienen las cosas naturales!?*!; pues quienes ignoran las verdaderas causas de las cosas lo confunden todo, y, sin repugnancia mental alguna, forjan en su espíritu árboles que hablan como los hombres, y se imaginan que los hombres se forman tanto a partir de piedras como de semen, y que cualesquiera formas se transforman en otras cualesquiera. Así también, quienes confunden la naturaleza divina con la humana atribuyen fácilmente a Dios afectos humanos, sobre todo mientras ignoran cómo se producen los afectos en el alma. Pero si los hombres atendieran a la naturaleza de la substancia, no dudarían un punto de la verdad de la Proposición 7; muy al contrario, esta Proposición sería para todos un axioma, y se contaría entre las nociones comunes. Pues por substancia entenderían aquello que es en sí y se concibe por sí, esto es, aquello cuyo conocimiento no precisa del conocimiento de otra cosa. En cambio, por modificaciones entenderían aquello que es en otra cosa, y Cuyo concepto se forma a partir del concepto de la cosa en la que es: por lo cual podemos tener ideas verdaderas de modificaciones no existentes; supuesto que, aunque no existan en acto fuera del entendimiento, su esencia está, sin embargo, comprendida en otra cosa, de tal modo que pueden concebirse por medio de ésta. Por contra, la verdad de las substancias fuera del entendimiento está sólo en sí mismas, ya que se conciben por sí. Por tanto, si alguien dijese que tiene una idea clara y distinta —esto es, verdadera— de una substancia y, con todo, dudara de si tal substancia existe, sería en verdad lo mismo que si dijese que tiene una idea verdadera y, con todo, dudara de si es falsa (como resulta patente al que preste la suficiente atención); o si alguien afirma que una substancia es creada, afirma a la vez que una idea falsa se ha hecho verdadera: y, sin duda, no puede concebirse nada más absurdo. Por ello, debe reconocerse que la existencia de una substancia es, como su esencia, una verdad eterna. Mas de ello, de otra manera, podemos concluir que no hay sino una única substancia de la misma naturaleza, lo cual he pensado que merecía la pena mostrar aquí. Pero para hacerlo con orden, debe notarse: 1) que la verdadera definición de cada cosa no implica ni expresa nada más que la naturaleza de la cosa definida. De lo cual se sigue esto: 2) que ninguna definición conlleva ni expresa un número determinado de individuos, puesto que no expresa más que la naturaleza de la cosa definida. Por ejemplo, la definición de un triángulo no expresa otra cosa que la simple naturaleza del triángulo, pero no un determinado número de triángulos. 3) Debe notarse que se da necesariamente alguna causa determinada de cada cosa existente. 4) Por último, debe notarse que esa causa, en cuya virtud existe una cosa, o bien debe estar contenida en la misma naturaleza y definición de la cosa existente (ciertamente, porque el existir es propio de su naturaleza), o bien debe darse fuera de ella. Sentado esto, se sigue que, si en la naturaleza existe un determinado número de individuos, debe darse necesariamente una causa en cuya virtud existan esos individuos, ni más ni menos. Si, por ejemplo, existen en la naturaleza veinte hombres (que, para mayor claridad, supongo existen a un tiempo, y sin que en la naturaleza haya habido otros antes), no bastará (para dar razón de por qué existen veinte hombres) con mostrar la causa de la naturaleza humana en general, sino que además habrá que mostrar la causa en cuya virtud no existen ni más ni menos que veinte, puesto que (por la Observación 3) debe haber necesariamente una causa de la existencia de cada uno. Pero esta causa (por las Observaciones 2 y 3) no puede estar contenida en la naturaleza humana misma, toda vez que la verdadera definición del hombre no implica el número veinte; y de esta suerte (por la Observación 4), la causa por la que esos veinte hombres existen, y, consiguientemente, por la que existe cada uno, debe darse necesariamente fuera de cada uno de ellos; y por ello es preciso concluir, en absoluto, que todo aquello de cuya naturaleza puedan existir varios individuos, debe tener necesariamente, para que existan, una causa externa. Entonces, y puesto que existir es propio de la naturaleza de una substancia (por lo ya mostrado en este Escolio), debe su definición conllevar la existencia como necesaria y, consiguientemente, su existencia debe concluirse de su sola definición. Pero de su definición (como ya mostramos en las Observaciones 2 y 3) no puede seguirse la existencia de varias substancias; por consiguiente, se sigue necesariamente de ella, como nos proponíamos demostrar, que existe sólo una única substancia de la misma naturaleza.`,
+        es: `Escolio 2: No dudo que sea difícil concebir la demostración de la Proposición 7 para todos los que juzgan confusamente de las cosas y no están acostumbrados a conocerlas por sus primeras causas; y ello porque no distinguen entre las modificaciones de las substancias y las substancias mismas, ni saben cómo se producen las cosas. De donde resulta que imaginen para las substancias un principio como el que ven que tienen las cosas naturales; pues quienes ignoran las verdaderas causas de las cosas lo confunden todo, y, sin repugnancia mental alguna, forjan en su espíritu árboles que hablan como los hombres, y se imaginan que los hombres se forman tanto a partir de piedras como de semen, y que cualesquiera formas se transforman en otras cualesquiera. Así también, quienes confunden la naturaleza divina con la humana atribuyen fácilmente a Dios afectos humanos, sobre todo mientras ignoran cómo se producen los afectos en el alma. Pero si los hombres atendieran a la naturaleza de la substancia, no dudarían un punto de la verdad de la Proposición 7; muy al contrario, esta Proposición sería para todos un axioma, y se contaría entre las nociones comunes. Pues por substancia entenderían aquello que es en sí y se concibe por sí, esto es, aquello cuyo conocimiento no precisa del conocimiento de otra cosa. En cambio, por modificaciones entenderían aquello que es en otra cosa, y Cuyo concepto se forma a partir del concepto de la cosa en la que es: por lo cual podemos tener ideas verdaderas de modificaciones no existentes; supuesto que, aunque no existan en acto fuera del entendimiento, su esencia está, sin embargo, comprendida en otra cosa, de tal modo que pueden concebirse por medio de ésta. Por contra, la verdad de las substancias fuera del entendimiento está sólo en sí mismas, ya que se conciben por sí. Por tanto, si alguien dijese que tiene una idea clara y distinta —esto es, verdadera— de una substancia y, con todo, dudara de si tal substancia existe, sería en verdad lo mismo que si dijese que tiene una idea verdadera y, con todo, dudara de si es falsa (como resulta patente al que preste la suficiente atención); o si alguien afirma que una substancia es creada, afirma a la vez que una idea falsa se ha hecho verdadera: y, sin duda, no puede concebirse nada más absurdo. Por ello, debe reconocerse que la existencia de una substancia es, como su esencia, una verdad eterna. Mas de ello, de otra manera, podemos concluir que no hay sino una única substancia de la misma naturaleza, lo cual he pensado que merecía la pena mostrar aquí. Pero para hacerlo con orden, debe notarse: 1) que la verdadera definición de cada cosa no implica ni expresa nada más que la naturaleza de la cosa definida. De lo cual se sigue esto: 2) que ninguna definición conlleva ni expresa un número determinado de individuos, puesto que no expresa más que la naturaleza de la cosa definida. Por ejemplo, la definición de un triángulo no expresa otra cosa que la simple naturaleza del triángulo, pero no un determinado número de triángulos. 3) Debe notarse que se da necesariamente alguna causa determinada de cada cosa existente. 4) Por último, debe notarse que esa causa, en cuya virtud existe una cosa, o bien debe estar contenida en la misma naturaleza y definición de la cosa existente (ciertamente, porque el existir es propio de su naturaleza), o bien debe darse fuera de ella. Sentado esto, se sigue que, si en la naturaleza existe un determinado número de individuos, debe darse necesariamente una causa en cuya virtud existan esos individuos, ni más ni menos. Si, por ejemplo, existen en la naturaleza veinte hombres (que, para mayor claridad, supongo existen a un tiempo, y sin que en la naturaleza haya habido otros antes), no bastará (para dar razón de por qué existen veinte hombres) con mostrar la causa de la naturaleza humana en general, sino que además habrá que mostrar la causa en cuya virtud no existen ni más ni menos que veinte, puesto que (por la Observación 3) debe haber necesariamente una causa de la existencia de cada uno. Pero esta causa (por las Observaciones 2 y 3) no puede estar contenida en la naturaleza humana misma, toda vez que la verdadera definición del hombre no implica el número veinte; y de esta suerte (por la Observación 4), la causa por la que esos veinte hombres existen, y, consiguientemente, por la que existe cada uno, debe darse necesariamente fuera de cada uno de ellos; y por ello es preciso concluir, en absoluto, que todo aquello de cuya naturaleza puedan existir varios individuos, debe tener necesariamente, para que existan, una causa externa. Entonces, y puesto que existir es propio de la naturaleza de una substancia (por lo ya mostrado en este Escolio), debe su definición conllevar la existencia como necesaria y, consiguientemente, su existencia debe concluirse de su sola definición. Pero de su definición (como ya mostramos en las Observaciones 2 y 3) no puede seguirse la existencia de varias substancias; por consiguiente, se sigue necesariamente de ella, como nos proponíamos demostrar, que existe sólo una única substancia de la misma naturaleza.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -399,7 +399,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Escolio: En esta última demostración he querido mostrar la existencia de Dios a posteriori, para que se percibiera más fácilmente la demostración, pero no porque la existencia de Dios no se siga apriori de ese mismo fundamento. Pues siendo potencia el poder existir, se sigue que cuanta más realidad compete a la naturaleza de esa cosa, tantas más fuerzas tiene para existir por sí; y, por tanto, un Ser absolutamente infinito, o sea Dios, tiene por sí una potencia absolutamente infinita de existir, y por eso existe absolutamente. Sin embargo, acaso muchos no podrán ver fácilmente la evidencia de esta demostración, porque están acostumbrados a considerar sólo las cosas que provienen de causas externas, y de entre esas cosas, ven que las que se producen rápidamente, esto es, las que existen fácilmente, perecen también con facilidad, y, por contra, piensan que es más difícil que se produzcan, esto es, que no es nada fácil que existan, aquellas cosas que conciben como más complejas!?”!. Mas, para que se libren de esos prejuicios, no tengo necesidad de mostrar aquí en qué medida es verdadero el dicho «lo que pronto se hace, pronto perece», ni tampoco si respecto de la naturaleza total todas las cosas son o no igualmente fáciles. Basta sólo con advertir que yo no hablo aquí de las cosas que se producen en virtud de causas externas, sino únicamente de las substancias, que (por la Proposición 6) no pueden ser producidas por ninguna causa externa. Pues las cosas que se producen en virtud de causas externas, ya consten de muchas partes, ya de pocas, deben cuanto de perfección o realidad tienen a la virtud de la causa externa y, por tanto, su existencia brota de la sola perfección de la causa externa, y no de la suya propia. Por contra, nada de lo que una substancia tiene de perfección se debe a causa externa alguna; por lo cual también su existencia debe seguirse de su sola naturaleza que, por ende, no es otra cosa que su esencia. Pues la perfección de una cosa no impide la existencia, sino que, al contrario, la pone, en tanto que la imperfección, por contra, la quita, y de esta suerte no podemos estar más seguros de la existencia de cosa alguna que de la existencia del Ser absolutamente infinito, o sea, perfecto, esto es, Dios. Pues siendo así que su esencia excluye toda imperfección, e implica la perfección absoluta, aparta por eso mismo todo motivo de duda acerca de su existencia, y da de ella una certeza suma, lo que creo ha de ser claro para quien atienda medianamente.`,
+        es: `Escolio: En esta última demostración he querido mostrar la existencia de Dios a posteriori, para que se percibiera más fácilmente la demostración, pero no porque la existencia de Dios no se siga apriori de ese mismo fundamento. Pues siendo potencia el poder existir, se sigue que cuanta más realidad compete a la naturaleza de esa cosa, tantas más fuerzas tiene para existir por sí; y, por tanto, un Ser absolutamente infinito, o sea Dios, tiene por sí una potencia absolutamente infinita de existir, y por eso existe absolutamente. Sin embargo, acaso muchos no podrán ver fácilmente la evidencia de esta demostración, porque están acostumbrados a considerar sólo las cosas que provienen de causas externas, y de entre esas cosas, ven que las que se producen rápidamente, esto es, las que existen fácilmente, perecen también con facilidad, y, por contra, piensan que es más difícil que se produzcan, esto es, que no es nada fácil que existan, aquellas cosas que conciben como más complejas. Mas, para que se libren de esos prejuicios, no tengo necesidad de mostrar aquí en qué medida es verdadero el dicho «lo que pronto se hace, pronto perece», ni tampoco si respecto de la naturaleza total todas las cosas son o no igualmente fáciles. Basta sólo con advertir que yo no hablo aquí de las cosas que se producen en virtud de causas externas, sino únicamente de las substancias, que (por la Proposición 6) no pueden ser producidas por ninguna causa externa. Pues las cosas que se producen en virtud de causas externas, ya consten de muchas partes, ya de pocas, deben cuanto de perfección o realidad tienen a la virtud de la causa externa y, por tanto, su existencia brota de la sola perfección de la causa externa, y no de la suya propia. Por contra, nada de lo que una substancia tiene de perfección se debe a causa externa alguna; por lo cual también su existencia debe seguirse de su sola naturaleza que, por ende, no es otra cosa que su esencia. Pues la perfección de una cosa no impide la existencia, sino que, al contrario, la pone, en tanto que la imperfección, por contra, la quita, y de esta suerte no podemos estar más seguros de la existencia de cosa alguna que de la existencia del Ser absolutamente infinito, o sea, perfecto, esto es, Dios. Pues siendo así que su esencia excluye toda imperfección, e implica la perfección absoluta, aparta por eso mismo todo motivo de duda acerca de su existencia, y da de ella una certeza suma, lo que creo ha de ser claro para quien atienda medianamente.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -503,7 +503,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Escolio: Los hay que se representan a Dios como un hombre: compuesto de cuerpo y alma y sometido a pasiones; pero ya consta, por las anteriores demostraciones, cuan lejos vagan éstos de un verdadero conocimiento de Dios. Pero los excluyo de mi consideración, pues todos cuantos han examinado de algún modo la naturaleza divina niegan que Dios sea corpóreo!'?8!, Lo cual prueban muy bien partiendo de que por cuerpo entendemos toda cantidad larga, ancha y profunda, limitada según cierta figura, y nada más absurdo que eso puede decirse de Dios, o sea, del ser absolutamente infinito. Sin embargo, al mismo tiempo, se esfuerzan por demostrar con otras razones, y manifiestan claramente, que ellos consideran la substancia corpórea o extensa como separada por completo de la naturaleza divina, y la afirman creada por Dios. Pero ignoran totalmente en virtud de qué potencia divina haya podido ser creada; lo que claramente muestra que no entienden lo que ellos mismos dicen. Yo al menos he demostrado, con bastante claridad a mi juicio (ver Corolario de la Proposición 6 y Escolio 2 de la Proposición 8), que ninguna substancia puede ser producida o creada por otra cosa. Además hemos mostrado en la Proposición 14 que, excepto Dios, no puede darse ni concebirse substancia alguna; y de ello hemos concluido que la substancia extensa es uno de los infinitos atributos de Dios. De todas maneras, para una más completa explicación, refutaré los argumentos de tales adversarios, que se reducen a lo siguiente: Primero: que la substancia corpórea, en cuanto substancia, consta, según creen, de partes; y por ello niegan que pueda ser infinita y, consiguientemente, que pueda pertenecer a Dios. Y explican eso con muchos ejemplos, de los que daré alguno que otro. Si la substancia corpórea —dicen— es infinita, concíbasela dividida en dos partes: cada una de esas partes será, o bien finita, o bien infinita. Si finita, entonces un infinito se compone de dos partes finitas, lo que es absurdo. Si infinita, entonces hay un infinito dos veces mayor que otro infinito, lo que también es absurdo. Además, si una cantidad infinita se mide mediante partes que tengan un pie de longitud, constará de un número infinito de dichas partes, lo mismo que si se la mide mediante partes de una pulgada de longitud; y, por tanto, un número infinito será doce veces mayor que otro número infinito. Por último, si se concibe que, a partir de un punto de una cantidad infinita, dos líneas AB y AC, separadas al principio por cierta y determinada distancia, se prolongan hasta el infinito, es indudable que la distancia entre B y C aumentará continuamente, y que, de ser determinada, pasará a ser indeterminable. Siguiéndose, pues, dichos absurdos —según creen— de la suposición de una cantidad infinita, concluyen de ello que la substancia corpórea debe ser finita y, consiguientemente, que no pertenece a la esencia de Dios. Un segundo argumento se obtiene a partir de la suma perfección de Dios. Dios —dicen—, como es un ser sumamente perfecto, no puede padecer; ahora bien, la substancia corpórea, dado que es divisible, puede padecer; luego se sigue que no pertenece a la esencia de Dios. Éstos son los argumentos que encuentro en los escritores, con los que se esfuerzan por probar que la substancia corpórea es indigna de la naturaleza divina y no puede pertenecer a ella. Pero en realidad, si bien se mira, se advertirá que yo ya he respondido a esos argumentos, toda vez que sólo se fundan en la suposición de que la substancia corpórea se compone de partes, lo que ya probé ser absurdo (Proposición 12, con el Corolario de la Proposición 13). Además, si se quiere sopesar con cuidado la cuestión, se verá que todos esos absurdos (supuesto que lo sean, cosa que ahora no discuto) en virtud de los cuales pretenden concluir que una substancia extensa es finita, en absoluto se siguen de la suposición de una cantidad infinita, sino de que esa cantidad infinita se supone mensurable y compuesta de partes finitas; por lo cual, de los absurdos que de eso se siguen no pueden concluir otra cosa sino que la cantidad infinita no es mensurable, y que no puede estar compuesta de partes finitas. Pero eso es ya precisamente lo mismo que nosotros hemos demostrado ya antes (Proposición 12, etc.). Por lo cual, el dardo que nos lanzan lo arrojan, en realidad, contra sí mismos. Si, pese a todo, quieren concluir, a partir de su propio absurdo, que la substancia extensa debe ser finita, no hacen, en verdad, otra cosa que quien, por el hecho de imaginar un círculo con las propiedades del cuadrado, concluye que el círculo no tiene un centro a partir del cual todas las líneas trazadas hasta la circunferencia son iguales, pues la substancia corpórea, que no puede concebirse sino como infinita, única e indivisible, la conciben ellos compuesta de partes, múltiple y divisible, para poder concluir que es finita. Así también, otros, tras imaginar que la línea se compone de puntos, encuentran fácilmente muchos argumentos con los que muestran que la línea no puede dividirse hasta lo infinito. Y, desde luego, no es menos absurdo afirmar que la substancia corpórea está compuesta de cuerpos, o sea de partes, que afirmar que el cuerpo está compuesto de superficies, las superficies de líneas y las líneas de puntos. Ahora bien, esto deben reconocerlo todos los que saben que una razón clara es infalible y, antes que nadie, los que niegan que haya vacío, pues si la substancia corpórea pudiera dividirse de modo que sus partes fuesen realmente distintas, ¿por qué no podría entonces aniquilarse una sola parte, permaneciendo las demás conectadas entre sí, como antes? ¿Y por qué todas deben ajustarse de modo que no haya vacío? Ciertamente, si hay cosas que son realmente distintas entre sí, una puede existir y permanecer en su estado sin la otra. Pero como en la naturaleza no hay vacío (de esto he hablado en otro lugar)'29, sino que todas sus partes deben concurrir de modo que no lo haya, se sigue de ahí que esas partes no pueden distinguirse realmente, esto es, que la substancia corpórea, en cuanto substancia, no puede ser dividida. Si alguien, con todo, pregunta ahora que por qué somos tan propensos por naturaleza a dividir la cantidad, le respondo que la cantidad es concebida por nosotros de dos maneras, a saber: abstractamente, o sea, superficialmente, es decir, como cuando actuamos con la imaginación; o bien como substancia, lo que sólo hace el entendimiento. Si consideramos la cantidad tal como se da en la imaginación —que es lo que hacemos con mayor facilidad y frecuencia—, aparecerá finita, divisible y compuesta de partes; pero si la consideramos tal como se da en el entendimiento, y la concebimos en cuanto substancia —lo cual es muy difícil—, entonces, como ya hemos demostrado suficientemente, aparecerá infinita, única e indivisible. Lo cual estará bastante claro para todos los que hayan sabido distinguir entre imaginación y entendimiento: sobre todo, si se considera también que la materia es la misma en todo lugar, y que en ella no se distinguen partes, sino en cuanto la concebimos como afectada de diversos modos, por lo que entre sus partes hay sólo distinción modal, y no real. Por ejemplo, concebimos que el agua, en cuanto es agua, se divide, y que sus partes se separan unas de otras; pero no en cuanto que es substancia corpórea, pues en cuanto tal ni se separa ni se divide. Además el agua, en cuanto agua, se genera y se corrompe, pero en cuanto substancia ni se genera ni se corrompe. Y con esto creo que he respondido también al segundo argumento, puesto que éste se funda también en que la materia, en cuanto substancia, es divisible y se compone de partes. Y aunque esto no fuese así, no sé por qué la materia sería indigna de la naturaleza divina, supuesto que (por la Proposición 14) no puede darse fuera de Dios substancia alguna por la que pueda padecer. Digo, pues, que todas las cosas son en Dios, y que todo lo que ocurre, ocurre en virtud de las solas leyes de la infinita naturaleza de Dios y se sigue (como en seguida mostraré) de la necesidad de su esencia; por lo cual no hay razón alguna para decir que Dios padezca en virtud de otra cosa, o que la substancia extensa sea indigna de la naturaleza divina, aunque se la suponga divisible, con tal que se conceda que es eterna e infinita. Pero, por el momento, ya hemos dicho bastante de esto.`,
+        es: `Escolio: Los hay que se representan a Dios como un hombre: compuesto de cuerpo y alma y sometido a pasiones; pero ya consta, por las anteriores demostraciones, cuan lejos vagan éstos de un verdadero conocimiento de Dios. Pero los excluyo de mi consideración, pues todos cuantos han examinado de algún modo la naturaleza divina niegan que Dios sea corpóreo. Lo cual prueban muy bien partiendo de que por cuerpo entendemos toda cantidad larga, ancha y profunda, limitada según cierta figura, y nada más absurdo que eso puede decirse de Dios, o sea, del ser absolutamente infinito. Sin embargo, al mismo tiempo, se esfuerzan por demostrar con otras razones, y manifiestan claramente, que ellos consideran la substancia corpórea o extensa como separada por completo de la naturaleza divina, y la afirman creada por Dios. Pero ignoran totalmente en virtud de qué potencia divina haya podido ser creada; lo que claramente muestra que no entienden lo que ellos mismos dicen. Yo al menos he demostrado, con bastante claridad a mi juicio (ver Corolario de la Proposición 6 y Escolio 2 de la Proposición 8), que ninguna substancia puede ser producida o creada por otra cosa. Además hemos mostrado en la Proposición 14 que, excepto Dios, no puede darse ni concebirse substancia alguna; y de ello hemos concluido que la substancia extensa es uno de los infinitos atributos de Dios. De todas maneras, para una más completa explicación, refutaré los argumentos de tales adversarios, que se reducen a lo siguiente: Primero: que la substancia corpórea, en cuanto substancia, consta, según creen, de partes; y por ello niegan que pueda ser infinita y, consiguientemente, que pueda pertenecer a Dios. Y explican eso con muchos ejemplos, de los que daré alguno que otro. Si la substancia corpórea —dicen— es infinita, concíbasela dividida en dos partes: cada una de esas partes será, o bien finita, o bien infinita. Si finita, entonces un infinito se compone de dos partes finitas, lo que es absurdo. Si infinita, entonces hay un infinito dos veces mayor que otro infinito, lo que también es absurdo. Además, si una cantidad infinita se mide mediante partes que tengan un pie de longitud, constará de un número infinito de dichas partes, lo mismo que si se la mide mediante partes de una pulgada de longitud; y, por tanto, un número infinito será doce veces mayor que otro número infinito. Por último, si se concibe que, a partir de un punto de una cantidad infinita, dos líneas AB y AC, separadas al principio por cierta y determinada distancia, se prolongan hasta el infinito, es indudable que la distancia entre B y C aumentará continuamente, y que, de ser determinada, pasará a ser indeterminable. Siguiéndose, pues, dichos absurdos —según creen— de la suposición de una cantidad infinita, concluyen de ello que la substancia corpórea debe ser finita y, consiguientemente, que no pertenece a la esencia de Dios. Un segundo argumento se obtiene a partir de la suma perfección de Dios. Dios —dicen—, como es un ser sumamente perfecto, no puede padecer; ahora bien, la substancia corpórea, dado que es divisible, puede padecer; luego se sigue que no pertenece a la esencia de Dios. Éstos son los argumentos que encuentro en los escritores, con los que se esfuerzan por probar que la substancia corpórea es indigna de la naturaleza divina y no puede pertenecer a ella. Pero en realidad, si bien se mira, se advertirá que yo ya he respondido a esos argumentos, toda vez que sólo se fundan en la suposición de que la substancia corpórea se compone de partes, lo que ya probé ser absurdo (Proposición 12, con el Corolario de la Proposición 13). Además, si se quiere sopesar con cuidado la cuestión, se verá que todos esos absurdos (supuesto que lo sean, cosa que ahora no discuto) en virtud de los cuales pretenden concluir que una substancia extensa es finita, en absoluto se siguen de la suposición de una cantidad infinita, sino de que esa cantidad infinita se supone mensurable y compuesta de partes finitas; por lo cual, de los absurdos que de eso se siguen no pueden concluir otra cosa sino que la cantidad infinita no es mensurable, y que no puede estar compuesta de partes finitas. Pero eso es ya precisamente lo mismo que nosotros hemos demostrado ya antes (Proposición 12, etc.). Por lo cual, el dardo que nos lanzan lo arrojan, en realidad, contra sí mismos. Si, pese a todo, quieren concluir, a partir de su propio absurdo, que la substancia extensa debe ser finita, no hacen, en verdad, otra cosa que quien, por el hecho de imaginar un círculo con las propiedades del cuadrado, concluye que el círculo no tiene un centro a partir del cual todas las líneas trazadas hasta la circunferencia son iguales, pues la substancia corpórea, que no puede concebirse sino como infinita, única e indivisible, la conciben ellos compuesta de partes, múltiple y divisible, para poder concluir que es finita. Así también, otros, tras imaginar que la línea se compone de puntos, encuentran fácilmente muchos argumentos con los que muestran que la línea no puede dividirse hasta lo infinito. Y, desde luego, no es menos absurdo afirmar que la substancia corpórea está compuesta de cuerpos, o sea de partes, que afirmar que el cuerpo está compuesto de superficies, las superficies de líneas y las líneas de puntos. Ahora bien, esto deben reconocerlo todos los que saben que una razón clara es infalible y, antes que nadie, los que niegan que haya vacío, pues si la substancia corpórea pudiera dividirse de modo que sus partes fuesen realmente distintas, ¿por qué no podría entonces aniquilarse una sola parte, permaneciendo las demás conectadas entre sí, como antes? ¿Y por qué todas deben ajustarse de modo que no haya vacío? Ciertamente, si hay cosas que son realmente distintas entre sí, una puede existir y permanecer en su estado sin la otra. Pero como en la naturaleza no hay vacío (de esto he hablado en otro lugar)'29, sino que todas sus partes deben concurrir de modo que no lo haya, se sigue de ahí que esas partes no pueden distinguirse realmente, esto es, que la substancia corpórea, en cuanto substancia, no puede ser dividida. Si alguien, con todo, pregunta ahora que por qué somos tan propensos por naturaleza a dividir la cantidad, le respondo que la cantidad es concebida por nosotros de dos maneras, a saber: abstractamente, o sea, superficialmente, es decir, como cuando actuamos con la imaginación; o bien como substancia, lo que sólo hace el entendimiento. Si consideramos la cantidad tal como se da en la imaginación —que es lo que hacemos con mayor facilidad y frecuencia—, aparecerá finita, divisible y compuesta de partes; pero si la consideramos tal como se da en el entendimiento, y la concebimos en cuanto substancia —lo cual es muy difícil—, entonces, como ya hemos demostrado suficientemente, aparecerá infinita, única e indivisible. Lo cual estará bastante claro para todos los que hayan sabido distinguir entre imaginación y entendimiento: sobre todo, si se considera también que la materia es la misma en todo lugar, y que en ella no se distinguen partes, sino en cuanto la concebimos como afectada de diversos modos, por lo que entre sus partes hay sólo distinción modal, y no real. Por ejemplo, concebimos que el agua, en cuanto es agua, se divide, y que sus partes se separan unas de otras; pero no en cuanto que es substancia corpórea, pues en cuanto tal ni se separa ni se divide. Además el agua, en cuanto agua, se genera y se corrompe, pero en cuanto substancia ni se genera ni se corrompe. Y con esto creo que he respondido también al segundo argumento, puesto que éste se funda también en que la materia, en cuanto substancia, es divisible y se compone de partes. Y aunque esto no fuese así, no sé por qué la materia sería indigna de la naturaleza divina, supuesto que (por la Proposición 14) no puede darse fuera de Dios substancia alguna por la que pueda padecer. Digo, pues, que todas las cosas son en Dios, y que todo lo que ocurre, ocurre en virtud de las solas leyes de la infinita naturaleza de Dios y se sigue (como en seguida mostraré) de la necesidad de su esencia; por lo cual no hay razón alguna para decir que Dios padezca en virtud de otra cosa, o que la substancia extensa sea indigna de la naturaleza divina, aunque se la suponga divisible, con tal que se conceda que es eterna e infinita. Pero, por el momento, ya hemos dicho bastante de esto.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -816,7 +816,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Ninguna cosa singular, o sea, ninguna cosa que es finital"! y tiene una existencia determinada, puede existir, mi ser determinada a obrar, si no es determinada a existir y obrar por otra causa, que es también finita y tiene una existencia determinada; y, a Su vez, dicha causa no puede tampoco existir, ni ser determinada a obrar, si no es determinada a existir y obrar por otra, que también es finita y tiene una existencia determinada, y así hasta el infinito. Demostración: Todo cuanto está determinado a existir y obrar, es determinado por Dios (por la Proposición 16 y el Corolario de la Proposición 24). Pero lo que es finito y tiene una existencia determinada no ha podido ser producido por la naturaleza, considerada en absoluto, de algún atributo de Dios, pues todo lo que se sigue de la naturaleza, tomada en absoluto, de algún atributo de Dios, es infinito y eterno (por la Proposición 21). Ha debido seguirse, entonces, a partir de Dios, o sea, de algún atributo suyo, en cuanto se le considera afectado por algún modo, ya que nada hay fuera de substancia y modos (por el Axioma 1 y las Definiciones 3 y 5), y los modos no son otra cosa (por el Corolario de la Proposición 25) que afecciones de los atributos de Dios. Ahora bien: tampoco ha podido seguirse a partir de Dios, o de algún atributo suyo, en cuanto afectado por alguna modificación que sea eterna e infinita (por la Proposición 22). Por consiguiente, ha debido seguirse de Dios, o bien ser determinado a existir y obrar por Dios, o por algún atributo suyo, en cuanto modificado por una modificación que sea infinita y tenga una existencia determinada. Que era lo primero. Además, esta causa, o sea, este modo, a su vez (por la misma razón de que nos hemos servido ahora mismo en la primera parte de esta demostración), ha debido también ser determinado por otra, que es también finita y tiene una existencia determinada, y, a su vez, esta última (por la misma razón) por otra, y así siempre (por la misma razón) hasta el infinito. Q.E.D.`,
+        es: `Ninguna cosa singular, o sea, ninguna cosa que es finita y tiene una existencia determinada, puede existir, mi ser determinada a obrar, si no es determinada a existir y obrar por otra causa, que es también finita y tiene una existencia determinada; y, a Su vez, dicha causa no puede tampoco existir, ni ser determinada a obrar, si no es determinada a existir y obrar por otra, que también es finita y tiene una existencia determinada, y así hasta el infinito. Demostración: Todo cuanto está determinado a existir y obrar, es determinado por Dios (por la Proposición 16 y el Corolario de la Proposición 24). Pero lo que es finito y tiene una existencia determinada no ha podido ser producido por la naturaleza, considerada en absoluto, de algún atributo de Dios, pues todo lo que se sigue de la naturaleza, tomada en absoluto, de algún atributo de Dios, es infinito y eterno (por la Proposición 21). Ha debido seguirse, entonces, a partir de Dios, o sea, de algún atributo suyo, en cuanto se le considera afectado por algún modo, ya que nada hay fuera de substancia y modos (por el Axioma 1 y las Definiciones 3 y 5), y los modos no son otra cosa (por el Corolario de la Proposición 25) que afecciones de los atributos de Dios. Ahora bien: tampoco ha podido seguirse a partir de Dios, o de algún atributo suyo, en cuanto afectado por alguna modificación que sea eterna e infinita (por la Proposición 22). Por consiguiente, ha debido seguirse de Dios, o bien ser determinado a existir y obrar por Dios, o por algún atributo suyo, en cuanto modificado por una modificación que sea infinita y tenga una existencia determinada. Que era lo primero. Además, esta causa, o sea, este modo, a su vez (por la misma razón de que nos hemos servido ahora mismo en la primera parte de esta demostración), ha debido también ser determinado por otra, que es también finita y tiene una existencia determinada, y, a su vez, esta última (por la misma razón) por otra, y así siempre (por la misma razón) hasta el infinito. Q.E.D.`,
         la: ``,
       },
       proof: [
@@ -1013,7 +1013,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Con lo dicho, he explicado la naturaleza de Dios y sus propiedades, a saber: que existe necesariamente; que es único; que es y obra en virtud de la sola necesidad de su naturaleza; que es causa libre de todas las cosas, y de qué modo lo es; que todas las cosas son en Dios y dependen de Él, de suerte qué sin Él no pueden ser ni concebirse; y, por último, que todas han sido predeterminadas por Dios, no, ciertamente, en virtud de la libertad de su voluntad o por su capricho absoluto, sino en virtud de la naturaleza de Dios, o sea, su infinita potencia, tomada absolutamente. Además, siempre que he tenido ocasión, he procurado remover los prejuicios que hubieran podido impedir que mis demostraciones se percibiesen bien, pero, como aún quedan no pocos prejuicios que podrían y pueden, en el más alto grado, impedir que los hombres comprendan la concatenación de las cosas en el orden en que la he explicado, he pensado que valía la pena someterlos aquí al examen de la razón. “Todos los prejuicios que intento indicar aquí dependen de uno solo, a saber: el hecho de que los hombres supongan, comúnmente, que todas las cosas de la naturaleza actúan, al igual que ellos mismos, por razón de un fin, e incluso tienen por cierto que Dios mismo dirige todas las cosas hacia un cierto fin, pues dicen que Dios ha hecho todas las cosas con vistas al hombre, y ha creado al hombre para que le rinda culto. Consideraré, pues, este solo prejuicio, buscando, en primer lugar, la causa por la que le presta su asentimiento la mayoría, y por la que todos son tan propensos, naturalmente, a darle acogida. Después mostraré su falsedad y, finalmente, cómo han surgido de él los prejuicios acerca del bien y el mal, el mérito y el pecado, la alabanza y el vituperio, el orden y la confusión, la belleza y la fealdad, y otros de este género. Ahora bien: deducir todo ello a partir de la naturaleza del alma!*9! humana no es de este lugar. Aquí me bastará con tomar como fundamento lo que todos deben reconocer, a saber: que todos los hombres nacen ignorantes de las causas de las cosas, y que todos los hombres poseen apetito de buscar lo que les es útil, y de ello son conscientes. De ahí se sigue, primero, que los hombres se imaginan ser libres, puesto que son conscientes de sus voliciones y de su apetito, y ni soñando piensan en las causas que les disponen a apetecer y querer, porque las ignoran. Se sigue, segundo, que los hombres actúan siempre con vistas a un fin, a saber: con vistas a la utilidad que apetecen, de lo que resulta que sólo anhelan siempre saber las causas finales de las cosas que se llevan a cabo, y, una vez que se han enterado de ellas, se tranquilizan, pues ya no les queda motivo alguno de duda. Si no pueden enterarse de ellas por otra persona, no les queda otra salida que volver sobre sí mismos y reflexionar sobre los fines en vista de los cuales suelen ellos determinarse en casos semejantes, y así juzgan necesariamente de la índole ajena a partir de la propia. Además, como encuentran, dentro y fuera de sí mismos, no pocos medios que cooperan en gran medida a la consecución de lo que les es útil, como, por ejemplo, los ojos para ver, los dientes para masticar, las hierbas y los animales para alimentarse, el sol para iluminar, el mar para criar peces, ello hace que consideren todas las cosas de la naturaleza como si fuesen medios para conseguir lo que les es útil. Y puesto que saben que esos medios han sido encontrados, pero no organizados por ellos, han tenido así un motivo para creer que hay algún otro que ha organizado dichos medios con vistas a que ellos los usen. Pues una vez que han considerado las cosas como medios, no han podido creer que se hayan hecho a sí mismas, sino que han tenido que concluir, basándose en el hecho de que ellos mismos suelen servirse de medios, que hay algún o algunos rectores de la naturaleza, provistos de libertad humana, que les han proporcionado todo y han hecho todas las cosas para que ellos las usen. Ahora bien: dado que no han tenido nunca noticia de la índole de tales rectores, se han visto obligados a juzgar de ella a partir de la suya, y así han afirmado que los dioses enderezan todas las cosas a la humana utilidad, con el fin de atraer a los hombres y ser tenidos por ellos en el más alto honor; de donde resulta que todos, según su propia índole, hayan excogitado diversos modos de dar culto a Dios, con el fin de que Dios los amara más que a los otros, y dirigiese la naturaleza entera en provecho de su ciego deseo e insaciable avaricia. Y así, este prejuicio se ha trocado en superstición, echando profundas raíces en las almas, lo que ha sido causa de que todos se hayan esforzado al máximo por entender y explicar las causas finales de todas las cosas. Pero al pretender mostrar que la naturaleza no hace nada en vano (esto es: no hace nada que no sea útil a los hombres), no han mostrado —parece— otra cosa sino que la naturaleza y los dioses deliran lo mismo que los hombres. Os ruego consideréis en qué ha parado el asunto. En medio de tantas ventajas naturales no han podido dejar de hallar muchas desventajas, como tempestades, terremotos, enfermedades, etc.; entonces han afirmado que ello ocurría porque los dioses estaban airados a causa de las ofensas que los hombres les inferían o a causa de los errores cometidos en el culto. Y aunque la experiencia proclamase cada día, y patentizase con infinitos ejemplos, que los beneficios y las desgracias acaecían indistintamente a piadosos y a impíos, no por ello han desistido de su inveterado prejuicio: situar este hecho entre otras cosas desconocidas, cuya utilidad ignoraban (conservando así su presente e innato estado de ignorancia) les ha sido más fácil que destruir todo aquel edificio y planear otro nuevo. Y de ahí que afirmasen como cosa cierta que los juicios de los dioses superaban con mucho la capacidad humana, afirmación que habría sido, sin duda, la única causa de que la verdad permaneciese eternamente oculta para el género humano, si la Matemática, que versa no sobre los fines, sino sólo sobre las esencias y propiedades de las figuras, no hubiese mostrado a los hombres otra norma de verdad; y, además de la Matemática, pueden también señalarse otras causas (cuya enumeración es aquí superflua) responsables de que los hombres se diesen cuenta de estos vulgares prejuicios y se orientasen hacia el verdadero conocimiento de las cosas. Con esto he explicado suficientemente lo que prometí en primer lugar. Mas para mostrar ahora que la naturaleza no tiene fin alguno prefijado, y que todas las causas finales son, sencillamente, ficciones humanas, no harán falta muchas palabras. Creo, en efecto, que ello ya consta suficientemente, tanto en virtud de los fundamentos y causas de donde he mostrado que este prejuicio tomó su origen, cuanto en virtud de la Proposición 16 y los Corolarios de la Proposición 32, y, además, en virtud de todo aquello por lo que he mostrado que las cosas de la naturaleza acontecen todas con una necesidad eterna y una suprema perfección. Sin embargo, añadiré aún que esta doctrina acerca del fin transtorna por completo la naturaleza, pues considera como efecto lo que es en realidad causa, y viceversa. Además, convierte en posterior lo que es, por naturaleza, anterior. Y, por último, trueca en imperfectísimo lo que es supremo y perfectísimo. Pues (omitiendo los dos primeros puntos, ya que son manifiestos por sí), según consta en virtud de las Proposiciones 21, 22 y 23, el efecto producido inmediatamente por Dios es el más perfecto, y una cosa es tanto más imperfecta cuantas más causas intermedias necesita para ser producida. Pero, si las cosas inmediatamente producidas por Dios hubieran sido hechas para que Dios alcanzase su fin propio, entonces las últimas, por cuya causa se han hecho las anteriores, serían necesariamente las más excelentes de todas. Además, esta doctrina priva de perfección a Dios: pues, si Dios actúa con vistas a un fin, es que — necesariamente— apetece algo de lo que carece. Y, aunque los teólogos y los metafísicos distingan entre fin de carencia y fin de asimilación, confiesan, sin embargo, que Dios ha hecho todas las cosas por causa de sí mismo, y no por causa de las cosas que iban a ser creadas, pues, aparte de Dios, no pueden señalar antes de la creación nada en cuya virtud Dios obrase; y así se ven forzados a confesar que Dios carecía de aquellas cosas para cuya consecución quiso disponer los medios, y que las deseaba, como es claro por sí mismo. Y no debe olvidarse aquí que los secuaces de esta doctrina, que han querido exhibir su ingenio señalando fines a las cosas, han introducido, para probar esta doctrina suya, una nueva manera de argumentar, a saber: la reducción, no a lo imposible, sino a la ignorancia, lo que muestra que no había ningún otro medio de probarla. Pues si, por ejemplo, cayese una piedra desde lo alto sobre la cabeza de alguien, y lo matase, demostrarán que la piedra ha caído para matar a ese hombre, de la manera siguiente. Si no ha caído con dicho fin, queriéndolo Dios, ¿cómo han podido juntarse al azar tantas circunstancias? (y, efectivamente, a menudo concurren muchas a la vez). Acaso responderéis que ello ha sucedido porque el viento soplaba y el hombre pasaba por allí. Pero —insistirán— ¿por qué soplaba entonces el viento? ¿Por qué el hombre pasaba por allí entonces? Si respondéis, de nuevo, que el viento se levantó porque el mar, estando el tiempo aún tranquilo, había empezado a agitarse el día anterior, y que el nombre había sido invitado por un amigo, insistirán de nuevo, a su vez —ya que el preguntar no tiene fin—- ¿y por qué se agitaba el mar? ¿por qué el hombre fue invitado en aquel momento? Y, de tal suerte, no cesarán de preguntar las causas de las causas, hasta que os refugiéis en la voluntad de Dios, ese asilo de la ignorancia, Así también, cuando contemplan la fábrica del cuerpo humano, quedan estupefactos, y concluyen, puesto que ignoran las causas de algo tan bien hecho, que es obra no mecánica, sino divina o sobrenatural, y constituida de modo tal que ninguna parte perjudica a otra. Y de aquí proviene que quien investiga las verdaderas causas de los milagros, y procura, tocante a las cosas naturales, entenderlas como sabio, y no admirarlas como necio, sea considerado hereje e impío, y proclamado tal por aquellos a quien el vulgo adora como intérpretes de la naturaleza y de los dioses. Porque ellos saben que, suprimida la ignorancia, se suprime la estúpida admiración, esto es, se les quita el único medio que tienen de argumentar y de preservar su autoridad. Pero voy a dejar este asunto, y pasar al que he decidido tratar aquí en tercer lugar. Una vez que los hombres se han persuadido de que todo lo que ocurre ocurre por causa de ellos, han debido juzgar como lo principal en toda cosa aquello que les resultaba más útil, y estimar como las más excelentes de todas aquellas cosas que les afectaban del mejor modo. De donde han debido formar nociones, con las que intentan explicar la naturaleza de las cosas, tales como Bien, Mal, Orden, Confusión, Calor, Frío, Belleza y Fealdad; y, dado que se consideran a sí mismos como libres, de ahí han salido nociones tales como Alabanza, Vituperio, Pecado y Mérito: estas últimas las explicaré más adelante, después que trate de la naturaleza humana; a las primeras me referiré ahora brevemente. Han llamado Bien a todo lo que se encamina a la salud y al culto de Dios, y Mal, a lo contrario de esas cosas. Y como aquellos que no entienden la naturaleza de las cosas nada afirman realmente acerca de ellas, sino que sólo se las imaginan, y confunden la imaginación con el entendimiento, creen por ello firmemente que en las cosas hay un Orden, ignorantes como son de la naturaleza de las cosas y de la suya propia. Pues decimos que están bien ordenadas cuando están dispuestas de tal manera que, al representárnoslas por medio de los sentidos, podemos imaginarlas fácilmente y, por consiguiente, recordarlas con facilidad; y, si no es así, decimos que están mal ordenadas o que son confusas. Y puesto que las cosas que más nos agradan son las que podemos imaginar fácilmente, los hombres prefieren, por ello, el orden a la confusión, corno si, en la naturaleza, el orden fuese algo independiente de nuestra imaginación; y dicen que Dios ha creado todo según un orden, atribuyendo de ese modo, sin darse cuenta, imaginación a Dios, a no ser quizá que prefieran creer que Dios, providente con la humana imaginación, ha dispuesto todas las cosas de manera tal que ellos puedan imaginarlas muy fácilmente. Y acaso no sería óbice para ellos el hecho de que se encuentran infinitas cosas que sobrepasan con mucho nuestra imaginación, y muchísimas que la confunden a causa de su debilidad. Pero de esto ya he dicho bastante. Por lo que toca a las otras nociones, tampoco son otra cosa que modos de imaginar, por los que la imaginación es afectada de diversas maneras, y, sin embargo, son consideradas por los ignorantes como si fuesen los principales atributos de las cosas; porque, como ya hemos dicho, creen que todas las cosas han sido hechas con vistas a ellos, y a la naturaleza de una cosa la llaman buena o mala, sana o pútrida y corrompida, según son afectados por ella. Por ejemplo, si el movimiento que los nervios reciben de los objetos captados por los ojos conviene a la salud, los objetos por los que es causado son llamados bellos; y feos, los que provocan un movimiento contrario. Los que actúan sobre el sentido por medio de la nariz son llamados aromáticos o fétidos; los que actúan por medio de la lengua, dulces o amargos, sabrosos o insípidos, etc.; los que actúan por medio del tacto, duros o blandos, ásperos o lisos, etc. Y, por último, los que excitan el oído se dice que producen ruido, sonido o armonía, y esta última ha enloquecido a los hombres hasta el punto de creer que también Dios se complace con la armonía; y no faltan filósofos persuadidos de que los movimientos celestes componen una armonía. Todo ello muestra suficientemente que cada cual juzga de las cosas según la disposición de su cerebro, o, más bien, toma por realidades las afecciones de su imaginación. Por ello, no es de admirar (notémoslo de pasada) que hayan surgido entre los hombres tantas controversias como conocemos, y de ellas, por último, el escepticismo. Pues, aunque los cuerpos humanos concuerdan en muchas cosas, difieren, con todo, en muchas más, y por eso lo que a uno le parece bueno, parece malo a otro; lo que ordenado a uno, a otro confuso; lo agradable para uno es desagradable para otro; y así ocurre con las demás cosas, que omito aquí no sólo por no ser éste lugar para tratar expresamente de ellas, sino porque todos tienen suficiente experiencia del caso. En efecto, en boca de todos están estas sentencias: hay tantas opiniones como cabezas; cada cual abunda en su opinión; no hay menos desacuerdo entre cerebros que entre paladares. Ellas muestran suficientemente que los hombres juzgan de las cosas según la disposición de su cerebro, y que más bien las imaginan que las entienden. Pues si las entendiesen —y de ello es testigo la Matemática—, al menos las cosas serían igualmente convincentes para todos, ya que no igualmente atractivas. Vemos, pues, que todas las nociones por las cuales suele el vulgo explicar la naturaleza son sólo modos de imaginar, y no indican la naturaleza de cosa alguna, sino sólo la contextura de la imaginación; y, pues tienen nombres como los que tendrían entidades existentes fuera de la imaginación, no las llamo entes de razón, sino de imaginación, y así, todos los argumentos que contra nosotros se han obtenido de tales nociones, pueden rechazarse fácilmente. En efecto, muchos suelen argumentar así: si todas las cosas se han seguido en virtud de la necesidad de la perfectísima naturaleza de Dios, ¿de dónde han surgido entonces tantas imperfecciones en la naturaleza, a saber: la corrupción de las cosas hasta el hedor, la fealdad que provoca náuseas, la confusión, el mal, el pecado, etc.? Pero, como acabo de decir, esto se refuta fácilmente. Pues la perfección de las cosas debe estimarse por su sola naturaleza y potencia, y no son mas o menos perfectas porque deleiten u ofendan los sentidos de los hombres, ni porque convengan o repugnen a la naturaleza humana. Y a quienes preguntan: ¿por qué Dios no ha creado a todos los hombres de manera que se gobiernen por la sola guía de la razón? respondo sencillamente: porque no le ha faltado materia para crearlo todo, desde el más alto al más bajo grado de perfección; o, hablando con más propiedad, porque las leyes de su naturaleza han sido lo bastante amplias como para producir todo lo que puede ser concebido por un entendimiento infinito, según he demostrado en la Proposición 16. Éstos son los prejuicios que aquí he pretendido señalar. Si todavía quedan algunos de la misma estofa, cada cual podrá corregirlos a poco que medite.`,
+        es: `Con lo dicho, he explicado la naturaleza de Dios y sus propiedades, a saber: que existe necesariamente; que es único; que es y obra en virtud de la sola necesidad de su naturaleza; que es causa libre de todas las cosas, y de qué modo lo es; que todas las cosas son en Dios y dependen de Él, de suerte qué sin Él no pueden ser ni concebirse; y, por último, que todas han sido predeterminadas por Dios, no, ciertamente, en virtud de la libertad de su voluntad o por su capricho absoluto, sino en virtud de la naturaleza de Dios, o sea, su infinita potencia, tomada absolutamente. Además, siempre que he tenido ocasión, he procurado remover los prejuicios que hubieran podido impedir que mis demostraciones se percibiesen bien, pero, como aún quedan no pocos prejuicios que podrían y pueden, en el más alto grado, impedir que los hombres comprendan la concatenación de las cosas en el orden en que la he explicado, he pensado que valía la pena someterlos aquí al examen de la razón. “Todos los prejuicios que intento indicar aquí dependen de uno solo, a saber: el hecho de que los hombres supongan, comúnmente, que todas las cosas de la naturaleza actúan, al igual que ellos mismos, por razón de un fin, e incluso tienen por cierto que Dios mismo dirige todas las cosas hacia un cierto fin, pues dicen que Dios ha hecho todas las cosas con vistas al hombre, y ha creado al hombre para que le rinda culto. Consideraré, pues, este solo prejuicio, buscando, en primer lugar, la causa por la que le presta su asentimiento la mayoría, y por la que todos son tan propensos, naturalmente, a darle acogida. Después mostraré su falsedad y, finalmente, cómo han surgido de él los prejuicios acerca del bien y el mal, el mérito y el pecado, la alabanza y el vituperio, el orden y la confusión, la belleza y la fealdad, y otros de este género. Ahora bien: deducir todo ello a partir de la naturaleza del alma humana no es de este lugar. Aquí me bastará con tomar como fundamento lo que todos deben reconocer, a saber: que todos los hombres nacen ignorantes de las causas de las cosas, y que todos los hombres poseen apetito de buscar lo que les es útil, y de ello son conscientes. De ahí se sigue, primero, que los hombres se imaginan ser libres, puesto que son conscientes de sus voliciones y de su apetito, y ni soñando piensan en las causas que les disponen a apetecer y querer, porque las ignoran. Se sigue, segundo, que los hombres actúan siempre con vistas a un fin, a saber: con vistas a la utilidad que apetecen, de lo que resulta que sólo anhelan siempre saber las causas finales de las cosas que se llevan a cabo, y, una vez que se han enterado de ellas, se tranquilizan, pues ya no les queda motivo alguno de duda. Si no pueden enterarse de ellas por otra persona, no les queda otra salida que volver sobre sí mismos y reflexionar sobre los fines en vista de los cuales suelen ellos determinarse en casos semejantes, y así juzgan necesariamente de la índole ajena a partir de la propia. Además, como encuentran, dentro y fuera de sí mismos, no pocos medios que cooperan en gran medida a la consecución de lo que les es útil, como, por ejemplo, los ojos para ver, los dientes para masticar, las hierbas y los animales para alimentarse, el sol para iluminar, el mar para criar peces, ello hace que consideren todas las cosas de la naturaleza como si fuesen medios para conseguir lo que les es útil. Y puesto que saben que esos medios han sido encontrados, pero no organizados por ellos, han tenido así un motivo para creer que hay algún otro que ha organizado dichos medios con vistas a que ellos los usen. Pues una vez que han considerado las cosas como medios, no han podido creer que se hayan hecho a sí mismas, sino que han tenido que concluir, basándose en el hecho de que ellos mismos suelen servirse de medios, que hay algún o algunos rectores de la naturaleza, provistos de libertad humana, que les han proporcionado todo y han hecho todas las cosas para que ellos las usen. Ahora bien: dado que no han tenido nunca noticia de la índole de tales rectores, se han visto obligados a juzgar de ella a partir de la suya, y así han afirmado que los dioses enderezan todas las cosas a la humana utilidad, con el fin de atraer a los hombres y ser tenidos por ellos en el más alto honor; de donde resulta que todos, según su propia índole, hayan excogitado diversos modos de dar culto a Dios, con el fin de que Dios los amara más que a los otros, y dirigiese la naturaleza entera en provecho de su ciego deseo e insaciable avaricia. Y así, este prejuicio se ha trocado en superstición, echando profundas raíces en las almas, lo que ha sido causa de que todos se hayan esforzado al máximo por entender y explicar las causas finales de todas las cosas. Pero al pretender mostrar que la naturaleza no hace nada en vano (esto es: no hace nada que no sea útil a los hombres), no han mostrado —parece— otra cosa sino que la naturaleza y los dioses deliran lo mismo que los hombres. Os ruego consideréis en qué ha parado el asunto. En medio de tantas ventajas naturales no han podido dejar de hallar muchas desventajas, como tempestades, terremotos, enfermedades, etc.; entonces han afirmado que ello ocurría porque los dioses estaban airados a causa de las ofensas que los hombres les inferían o a causa de los errores cometidos en el culto. Y aunque la experiencia proclamase cada día, y patentizase con infinitos ejemplos, que los beneficios y las desgracias acaecían indistintamente a piadosos y a impíos, no por ello han desistido de su inveterado prejuicio: situar este hecho entre otras cosas desconocidas, cuya utilidad ignoraban (conservando así su presente e innato estado de ignorancia) les ha sido más fácil que destruir todo aquel edificio y planear otro nuevo. Y de ahí que afirmasen como cosa cierta que los juicios de los dioses superaban con mucho la capacidad humana, afirmación que habría sido, sin duda, la única causa de que la verdad permaneciese eternamente oculta para el género humano, si la Matemática, que versa no sobre los fines, sino sólo sobre las esencias y propiedades de las figuras, no hubiese mostrado a los hombres otra norma de verdad; y, además de la Matemática, pueden también señalarse otras causas (cuya enumeración es aquí superflua) responsables de que los hombres se diesen cuenta de estos vulgares prejuicios y se orientasen hacia el verdadero conocimiento de las cosas. Con esto he explicado suficientemente lo que prometí en primer lugar. Mas para mostrar ahora que la naturaleza no tiene fin alguno prefijado, y que todas las causas finales son, sencillamente, ficciones humanas, no harán falta muchas palabras. Creo, en efecto, que ello ya consta suficientemente, tanto en virtud de los fundamentos y causas de donde he mostrado que este prejuicio tomó su origen, cuanto en virtud de la Proposición 16 y los Corolarios de la Proposición 32, y, además, en virtud de todo aquello por lo que he mostrado que las cosas de la naturaleza acontecen todas con una necesidad eterna y una suprema perfección. Sin embargo, añadiré aún que esta doctrina acerca del fin transtorna por completo la naturaleza, pues considera como efecto lo que es en realidad causa, y viceversa. Además, convierte en posterior lo que es, por naturaleza, anterior. Y, por último, trueca en imperfectísimo lo que es supremo y perfectísimo. Pues (omitiendo los dos primeros puntos, ya que son manifiestos por sí), según consta en virtud de las Proposiciones 21, 22 y 23, el efecto producido inmediatamente por Dios es el más perfecto, y una cosa es tanto más imperfecta cuantas más causas intermedias necesita para ser producida. Pero, si las cosas inmediatamente producidas por Dios hubieran sido hechas para que Dios alcanzase su fin propio, entonces las últimas, por cuya causa se han hecho las anteriores, serían necesariamente las más excelentes de todas. Además, esta doctrina priva de perfección a Dios: pues, si Dios actúa con vistas a un fin, es que — necesariamente— apetece algo de lo que carece. Y, aunque los teólogos y los metafísicos distingan entre fin de carencia y fin de asimilación, confiesan, sin embargo, que Dios ha hecho todas las cosas por causa de sí mismo, y no por causa de las cosas que iban a ser creadas, pues, aparte de Dios, no pueden señalar antes de la creación nada en cuya virtud Dios obrase; y así se ven forzados a confesar que Dios carecía de aquellas cosas para cuya consecución quiso disponer los medios, y que las deseaba, como es claro por sí mismo. Y no debe olvidarse aquí que los secuaces de esta doctrina, que han querido exhibir su ingenio señalando fines a las cosas, han introducido, para probar esta doctrina suya, una nueva manera de argumentar, a saber: la reducción, no a lo imposible, sino a la ignorancia, lo que muestra que no había ningún otro medio de probarla. Pues si, por ejemplo, cayese una piedra desde lo alto sobre la cabeza de alguien, y lo matase, demostrarán que la piedra ha caído para matar a ese hombre, de la manera siguiente. Si no ha caído con dicho fin, queriéndolo Dios, ¿cómo han podido juntarse al azar tantas circunstancias? (y, efectivamente, a menudo concurren muchas a la vez). Acaso responderéis que ello ha sucedido porque el viento soplaba y el hombre pasaba por allí. Pero —insistirán— ¿por qué soplaba entonces el viento? ¿Por qué el hombre pasaba por allí entonces? Si respondéis, de nuevo, que el viento se levantó porque el mar, estando el tiempo aún tranquilo, había empezado a agitarse el día anterior, y que el nombre había sido invitado por un amigo, insistirán de nuevo, a su vez —ya que el preguntar no tiene fin—- ¿y por qué se agitaba el mar? ¿por qué el hombre fue invitado en aquel momento? Y, de tal suerte, no cesarán de preguntar las causas de las causas, hasta que os refugiéis en la voluntad de Dios, ese asilo de la ignorancia, Así también, cuando contemplan la fábrica del cuerpo humano, quedan estupefactos, y concluyen, puesto que ignoran las causas de algo tan bien hecho, que es obra no mecánica, sino divina o sobrenatural, y constituida de modo tal que ninguna parte perjudica a otra. Y de aquí proviene que quien investiga las verdaderas causas de los milagros, y procura, tocante a las cosas naturales, entenderlas como sabio, y no admirarlas como necio, sea considerado hereje e impío, y proclamado tal por aquellos a quien el vulgo adora como intérpretes de la naturaleza y de los dioses. Porque ellos saben que, suprimida la ignorancia, se suprime la estúpida admiración, esto es, se les quita el único medio que tienen de argumentar y de preservar su autoridad. Pero voy a dejar este asunto, y pasar al que he decidido tratar aquí en tercer lugar. Una vez que los hombres se han persuadido de que todo lo que ocurre ocurre por causa de ellos, han debido juzgar como lo principal en toda cosa aquello que les resultaba más útil, y estimar como las más excelentes de todas aquellas cosas que les afectaban del mejor modo. De donde han debido formar nociones, con las que intentan explicar la naturaleza de las cosas, tales como Bien, Mal, Orden, Confusión, Calor, Frío, Belleza y Fealdad; y, dado que se consideran a sí mismos como libres, de ahí han salido nociones tales como Alabanza, Vituperio, Pecado y Mérito: estas últimas las explicaré más adelante, después que trate de la naturaleza humana; a las primeras me referiré ahora brevemente. Han llamado Bien a todo lo que se encamina a la salud y al culto de Dios, y Mal, a lo contrario de esas cosas. Y como aquellos que no entienden la naturaleza de las cosas nada afirman realmente acerca de ellas, sino que sólo se las imaginan, y confunden la imaginación con el entendimiento, creen por ello firmemente que en las cosas hay un Orden, ignorantes como son de la naturaleza de las cosas y de la suya propia. Pues decimos que están bien ordenadas cuando están dispuestas de tal manera que, al representárnoslas por medio de los sentidos, podemos imaginarlas fácilmente y, por consiguiente, recordarlas con facilidad; y, si no es así, decimos que están mal ordenadas o que son confusas. Y puesto que las cosas que más nos agradan son las que podemos imaginar fácilmente, los hombres prefieren, por ello, el orden a la confusión, corno si, en la naturaleza, el orden fuese algo independiente de nuestra imaginación; y dicen que Dios ha creado todo según un orden, atribuyendo de ese modo, sin darse cuenta, imaginación a Dios, a no ser quizá que prefieran creer que Dios, providente con la humana imaginación, ha dispuesto todas las cosas de manera tal que ellos puedan imaginarlas muy fácilmente. Y acaso no sería óbice para ellos el hecho de que se encuentran infinitas cosas que sobrepasan con mucho nuestra imaginación, y muchísimas que la confunden a causa de su debilidad. Pero de esto ya he dicho bastante. Por lo que toca a las otras nociones, tampoco son otra cosa que modos de imaginar, por los que la imaginación es afectada de diversas maneras, y, sin embargo, son consideradas por los ignorantes como si fuesen los principales atributos de las cosas; porque, como ya hemos dicho, creen que todas las cosas han sido hechas con vistas a ellos, y a la naturaleza de una cosa la llaman buena o mala, sana o pútrida y corrompida, según son afectados por ella. Por ejemplo, si el movimiento que los nervios reciben de los objetos captados por los ojos conviene a la salud, los objetos por los que es causado son llamados bellos; y feos, los que provocan un movimiento contrario. Los que actúan sobre el sentido por medio de la nariz son llamados aromáticos o fétidos; los que actúan por medio de la lengua, dulces o amargos, sabrosos o insípidos, etc.; los que actúan por medio del tacto, duros o blandos, ásperos o lisos, etc. Y, por último, los que excitan el oído se dice que producen ruido, sonido o armonía, y esta última ha enloquecido a los hombres hasta el punto de creer que también Dios se complace con la armonía; y no faltan filósofos persuadidos de que los movimientos celestes componen una armonía. Todo ello muestra suficientemente que cada cual juzga de las cosas según la disposición de su cerebro, o, más bien, toma por realidades las afecciones de su imaginación. Por ello, no es de admirar (notémoslo de pasada) que hayan surgido entre los hombres tantas controversias como conocemos, y de ellas, por último, el escepticismo. Pues, aunque los cuerpos humanos concuerdan en muchas cosas, difieren, con todo, en muchas más, y por eso lo que a uno le parece bueno, parece malo a otro; lo que ordenado a uno, a otro confuso; lo agradable para uno es desagradable para otro; y así ocurre con las demás cosas, que omito aquí no sólo por no ser éste lugar para tratar expresamente de ellas, sino porque todos tienen suficiente experiencia del caso. En efecto, en boca de todos están estas sentencias: hay tantas opiniones como cabezas; cada cual abunda en su opinión; no hay menos desacuerdo entre cerebros que entre paladares. Ellas muestran suficientemente que los hombres juzgan de las cosas según la disposición de su cerebro, y que más bien las imaginan que las entienden. Pues si las entendiesen —y de ello es testigo la Matemática—, al menos las cosas serían igualmente convincentes para todos, ya que no igualmente atractivas. Vemos, pues, que todas las nociones por las cuales suele el vulgo explicar la naturaleza son sólo modos de imaginar, y no indican la naturaleza de cosa alguna, sino sólo la contextura de la imaginación; y, pues tienen nombres como los que tendrían entidades existentes fuera de la imaginación, no las llamo entes de razón, sino de imaginación, y así, todos los argumentos que contra nosotros se han obtenido de tales nociones, pueden rechazarse fácilmente. En efecto, muchos suelen argumentar así: si todas las cosas se han seguido en virtud de la necesidad de la perfectísima naturaleza de Dios, ¿de dónde han surgido entonces tantas imperfecciones en la naturaleza, a saber: la corrupción de las cosas hasta el hedor, la fealdad que provoca náuseas, la confusión, el mal, el pecado, etc.? Pero, como acabo de decir, esto se refuta fácilmente. Pues la perfección de las cosas debe estimarse por su sola naturaleza y potencia, y no son mas o menos perfectas porque deleiten u ofendan los sentidos de los hombres, ni porque convengan o repugnen a la naturaleza humana. Y a quienes preguntan: ¿por qué Dios no ha creado a todos los hombres de manera que se gobiernen por la sola guía de la razón? respondo sencillamente: porque no le ha faltado materia para crearlo todo, desde el más alto al más bajo grado de perfección; o, hablando con más propiedad, porque las leyes de su naturaleza han sido lo bastante amplias como para producir todo lo que puede ser concebido por un entendimiento infinito, según he demostrado en la Proposición 16. Éstos son los prejuicios que aquí he pretendido señalar. Si todavía quedan algunos de la misma estofa, cada cual podrá corregirlos a poco que medite.`,
         la: ``,
       },
       // Here Spinoza says "corollariis propositionis 32" though
@@ -1339,7 +1339,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Escolio: Si, en orden a una más amplia explicación de este punto, alguien desease un ejemplo, ninguno podré darle que explique adecuadamente la cuestión de que hablo aquí, toda vez que es única; procuraré, con todo, ilustrar este asunto lo mejor que pueda. Como se sabe, el círculo posee una naturaleza tal que son iguales entre sí los rectángulos formados por los segmentos de cada par de líneas rectas que se cortan entre sí dentro de dicho círculo!?%!; por lo cual se contienen en el círculo infinitos rectángulos iguales entre sí; pero ninguno de ellos puede decirse que exista sino en cuanto que existe el círculo, ni tampoco puede decirse que exista la idea de ninguno de esos rectángulos sino en cuanto que está comprendida en la idea del círculo. Concíbase ahora que, de esos infinitos rectángulos, sólo dos existen, a saber, E y D. Ciertamente, sus ideas existen ahora no ya sólo en cuanto comprendidas en la idea del círculo, sino también en cuanto que implican la existencia de esos rectángulos, y por ello se distinguen de las demás ideas de los otros rectángulos.`,
+        es: `Escolio: Si, en orden a una más amplia explicación de este punto, alguien desease un ejemplo, ninguno podré darle que explique adecuadamente la cuestión de que hablo aquí, toda vez que es única; procuraré, con todo, ilustrar este asunto lo mejor que pueda. Como se sabe, el círculo posee una naturaleza tal que son iguales entre sí los rectángulos formados por los segmentos de cada par de líneas rectas que se cortan entre sí dentro de dicho círculo; por lo cual se contienen en el círculo infinitos rectángulos iguales entre sí; pero ninguno de ellos puede decirse que exista sino en cuanto que existe el círculo, ni tampoco puede decirse que exista la idea de ninguno de esos rectángulos sino en cuanto que está comprendida en la idea del círculo. Concíbase ahora que, de esos infinitos rectángulos, sólo dos existen, a saber, E y D. Ciertamente, sus ideas existen ahora no ya sólo en cuanto comprendidas en la idea del círculo, sino también en cuanto que implican la existencia de esos rectángulos, y por ello se distinguen de las demás ideas de los otros rectángulos.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -1401,7 +1401,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Corolario: De aquí se sigue que la esencia del hombre está constituida por ciertas modificaciones de los atributos de Dios. Demostración: Porque el ser de la substancia (por la Proposición anterior) no pertenece a la esencia del hombre. Por consiguiente, ésta es algo (por la Proposición 15 de la Parte I) que es en Dios y que no puede ser ni concebirse sin Dios, o sea (por el Corolario de la Proposición 25 de la Parte 1), es una afección o modo que expresa la naturaleza de Dios de cierta y determinada manera.`,
+        es: `Corolario: De aquí se sigue que la esencia del hombre está constituida por ciertas modificaciones de los atributos de Dios. Demostración: Porque el ser de la substancia (por la Proposición anterior) no pertenece a la esencia del hombre. Por consiguiente, ésta es algo (por la Proposición 15 de la Parte I) que es en Dios y que no puede ser ni concebirse sin Dios, o sea (por el Corolario de la Proposición 25 de la Parte I), es una afección o modo que expresa la naturaleza de Dios de cierta y determinada manera.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -1425,7 +1425,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Lo primero que constituye el ser actual del alma humana no es más que la idea de una cosa singular existente en acto. Demostración: La esencia del hombre (por el Corolario de la Proposición anterior) está constituida por ciertos modos de los atributos de Dios, a saber (por el Axioma 2 de esta Parte): por modos de pensar, de todos los cuales (por el Axioma 3 de esta Parte) es la idea, por naturaleza, el primero y, dada ella, los restantes modos (es decir, aquellos a quienes la idea es anterior por naturaleza) deben darse en el mismo individuo (por el Axioma 3 de esta Parte). Y así, la idea es lo primero que constituye el ser del alma humana. Pero no la idea de una cosa inexistente, pues en ese caso (por el Corolario de la Proposición 8 de esta Parte) no podría decirse que existe la idea misma. Se tratará, pues, de la idea de una cosa existente en acto. Pero no de una cosa infinita, ya que una cosa infinita (por las Proposiciones 21 y 22 de la Parte 1) debe existir siempre necesariamente; ahora bien, esto es absurdo (por el Axioma 1 de esta Parte); y, por consiguiente, lo primero que constituye el ser actual del alma humana es la idea de una cosa singular existente en acto. Q.E.D.`,
+        es: `Lo primero que constituye el ser actual del alma humana no es más que la idea de una cosa singular existente en acto. Demostración: La esencia del hombre (por el Corolario de la Proposición anterior) está constituida por ciertos modos de los atributos de Dios, a saber (por el Axioma 2 de esta Parte): por modos de pensar, de todos los cuales (por el Axioma 3 de esta Parte) es la idea, por naturaleza, el primero y, dada ella, los restantes modos (es decir, aquellos a quienes la idea es anterior por naturaleza) deben darse en el mismo individuo (por el Axioma 3 de esta Parte). Y así, la idea es lo primero que constituye el ser del alma humana. Pero no la idea de una cosa inexistente, pues en ese caso (por el Corolario de la Proposición 8 de esta Parte) no podría decirse que existe la idea misma. Se tratará, pues, de la idea de una cosa existente en acto. Pero no de una cosa infinita, ya que una cosa infinita (por las Proposiciones 21 y 22 de la Parte I) debe existir siempre necesariamente; ahora bien, esto es absurdo (por el Axioma 1 de esta Parte); y, por consiguiente, lo primero que constituye el ser actual del alma humana es la idea de una cosa singular existente en acto. Q.E.D.`,
         la: ``,
       },
       proof: [
@@ -1553,18 +1553,18 @@ export const book = [
     },
   ],
   [
-    "e2p13lem1",
+    "e2lem1",
     {
       text: {
         en: ``,
-        es: `Los cuerpos se distinguen entre sí en razón del movimiento y el reposo, de la rapidez y la lentitud, y no en razón de la substancia. Demostración: Supongo que la primera parte de este Lema es evidente por sí misma. Y, tocante a que los cuerpos no se distinguen por razón de la substancia, ello es evidente tanto por la Proposición 5 como por la 8 de la Parte I. Pero es aún más claro por lo dicho en el Escolio de la Proposición 15 de la Parte 1.`,
+        es: `Los cuerpos se distinguen entre sí en razón del movimiento y el reposo, de la rapidez y la lentitud, y no en razón de la substancia. Demostración: Supongo que la primera parte de este Lema es evidente por sí misma. Y, tocante a que los cuerpos no se distinguen por razón de la substancia, ello es evidente tanto por la Proposición 5 como por la 8 de la Parte I. Pero es aún más claro por lo dicho en el Escolio de la Proposición 15 de la Parte I.`,
         la: ``,
       },
       proof: ["e1p5", "e1p8", "e1p15exp"],
     },
   ],
   [
-    "e2p13lem2",
+    "e2lem2",
     {
       text: {
         en: ``,
@@ -1575,18 +1575,18 @@ export const book = [
     },
   ],
   [
-    "e2p13lem3",
+    "e2lem3",
     {
       text: {
         en: ``,
-        es: `Un cuerpo en movimiento o en reposo ha debido ser determinado al movimiento o al reposo por otro cuerpo, el cual ha sido también determinado al movimiento o al reposo por otro, y éste a Su vez por otro, y así hasta el infinito. Demostración: Los cuerpos (por la Definición 1 de esta Parte) son cosas singulares, que (por el Lema 1) se distinguen entre sí en razón del movimiento y el reposo; y así (por la Proposición 28 de la Parte 1), cada uno de ellos ha debido ser determinado necesariamente al movimiento o al reposo por otra cosa singular, a saber (por la Proposición 6 de esta Parte), por otro cuerpo, el cual (por el Axioma 1) también se mueve o está en reposo. Ahora bien, éste (por la misma razón) tampoco ha podido moverse o estar en reposo si no hubiera sido determinado por otro a dichos movimiento o reposo, y éste a su vez (por la misma razón) por otro, y así hasta el infinito. Q.E.D.`,
+        es: `Un cuerpo en movimiento o en reposo ha debido ser determinado al movimiento o al reposo por otro cuerpo, el cual ha sido también determinado al movimiento o al reposo por otro, y éste a Su vez por otro, y así hasta el infinito. Demostración: Los cuerpos (por la Definición 1 de esta Parte) son cosas singulares, que (por el Lema 1) se distinguen entre sí en razón del movimiento y el reposo; y así (por la Proposición 28 de la Parte I), cada uno de ellos ha debido ser determinado necesariamente al movimiento o al reposo por otra cosa singular, a saber (por la Proposición 6 de esta Parte), por otro cuerpo, el cual (por el Axioma 1) también se mueve o está en reposo. Ahora bien, éste (por la misma razón) tampoco ha podido moverse o estar en reposo si no hubiera sido determinado por otro a dichos movimiento o reposo, y éste a su vez (por la misma razón) por otro, y así hasta el infinito. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2def1", "e2p13lem1", "e1p28", "e2p6", "e2ax1*"],
+      proof: ["e2def1", "e2lem1", "e1p28", "e2p6", "e2ax1*"],
     },
   ],
   [
-    "e2p13lem3cor",
+    "e2lem3cor",
     {
       text: {
         en: ``,
@@ -1594,7 +1594,7 @@ export const book = [
         la: ``,
       },
       // "corollary" must include parent as proof
-      proof: ["e2p13lem3"],
+      proof: ["e2lem3"],
     },
   ],
   [
@@ -1642,18 +1642,18 @@ export const book = [
     },
   ],
   [
-    "e2p13lem4",
+    "e2lem4",
     {
       text: {
         en: ``,
         es: `Si de un cuerpo o individuo compuesto de varios cuerpos se separan ciertos cuerpos, y a la vez Otros tantos de la misma naturaleza ocupan el lugar de aquéllos, ese individuo conservará su naturaleza tal y como era antes, sin cambio alguno en su forma. Demostración: En efecto, los cuerpos (por el Lema 1) no se distinguen en razón de la substancia, sino que aquello que constituye la forma de un individuo consiste en una unión de cuerpos (por la Definición anterior). Ahora bien, esta unión (por hipótesis) se conserva aun cuando se produzca un continuo cambio de cuerpos; por consiguiente, el individuo conservará su naturaleza tal y como era antes, tanto respecto de la substancia como respecto del modo. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2p13lem1", "e2def1*"],
+      proof: ["e2lem1", "e2def1*"],
     },
   ],
   [
-    "e2p13lem5",
+    "e2lem5",
     {
       text: {
         en: ``,
@@ -1662,11 +1662,11 @@ export const book = [
       },
       // if the proof is the same, then we
       // can treat lem4 as a proxy proof:
-      proof: ["e2p13lem4"],
+      proof: ["e2lem4"],
     },
   ],
   [
-    "e2p13lem6",
+    "e2lem6",
     {
       text: {
         en: ``,
@@ -1675,11 +1675,11 @@ export const book = [
       },
       // "self-evident"
       proof: [],
-      see: ["e2p13lem4"],
+      see: ["e2lem4"],
     },
   ],
   [
-    "e2p13lem7",
+    "e2lem7",
     {
       text: {
         en: ``,
@@ -1690,7 +1690,7 @@ export const book = [
     },
   ],
   [
-    "e2p13lem7exp",
+    "e2lem7exp",
     {
       text: {
         en: ``,
@@ -1698,7 +1698,7 @@ export const book = [
         la: ``,
       },
       // "explanation" must include parent as proof
-      proof: ["e2p13lem7", "e2p13lem6"],
+      proof: ["e2lem7", "e2lem6"],
     },
   ],
   [
@@ -1852,7 +1852,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Escolio: Vemos, pues, que puede ocurrir que consideremos como presentes cosas que no existen, lo que sucede a menudo. Y puede suceder que esto acontezca por otras causas; pero aquí me basta haber mostrado una por la que puedo explicar la cuestión como si la hubiera demostrado por su verdadera causa. Con todo, no creo haberme alejado mucho de la verdad, supuesto que todos los postulados que aquí he admitido apenas contienen cosa alguna que no conste por la experiencia, de la cual no nos está permitido dudar una vez que hemos mostrado que el cuerpo humano existe tal y como lo sentimos (ver el Corolario que sigue a la Proposición 13 de esta Parte). Además (por el Corolario anterior y el Corolario 2 de la Proposición 16 de esta Parte), entendemos claramente cuál es la diferencia entre, por ejemplo, la idea de Pedro, que constituye la esencia del alma del propio Pedro, y la idea del mismo Pedro que existe en otro hombre, pongamos Pablo. En efecto, la primera representa directamente la esencia del cuerpo del propio Pedro, y no implica existencia sino mientras Pedro existe; en cambio, la segunda revela más bien la constitución del cuerpo de Pablo que la naturaleza de Pedro, y, por tanto, mientras dure esa constitución del cuerpo de Pablo, su alma considerará a Pedro, aunque éste ya no exista, como algo que le está presente. Además, y sirviéndonos de términos usuales, llamaremos «imágenes» de las cosas a las afecciones del cuerpo humano cuyas ideas nos representan los cuerpos exteriores como si nos estuvieran presentes, aunque no reproduzcan las figuras de las cosas. Y cuando el alma considere los cuerpos de esa manera, diremos que los «imagina». Y en este punto, para comenzar a indicar qué es el error, quisiera que notarais que las imaginaciones del alma, en sí mismas consideradas, no contienen error alguno; o sea, que el alma no yerra por el hecho de imaginar, sino sólo en cuanto se la considera carente de una idea que excluya la existencia de aquellas cosas que imagina estarle presentes. Pues si el alma, al tiempo que imagina como presentes cosas que no existen, supiese que realmente no existen, atribuiría sin duda esa potencia imaginativa a una virtud, y no a un vicio, de su naturaleza; sobre todo si esa facultad de imaginar dependiese de su sola naturaleza, esto es (por la Definición 7 de la Parte 1), si esa facultad de imaginar que el alma posee fuese libre.`,
+        es: `Escolio: Vemos, pues, que puede ocurrir que consideremos como presentes cosas que no existen, lo que sucede a menudo. Y puede suceder que esto acontezca por otras causas; pero aquí me basta haber mostrado una por la que puedo explicar la cuestión como si la hubiera demostrado por su verdadera causa. Con todo, no creo haberme alejado mucho de la verdad, supuesto que todos los postulados que aquí he admitido apenas contienen cosa alguna que no conste por la experiencia, de la cual no nos está permitido dudar una vez que hemos mostrado que el cuerpo humano existe tal y como lo sentimos (ver el Corolario que sigue a la Proposición 13 de esta Parte). Además (por el Corolario anterior y el Corolario 2 de la Proposición 16 de esta Parte), entendemos claramente cuál es la diferencia entre, por ejemplo, la idea de Pedro, que constituye la esencia del alma del propio Pedro, y la idea del mismo Pedro que existe en otro hombre, pongamos Pablo. En efecto, la primera representa directamente la esencia del cuerpo del propio Pedro, y no implica existencia sino mientras Pedro existe; en cambio, la segunda revela más bien la constitución del cuerpo de Pablo que la naturaleza de Pedro, y, por tanto, mientras dure esa constitución del cuerpo de Pablo, su alma considerará a Pedro, aunque éste ya no exista, como algo que le está presente. Además, y sirviéndonos de términos usuales, llamaremos «imágenes» de las cosas a las afecciones del cuerpo humano cuyas ideas nos representan los cuerpos exteriores como si nos estuvieran presentes, aunque no reproduzcan las figuras de las cosas. Y cuando el alma considere los cuerpos de esa manera, diremos que los «imagina». Y en este punto, para comenzar a indicar qué es el error, quisiera que notarais que las imaginaciones del alma, en sí mismas consideradas, no contienen error alguno; o sea, que el alma no yerra por el hecho de imaginar, sino sólo en cuanto se la considera carente de una idea que excluya la existencia de aquellas cosas que imagina estarle presentes. Pues si el alma, al tiempo que imagina como presentes cosas que no existen, supiese que realmente no existen, atribuiría sin duda esa potencia imaginativa a una virtud, y no a un vicio, de su naturaleza; sobre todo si esa facultad de imaginar dependiese de su sola naturaleza, esto es (por la Definición 7 de la Parte I), si esa facultad de imaginar que el alma posee fuese libre.`,
         la: ``,
       },
       // "explanation" must include parent as proof.
@@ -1968,13 +1968,13 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `El alma humana no implica el conocimiento adecuado de las Partes que componen el cuerpo humano. Demostración: Las partes componentes del cuerpo humano no pertenecen a la esencia de dicho cuerpo sino en cuanto que se comunican unas a otras sus movimientos según cierta relación (ver la Definición que sigue al Corolario del Lema 3), y no en cuanto pueden ser consideradas como individuos, al margen de su relación con el cuerpo humano. Las partes del cuerpo humano (por el Postulado 1), son, efectivamente, individuos muy compuestos, cuyas partes (por el Lema 4) pueden separarse del cuerpo humano y comunicar sus movimientos (ver Axioma 1 que sigue al Lema 3) a otros cuerpos según otra relación, conservando el cuerpo enteramente su naturaleza y forma; y de esta suerte (por la Proposición 3 de esta Parte), la idea o conocimiento de una parte cualquiera se dará en Dios (por la Proposición 9 de esta Parte) en cuanto se lo considera afectado por otra idea de cosa singular, cuya cosa singular es, en el orden de la naturaleza, anterior a la parte misma (por la Proposición 7 de esta Parte). Esto mismo debe también decirse de cualquier parte de ese individuo componente del cuerpo humano; y, de esta suerte, el conocimiento de cualquier parte componente del cuerpo humano se da en Dios en cuanto es afectado por un gran número de ideas de cosas, y no en cuanto tiene sólo la idea del cuerpo humano, esto es (por la Proposición 13 de esta Parte), la idea que constituye la naturaleza del alma humana; y, por lo tanto (Corolario de la Proposición 11 de esta Parte), el alma humana no implica el conocimiento adecuado de las partes que componen el cuerpo humano. Q.E.D.!*`,
+        es: `El alma humana no implica el conocimiento adecuado de las Partes que componen el cuerpo humano. Demostración: Las partes componentes del cuerpo humano no pertenecen a la esencia de dicho cuerpo sino en cuanto que se comunican unas a otras sus movimientos según cierta relación (ver la Definición que sigue al Corolario del Lema 3), y no en cuanto pueden ser consideradas como individuos, al margen de su relación con el cuerpo humano. Las partes del cuerpo humano (por el Postulado 1), son, efectivamente, individuos muy compuestos, cuyas partes (por el Lema 4) pueden separarse del cuerpo humano y comunicar sus movimientos (ver Axioma 1 que sigue al Lema 3) a otros cuerpos según otra relación, conservando el cuerpo enteramente su naturaleza y forma; y de esta suerte (por la Proposición 3 de esta Parte), la idea o conocimiento de una parte cualquiera se dará en Dios (por la Proposición 9 de esta Parte) en cuanto se lo considera afectado por otra idea de cosa singular, cuya cosa singular es, en el orden de la naturaleza, anterior a la parte misma (por la Proposición 7 de esta Parte). Esto mismo debe también decirse de cualquier parte de ese individuo componente del cuerpo humano; y, de esta suerte, el conocimiento de cualquier parte componente del cuerpo humano se da en Dios en cuanto es afectado por un gran número de ideas de cosas, y no en cuanto tiene sólo la idea del cuerpo humano, esto es (por la Proposición 13 de esta Parte), la idea que constituye la naturaleza del alma humana; y, por lo tanto (Corolario de la Proposición 11 de esta Parte), el alma humana no implica el conocimiento adecuado de las partes que componen el cuerpo humano. Q.E.D.`,
         la: ``,
       },
       proof: [
         "e2def1*",
         "e2post1",
-        "e2p13lem4",
+        "e2lem4",
         "e2ax1**",
         "e2p3",
         "e2p9",
@@ -2102,7 +2102,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Acerca de la duración de nuestro cuerpo no podemos tener sino un conocimiento muy inadecuado. Demostración: La duración de nuestro cuerpo no depende de su esencia (por el Axioma 1 de esta Parte), ni tampoco de la naturaleza de Dios, considerada en términos absolutos (por la Proposición 21 de la Parte 1), sino que (por la Proposición 28 de la Parte I) es determinado a existir y obrar por causas tales que, a su vez, han sido también determinadas por otras a existir y obrar de cierta y determinada manera, y éstas a su vez por otras, y así hasta el infinito. Así pues, la duración de nuestro cuerpo depende del orden común de la naturaleza y de la constitución de las cosas. Ahora bien, en Dios hay conocimiento adecuado acerca del modo que tienen las cosas de constituirse, en cuanto que tiene ideas de todas ellas, y no en cuanto tiene la idea del solo cuerpo humano (por el Corolario de la Proposición 9 de esta Parte). Por ello, el conocimiento de la duración de nuestro cuerpo es en Dios muy inadecuado, en cuanto se lo considera como constituyendo solamente la naturaleza del alma humana, esto es (por el Corolario de la Proposición 11 de esta Parte), tal conocimiento es, en nuestra alma, muy inadecuado. Q.E.D.`,
+        es: `Acerca de la duración de nuestro cuerpo no podemos tener sino un conocimiento muy inadecuado. Demostración: La duración de nuestro cuerpo no depende de su esencia (por el Axioma 1 de esta Parte), ni tampoco de la naturaleza de Dios, considerada en términos absolutos (por la Proposición 21 de la Parte I), sino que (por la Proposición 28 de la Parte I) es determinado a existir y obrar por causas tales que, a su vez, han sido también determinadas por otras a existir y obrar de cierta y determinada manera, y éstas a su vez por otras, y así hasta el infinito. Así pues, la duración de nuestro cuerpo depende del orden común de la naturaleza y de la constitución de las cosas. Ahora bien, en Dios hay conocimiento adecuado acerca del modo que tienen las cosas de constituirse, en cuanto que tiene ideas de todas ellas, y no en cuanto tiene la idea del solo cuerpo humano (por el Corolario de la Proposición 9 de esta Parte). Por ello, el conocimiento de la duración de nuestro cuerpo es en Dios muy inadecuado, en cuanto se lo considera como constituyendo solamente la naturaleza del alma humana, esto es (por el Corolario de la Proposición 11 de esta Parte), tal conocimiento es, en nuestra alma, muy inadecuado. Q.E.D.`,
         la: ``,
       },
       proof: ["e2ax1", "e1p21", "e1p28", "e2p9cor", "e2p11cor"],
@@ -2113,7 +2113,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Acerca de la duración de las cosas singulares que existen fuera de nosotros no podemos tener sino un conocimiento muy inadecuado. Demostración: En efecto, cada cosa singular, al igual que el cuerpo humano, debe ser determinada a existir y obrar de cierta y determinada manera por otra cosa singular, y ésta a SU Vez por otra, y así hasta el infinito (por la Proposición 28 de la Parte 1), Ahora bien, puesto que hemos demostrado en la Proposición anterior, a partir de dicha propiedad común a las cosas singulares, que nosotros no tenemos, acerca de la duración de nuestro cuerpo, sino un conocimiento muy inadecuado, deberá seguirse, acerca de la duración de las cosas singulares, la misma conclusión, a saber: que no podemos tener de ella sino un conocimiento muy inadecuado. Q.E.D. `,
+        es: `Acerca de la duración de las cosas singulares que existen fuera de nosotros no podemos tener sino un conocimiento muy inadecuado. Demostración: En efecto, cada cosa singular, al igual que el cuerpo humano, debe ser determinada a existir y obrar de cierta y determinada manera por otra cosa singular, y ésta a SU Vez por otra, y así hasta el infinito (por la Proposición 28 de la Parte I), Ahora bien, puesto que hemos demostrado en la Proposición anterior, a partir de dicha propiedad común a las cosas singulares, que nosotros no tenemos, acerca de la duración de nuestro cuerpo, sino un conocimiento muy inadecuado, deberá seguirse, acerca de la duración de las cosas singulares, la misma conclusión, a saber: que no podemos tener de ella sino un conocimiento muy inadecuado. Q.E.D. `,
         la: ``,
       },
       proof: ["e1p28"],
@@ -2124,7 +2124,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Corolario: De aquí se sigue que todas las cosas particulares son contingentes y corruptibles, ya que acerca de su duración no podemos tener conocimiento adecuado alguno (por la Proposición anterior), y eso es lo que debemos entender por «contingencia» y posibilidad de «corrupción» de las cosas (ver Escolio 1 de la Proposición 33 de la Parte 1). Pues en ningún otro sentido, aparte de éste, hay nada contingente (por la Proposición 29 de la Parte 1).`,
+        es: `Corolario: De aquí se sigue que todas las cosas particulares son contingentes y corruptibles, ya que acerca de su duración no podemos tener conocimiento adecuado alguno (por la Proposición anterior), y eso es lo que debemos entender por «contingencia» y posibilidad de «corrupción» de las cosas (ver Escolio 1 de la Proposición 33 de la Parte I). Pues en ningún otro sentido, aparte de éste, hay nada contingente (por la Proposición 29 de la Parte I).`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -2136,7 +2136,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Todas las ideas, en cuanto referidas a Dios, son verdaderas. Demostración: En efecto, todas las ideas que se dan en Dios son por completo conformes con lo ideado por ellas (por el Corolario de la Proposición 7 de esta Parte), y, de esta suerte (por el Axioma 6 de la Parte 1), son todas verdaderas. Q.E.D.`,
+        es: `Todas las ideas, en cuanto referidas a Dios, son verdaderas. Demostración: En efecto, todas las ideas que se dan en Dios son por completo conformes con lo ideado por ellas (por el Corolario de la Proposición 7 de esta Parte), y, de esta suerte (por el Axioma 6 de la Parte I), son todas verdaderas. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p7cor", "e1ax6"],
@@ -2192,7 +2192,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Las ideas inadecuadas y confusas se siguen unas de otras con la misma necesidad que las ideas adecuadas, es decir, claras y distintas. Demostración: “Todas las ideas son en Dios (por la Proposición 15 de la Parte 1); y, en cuanto referidas a Dios, son verdaderas (por la Proposición 32 de esta Parte) y adecuadas (por el Corolario de la Proposición 7 de esta Parte); y, por tanto, ninguna es inadecuada ni confusa, sino en cuanto considerada en relación con el alma singular de alguien (acerca de esto, ver Proposiciones 24 y 28 de esta Parte). Y, de esta suene, todas, tanto las adecuadas como las inadecuadas, se siguen unas de otras con la misma necesidad (por el Corolario de la Proposición 6 de esta Parte). Q.E.D.`,
+        es: `Las ideas inadecuadas y confusas se siguen unas de otras con la misma necesidad que las ideas adecuadas, es decir, claras y distintas. Demostración: “Todas las ideas son en Dios (por la Proposición 15 de la Parte I); y, en cuanto referidas a Dios, son verdaderas (por la Proposición 32 de esta Parte) y adecuadas (por el Corolario de la Proposición 7 de esta Parte); y, por tanto, ninguna es inadecuada ni confusa, sino en cuanto considerada en relación con el alma singular de alguien (acerca de esto, ver Proposiciones 24 y 28 de esta Parte). Y, de esta suene, todas, tanto las adecuadas como las inadecuadas, se siguen unas de otras con la misma necesidad (por el Corolario de la Proposición 6 de esta Parte). Q.E.D.`,
         la: ``,
       },
       // the Elwes translation has a mistake here,
@@ -2208,9 +2208,9 @@ export const book = [
         es: `Aquello que es común a todas las cosas (acerca de esto, ver anteriormente el Lema 2), y que está igualmente en la parte y en el todo, no constituye la esencia de ninguna cosa singular. Demostración: Si lo negáis, concebid, si es posible, que esto constituya la esencia de alguna cosa singular, por ejemplo, la de B. En tal cosa (por la Definición 2 de esta Parte), eso no podrá ser ni concebirse sin B. Ahora bien, esto va en contra de la hipótesis. Luego, aquello no pertenece a la esencia de B, ni constituye la esencia de otra cosa singular. Q.E.D.`,
         la: ``,
       },
-      // though e2p13lem2 is mentioned in the proposition and
+      // though e2lem2 is mentioned in the proposition and
       // not the proof, it seems to satisfy the role of a proof:
-      proof: ["e2p13lem2", "e2def2"],
+      proof: ["e2lem2", "e2def2"],
     },
   ],
   [
@@ -2241,7 +2241,7 @@ export const book = [
         la: ``,
       },
       // "corollary" must include parent as proof
-      proof: ["e2p38", "e2p13lem2"],
+      proof: ["e2p38", "e2lem2"],
     },
   ],
   [
@@ -2353,7 +2353,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `No es propio de la naturaleza de la razón considerar las cosas como contingentes, sino como necesarias. Demostración: Es propio de la naturaleza de la razón percibir las cosas verdaderamente (por la Proposición 41 de esta Parte), es decir (por el Axioma 6 de la Parte 1), tal como son en sí, esto es (por la Proposición 29 de la Parte 1), no como contingentes, sino como necesarias. Q.E.D.`,
+        es: `No es propio de la naturaleza de la razón considerar las cosas como contingentes, sino como necesarias. Demostración: Es propio de la naturaleza de la razón percibir las cosas verdaderamente (por la Proposición 41 de esta Parte), es decir (por el Axioma 6 de la Parte I), tal como son en sí, esto es (por la Proposición 29 de la Parte I), no como contingentes, sino como necesarias. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p41", "e1ax6", "e1p29"],
@@ -2388,7 +2388,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Corolario II: Es propio de la naturaleza de la razón percibir las cosas desde una cierta perspectiva de eternidad. Demostración: En efecto, es propio de la naturaleza de la razón considerar las cosas como necesarias, y no como contingentes (por la Proposición anterior). La razón percibe esta necesidad de las cosas verdaderamente (por la Proposición 41 de esta Parte), es decir (por el Axioma 6 de la Parte 1), tal como es en sí. Ahora bien (por la Proposición 16 de la Parte I): esta necesidad de las cosas es la necesidad misma de la naturaleza eterna de Dios; luego es propio de la naturaleza de la razón considerar las cosas desde esa perspectiva de eternidad. Añádase que los fundamentos de la razón son nociones (por la Proposición 38 de esta Parte) que explican lo que es común a todas las cosas, y que (por la Proposición 37 de esta Parte) no explican la esencia de ninguna cosa singular; por ello, deben ser concebidos sin referencia alguna al tiempo, sino desde una cierta perspectiva de eternidad. Q.E.D.`,
+        es: `Corolario II: Es propio de la naturaleza de la razón percibir las cosas desde una cierta perspectiva de eternidad. Demostración: En efecto, es propio de la naturaleza de la razón considerar las cosas como necesarias, y no como contingentes (por la Proposición anterior). La razón percibe esta necesidad de las cosas verdaderamente (por la Proposición 41 de esta Parte), es decir (por el Axioma 6 de la Parte I), tal como es en sí. Ahora bien (por la Proposición 16 de la Parte I): esta necesidad de las cosas es la necesidad misma de la naturaleza eterna de Dios; luego es propio de la naturaleza de la razón considerar las cosas desde esa perspectiva de eternidad. Añádase que los fundamentos de la razón son nociones (por la Proposición 38 de esta Parte) que explican lo que es común a todas las cosas, y que (por la Proposición 37 de esta Parte) no explican la esencia de ninguna cosa singular; por ello, deben ser concebidos sin referencia alguna al tiempo, sino desde una cierta perspectiva de eternidad. Q.E.D.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -2411,7 +2411,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Escolio: Por «existencia» no entiendo aquí la duración, esto es, la existencia en cuanto concebida abstractamente y como si fuese una especie de cantidad. Pues hablo de la naturaleza misma de la existencia, que se atribuye a las cosas singulares porque de la eterna necesidad de la naturaleza de Dios se siguen infinitas cosas de infinitos modos (ver Proposición 16 de la Parte I) . Digo que hablo de la existencia misma de las cosas singulares, en cuanto son en Dios, pues, aunque cada una sea determinada por otra cosa singular a existir de cierta manera, sin embargo, la fuerza en cuya virtud cada una de ellas persevera en la existencia se sigue de la eterna necesidad de la naturaleza de Dios. Acerca de ello, ver el Corolario de la Proposición 24 de la Parte 1.`,
+        es: `Escolio: Por «existencia» no entiendo aquí la duración, esto es, la existencia en cuanto concebida abstractamente y como si fuese una especie de cantidad. Pues hablo de la naturaleza misma de la existencia, que se atribuye a las cosas singulares porque de la eterna necesidad de la naturaleza de Dios se siguen infinitas cosas de infinitos modos (ver Proposición 16 de la Parte I) . Digo que hablo de la existencia misma de las cosas singulares, en cuanto son en Dios, pues, aunque cada una sea determinada por otra cosa singular a existir de cierta manera, sin embargo, la fuerza en cuya virtud cada una de ellas persevera en la existencia se sigue de la eterna necesidad de la naturaleza de Dios. Acerca de ello, ver el Corolario de la Proposición 24 de la Parte I.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -2467,7 +2467,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `No hay en el alma ninguna voluntad absoluta o libre, sino que el alma es determinada a querer esto o aquello por una causa, que también es determinada por otra, y ésta a su vez por otra, y así hasta el infinito. Demostración: El alma es un cierto y determinado modo del pensar (por la Proposición 11 de esta Parte), y de esta suerte (por el Corolario 2 de la Proposición 17 de la Parte I), no puede ser causa libre de sus acciones, o sea, no puede tener una facultad absoluta de querer y no querer, sino que (por la Proposición 28 de la Parte 1) debe ser determinada a querer esto o aquello por una causa, la cual también es determinada por otra, y ésta a su vez por otra, etc. Q.E.D.`,
+        es: `No hay en el alma ninguna voluntad absoluta o libre, sino que el alma es determinada a querer esto o aquello por una causa, que también es determinada por otra, y ésta a su vez por otra, y así hasta el infinito. Demostración: El alma es un cierto y determinado modo del pensar (por la Proposición 11 de esta Parte), y de esta suerte (por el Corolario 2 de la Proposición 17 de la Parte I), no puede ser causa libre de sus acciones, o sea, no puede tener una facultad absoluta de querer y no querer, sino que (por la Proposición 28 de la Parte I) debe ser determinada a querer esto o aquello por una causa, la cual también es determinada por otra, y ésta a su vez por otra, etc. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p11", "e1p17cor2", "e1p28"],
@@ -2516,7 +2516,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Escolio: Con esto hemos suprimido la que comúnmente se dice ser causa del error. De todas formas, hemos mostrado más arriba que la falsedad consiste sólo en una privación, implícita en las ideas mutiladas y confusas. Por eso una idea falsa, en cuanto que es falsa, no implica certidumbre. Así pues, cuando decimos que un hombre da aquiescencia a lo falso y no duda de ello, no por eso decimos que posee certeza, sino tan sólo que no duda o que da aquiescencia a lo falso, ya que no hay ninguna causa que haga fluctuar su imaginación. Sobre esto, véase el Escolio de la Proposición 44 de esta Parte. De este modo, por mucho que se suponga que un hombre se adhiere a cosas falsas nunca diremos, con todo, que posee certeza. Pues por «certeza» entendemos algo positivo (ver Proposición 43 de esta Parte, con su Escolio), y no la ausencia de duda. En cambio, sí entendernos por «privación de certeza» la falsedad. Pero quedan por hacer algunas advertencias, para una más amplia explicación de lo que precede. Quedan, además, por responder, las posibles objeciones a esta doctrina nuestra; y, en fin, para conseguir que se deseche todo escrúpulo, he pensado que merecía la pena indicar algunas ventajas de esta doctrina. Digo «algunas», pues las principales se entenderán mejor en virtud de lo que diremos en la Quinta Parte. Empiezo, pues, por lo primero, y advierto a los lectores que distingan cuidadosamente entre la idea, o sea, un concepto del alma, y las imágenes de las cosas que imaginamos. Además, es necesario que distingan entre las ideas y las palabras con las que significamos las cosas. Pues muchos ignoran por completo esta doctrina acerca de la voluntad —de conocimiento absolutamente obligado, tanto para la especulación como para ordenar sabiamente la vida— porque confunden completamente esas tres cosas —a saber: imágenes, palabras e ideas— o bien porque no las distinguen con el cuidado y cautela suficientes. Quienes creen que las ideas consisten en imágenes que se forman en nosotros al ser afectados por los cuerpos, se persuaden de que aquellas ideas de cosas de las que no podemos formar imagen alguna semejante no son ideas, sino sólo ficciones que forjamos en virtud del libre arbitrio de la voluntad; así pues, consideran las ideas como pinturas mudas en un lienzo, y, estorbados por este prejuicio, no ven que la idea, en cuanto que es idea, implica afirmación o negación. Por otra parte, quienes confunden las palabras con la idea, o con la afirmación misma implícita en la idea, creen que pueden querer contrariamente a como sienten, cuando afirman o niegan algo contrario a lo que sienten con meras palabras. Pero de tales prejuicios podrá desembarazarse fácilmente quien atienda a la naturaleza del conocimiento, la cual no implica en absoluto el concepto de la extensión, y entenderá así claramente que la idea (supuesto que es un modo del pensar) no consiste ni en palabras, ni en la imagen de alguna cosa. Pues la esencia de las palabras y de las imágenes está constituida por los solos movimientos corpóreos, que no implican en absoluto el concepto del pensamiento. Y baste con estas pocas advertencias en torno a este punto; paso, pues, a hablar de las objeciones a que me he referido. La primera de ellas consiste en estimar como algo bien establecido que la voluntad tiene más extensión que el entendimiento y, por ello, que es distinta de él. La razón por la que estiman que la voluntad tiene más extensión que el entendimiento es la de que dicen saber por experiencia que ellos no necesitan una facultad de asentir, o sea, de afirmar y negar, mayor de la que tenemos, para asentir a las infinitas cosas que no percibimos, mientras que sí necesitaríamos una mayor facultad de entender. Por consiguiente, la voluntad se distingue del entendimiento en que éste es finito y aquélla infinita. En segundo lugar, puede objetársenos que nada enseña la experiencia más claramente que el hecho de que podemos suspender nuestro juicio y no asentir a las cosas que percibimos; ello se confirma también por el hecho de que no se dice de nadie que se equivoca en cuanto que percibe algo, sino sólo en la medida en que asiente o disiente. Por ejemplo: quien imagina un caballo con alas, no por ello concede que exista un caballo con alas, esto es, no por ello se equivoca, salvo que conceda a un tiempo que existe un caballo con alas. Así pues, nada parece enseñar la experiencia más claramente que el hecho de que la voluntad, o sea, la facultad de asentir, es libre, y distinta de la facultad de entender. En tercer lugar, puede objetarse que una afirmación no parece contener más realidad que otra, esto es: no parece que necesitemos una potencia mayor para afirmar que es verdadero lo que es verdadero, que para afirmar que es verdadero algo que es falso. Ahora bien, percibimos que una idea tiene más realidad o perfección que otra, pues cuanto más excelentes sean unos objetos que otros, tanto más perfectas serán las ideas de los unos que las de los otros. En virtud de esto, también parece poder establecerse una diferencia entre voluntad y entendimiento. En cuarto lugar, puede objetarse que si el hombre no obra en virtud de la libertad de su voluntad, ¿qué sucederá si está en equilibrio, como el asno de Buridán?!”!!. ¿Perecerá de hambre y sed? Si lo admito, parecería que pienso en un asno, o en una estatua de hombre, y no en un hombre, pero si lo niego, entonces el hombre se determinará a sí mismo y, por consiguiente, tendrá la facultad de dirigirse a donde quiera y hacer lo que quiera. Quizá puedan hacerse otras objeciones aparte de éstas, pero puesto que no tengo la obligación de insertar aquí los sueños de cada cual, procuraré responder sólo a las objeciones antedichas, y lo más brevemente que pueda. Tocante a la primera, concedo que la voluntad tiene más extensión que el entendimiento, si por «entendimiento» se entienden solamente las ideas claras y distintas, pero niego que la voluntad tenga más extensión que las percepciones, o sea, que la facultad de concebir, y no veo, en realidad, por qué la facultad de querer ha de ser declarada infinita más bien que la facultad de sentir: en efecto, así como en virtud de la facultad de querer podemos afirmar infinitas cosas (una tras otra, desde luego, ya que no podemos afirmar infinitas cosas a la vez), también podemos sentir o percibir infinitos cuerpos (uno tras otro, por supuesto) en virtud de la facultad de sentir. ¿Se dirá que hay infinitas cosas que no podemos percibir? Replico que nosotros no podemos alcanzar esas cosas con pensamiento alguno y, por consiguiente, con ninguna facultad de querer. Dirán, con todo: si Dios quisiera hacer que las percibiésemos, debería darnos, sin duda, una mayor facultad de percibir, pero no una facultad de querer mayor de la que nos ha dado; ello es lo mismo que si dijesen: si Dios quisiera hacer que entendiéramos una infinidad de otros seres, sería necesario sin duda que nos diese un mayor entendimiento, pero no una idea de ser más universal de la que nos ha dado, para abarcar esos infinitos seres. En efecto: hemos mostrado que la voluntad es un ser universal, o sea, una idea por la que explicarnos todas las voliciones singulares, es decir, aquello que es común a todas ellas. Siendo así que creen que esa idea universal o común a todas las voliciones es una facultad, no es nada extraño que afirmen que esa facultad se extiende hasta el infinito, más allá de los límites del entendimiento. «Universal», en efecto, se dice igualmente de uno, de muchos y de infinitos individuos. A la segunda objeción respondo negando que nosotros tengamos una libre potestad de suspender el juicio. Pues cuando decimos que alguien suspende el juicio, no decimos sino que él ve que no percibe adecuadamente la cosa. Así pues, la suspensión del juicio es, en realidad, una percepción, y no una voluntad libre. Para entender esto con claridad, supongamos que un niño imagina un caballo alado, sin que perciba ninguna otra cosa. Puesto que tal imaginación del caballo implica la existencia (por el Corolario de la Proposición 17 de esta Parte), y puesto que el niño no percibe nada que excluya la existencia del caballo, considerará necesariamente al caballo como presente, y no podrá dudar de su existencia, aunque no tenga la certeza de ella. Esto lo experimentamos todos los días en los sueños, y no creo que haya alguien que piense que, mientras sueña, tiene libre potestad de suspender el juicio acerca de las cosas que sueña, y de hacer que no sueñe lo que sueña que ve; y, sin embargo, acontece que también en los sueños suspendemos el juicio, a saber, cuando soñamos que soñamos. Concedo, además, que, en la medida en que percibe, nadie se equivoca; esto es, concedo que las imaginaciones del alma, en sí mismas consideradas, no implican ninguna clase de error (ver Escolio de la Proposición 17 de esta Parte); pero niego que un hombre nada afirme en la medida en que percibe. Pues ¿qué es «percibir» un caballo alado, sino afirmar del caballo que tiene alas? En efecto: si el alma, aparte del caballo alado, no percibiera otra cosa, lo consideraría como algo que le está presente, y no tendría causa alguna para dudar de su existencia, ni facultad alguna para disentir, salvo si la imaginación del caballo se une a una idea que excluya la existencia de ese caballo, o salvo que el alma perciba que la idea que tiene del caballo alado es inadecuada, y entonces, o bien negará necesariamente la existencia del caballo, o dudará necesariamente de ella. Y con esto creo haber respondido también a la tercera objeción: la voluntad es algo universal, que se predica de todas las ideas y sólo significa lo que es común a todas ellas, a saber, la afirmación, cuya esencia adecuada, en cuanto abstractamente concebida, debe darse en todas y cada una de las ideas, y sólo en este sentido es la misma en todas, pero no en cuanto se la piensa como constituyendo la esencia de la idea, pues, en ese caso, las afirmaciones singulares difieren entre sí como las ideas mismas. Por ejemplo, la afirmación que implica la idea del círculo difiere de la que implica la idea del triángulo, como la idea del círculo difiere de la idea del triángulo. Además, niego absolutamente que nosotros necesitemos igual potencia de pensamiento para afirmar que es verdadero lo que es verdadero, que para afirmar que es verdadero lo que es falso. Pues estas dos «afirmaciones», en cuanto a su sentido, están entre sí en la relación del ser y el no-ser; en efecto, en las ideas no hay nada positivo que revista la forma de la falsedad (ver la Proposición 35 de esta Parte con su Escolio, y el Escolio de la Proposición 47 de esta Parte). Por lo cual es oportuno notar aquí, ante todo, cuan fácilmente nos equivocamos, cuando confundimos los universales con los singulares, y los entes de razón y abstractos con los reales. Por lo que atañe, en fin, a la cuarta objeción, concedo por completo que un hombre, puesto en tal equilibrio (a saber, sin otras percepciones que las de la sed y el hambre, y las de tal y cual comida y bebida que están a igual distancia de él), perecerá de hambre y sed. Si me preguntan: ¿acaso tal hombre no debe ser estimado más bien como un asno que como un hombre?, respondo que no lo sé, como tampoco sé cómo ha de ser estimado el que se ahorca, o cómo han de ser estimados los niños, los necios, los locos, etc. Queda sólo por indicar cuan útil es para la vida el conocimiento de esta doctrina, lo que advertiremos fácilmente por lo que sigue, a saber: 1. En cuanto nos enseña que obramos por el solo mandato de Dios, y somos partícipes de la naturaleza divina, y ello tanto más cuanto más perfectas acciones llevamos a cabo, y cuanto más y más entendemos a Dios. Por consiguiente, esta doctrina, además de conferir al ánimo un completo sosiego, tiene también la ventaja de que nos enseña en qué consiste nuestra más alta felicidad o beatitud, a saber: en el solo conocimiento de Dios, por el cual somos inducidos a hacer tan sólo aquello que el amor y el sentido del deber aconsejan!”?], Por ello entendemos claramente cuánto se alejan de una verdadera estimación de la virtud aquellos que esperan de Dios una gran recompensa en pago a su virtud y sus buenas acciones, como si se tratase de recompensar una estrecha servidumbre, siendo así que la virtud y el servicio de Dios son ellos mismos la felicidad y la suprema libertad. 2. En cuanto enseña cómo debemos comportarnos ante los sucesos de la fortuna (los que no caen bajo nuestra potestad, o sea, no se siguen de nuestra naturaleza), a saber: contemplando y soportando con ánimo equilibrado las dos caras de la suerte, ya que de los eternos decretos de Dios se siguen todas las cosas con la misma necesidad con que se sigue de la esencia del triángulo que sus tres ángulos valen dos rectos. 3. Esta doctrina es útil para la vida social, en cuanto enseña a no odiar ni despreciar a nadie, a no burlarse de nadie ni encolerizarse contra nadie, a no envidiar a nadie. Además es útil en cuanto enseña a cada uno a contentarse con lo suyo, y a auxiliar al prójimo, no por mujeril misericordia, ni por parcialidad o superstición, sino sólo por la guía de la razón, según lo demanden el tiempo y las circunstancias, como mostraré en la Cuarta Parte. 4. Por último, esta doctrina es también de no poca utilidad para la sociedad civil, en cuanto enseña de qué modo han de ser gobernados y dirigidos los ciudadanos, a saber: no para que sean siervos, sino para que hagan libremente lo mejor. Y con ello he terminado lo que me había propuesto tratar en este Escolio, y pongo fin a nuestra Segunda Parte, en la que creo haber explicado la naturaleza del alma humana y sus propiedades con bastante amplitud y, en cuanto lo permite la dificultad de la cuestión, con bastante claridad, y creo haber expuesto cosas tales que de ellas pueden concluirse otras muy notables, sumamente útiles, y de necesario conocimiento, como constará, en parte, por lo que sigue.`,
+        es: `Escolio: Con esto hemos suprimido la que comúnmente se dice ser causa del error. De todas formas, hemos mostrado más arriba que la falsedad consiste sólo en una privación, implícita en las ideas mutiladas y confusas. Por eso una idea falsa, en cuanto que es falsa, no implica certidumbre. Así pues, cuando decimos que un hombre da aquiescencia a lo falso y no duda de ello, no por eso decimos que posee certeza, sino tan sólo que no duda o que da aquiescencia a lo falso, ya que no hay ninguna causa que haga fluctuar su imaginación. Sobre esto, véase el Escolio de la Proposición 44 de esta Parte. De este modo, por mucho que se suponga que un hombre se adhiere a cosas falsas nunca diremos, con todo, que posee certeza. Pues por «certeza» entendemos algo positivo (ver Proposición 43 de esta Parte, con su Escolio), y no la ausencia de duda. En cambio, sí entendernos por «privación de certeza» la falsedad. Pero quedan por hacer algunas advertencias, para una más amplia explicación de lo que precede. Quedan, además, por responder, las posibles objeciones a esta doctrina nuestra; y, en fin, para conseguir que se deseche todo escrúpulo, he pensado que merecía la pena indicar algunas ventajas de esta doctrina. Digo «algunas», pues las principales se entenderán mejor en virtud de lo que diremos en la Quinta Parte. Empiezo, pues, por lo primero, y advierto a los lectores que distingan cuidadosamente entre la idea, o sea, un concepto del alma, y las imágenes de las cosas que imaginamos. Además, es necesario que distingan entre las ideas y las palabras con las que significamos las cosas. Pues muchos ignoran por completo esta doctrina acerca de la voluntad —de conocimiento absolutamente obligado, tanto para la especulación como para ordenar sabiamente la vida— porque confunden completamente esas tres cosas —a saber: imágenes, palabras e ideas— o bien porque no las distinguen con el cuidado y cautela suficientes. Quienes creen que las ideas consisten en imágenes que se forman en nosotros al ser afectados por los cuerpos, se persuaden de que aquellas ideas de cosas de las que no podemos formar imagen alguna semejante no son ideas, sino sólo ficciones que forjamos en virtud del libre arbitrio de la voluntad; así pues, consideran las ideas como pinturas mudas en un lienzo, y, estorbados por este prejuicio, no ven que la idea, en cuanto que es idea, implica afirmación o negación. Por otra parte, quienes confunden las palabras con la idea, o con la afirmación misma implícita en la idea, creen que pueden querer contrariamente a como sienten, cuando afirman o niegan algo contrario a lo que sienten con meras palabras. Pero de tales prejuicios podrá desembarazarse fácilmente quien atienda a la naturaleza del conocimiento, la cual no implica en absoluto el concepto de la extensión, y entenderá así claramente que la idea (supuesto que es un modo del pensar) no consiste ni en palabras, ni en la imagen de alguna cosa. Pues la esencia de las palabras y de las imágenes está constituida por los solos movimientos corpóreos, que no implican en absoluto el concepto del pensamiento. Y baste con estas pocas advertencias en torno a este punto; paso, pues, a hablar de las objeciones a que me he referido. La primera de ellas consiste en estimar como algo bien establecido que la voluntad tiene más extensión que el entendimiento y, por ello, que es distinta de él. La razón por la que estiman que la voluntad tiene más extensión que el entendimiento es la de que dicen saber por experiencia que ellos no necesitan una facultad de asentir, o sea, de afirmar y negar, mayor de la que tenemos, para asentir a las infinitas cosas que no percibimos, mientras que sí necesitaríamos una mayor facultad de entender. Por consiguiente, la voluntad se distingue del entendimiento en que éste es finito y aquélla infinita. En segundo lugar, puede objetársenos que nada enseña la experiencia más claramente que el hecho de que podemos suspender nuestro juicio y no asentir a las cosas que percibimos; ello se confirma también por el hecho de que no se dice de nadie que se equivoca en cuanto que percibe algo, sino sólo en la medida en que asiente o disiente. Por ejemplo: quien imagina un caballo con alas, no por ello concede que exista un caballo con alas, esto es, no por ello se equivoca, salvo que conceda a un tiempo que existe un caballo con alas. Así pues, nada parece enseñar la experiencia más claramente que el hecho de que la voluntad, o sea, la facultad de asentir, es libre, y distinta de la facultad de entender. En tercer lugar, puede objetarse que una afirmación no parece contener más realidad que otra, esto es: no parece que necesitemos una potencia mayor para afirmar que es verdadero lo que es verdadero, que para afirmar que es verdadero algo que es falso. Ahora bien, percibimos que una idea tiene más realidad o perfección que otra, pues cuanto más excelentes sean unos objetos que otros, tanto más perfectas serán las ideas de los unos que las de los otros. En virtud de esto, también parece poder establecerse una diferencia entre voluntad y entendimiento. En cuarto lugar, puede objetarse que si el hombre no obra en virtud de la libertad de su voluntad, ¿qué sucederá si está en equilibrio, como el asno de Buridán?. ¿Perecerá de hambre y sed? Si lo admito, parecería que pienso en un asno, o en una estatua de hombre, y no en un hombre, pero si lo niego, entonces el hombre se determinará a sí mismo y, por consiguiente, tendrá la facultad de dirigirse a donde quiera y hacer lo que quiera. Quizá puedan hacerse otras objeciones aparte de éstas, pero puesto que no tengo la obligación de insertar aquí los sueños de cada cual, procuraré responder sólo a las objeciones antedichas, y lo más brevemente que pueda. Tocante a la primera, concedo que la voluntad tiene más extensión que el entendimiento, si por «entendimiento» se entienden solamente las ideas claras y distintas, pero niego que la voluntad tenga más extensión que las percepciones, o sea, que la facultad de concebir, y no veo, en realidad, por qué la facultad de querer ha de ser declarada infinita más bien que la facultad de sentir: en efecto, así como en virtud de la facultad de querer podemos afirmar infinitas cosas (una tras otra, desde luego, ya que no podemos afirmar infinitas cosas a la vez), también podemos sentir o percibir infinitos cuerpos (uno tras otro, por supuesto) en virtud de la facultad de sentir. ¿Se dirá que hay infinitas cosas que no podemos percibir? Replico que nosotros no podemos alcanzar esas cosas con pensamiento alguno y, por consiguiente, con ninguna facultad de querer. Dirán, con todo: si Dios quisiera hacer que las percibiésemos, debería darnos, sin duda, una mayor facultad de percibir, pero no una facultad de querer mayor de la que nos ha dado; ello es lo mismo que si dijesen: si Dios quisiera hacer que entendiéramos una infinidad de otros seres, sería necesario sin duda que nos diese un mayor entendimiento, pero no una idea de ser más universal de la que nos ha dado, para abarcar esos infinitos seres. En efecto: hemos mostrado que la voluntad es un ser universal, o sea, una idea por la que explicarnos todas las voliciones singulares, es decir, aquello que es común a todas ellas. Siendo así que creen que esa idea universal o común a todas las voliciones es una facultad, no es nada extraño que afirmen que esa facultad se extiende hasta el infinito, más allá de los límites del entendimiento. «Universal», en efecto, se dice igualmente de uno, de muchos y de infinitos individuos. A la segunda objeción respondo negando que nosotros tengamos una libre potestad de suspender el juicio. Pues cuando decimos que alguien suspende el juicio, no decimos sino que él ve que no percibe adecuadamente la cosa. Así pues, la suspensión del juicio es, en realidad, una percepción, y no una voluntad libre. Para entender esto con claridad, supongamos que un niño imagina un caballo alado, sin que perciba ninguna otra cosa. Puesto que tal imaginación del caballo implica la existencia (por el Corolario de la Proposición 17 de esta Parte), y puesto que el niño no percibe nada que excluya la existencia del caballo, considerará necesariamente al caballo como presente, y no podrá dudar de su existencia, aunque no tenga la certeza de ella. Esto lo experimentamos todos los días en los sueños, y no creo que haya alguien que piense que, mientras sueña, tiene libre potestad de suspender el juicio acerca de las cosas que sueña, y de hacer que no sueñe lo que sueña que ve; y, sin embargo, acontece que también en los sueños suspendemos el juicio, a saber, cuando soñamos que soñamos. Concedo, además, que, en la medida en que percibe, nadie se equivoca; esto es, concedo que las imaginaciones del alma, en sí mismas consideradas, no implican ninguna clase de error (ver Escolio de la Proposición 17 de esta Parte); pero niego que un hombre nada afirme en la medida en que percibe. Pues ¿qué es «percibir» un caballo alado, sino afirmar del caballo que tiene alas? En efecto: si el alma, aparte del caballo alado, no percibiera otra cosa, lo consideraría como algo que le está presente, y no tendría causa alguna para dudar de su existencia, ni facultad alguna para disentir, salvo si la imaginación del caballo se une a una idea que excluya la existencia de ese caballo, o salvo que el alma perciba que la idea que tiene del caballo alado es inadecuada, y entonces, o bien negará necesariamente la existencia del caballo, o dudará necesariamente de ella. Y con esto creo haber respondido también a la tercera objeción: la voluntad es algo universal, que se predica de todas las ideas y sólo significa lo que es común a todas ellas, a saber, la afirmación, cuya esencia adecuada, en cuanto abstractamente concebida, debe darse en todas y cada una de las ideas, y sólo en este sentido es la misma en todas, pero no en cuanto se la piensa como constituyendo la esencia de la idea, pues, en ese caso, las afirmaciones singulares difieren entre sí como las ideas mismas. Por ejemplo, la afirmación que implica la idea del círculo difiere de la que implica la idea del triángulo, como la idea del círculo difiere de la idea del triángulo. Además, niego absolutamente que nosotros necesitemos igual potencia de pensamiento para afirmar que es verdadero lo que es verdadero, que para afirmar que es verdadero lo que es falso. Pues estas dos «afirmaciones», en cuanto a su sentido, están entre sí en la relación del ser y el no-ser; en efecto, en las ideas no hay nada positivo que revista la forma de la falsedad (ver la Proposición 35 de esta Parte con su Escolio, y el Escolio de la Proposición 47 de esta Parte). Por lo cual es oportuno notar aquí, ante todo, cuan fácilmente nos equivocamos, cuando confundimos los universales con los singulares, y los entes de razón y abstractos con los reales. Por lo que atañe, en fin, a la cuarta objeción, concedo por completo que un hombre, puesto en tal equilibrio (a saber, sin otras percepciones que las de la sed y el hambre, y las de tal y cual comida y bebida que están a igual distancia de él), perecerá de hambre y sed. Si me preguntan: ¿acaso tal hombre no debe ser estimado más bien como un asno que como un hombre?, respondo que no lo sé, como tampoco sé cómo ha de ser estimado el que se ahorca, o cómo han de ser estimados los niños, los necios, los locos, etc. Queda sólo por indicar cuan útil es para la vida el conocimiento de esta doctrina, lo que advertiremos fácilmente por lo que sigue, a saber: 1. En cuanto nos enseña que obramos por el solo mandato de Dios, y somos partícipes de la naturaleza divina, y ello tanto más cuanto más perfectas acciones llevamos a cabo, y cuanto más y más entendemos a Dios. Por consiguiente, esta doctrina, además de conferir al ánimo un completo sosiego, tiene también la ventaja de que nos enseña en qué consiste nuestra más alta felicidad o beatitud, a saber: en el solo conocimiento de Dios, por el cual somos inducidos a hacer tan sólo aquello que el amor y el sentido del deber aconsejan!”?], Por ello entendemos claramente cuánto se alejan de una verdadera estimación de la virtud aquellos que esperan de Dios una gran recompensa en pago a su virtud y sus buenas acciones, como si se tratase de recompensar una estrecha servidumbre, siendo así que la virtud y el servicio de Dios son ellos mismos la felicidad y la suprema libertad. 2. En cuanto enseña cómo debemos comportarnos ante los sucesos de la fortuna (los que no caen bajo nuestra potestad, o sea, no se siguen de nuestra naturaleza), a saber: contemplando y soportando con ánimo equilibrado las dos caras de la suerte, ya que de los eternos decretos de Dios se siguen todas las cosas con la misma necesidad con que se sigue de la esencia del triángulo que sus tres ángulos valen dos rectos. 3. Esta doctrina es útil para la vida social, en cuanto enseña a no odiar ni despreciar a nadie, a no burlarse de nadie ni encolerizarse contra nadie, a no envidiar a nadie. Además es útil en cuanto enseña a cada uno a contentarse con lo suyo, y a auxiliar al prójimo, no por mujeril misericordia, ni por parcialidad o superstición, sino sólo por la guía de la razón, según lo demanden el tiempo y las circunstancias, como mostraré en la Cuarta Parte. 4. Por último, esta doctrina es también de no poca utilidad para la sociedad civil, en cuanto enseña de qué modo han de ser gobernados y dirigidos los ciudadanos, a saber: no para que sean siervos, sino para que hagan libremente lo mejor. Y con ello he terminado lo que me había propuesto tratar en este Escolio, y pongo fin a nuestra Segunda Parte, en la que creo haber explicado la naturaleza del alma humana y sus propiedades con bastante amplitud y, en cuanto lo permite la dificultad de la cuestión, con bastante claridad, y creo haber expuesto cosas tales que de ellas pueden concluirse otras muy notables, sumamente útiles, y de necesario conocimiento, como constará, en parte, por lo que sigue.`,
         la: ``,
       },
       proof: [
@@ -2549,7 +2549,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Llamo causa adecuada aquella cuyo efecto puede ser percibido clara y distintamente en virtud de ella misma. Por el contrario, llamo inadecuada o parcial aquella cuyo efecto no puede entenderse por ella sola.`,
         la: ``,
       },
       proof: [],
@@ -2560,7 +2560,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Digo que obramos, cuando ocurre algo, en nosotros o fuera de nosotros, de lo cual somos causa adecuada; es decir (por la Definición anterior), cuando de nuestra naturaleza se sigue algo, en nosotros o fuera de nosotros, que puede entenderse clara y distintamente en virtud de ella sola. Y, por el contrario, digo que padecemos, cuando en nosotros ocurre algo, o de nuestra naturaleza se sigue algo, de lo que no somos sino causa parcial.`,
         la: ``,
       },
       proof: [],
@@ -2571,7 +2571,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Por afectos entiendo las afecciones del cuerpo, por las cuales aumenta o disminuye, es favorecida o perjudicada, la potencia de obrar de ese mismo cuerpo, y entiendo, al mismo tiempo, las ideas de esas afecciones. Así pues, si podemos ser causa adecuada de alguna de esas afecciones, entonces entiendo por «afecto» una acción; en los otros casos, una pasión.`,
         la: ``,
       },
       proof: [],
@@ -2582,10 +2582,10 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El cuerpo humano puede ser afectado de muchas maneras, por las que su potencia de obrar aumenta o disminuye, y también de otras maneras, que no hacen mayor ni menor esa potencia de obrar. Este Postulado o Axioma se apoya en el Postulado 1 y los Lemas 5 y 7 que siguen a la Proposición 13, Parte II`,
         la: ``,
       },
-      proof: ["e2post1", "e2p13lem5", "e2p13lem7"],
+      proof: ["e2post1", "e2lem5", "e2lem7"],
     },
   ],
   [
@@ -2593,7 +2593,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El cuerpo humano puede padecer muchas mutaciones, sin dejar por ello de retener las impresiones o huellas de los objetos (ver acerca de esto el Postulado 5 de la Parte 11), y, por consiguiente, las imágenes mismas de las cosas; para cuya Definición ver el Escolio de la Proposición 17 de la Parte II.`,
         la: ``,
       },
       proof: ["e2post5", "e2p17exp"],
@@ -2604,16 +2604,804 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Nuestra alma obra ciertas cosas, pero padece ciertas otras; a saber: en cuanto que tiene ideas adecuadas, entonces obra necesariamente ciertas cosas, y en cuanto que tiene ideas inadecuadas, entonces padece necesariamente ciertas otras. Demostración: Las ideas de cualquier alma humana son unas adecuadas y otras mutiladas y confusas (por el Escolio de la Proposición 40 de la Parte II). Ahora bien: las ideas que, en el alma de alguien, son adecuadas, lo son en Dios, en cuanto que Este constituye la esencia de ese alma (por el Corolario de la Proposición 11 de la Parte II); y las que son inadecuadas en el alma, en Dios son también adecuadas (por el mismo Corolario), no en cuanto contiene en sí solamente la esencia de ese alma, sino en cuanto contiene también, a la vez, las almas de las otras cosas. Además, a partir de una idea cualquiera dada debe necesariamente seguirse algún efecto (por la Proposición 36 de la Parte 1), de cuyo efecto Dios es causa adecuada (ver Definición 1 de esta Parte), no en cuanto que es infinito, sino en cuanto que se lo considera afectado por esa idea dada (ver Proposición 9 de la Parte II). Ahora bien: del efecto cuya causa es Dios en cuanto afectado por una idea que es adecuada en un alma, es causa adecuada esa misma alma (ver el Corolario de la Proposición 11 de la Parte II). Por consiguiente, nuestra alma (por la Definición 2 de esta Parte), en cuanto que tiene ideas adecuadas, obra necesariamente ciertas cosas: que era lo primero. Además, de aquello que se sigue necesariamente de una idea que es adecuada en Dios, no en cuanto tiene en sí el alma de un solo hombre, sino en cuanto que tiene en sí, junto con ella, las almas de las otras cosas, no es causa adecuada el alma de ese hombre (por el mismo Corolario de la Proposición 11 de la Parte II), sino parcial, y, por ende (por la Definición 2 de esta Parte), el alma, en cuanto tiene ideas inadecuadas, padece necesariamente ciertas cosas: que era lo segundo. Luego nuestra alma, etc. Q.E.D`,
         la: ``,
       },
       // English translations make it seem like it's only one "explanation", but the latin speaks of
       // "per expolia", in the plural form; also, Elwes translation says "constitutes the essence
       // of the mind (II. xl. Coroll.)" which is a mistake, where the latin says "mentis essentiam
       // constituit (per corollarium propositionis 11 partis II)"; e.i, "e2p11cor" not "e2p40cor":
-      proof: ["e2p40exp1", "e2p40exp2", "e2p11cor", "e1p36", "e3def1", "e2p9"],
+      proof: [
+        "e2p40exp1",
+        "e2p40exp2",
+        "e2p11cor",
+        "e1p36",
+        "e3def1",
+        "e3def2",
+        "e2p9",
+      ],
     },
   ],
+  [
+    "e3p1cor",
+    {
+      text: {
+        en: ``,
+        es: `Corolario: De aquí se sigue que el alma está sujeta a tantas más pasiones cuantas más ideas inadecuadas tiene, y, por contra, obra tantas más cosas cuantas más ideas adecuadas tiene.`,
+        la: ``,
+      },
+      // "corollary" must include parent as proof
+      proof: ["e3p1"],
+    },
+  ],
+  [
+    "e3p2",
+    {
+      text: {
+        en: ``,
+        es: `Ni el cuerpo puede determinar al alma a pensar, ni el alma puede determinar al cuerpo al movimiento ni al reposo, ni a otra cosa alguna (si la hay). Demostración: Todos los modos del pensar tienen a Dios por causa en cuanto que es cosa pensante, y no en cuanto que se explica a través de otro atributo (por la Proposición 6 de la Parte II); por consiguiente, lo que determina al alma a pensar es un modo del pensamiento, y no de la extensión, es decir (por la Definición 1 de la Parte II), no es un cuerpo, que era lo primero. Además, el movimiento y el reposo del cuerpo deben proceder de otro cuerpo, que ha sido también determinado al movimiento o al reposo por otro, y, en términos absolutos, todo cuanto sucede en un cuerpo ha debido proceder de Dios en cuanto se lo considera afectado por algún modo de la extensión, y no por algún modo del pensamiento (ver la misma Proposición 6 de la Parte II), es decir, no puede proceder del alma, que es un modo del pensamiento (por la Proposición 11 de la Parte II), que era lo segundo. Por consiguiente, ni el cuerpo puede, etc. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e2p6", "e2def1", "e2p11"],
+    },
+  ],
+  [
+    "e3p2exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Esto se entiende de un modo más claro por lo dicho en el Escolio de la Proposición 7 de la Parte II, a saber: que el alma y el cuerpo son una sola y misma cosa, que se concibe, ya bajo el atributo del pensamiento, ya bajo el de la extensión. De donde resulta que el orden o concatenación de las cosas es uno solo, ya se conciba la naturaleza bajo tal atributo, ya bajo tal otro, y, por consiguiente, que el orden de las acciones y pasiones de nuestro cuerpo se corresponde por naturaleza con el orden de las acciones y pasiones del alma. Ello es también evidente según la Demostración de la Proposición 12 de la Parte II. Ahora bien: aunque las cosas sean de tal modo que no queda ningún motivo para dudar de ello, con todo, creo que, no mediando comprobación experimental, es muy difícil poder convencer a los hombres de que sopesen esta cuestión sin prejuicios, hasta tal punto están persuadidos firmemente de que el cuerpo se mueve o reposa al más mínimo mandato del alma, y de que el cuerpo obra muchas cosas que dependen exclusivamente de la voluntad del alma y su capacidad de pensamiento. Y el hecho es que nadie, hasta ahora, ha determinado lo que puede el cuerpo, es decir, a nadie ha enseñado la experiencia, hasta ahora, qué es lo que puede hacer el cuerpo en virtud de las solas leyes de su naturaleza, considerada como puramente corpórea, y qué es lo que no puede hacer salvo que el alma lo determine. Pues nadie hasta ahora ha conocido la fábrica del cuerpo de un modo lo suficientemente preciso como para poder explicar todas sus funciones, por no hablar ahora de que en los animales se observan muchas cosas que exceden con largueza la humana sagacidad, y de que los sonámbulos hacen en sueños muchísimas cosas que no osarían hacer despiertos; ello basta para mostrar que el cuerpo, en virtud de las solas leyes de su naturaleza, puede hacer muchas cosas que resultan asombrosas a su propia alma. Además, nadie sabe de qué modo ni con qué medios el alma mueve al cuerpo, ni cuántos grados de movimiento puede imprimirle, ni con qué rapidez puede moverlo. De donde se sigue que cuando los hombres dicen que tal o cual acción del cuerpo proviene del alma, por tener ésta imperio sobre el cuerpo, no saben lo que se dicen, y no hacen sino confesar, con palabras especiosas, su ignorancia —que les trae sin cuidado— acerca de la verdadera causa de esa acción. Me dirán, empero, que sepan o no por qué medios el alma mueve al cuerpo, saben en cualquier caso por experiencia que, si la mente humana no fuese apta para pensar, el cuerpo sería inerte. Además, saben por experiencia que caen bajo la sola potestad del alma cosas como el hablar o el callar, y otras muchas que, por ende, creen que dependen del mandato del alma. Pues bien, en lo que atañe a lo primero, les pregunto: ¿acaso la experiencia no enseña también, y al contrario, que si el cuerpo está interte, el alma es al mismo tiempo inepta para pensar? Pues cuando el cuerpo reposa durante el sueño, el alma permanece también adormecida, y no tiene el poder de pensar, como en la vigilia. Además, creo que todos tenemos experiencia de que el alma no siempre es igualmente apta para pensar sobre un mismo objeto, sino que, según el cuerpo sea más apto para ser excitado por la imagen de tal o cual objeto, en esa medida es el alma más apta para considerar tal o cual objeto. Dirán, empero, que no es posible que de las solas leyes de la naturaleza, considerada como puramente corpórea, surjan las causas de los edificios, las pinturas y cosas de índole similar (que se producen sólo en virtud del arte humano), y que el cuerpo humano, si no estuviera determinado y orientado por el alma, no sería Capaz de edificar un templo. Pero ya he mostrado que ellos ignoran lo que puede el cuerpo, o lo que puede deducirse de la sola consideración de su naturaleza, y han experimentado que se producen muchas cosas en virtud de las solas leyes de la naturaleza, cuya producción nunca hubiera creído posible sin la dirección del alma, como son las que hacen los sonámbulos durante el sueño, y que a ellos mismos les asombran cuando están despiertos. Añado aquí el ejemplo de la fábrica del cuerpo humano, que supera con mucho en artificio a todas las cosas fabricadas por el arte de los hombres, por no hablar de lo que he mostrado más arriba: que de la naturaleza, considerada bajo un atributo cualquiera, se siguen infinitas cosas. Por lo que atañe a lo segundo, digo que los asuntos humanos se hallarían en mucha mejor situación, si cayese igualmente bajo la potestad del hombre tanto el callar como el hablar. Pero la experiencia enseña sobradamente que los hombres no tiene sobre ninguna cosa menos poder que sobre su lengua, y para nada son más impotentes que para moderar sus apetitos; de donde resulta que los más creen que sólo hacemos libremente aquello que apetecemos escasamente, ya que el apetito de tales cosas puede fácilmente ser dominado por la memoria de otra cosa de que nos acordamos con frecuencia, y, en cambio, no haríamos libremente aquellas cosas que apetecemos con un deseo muy fuerte, que no puede calmarse con el recuerdo de otra cosa. Si los hombres no tuviesen experiencia de que hacemos muchas cosas de las que después nos arrepentimos, y de que a menudo, cuando hay en nosotros conflicto entre afectos contrarios, reconocemos lo que es mejor y hacemos lo que es peor, nada impediría que creyesen que lo hacemos todo libremente. Así, el niño cree que apetece libremente la leche, el muchacho irritado, que quiere libremente la venganza, y el tímido, la fuga. También el ebrio cree decir por libre decisión de su alma lo que, ya sobrio, quisiera haber callado, y asimismo el que delira, la charlatana, el niño y otros muchos de esta laya creen hablar por libre decisión del alma, siendo así que no pueden reprimir el impulso que les hace hablar. De modo que la experiencia misma, no menos claramente que la razón, enseña que los hombres creen ser libres sólo a causa de que son conscientes de sus acciones, e ignorantes de las causas que las determinan, y, además, porque las decisiones del alma no son otra cosa que los apetitos mismos, y varían según la diversa disposición del cuerpo, pues cada cual se comporta según su afecto, y quienes padecen conflicto entre afectos contrarios no saben lo que quieren, y quienes carecen de afecto son impulsados acá y allá por cosas sin importancia. Todo ello muestra claramente que tanto la decisión como el apetito del alma y la determinación del cuerpo son cosas simultáneas por naturaleza, o, mejor dicho, son una sola y misma cosa, a la que llamamos «decisión» cuando la consideramos bajo el atributo del pensamiento, y «determinación» cuando la consideramos bajo el atributo de la extensión, y la deducimos de las leyes del movimiento y el reposo, y esto se verá aún más claro por lo que vamos a decir. Pues hay otra cosa que quisiera notar particularmente aquí, a saber: que nosotros no podemos, por decisión del alma, hacer nada que previamente no recordemos. Por ejemplo, no podemos decir una palabra, si no nos acordamos de ella. Y no cae bajo la potestad del alma el acordarse u olvidarse de alguna cosa. Por ello se cree que bajo la potestad del alma sólo está el hecho de que podamos, en virtud de la sola decisión del alma, callar o hablar de la cosa que recordamos. Pero cuando soñamos que hablamos, creemos que hablamos por libre decisión del alma, y sin embargo no hablamos o, si lo hacemos, ello sucede en virtud de un movimiento espontáneo del cuerpo. Soñamos, además, que ocultamos a los hombres ciertas cosas, y ello por la misma decisión del alma en cuya virtud, estando despiertos, callamos lo que sabemos. Soñamos, en fin, que por decisión del alma hacemos ciertas cosas que, despiertos, no osamos hacer. Y, siendo ello así, me gustaría mucho saber si hay en el alma dos clases de decisiones, unas fantásticas y otras libres. Y si no se quiere incurrir en tan gran tontería, debe necesariamente concederse que esa decisión del alma que se cree ser libre, no se distingue de la imaginación o del recuerdo mismo, y no es más que la afirmación implícita en la idea, en cuanto que es idea (ver Proposición 49 de la, Parte II). Y, de esta suerte, tales decisiones surgen en el alma con la misma necesidad que las ideas de las cosas existentes en acto. Así pues, quienes creen que hablan, o callan, o hacen cualquier cosa, por libre decisión del alma, sueñan con los ojos abiertos.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p2", "e2p7exp", "e2p12", "e2p49"],
+    },
+  ],
+  [
+    "e3p3",
+    {
+      text: {
+        en: ``,
+        es: `Las acciones del alma brotan sólo de las ideas adecuadas; las pasiones dependen sólo de las inadecuadas. Demostración: Lo que constituye primariamente la esencia del alma no es otra cosa que la idea del cuerpo existente en acto (por las Proposiciones 11 y 13 de la Parte II), cuya idea (por la Proposición 15 de la Parte II) se compone de otras muchas, algunas de las cuales son adecuadas (por el Corolario de la Proposición 38 de la Parte II), y otras inadecuadas (por el Corolario de la Proposición 29 de la Parte II). Por consiguiente, todo cuanto se sigue de la naturaleza del alma, y de lo cual es el alma causa próxima por la que ello debe entenderse, debe seguirse necesariamente de una idea adecuada, o de una idea inadecuada. Ahora bien: el alma, en cuanto que tiene ideas inadecuadas (por la Proposición 1 de esta Parte), en esa medida padece necesariamente; luego las acciones del alma se siguen sólo de las ideas adecuadas, y el alma sólo es pasiva porque tiene ideas inadecuadas. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e2p11", "e2p13", "e2p15", "e2p38", "e2p29cor", "e3p1"],
+    },
+  ],
+  [
+    "e3p3exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Vemos, pues, que las pasiones no se refieren al alma sino en cuanto que ésta tiene algo que implica una negación, o sea, en cuanto se la considera como una parte de la naturaleza que, por sí sola y sin las demás, no puede percibirse clara y distintamente, y de este modo podría mostrar que las pasiones se refieren a las cosas singulares de la misma manera que al alma, y no pueden percibirse de otro modo. Pero aquí me propongo tratar sólo del alma humana.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p3"],
+    },
+  ],
+  [
+    "e3p4",
+    {
+      text: {
+        en: ``,
+        es: `Ninguna cosa puede ser destruida sino por una causa exterior. Demostración: Esta Proposición es evidente por sí. En efecto: la definición de una cosa cualquiera afirma, y no niega, la esencia de esa cosa; o sea, pone la esencia de la cosa, y no la priva de ella. Así pues, en tanto atendemos sólo a la cosa misma, y no a las causas exteriores, nada seremos capaces de hallar en ella que pueda destruirla. Q.E.D.`,
+        la: ``,
+      },
+      // "self evident"
+      proof: [],
+    },
+  ],
+  [
+    "e3p5",
+    {
+      text: {
+        en: ``,
+        es: `Las cosas son de naturaleza contraria, es decir, no pueden darse en el mismo sujeto, en la medida en que una de ellas puede destruir a la otra. Demostración: En efecto, si pudiesen concordar entre sí O darse a la vez en el mismo sujeto, entonces podría darse en el mismo sujeto algo que tendría la capacidad de destruirlo, lo cual (por la Proposición anterior) es absurdo. Luego las cosas, etc. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p4"],
+    },
+  ],
+  [
+    "e3p6",
+    {
+      text: {
+        en: ``,
+        es: `Cada cosa se esfuerza, cuanto está a su alcance, por perseverar en su ser. Demostración: En efecto, todas las cosas singulares son modos, por los cuales los atributos de Dios se expresan de cierta y determinada manera (por el Corolario de la Proposición 25 de la Parte I), esto es (por la Proposición 34 de la Parte 1), cosas que expresan de cierta y determinada manera la potencia de Dios, por la cual Dios es obra, y ninguna cosa tiene en sí algo en cuya virtud pueda ser destruida, o sea, nada que le prive de su existencia (por la Proposición 4 de esta Parte), sino que, por el contrario, se opone a todo aquello que pueda privarle de su existencia (por la Proposición anterior), y, de esta suerte, se esfuerza cuanto puede y está a su alcance por perseverar en su ser. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e1p25cor", "e1p34", "e3p4", "e3p5"],
+    },
+  ],
+  [
+    "e3p7",
+    {
+      text: {
+        en: ``,
+        es: `El esfuerzo con que cada cosa intenta perseverar en su ser no es nada distinto de la esencia actual de la cosa misma. Demostración: Dada le esencia de una cosa cualquiera, se siguen de ella necesariamente ciertas cosas (por la Proposición 36 de la Parte 1), y las cosas no pueden más que aquello que se sigue necesariamente a partir de su determinada naturaleza (por la Proposición 29 de la Parte 1); por ello, la potencia de una cosa cualquiera, o sea, el esfuerzo por el que, ya sola, ya junto con otras, obra o intenta obrar algo —+eso es (por la Proposición 6 de esta Parte), la potencia o esfuerzo por el que intenta perseverar en su ser— no es nada distinto de la esencia dada, o sea, actual, de la cosa misma. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e1p36", "e1p29", "e3p6"],
+    },
+  ],
+  [
+    "e3p8",
+    {
+      text: {
+        en: ``,
+        es: `El esfuerzo con que cada cosa intenta perseverar en su ser no implica tiempo alguno finito, sino indefinido. Demostración: En efecto: si implicase un tiempo limitado que determinara la duración de la cosa, entonces se seguiría, en virtud sólo de la potencia misma por la que la cosa existe, que dicha cosa no podría existir después de ese tiempo limitado, sino que debería destruirse; ahora bien, eso (por la Proposición 4 de esta Parte) es absurdo; por consiguiente, el esfuerzo por el que la cosa existe no implica un tiempo definido, sino al contrario, ya que (por la misma Proposición 4 de esta Parte), si no es destruida por ninguna causa exterior, continuará existiendo en virtud de la misma potencia por la que existe ahora. Luego ese esfuerzo implica un tiempo indefinido. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p4"],
+    },
+  ],
+  [
+    "e3p9",
+    {
+      text: {
+        en: ``,
+        es: `El alma, ya en cuanto tiene ideas claras y distintas, ya en cuanto las tiene confusas, se esfuerza por perseverar en su ser con una duración indefinida, y es consciente de ese esfuerzo suyo. Demostración: La esencia del alma está constituida por ideas adecuadas e inadecuadas (como hemos mostrado en la Proposición 3 de esta Parte), y así (por la Proposición 7 de esta Parte), se esfuerza por perseverar en su ser tanto en cuanto tiene las unas como en cuanto tiene las otras, y ello (por la Proposición 8 de esta Parte), con una duración indefinida. Y como el alma es necesariamente consciente de sí (por la Proposición 23 de la Parte II), por medio de las ideas de las afecciones del cuerpo, es, por lo tanto, consciente de su esfuerzo (por la Proposición 7 de esta Parte). Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p3", "e3p7", "e3p8", "e2p23"],
+    },
+  ],
+  [
+    "e3p9exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Este esfuerzo, cuando se refiere al alma sola, se llama voluntad, pero cuando se refiere a la vez al alma y al cuerpo, se llama apetito; por ende, éste no es otra cosa que la esencia misma del hombre, de cuya naturaleza se siguen necesariamente aquellas cosas que sirven para su conservación, cosas que, por tanto, el hombre está determinado a realizar. Además, entre «apetito» y «deseo» no hay diferencia alguna, si no es la de que él «deseo» se refiere generalmente a los hombres, en cuanto que son conscientes de su apetito, y por ello puede definirse así: el deseo es el apetito acompañado de la conciencia del mismo. Así pues, queda claro, en virtud de todo esto, que nosotros no intentamos, queremos, apetecemos ni deseamos algo porque lo juzguemos bueno, sino que, al contrario, juzgamos que algo es bueno porque lo intentamos, queremos, apetecemos y deseamos.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p9"],
+    },
+  ],
+  [
+    "e3p10",
+    {
+      text: {
+        en: ``,
+        es: `Una idea que excluya la existencia de nuestro cuerpo no puede darse en nuestra alma, sino que le es contraria. Demostración: Nada que pueda destruir nuestro cuerpo puede darse en él (por la Proposición 5 de esta Parte), y, por tanto, no puede darse en Dios la idea de ello, en la medida en que tiene la idea de nuestro cuerpo (por el Corolario de la Proposición 9 de la Parte II), esto es (por las Proposiciones 11 y 13 de la Parte II), la idea de ello no puede darse en nuestra alma, sino que, al contrario, supuesto que (por las Proposiciones 11 y 13 de la Parte II) lo que primordialmente constituye la esencia del alma es la idea del cuerpo existente en acto, el primordial y principal esfuerzo de nuestra alma será (por la Proposición 7 de esta Parte) el de afirmar la existencia de nuestro cuerpo, y, por tanto, una idea que niegue la existencia de nuestro cuerpo es contraria a nuestra alma. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p5", "e2p9cor", "e2p11", "e2p13", "e3p7"],
+    },
+  ],
+  [
+    "e3p11",
+    {
+      text: {
+        en: ``,
+        es: `La idea de todo cuanto aumenta o disminuye, favorece o reprime la potencia de obrar de nuestro cuerpo, a su vez aumenta o disminuye, favorece o reprime, la potencia de pensar de nuestra alma. Demostración: Esta Proposición es evidente por la Proposición 7 de la Parte Il, o también por la Proposición 14 de la Parte II.`,
+        la: ``,
+      },
+      proof: ["e2p7", "e2p14"],
+    },
+  ],
+  [
+    "e3p11exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Vemos, pues, que el alma puede padecer grandes cambios, y pasar, ya a una mayor, ya a una menor perfección, y estas pasiones nos explican los afectos de la alegría y la tristeza. De aquí en adelante, entenderé por alegría: una pasión por la que el alma pasa a una mayor perfección. Por tristeza, en cambio, una pasión por la cual el alma pasa a una menor perfección. Además, llamo al afecto de la alegría, referido a la vez al alma y al cuerpo, «placer» o «regocijo», y al de la tristeza, «dolor» o «melancolía». Pero ha de notarse que el placer y el dolor se refieren al hombre cuando una parte de él resulta más afectada que las restantes, y el regocijo y la melancolía, al contrario, cuando todas resultan igualmente afectadas. Por lo que toca al deseo, he explicado lo que es en el Escolio de la Proposición 9 de esta Parte; y, fuera de estos tres, no reconozco ningún afecto primario: mostraré, efectivamente, a continuación que los demás surgen de esos tres. Pero antes de seguir adelante, me gustaría explicar aquí con más amplitud la Proposición 10 de esta Parte, para que se entienda más claramente en virtud de qué una idea es contraria a otra idea. En el Escolio de la Proposición 17 de la Parte II hemos mostrado que la idea que constituye la esencia del alma implica la existencia del cuerpo, durante tanto tiempo como el cuerpo existe. Además, se sigue de lo mostrado en el Corolario de la Proposición 8 de la Parte Il, y en el Escolio de la misma, que la existencia presente de nuestra alma depende sólo del hecho de que el alma implica la existencia actual del cuerpo. Hemos mostrado, por último, que la potencia del alma, por la que imagina y recuerda las cosas, depende también (ver Proposiciones 17 y 18 de la Parte II, con su Escolio) de que el alma implica la existencia actual del cuerpo. De donde se sigue que se priva al alma de su existencia presente y su potencia de imaginar, tan pronto como el alma deja de afirmar la existencia presente del cuerpo. Ahora bien: la causa por la que el alma deja de afirmar esa existencia del cuerpo no puede ser el alma misma (por la Proposición 4 de esta Parte), ni tampoco el hecho de que el cuerpo deje de existir. Pues (por la Proposición 6 de la Parte II) la causa por la que el alma afirma la existencia del cuerpo no es la de que el cuerpo tenga ya existencia, y, por la misma razón, tampoco deja de afirmar la existencia de ese cuerpo porque el cuerpo deje de existir, sino que (por la Proposición 8 de la Parte II) ello surge de otra idea que excluye la existencia presente de nuestro cuerpo y, consiguientemente, de nuestra alma, y que es, por tanto, contraria a la idea que constituye la esencia de nuestra alma.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: [
+        "e3p11",
+        "e3p9exp",
+        "e3p10",
+        "e2p17exp",
+        "e2p8cor",
+        "e2p17",
+        "e2p18exp",
+        "e3p4",
+        "e2p6",
+        "e2p8",
+      ],
+    },
+  ],
+  [
+    "e3p12",
+    {
+      text: {
+        en: ``,
+        es: `El alma se esfuerza, cuanto puede, en imaginarlas cosas que aumentan o favorecen la potencia de obrar del cuerpo. Demostración: Mientras el cuerpo humano esté afectado por un modo que implica la naturaleza de algún cuerpo exterior, el alma humana considerará ese cuerpo como presente (por la Proposición 17 de la Parte II), y, consiguiente-mente (por la Proposición 7 de la Parte II), mientras el alma humana considera como presente un cuerpo externo, esto es (por el Escolio de la misma Proposición 17), mientras lo imagina, el cuerpo humano está afectado por un modo que implica la naturaleza de ese cuerpo externo, y así, mientras el alma imagina aquellas cosas que aumentan o favorecen la potencia de obrar de nuestro cuerpo, éste es afectado por modos que aumentan o favorecen su potencia de obrar (ver Postulado 1 de esta Parte), y, consiguientemente (por la Proposición 11 de esta Parte) es aumentada o favorecida la potencia de pensar del alma, y, por ende (por la Proposición 6 o la 9 de esta Parte), el alma se esfuerza cuanto puede en imaginar esas cosas. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e2p17", "e2p7", "e2p17exp", "e3post1", "e3p11", "e3p6", "e3p9"],
+    },
+  ],
+  [
+    "e3p13",
+    {
+      text: {
+        en: ``,
+        es: `Cuando el alma imagina aquellas cosas que disminuyen o reprimen la potencia de obrar del cuerpo, se esfuerza cuanto puede por acordarse de otras cosas que excluyan la existencia de aquéllas. Demostración: Mientras el alma imagina una cosa así, es disminuida o reprimida la potencia del alma y el cuerpo (como hemos demostrado en la Proposición anterior); no por ello dejará de imaginarla, hasta que imagine otra que excluya la existencia presente de aquélla (por la Proposición 17 de la Parte II); esto es (como acabamos de mostrar), la potencia del alma y del cuerpo queda disminuida o reprimida hasta que el alma imagine otra que excluya la existencia de aquélla; por tanto, el alma (por la Proposición 9 de esta Parte) se esforzará cuanto pueda en imaginar o recordar esa otra cosa. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p12", "e2p17", "e3p9"],
+    },
+  ],
+  [
+    "e3p13cor",
+    {
+      text: {
+        en: ``,
+        es: `Corolario: De aquí se sigue que el alma tiene aversión a imaginar lo que disminuye o reprime su potencia y la del cuerpo.`,
+        la: ``,
+      },
+      // "corollary" must include parent as proof
+      proof: ["e3p13"],
+    },
+  ],
+  [
+    "e3p13exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: En virtud de esto entendemos claramente qué es el amor y qué es el odio. El amor no es sino la alegría, acompañada por la idea de una causa exterior, y el odio no es sino la tristeza, acompañada por la idea de una causa exterior. Vemos, además, que el que ama se esfuerza necesariamente por tener presente y conservar la cosa que ama, y, al contrario, el que odia se esfuerza por apartar y destruir la cosa que odia. Pero de todo esto trataré más adelante con mayor prolijidad.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p13"],
+    },
+  ],
+  [
+    "e3p14",
+    {
+      text: {
+        en: ``,
+        es: `Si el alma ha sido afectada una vez por dos afectos al mismo tiempo, cuando más tarde sea afectada por uno de ellos, también será afectada por el otro. Demostración: Si el cuerpo humano ha sido afectado una vez por dos cuerpos al mismo tiempo, cuando más tarde imagine el alma uno de ellos, al punto recordará al otro (por la Proposición 18 de la Parte II). Ahora bien, las imaginaciones del alma revelan los afectos de nuestro cuerpo más bien que la naturaleza de los cuerpos exteriores (por el Corolario 2 de la Proposición 16 de la Parte II). Luego si el cuerpo y, consiguientemente, el alma (ver Definición 3 de esta Parte), han experimentado una vez dos afectos, cuando más tarde el alma sea afectada por uno de ellos, también lo será por el otro. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e2p18", "e2p16cor2", "e3def3"],
+    },
+  ],
+  [
+    "e3p15",
+    {
+      text: {
+        en: ``,
+        es: `Cualquiera cosa puede ser, por accidente, causa de alegría, tristeza o deseo. Demostración: Supongamos que el alma es afectada a la vez por dos afectos, uno de los cuales no aumenta ni disminuye su potencia de obrar, y el otro sí (ver Postulado 1 de esta Parte). Por la Proposición anterior es evidente que cuando el alma, más tarde, sea afectada por el primero en virtud de su verdadera causa, la cual (según la hipótesis) de por sí no aumenta ni disminuye su potencia de obrar, al punto será también afectada por el otro, que aumenta o disminuye su potencia de obrar, esto es (por el Escolio de la Proposición 11 de esta Parte), será afectada de alegría o tristeza. Y, por tanto, aquella primera cosa será causa, no por sí misma, sino por accidente, de alegría o tristeza. Por esta misma vía puede mostrarse fácilmente que esa cosa puede, por accidente, ser causa de deseo. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3post1", "e3p11exp"],
+    },
+  ],
+  [
+    "e3p15cor",
+    {
+      text: {
+        en: ``,
+        es: `Corolario: En virtud del solo hecho de haber considerado una cosa con alegría o tristeza, de las que esa cosa no es causa eficiente, podemos amarla u odiarla. Demostración: Efectivamente, en virtud de ese solo hecho (por la Proposición 14 de esta Parte) sucede que el alma, al imaginar más tarde esa cosa, sea afectada por un afecto de alegría o tristeza; es decir (por el Escolio de la Proposición 11 de esta Parte) sucede que aumenta o disminuye la potencia del alma y del cuerpo, etc. Y, por consiguiente (por la Proposición 12 de esta Parte), sucede que el alma desee imaginar esa cosa, o bien (por el Corolario de la Proposición 13 de esta Parte) que le repugne hacerlo; esto es (por el Escolio de la Proposición 13 de esta Parte), que la ame o la odie. Q.E.D.`,
+        la: ``,
+      },
+      // "corollary" must include parent as proof
+      proof: ["e3p15", "e3p14", "e3p11exp", "e3p12", "e3p13cor", "e3p13exp"],
+    },
+  ],
+  [
+    "e3p15exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Por ello entendemos cómo puede ocurrir que amemos u odiemos ciertas cosas sin que conozcamos la causa de ello, sino sólo (como dicen) por «simpatía» o «antipatía». Y con esto tienen que ver también esos objetos que nos afectan de alegría o tristeza por el solo hecho de ser semejantes en algo a otros que suelen afectarnos así, como mostraré en la Proposición siguiente. Ya sé que los autores que introdujeron por primera vez esos nombres de «simpatía» O «antipatía» quisieron significar con ellos ciertas cualidades ocultas de las cosas; con todo, creo que podemos entenderlos como significando cualidades notorias o manifiestas.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p15"],
+    },
+  ],
+  [
+    "e3p16",
+    {
+      text: {
+        en: ``,
+        es: `En virtud del solo hecho de imaginar que una cosa es semejante en algo a un objeto que suele afectar al alma de alegría o tristeza, aunque eso en que se asemejan no sea la causa eficiente de tales afectos, amaremos u odiaremos esa cosa. Demostración: Aquello en que es semejante la cosa al objeto lo hemos considerado (por hipótesis), en el objeto mismo, con un afecto de alegría o tristeza, y, de esta suerte (por la Proposición 14 de esta Parte), cuando el alma sea afectada por la imagen de ello, será también afectada, al punto, por uno u otro afecto, y, por consiguiente, la cosa en la que percibimos eso mismo será (por la Proposición 15 de esta Parte) causa, por accidente, de alegría o tristeza. Por lo tanto (por el Corolario anterior), aunque eso en que se asemeja la cosa al objeto no sea causa eficiente de dichos afectos, sin embargo la amaremos u odiaremos. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p14", "e3p15", "e3p15cor"],
+    },
+  ],
+  [
+    "e3p17",
+    {
+      text: {
+        en: ``,
+        es: `Si imaginamos que una cosa que suele afectarnos de tristeza se asemeja en algo a otra que suele afectarnos, con igual intensidad, de alegría, la odiaremos y amaremos a la vez. Demostración: En efecto, esa cosa es (por hipótesis) causa, por sí misma, de tristeza, y (por el Escolio de la Proposición 13 de esta Parte) en cuanto la imaginamos con tal afecto, la odiamos, y, además, en cuanto imaginamos que se asemeja en algo a otra que suele afectarnos de alegría con igual intensidad, la amaremos con un impulso de alegría de igual intensidad (por la Proposición anterior), y, por tanto, la odiaremos y amaremos a la vez. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p13exp", "e3p16"],
+    },
+  ],
+  [
+    "e3p17exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Esa disposición del alma, que brota de dos afectos contrarios, se llama fluctuación del ánimo; y es, por ende, respecto de la afección, lo que es la duda respecto de la imaginación (ver Escolio de la Proposición 44 de la Parte II); la fluctuación del ánimo y la duda no difieren entre sí sino en el más y el menos. Debe observarse que, en la Proposición anterior, he deducido esas fluctuaciones del ánimo a partir de causas que lo son «por sí» de un afecto y «por accidente» del otro; lo he hecho así porque, de esa manera, podían deducirse más fácilmente de las Proposiciones anteriores, y no porque yo niegue que las fluctuaciones del ánimo broten, por lo regular, de un objeto que es causa eficiente de uno y otro afecto. Pues el cuerpo humano (por el Postulado 1 de la Parte II) está compuesto de muchísimos individuos de diversa naturaleza, y, de esta suerte (por el Axioma 1, que sigue al Lema 3, que sigue —véase— a la Proposición 13 de la Parte 11), puede ser afectado de muchas y distintas maneras por un solo y mismo cuerpo; y, al contrario, como una sola y misma cosa puede ser afectada de muchas maneras, también podrá afectar de muchas y distintas maneras, por consiguiente, a una sola y misma parte del cuerpo. Por ello, podemos concebir fácilmente que un solo y mismo objeto pueda ser causa de muchos y contrarios afectos.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p17", "e2p44exp", "e2post1", "e2ax1**"],
+    },
+  ],
+  [
+    "e3p18",
+    {
+      text: {
+        en: ``,
+        es: `El hombre es afectado por la imagen de una cosa pretérita o futura con el mismo afecto de alegría o tristeza que por la imagen de una cosa presente. Demostración: Mientras el hombre esté afectado por la imagen de una cosa, considerará esa cosa como presente, aunque no exista (por la Proposición 17 de la Parte II, con su Corolario), y no la imaginará como pretérita o futura, sino en cuanto su imagen se vincule a la de un tiempo pretérito o futuro (ver Escolio de la Proposición 44 de la Parte II). Por lo cual, la imagen de una cosa, considerada aisladamente, es la misma, ya se refiera a un tiempo futuro, pretérito o presente: esto es (por el Corolario 2 de la Proposición 16 de la Parte II), la disposición del cuerpo —o sea, su afección— es la misma, sea la imagen la de una Cosa pretérita o futura, sea la de una presente. Y de este modo, el afecto de alegría o tristeza es el mismo, ya la imagen lo sea de una cosa pretérita o futura, ya lo sea de una presente. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e2p17", "e2p17cor", "e2p44exp", "e2p16cor2"],
+    },
+  ],
+  [
+    "e3p18exp1",
+    {
+      text: {
+        en: ``,
+        es: `Escolio I: Llamo aquí pretérita o futura a una cosa, según hayamos sido o vayamos a ser afectados por ella. Por ejemplo, según que la hayamos visto o la vayamos a ver, nos haya sido o nos vaya a ser útil, o dañosa, etc. En cuanto la imaginamos así, afirmamos su existencia, esto es, el cuerpo no experimenta afecto alguno que excluya la existencia de la cosa; y de esta suerte (por la Proposición 17 de la Parte II), el cuerpo es afectado por la imagen de esa cosa de igual modo que si ella estuviera presente. Sin embargo, puesto que sucede, en general, que los que han experimentado muchas cosas, al considerar una de ellas como futura o pretérita, fluctúan, y dudan muy seriamente acerca de su efectividad (ver Escolio de la Proposición 44 de la Parte II), resulta de ello que los afectos surgidos a partir de tales imágenes no son muy constantes, sino que, por lo general, están perturbados por las imágenes de otras cosas, hasta que los hombres adquieren una mayor certeza sobre la efectiva realización de la cosa.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p18", "e2p17", "e2p44exp"],
+    },
+  ],
+  [
+    "e3p18exp2",
+    {
+      text: {
+        en: ``,
+        es: `Escolio II: En virtud de lo que acabamos de decir, entendemos qué son la esperanza, el miedo, la seguridad, la desesperación, la satisfacción y la insatisfacción.  En efecto: la esperanza no es sino una alegría inconstante, surgida de la imagen de una cosa futura o pretérita, de cuya realización dudamos. Por contra, el miedo es una tristeza inconstante, surgida también de la imagen de una cosa dudosa. Si de estos afectos se suprime la duda, de la esperanza resulta la seguridad, y del miedo, la desesperación; es decir, una alegría o tristeza surgida de la imagen de una cosa que hemos tenido o esperado. La satisfacción, a su vez, es una alegría surgida de la imagen de una cosa pretérita de cuya realización hemos dudado. La insatisfacción, por último, es una tristeza opuesta a la satisfacción.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p18"],
+    },
+  ],
+  [
+    "e3p19",
+    {
+      text: {
+        en: ``,
+        es: `Quien imagina que se destruye lo que ama, se entristecerá, pero si imagina que se conserva, se alegrará. Demostración: El alma se esfuerza cuanto puede por imaginar aquellas cosas que aumentan o favorecen la potencia de obrar del cuerpo (por la Proposición 12 de esta Parte), es decir (por el Escolio de la Proposición 13 de esta Parte), aquellas cosas que ama. Ahora bien: la imaginación es favorecida por aquello que afirma la existencia de la cosa, y, al contrario, es reprimida por lo que excluye esa existencia (por la Proposición 17 de la Parte II); por consiguiente, las imágenes de las cosas que afirman la existencia de la cosa amada favorecen el esfuerzo que el alma realiza por imaginarla, esto es (por el Escolio de la Proposición 11 de esta Parte), afectan el alma de alegría, y las que, por el contrario, excluyen la existencia de la cosa amada reprimen ese esfuerzo del alma, esto es (por el mismo Escolio), afectan el alma de tristeza. Así pues, quien imagina que se destruye lo que ama, se entristecerá, etc. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p13", "e2p17", "e3p11exp"],
+    },
+  ],
+  [
+    "e3p20",
+    {
+      text: {
+        en: ``,
+        es: `Quien imagina que se destruye aquello que odia, se alegrará. Demostración: El alma (por la Proposición 13 de esta Parte) se esfuerza por imaginar aquello que excluye la existencia de las cosas que disminuyen o reprimen la potencia de obrar del cuerpo, esto es (por el Escolio de la misma Proposición), se esfuerza por imaginar aquello que excluye la existencia de las cosas que odia, y, por tanto, la imagen de una cosa que excluye la existencia de aquello que el alma odia favorece ese esfuerzo del alma, esto es (por el Escolio de la Proposición 11 de esta Parte), afecta el alma de alegría. Así, pues, quien imagina que se destruye aquello que odia, se alegrará. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p13", "e3p13exp", "e3p11exp"],
+    },
+  ],
+  [
+    "e3p21",
+    {
+      text: {
+        en: ``,
+        es: `Quien imagina lo que ama afectado de alegría o tristeza, también será afectado de alegría o tristeza, y ambos afectos serán mayores o menores en el amante, según lo sean en la cosa amada. Demostración: Las imágenes de las cosas que afirman la existencia de la cosa amada (según hemos demostrado en la Proposición 19 de esta Parte), favorecen el esfuerzo que el alma realiza por imaginar esa cosa amada. Ahora bien, la alegría afirma la existencia de la cosa alegre, y ello tanto más cuanto mayor es ese afecto de alegría, pues se trata (por el Escolio de la Proposición 11 de esta Parte) de la transición a una mayor perfección; por consiguiente, la imagen de la alegría de la cosa amada favorece en el amante ese esfuerzo de su alma, esto es (por el Escolio de la Proposición 11 de esta Parte), afecta al amante de alegría, y tanto mayor cuanto mayor haya sido ese afecto en la cosa amada. Que era lo primero. Además, en cuanto una cosa está afectada de tristeza, en esa medida se destruye, y ello tanto más cuanto mayor es la tristeza que la afecta (por el mismo Escolio de la Proposición 11). Y, de esta suerte, quien imagina lo que ama afectado de tristeza, será también afectado de tristeza, y tanto mayor cuanto mayor fuere dicho afecto en la cosa amada. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p19", "e3p11exp"],
+    },
+  ],
+  [
+    "e3p22",
+    {
+      text: {
+        en: ``,
+        es: `Si imaginamos que alguien afecta de alegría a la cosa que amamos, seremos afectados de amor hacia él. Si, por contra, imaginamos que la afecta de tristeza, seremos afectados de odio contra él. Demostración: Quien afecta de alegría o tristeza a la cosa que amamos, nos afecta también de alegría o tristeza, si imaginamos la cosa amada afectada de esa alegría o tristeza (por la Proposición anterior). Ahora bien: se supone que esa alegría o tristeza se da en nosotros acompañada por la idea de una causa exterior; por consiguiente (por el Escolio de la Proposición 13 de esta Parte), si imaginamos que alguien afecta de alegría o tristeza a la cosa que amamos, seremos afectados de amor u odio hacia él. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p21", "e3p13exp"],
+    },
+  ],
+  [
+    "e3p22exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: La Proposición 21 nos explica qué es la conmiseración; podemos definirla como una tristeza surgida del daño de otro. Pero no sé con qué nombre debe llamarse la alegría que surge del bien de otro. Llamaremos aprobación al amor hada aquel que ha hecho bien a Otro, y, por contra, indignación, al odio hacia aquel que ha hecho mala otro. Debe notarse, en fin, que sentimos conmiseración no sólo hacia la cosa que hemos amado (como hemos mostrado en la Proposición 21), sino también hacia aquella sobre la que no hemos proyectado con anterioridad afecto alguno, con tal que la juzguemos semejante a nosotros (como mostraré más adelante). Y, de esta suerte, aprobamos también al que ha hecho bien a un semejante, y nos indignamos contra el que le ha inferido un daño.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p22", "e3p21"],
+    },
+  ],
+  [
+    "e3p23",
+    {
+      text: {
+        en: ``,
+        es: `Quien imagina lo que odia afectado de tristeza, se alegrará; si, por el contrario, lo imagina afectado de alegría, se entristecerá, y ambos afectos serán mayores o menores, según lo sean sus contrarios en la cosa odiada. Demostración: En cuanto una cosa odiosa es afectada de tristeza, en esa medida se destruye, y tanto más cuanto mayor sea la tristeza (por el Escolio de la Proposición 11 de esta Parte). Así pues, quien imagina afectada de tristeza la cosa que odia (por la Proposición 20 de esta Parte) será afectado de alegría, y tanto mayor cuanto mayor sea la tristeza por la que imagina estar afectada la cosa odiosa. Que era lo primero. Además, la alegría afirma la existencia de la cosa alegre (por el mismo Escolio de la Proposición 11), y ello tanto más cuanto mayor se concibe esa alegría. Si alguien imagina afectado de alegría a quien odia, esa imaginación (por la Proposición 13 de esta Parte) reprimirá su esfuerzo, esto es (por el Escolio de la Proposición 11 de esta Parte), el que odia será afectado de tristeza, etc. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p11exp", "e3p20", "e3p13"],
+    },
+  ],
+  [
+    "e3p23exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Esa alegría no puede ser sólida, ni libre de todo conflicto del ánimo. Pues (como mostraré en la Proposición 27 de esta Parte) en cuanto alguien imagina afectada de tristeza una cosa que le es semejante, debe entristecerse en cierto modo, y lo contrario, si la imagina afectada de alegría. Pero aquí nos fijamos sólo en el odio.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p23"],
+      see: ["e3p27"],
+    },
+  ],
+  [
+    "e3p24",
+    {
+      text: {
+        en: ``,
+        es: `Si imaginamos que alguien afecta de alegría a una cosa que odiamos, seremos afectados también de odio hacia él. Si, por el contrario, imaginamos que afecta a esa cosa de tristeza, seremos afectados de amor hacia él. Demostración: Esta Proposición se demuestra del mismo modo que la 22 de esta Parte: véase.`,
+        la: ``,
+      },
+      proof: ["e3p22"],
+    },
+  ],
+  [
+    "e3p24exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Estos afectos de odio, y otros similares, se resumen en la envidia, la cual, por ello, no es sino el odio mismo, en cuanto considerado como disponiendo al hombre a gozarse en el mal de otro, y a entristecerse con su bien.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p24"],
+    },
+  ],
+  [
+    "e3p25",
+    {
+      text: {
+        en: ``,
+        es: `Nos esforzamos en afirmar de nosotros y de la cosa amada todo aquello que imaginamos nos afecta O la afecta de alegría, y, al contrario, en negar todo aquello que imaginamos nos afecta O la afecta de tristeza. Demostración: Lo que imaginamos afecta a la cosa amada de alegría o tristeza, nos afecta de alegría o tristeza (por la Proposición 21 de esta Parte). Ahora bien, el alma (por la Proposición 12 de esta Parte) se esfuerza cuanto puede en imaginar aquellas cosas que nos afectan de alegría, esto es (por la Proposición 17 de la Parte II, y su Corolario), se esfuerza en contemplarlas como presentes, y, al contrario (por la Proposición 13 de esta Parte), se esfuerza por excluir la existencia de las que nos afectan de tristeza. Por consiguiente, nos esforzamos en afirmar de nosotros y de la cosa amada todo aquello que imaginamos nos afecta o la afecta de alegría, y al contrario. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p21", "e3p12", "e2p17", "e2p17cor", "e3p13"],
+    },
+  ],
+  [
+    "e3p26",
+    {
+      text: {
+        en: ``,
+        es: `Nos esforzamos en afirmar, de una cosa que odiamos, todo aquello que imaginamos la afecta de tristeza, y, por contra, en negar aquello que imaginamos la afecta de alegría. Demostración: Esta Proposición se sigue de la Proposición 23, como la anterior de la Proposición 21 de esta Parte.`,
+        la: ``,
+      },
+      // note: should we add ["e3p12", "e2p17", "e2p17cor", "e3p13"]
+      // here since Spinoza says the proof is "the same as e3p25"?
+      proof: ["e3p23"],
+    },
+  ],
+  [
+    "e3p26exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Vemos, según esto, que fácilmente acontece que el hombre se estime a sí mismo y estime la cosa amada en más de lo justo y, al contrario, en menos de lo justo la cosa que odia, y esa imaginación, cuando concierne al hombre que se estima a sí mismo en más de lo justo, se llama soberbia, y es una especie de delirio, porque el hombre sueña con los ojos abiertos que puede realizar todas las cosas que alcanza con la sola imaginación, a las que, por ello, considera como reales, y exulta con ellas, mientras no puede imaginar otras que excluyen la existencia de aquéllas y limitan su potencia de obrar. Así pues, la soberbia es una alegría surgida del hecho de que el hombre se estima en más de lo justo. Además, la alegría que surge del hecho de que un hombre estime a otro en más de lo justo, se llama sobreestimación, y, por último, se llama menosprecio, la que surge del hecho de estimar a otro en menos de lo justo.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p26"],
+    },
+  ],
+  [
+    "e3p27",
+    {
+      text: {
+        en: ``,
+        es: `Por el hecho de imaginar que experimenta algún afecto una cosa semejante a nosotros, y sobre la cual no hemos proyectado afecto alguno, experimentamos nosotros un afecto semejante. Demostración: Las imágenes de las cosas son afecciones del cuerpo humano, cuyas ideas representan los cuerpos exteriores como presentes a nosotros (por el Escolio de la Proposición 17 de la Parte II), esto es (por la Proposición 16 de la Parte II), cuyas ideas implican a la vez la naturaleza de nuestro cuerpo y la naturaleza presente de un cuerpo exterior. Así pues, si la naturaleza de un cuerpo exterior es semejante a la naturaleza de nuestro cuerpo, entonces la idea del cuerpo exterior que imaginamos implicará una afección de nuestro cuerpo semejante a la afección del cuerpo exterior, y, consiguientemente, si imaginamos a alguien semejante a nosotros experimentando algún afecto, esa imaginación expresará una afección de nuestro cuerpo semejante a ese afecto, y, de esta suerte, en virtud del hecho de imaginar una cosa semejante a nosotros experimentando algún afecto, somos afectados por un afecto semejante al suyo. Y si odiamos una cosa semejante a nosotros, en esa medida (por la Proposición 23 de esta Parte) seremos afectados por un afecto contrario, y no semejante, al suyo. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e2p17exp", "e2p16", "e3p23"],
+    },
+  ],
+  [
+    "e3p27exp1",
+    {
+      text: {
+        en: ``,
+        es: `Esta imitación de los afectos, cuando se refiere a la tristeza, se llama conmiseración (acerca de la cual, ver el Escolio de la Proposición 22 de esta Parte), pero referida al deseo se llama emulación que, por ende, no es sino el deseo de alguna cosa, engendrado en nosotros en virtud del hecho de imaginar que otros, semejantes a nosotros, tienen el mismo deseo.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p27", "e3p22exp"],
+    },
+  ],
+  [
+    "e3p27cor1",
+    {
+      text: {
+        en: ``,
+        es: `Si imaginamos que alguien, sobre quien no hemos proyectado ningún afecto, afecta de alegría a una cosa semejante a nosotros, seremos afectados de amor hacia él. Si, por contra, imaginamos que la afecta de tristeza, seremos afectados de odio hacia él. Demostración: Esto se demuestra por la Proposición anterior, del mismo modo que la Proposición 22 de esta Parte por la Proposición 21.`,
+        la: ``,
+      },
+      // note: should we include "e3p13exp", since Spinoza says that
+      // this is proven the same way that e3p22 follows from e3p21?
+      // "corollary" must include parent as proof
+      proof: ["e3p27"],
+    },
+  ],
+  [
+    "e3p27cor2",
+    {
+      text: {
+        en: ``,
+        es: `Corolario II: No podemos odiar una cosa que nos mueve a conmiseración, pues su miseria nos afecta de tristeza. Demostración: En efecto, si por ello pudiéramos odiarla, entonces (por la Proposición 23 de esta Parte) nos alegraríamos de su tristeza, lo cual va contra la hipótesis.`,
+        la: ``,
+      },
+      // "corollary" must include parent as proof
+      proof: ["e3p27", "e3p23"],
+    },
+  ],
+  [
+    "e3p27cor3",
+    {
+      text: {
+        en: ``,
+        es: `Corolario III: Nos esforzamos cuanto podemos por librar de su miseria a una cosa que nos mueve a conmiseración. Demostración: Aquello que afecta de tristeza a una cosa que nos mueve a conmiseración, nos afecta también de una tristeza semejante (por la Proposición anterior), y así, nos esforzaremos por recordar todo aquello que prive de existencia a esa cosa o que la destruya (por la Proposición 13 de esta Parte), esto es (por el Escolio de la Proposición 9 de esta Parte), apeteceremos destruirlo o nos determinaremos a destruirlo, y así, nos esforzaremos por librar de su miseria a una cosa que nos mueve a conmiseración. Q.E.D.`,
+        la: ``,
+      },
+      // "corollary" must include parent as proof
+      proof: ["e3p27", "e3p13", "e3p9exp"],
+    },
+  ],
+  [
+    "e3p27exp2",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Esa voluntad o apetito de hacer bien, que surge de nuestra conmiseración hacia la cosa a la que queremos beneficiar, se llama benevolencia, la cual, por ende, no es sino un deseo surgido de la conmiseración. Tocante al amor y el odio hacia aquel que ha hecho bien o mal a la cosa que imaginamos ser semejante a nosotros, ver el Escolio de la Proposición 22 de esta Parte.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p27", "e3p22exp"],
+    },
+  ],
+  [
+    "e3p28",
+    {
+      text: {
+        en: ``,
+        es: `Nos esforzamos en promover que suceda todo aquello que imaginamos conduce a la alegría, pero nos esforzamos por apartar o destruir lo que imaginamos que la repugna, o sea, que conduce a la tristeza. Demostración: Nos esforzamos cuanto podemos por imaginar aquello que imaginamos conduce a la alegría (por la Proposición 12 de esta Parte), eso es (por la Proposición 17 de la Parte IM, nos esforzamos cuanto podemos por considerarlo como presente O existente en acto. Ahora bien, el esfuerzo o potencia del alma al pensar es igual, y simultáneo por naturaleza, al esfuerzo o potencia del cuerpo al obrar (como claramente se sigue del Corolario de la Proposición 7 y el Corolario de la Proposición 11 de la Parte ID); por consiguiente, nos esforzamos absolutamente para que eso exista, o sea (lo que es lo mismo: por el Escolio de la Proposición 9 de esta Parte), lo apetecemos y tendemos hacia ello. Que era lo primero. Además, si imaginamos que se destruye lo que creemos ser causa de tristeza, esto es (por el Escolio de la Proposición 13 de esta Parte), lo que odiamos, nos alegraremos (por la Proposición 20 de esta Parte), y así (por la primera parte de esta demostración) nos esforzaremos en destruirlo, o sea (por la Proposición 13 de esta Parte), en apartarlo de nosotros, para no considerarlo como presente. Que era lo segundo. Luego nos esforzamos en promover todo aquello que imaginamos conduce a la alegría, etc. Q.E.D.`,
+        la: ``,
+      },
+      proof: [
+        "e3p12",
+        "e2p17",
+        "e2p7cor",
+        "e2p11cor",
+        "e3p9exp",
+        "e3p13exp",
+        "e3p20",
+        "e3p13",
+      ],
+    },
+  ],
+  [
+    "e3p29",
+    {
+      text: {
+        en: ``,
+        es: `Nos esforzaremos también por hacer todo aquello que imaginamos que los hombres miran con alegría, y, al contrario, detestaremos hacer aquello que imaginamos que los hombres aborrecen. Demostración: Por el hecho de imaginar que los hombres aman u odian algo, amaremos u odiaremos eso mismo (por la Proposición 27 de esta Parte), es decir (por el Escolio de la Proposición 13 de esta Parte), por ese hecho nos alegraremos o entristeceremos de la presencia de esa cosa, y así (por la Proposición anterior), nos esforzaremos por hacer todo aquello que imaginamos que los hombres aman, o sea, miran con alegría, etc. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p27", "e3p13exp", "e3p28"],
+    },
+  ],
+  [
+    "e3p29exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Este esfuerzo por hacer algo (y también por omitirlo) a causa solamente de complacer a los hombres, se llama ambición, sobre todo cuando nos esforzamos por agradar al vulgo con tal celo que hacemos u omitimos ciertas cosas en daño nuestro O ajeno; de otro modo, suele llamarse humanidad. Además, llamo alabanza a la alegría con que imaginamos la acción con la que otro se ha esforzado en deleitarnos, y vituperio, a la tristeza con que aborrecemos, al contrario, la acción de otro.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p29"],
+    },
+  ],
+  [
+    "e3p30",
+    {
+      text: {
+        en: ``,
+        es: `Si alguien ha hecho algo que imagina afecta a los demás de alegría, será afectado de una alegría, acompañada de la idea de sí mismo como causa, o sea: se considerará a sí mismo con alegría. Si, por el contrario, ha hecho algo que imagina afecta a los demás de tristeza, se considerará a sí mismo con tristeza. Demostración: Quien imagina que afecta a los demás de alegría o tristeza, será afectado, por ese motivo, de alegría o tristeza (por la Proposición 27 de esta Parte). Ahora bien, siendo así que el hombre (por las Proposiciones 19 y 23 de la Parte II) es consciente de sí por medio de las afecciones que lo determinan a obrar, entonces quien ha hecho algo que imagina afecta a los demás de alegría, será afectado por una alegría junto con la conciencia de sí como causa, o sea, se considerará a sí mismo con alegría, y al contrario, etc. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p27", "e2p19", "e2p23"],
+    },
+  ],
+  [
+    "e3p30exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Siendo el amor (por el Escolio de la Proposición 13 de esta Parte) una alegría acompañada por la idea de una causa exterior, y el odio una tristeza acompañada de esa misma idea, dichas tristeza y alegría serán, pues, formas del odio y del amor. Pero puesto que el amor y el odio se refieren a objetos exteriores, designaremos esos afectos con otros nombres. A saber: a la alegría acompañada de la idea de una causa exterior la llamaremos gloria, y vergiúenza, a la tristeza contraria: entiéndase, cuando la alegría o la tristeza surge de que el hombre se cree alabado o vituperado; en otro caso, llamaré contento de sí mismo a la alegría acompañada de la idea de una causa interior, y arrepentimiento a la tristeza contraria. Además, puesto que (por el Corolario de la Proposición 17 de la Parte II) puede ocurrir que la alegría con que alguien piensa afectar a los demás sea sólo imaginaria, y (por la Proposición 25 de esta Parte) puesto que cada cual se esfuerza por imaginar respecto de sí mismo todo lo que imagina le afecta de alegría, puede suceder fácilmente que el que se gloría sea soberbio, e imagine ser grato a todos, cuando a todos es molesto.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p30", "e3p13exp", "e2p17cor", "e3p25"],
+    },
+  ],
+  [
+    "e3p31",
+    {
+      text: {
+        en: ``,
+        es: `Si imaginamos que alguien ama, o desea, u odia algo que nosotros mismos amamos, deseamos u odiamos, por eso mismo amaremos, etc., esa cosa de un modo más constante. Si, por el contrario, imaginamos que tiene aversión a lo que amamos, O a la inversa, entonces padeceremos fluctuación del ánimo. Demostración: Por el solo hecho de que imaginamos que alguien ama algo, amaremos eso mismo (por la Proposición 27 de esta Parte). Pero supongamos que lo amamos sin esto: se añade entonces al amor una nueva causa que lo alienta, y así amaremos lo que amamos, por eso mismo, con más constancia. Además, por el hecho de que imaginamos que alguien aborrece algo, lo aborreceremos nosotros (por la misma Proposición). Ahora bien, si suponemos que a un tiempo amamos eso mismo, entonces lo amaremos y aborreceremos al mismo tiempo, o sea (ver Escolio de la Proposición 17 de esta Parte), padeceremos fluctuación del ánimo. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p27", "e3p17exp"],
+    },
+  ],
+  [
+    "e3p31cor",
+    {
+      text: {
+        en: ``,
+        es: `Corolario: De aquí, y de la Proposición 28 de esta Parte, se sigue que cada cual se esfuerza, cuanto puede, en que todos amen lo que él ama y odien lo que él odia; de ahí aquello del poeta: Amantes, conviene que esperemos y temamos a la vez; hay que ser insensible para amar lo que nadie nos disputa.`,
+        la: ``,
+      },
+      // "corollary" must include parent as proof
+      proof: ["e3p31", "e3p28"],
+    },
+  ],
+  [
+    "e3p31exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Este esfuerzo por conseguir que todos apruébenlo que uno ama u odia es, en realidad, ambición (ver Escolio de la Proposición 29 de esta Parte), y así vemos que cada cual, por naturaleza, apetece que los demás vivan como él lo haría según su índole propia, y como todos apetecen lo mismo, se estorban los unos a los otros, y, queriendo todos ser amados o alabados por todos, resulta que se odian entre sí.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p31", "e3p29"],
+    },
+  ],
+  [
+    "e3p32",
+    {
+      text: {
+        en: ``,
+        es: `Si imaginamos que alguien goza de alguna cosa que sólo uno puede poseer, nos esforzaremos por conseguir que no posea esa cosa. Demostración: Por el solo hecho de imaginar que alguien goza de una cosa (por la Proposición 27 de esta Parte, con su Corolario 1), amaremos esa cosa y desearemos gozar de ella. Ahora bien (por hipótesis), imaginamos que se opone a esta alegría el hecho de que él goce de esa misma cosa; por consiguiente (por la Proposición 28 de esta Parte), nos esforzaremos para que no la posea. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p27", "e3p27cor1", "e3p28"],
+    },
+  ],
+  [
+    "e3p32exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Vemos, pues, cómo la naturaleza de los hombres está ordinariamente dispuesta de tal modo que sienten conmiseración por aquellos a quienes les va mal, y envidian a quienes les va bien, y ello (por la Proposición anterior) con tanto mayor odio cuanto más aman la cosa que imaginan posee otro. Vemos, además, que de la misma propiedad de la naturaleza humana de la que se sigue que los hombres sean misericordes, se sigue también que sean envidiosos y ambiciosos. Si queremos consultar, por último, a la experiencia, veremos que ella también nos enseña todo esto, sobre todo si nos fijamos en los primeros años de nuestra vida. Pues la experiencia nos muestra que los niños, a causa de que su cuerpo está continuamente como en oscilación, ríen o lloran por el mero hecho de ver reír o llorar a otros, desean imitar en seguida todo cuando ven hacer a los demás, y, en fin, quieren para ellos todo lo que imaginan que deleita a los otros, porque, en efecto, las imágenes de las cosas —como hemos dicho— son las afecciones mismas del cuerpo humano, o sea, las maneras que el cuerpo humano tiene de ser afectado por las causas exteriores y de estar dispuesto para hacer esto o aquello.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p32"],
+    },
+  ],
+  [
+    "e3p33",
+    {
+      text: {
+        en: ``,
+        es: `Cuando amamos una cosa semejante a nosotros, nos esforzamos cuanto podemos por conseguir que ella nos ame a su vez. Demostración: Nos esforzamos cuanto podemos por imaginar una cosa que amamos por encima de las demás (por la Proposición 12 de esta Parte). Si la cosa es semejante a nosotros, nos esforzaremos (por la Proposición 29 de esta Parte) en afectarla de alegría por encima de las demás, o sea, nos esforzaremos cuanto podamos por conseguir que la cosa amada sea afectada de una alegría acompañada de la idea de nosotros mismos, esto es (por el Escolio de la Proposición 13 de esta Parte), por conseguir que nos ame a Su vez. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p12", "e3p29", "e3p13exp"],
+    },
+  ],
+  [
+    "e3p34",
+    {
+      text: {
+        en: ``,
+        es: `Cuanto mayor es el afecto que imaginamos experimenta hacia nosotros la cosa amada, tanto más nos gloriaremos. Demostración: Nos esforzamos cuanto podemos (por la Proposición anterior) para que la cosa amada nos ame a su vez, esto es (por el Escolio de la Proposición 13 de esta Parte), para que la cosa amada sea afectada por una alegría acompañada de la idea de nosotros mismos. Así pues, cuanto mayor imaginamos la alegría de que es afectada la cosa amada por causa nuestra, tanto más favorecido resulta ese esfuerzo, es decir (por la Proposición 11 de esta Parte, con su Escolio), tanto mayor es la alegría que nos afecta. Ahora bien, como nos alegramos porque hemos afectado de alegría a un semejante nuestro, entonces nos consideramos a nosotros mismos con alegría (por la Proposición 30 de esta Parte); por consiguiente, cuanto mayor es el afecto que imaginamos experimenta hacia nosotros la cosa amada, con tanta mayor alegría nos consideraremos a nosotros mismos, o sea (por el Escolio de la Proposición 30 de esta Parte), tanto más nos gloriaremos. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p33", "e3p13exp", "e3p11", "e3p11exp", "e3p30", "e3p30exp"],
+    },
+  ],
+  [
+    "e3p35",
+    {
+      text: {
+        en: ``,
+        es: `Si alguien imagina que la cosa amada se une a otro con el mismo vínculo de amistad, o con uno más estrecho, que aquel por el que él solo la poseía, será afectado de odio hacia la cosa amada, y envidiará a ese otro. Demostración: Cuanto mayor imagina alguien el amor que la cosa amada experimenta hacia él, tanto más se gloriará (por la Proposición anterior), esto es (por el Escolio de la Proposición 30 de esta Parte) tanto más se alegrará, y, de esta suerte (por la Proposición 28 de esta Parte), se esforzará cuanto pueda en imaginar que la cosa amada está unida a él lo más estrechamente posible, esfuerzo O apetito que resulta estimulado si imagina que otro desea para sí la misma cosa (por la Proposición 31 de esta Parte). Ahora bien, se supone que dicho esfuerzo o apetito está reprimido por la imagen de la cosa amada acompañada por la de aquel que se une a ella; luego (por el Escolio de la Proposición 11 de esta Parte) en virtud de ello será afectado de tristeza, acompañada, como causa, por la idea de la cosa amada, y a la vez por la imagen del otro; es decir (por el Escolio de la Proposición 13 de esta Parte), será afectado de odio hacia la cosa amada y a la vez hacia ese otro (por el Corolario de la Proposición 15 de esta Parte), a quien envidiará (por la Proposición 23 de esta Parte), porque se deleita con la cosa amada. Q.E.D.`,
+        la: ``,
+      },
+      proof: [
+        "e3p34",
+        "e3p30exp",
+        "e3p28",
+        "e3p31",
+        "e3p11exp",
+        "e3p13exp",
+        "e3p15cor",
+        "e3p23",
+      ],
+    },
+  ],
+  [
+    "e3p35exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Este odio hacia una cosa amada, unido a la envidia, se llama celos; que, por ende, no son sino una fluctuación del ánimo surgida a la vez del amor y el odio, acompañados de la idea de otro al que se envidia. Además, ese odio hacia la cosa amada será mayor, en proporción a la alegría con la que solía estar afectado el celoso por el amor recíproco que experimentaba hacia él la cosa amada, y también en proporción al afecto que experimentaba hacia aquel que imagina unido a la cosa amada. Pues si lo odiaba, por eso mismo odiará a la cosa amada (por la Proposición 24 de esta Parte), ya que imagina que ésta afecta de alegría a lo que él odia, y también (por el Corolario de la Proposición 15 de esta Parte) porque se ve obligado a unir la imagen de la cosa amada a la imagen de aquel que odia. Esta última razón se da generalmente en el amor hacia la hembra: en efecto, quien imagina que la mujer que ama se entrega a otro, no solamente se entristecerá por resultar reprimido su propio apetito, sino que también la aborrecerá porque se ve obligado a unir la imagen de la cosa amada a las partes pudendas y las excreciones del otro; a lo que se añade, en fin, que el celoso no es recibido por la cosa amada con el mismo semblante que solía presentarle, por cuya causa también se entristece el amante, como mostraré en seguida.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p35", "e3p24", "e3p15cor"],
+    },
+  ],
+  [
+    "e3p36",
+    {
+      text: {
+        en: ``,
+        es: `Quien se acuerda de una cosa por la que fue deleitado una vez, desea poseerla con las mismas circunstancias que se dieron cuando fue deleitado por ella la vez primera. Demostración: Todo cuanto el hombre vio junto con la cosa que le produjo deleite (por la Proposición 15 de esta Parte) será, por accidente, causa de alegría, y de esta suerte (por la Proposición 28 de esta Parte), deseará poseerlo a la vez que la cosa que lo deleitó, o sea, deseará poseer la cosa con todas y las mismas circunstancias que se dieron cuando fue deleitado por ella la vez primera. Q.E.D.`,
+        la: ``,
+      },
+      proof: ["e3p15", "e3p28"],
+    },
+  ],
+  [
+    "e3p36cor",
+    {
+      text: {
+        en: ``,
+        es: `Corolario: Así pues, si adviene que falta una sola de esas circunstancias, el amante se entristecerá. Demostración: Pues en cuanto advierte que falta alguna circunstancia, en esa medida imagina algo que excluye la existencia de la cosa. Y como, por amor, siente deseo de esa cosa, O de esa circunstancia (por la Proposición anterior), entonces (por la Proposición 19 de esta Parte), en cuanto imagina que tal circunstancia falta, se entristecerá. Q.E.D.`,
+        la: ``,
+      },
+      // "corollary" must include parent as proof
+      proof: ["e3p36", "e3p19"],
+    },
+  ],
+  [
+    "e3p36exp",
+    {
+      text: {
+        en: ``,
+        es: `Escolio: Esa tristeza, en cuanto que se produce respecto de la ausencia de lo que amamos, se llama frustración.`,
+        la: ``,
+      },
+      // "schollium" must include parent as proof
+      proof: ["e3p36"],
+    },
+  ],
+  [
+    "e3p37",
+    {
+      text: {
+        en: ``,
+        es: `El deseo que brota de una tristeza o de una alegría, de un odio o de un amor, es tanto mayor cuanto mayor es el afecto. Demostración: La tristeza disminuye o reprime (por el Escolio de la Proposición 11 de esta Parte) la potencia de obrar del hombre, esto es (por la Proposición 7 de esta Parte), disminuye o reprime el esfuerzo que el hombre realiza por perseverar en su ser, y, de esta suerte (por la Proposición 5 de esta Parte), es contraria a ese esfuerzo; y todo esfuerzo del hombre afectado de tristeza se encamina a apartar esa tristeza. Ahora bien, cuanto mayor es la tristeza (por su definición), tanto mayor es la parte de la potencia de obrar del hombre a la que necesariamente se opone; por consiguiente, cuanto mayor es la tristeza, tanto mayor será la potencia de obrar con la que el hombre se esforzará por apartar de sí esa tristeza, esto es (por el Escolio de la Proposición 9 de esta Parte), tanto mayor será el deseo o apetito con que lo hará. Además, puesto que la alegría (por el mismo Escolio de la Proposición 11 de esta Parte) aumenta o favorece la potencia de obrar del hombre, se demuestra fácilmente por la misma vía que el hombre afectado de alegría no desea otra cosa que conservarla, y ello con tanto mayor deseo cuanto mayor sea la alegría. Y por último, puesto que el odio y el amor son los afectos mismos de la tristeza y la alegría, se sigue de igual modo que el esfuerzo, apetito o deseo que brota del odio o del amor será mayor en proporción a esos odio y amor. Q.E.D`,
+        la: ``,
+      },
+      proof: ["e3p11exp", "e3p7", "e3p5", "e3p9exp"],
+    },
+  ],
+  //pag 115
 ] as const
 
 export const nodeOpts = book.map((n) => n[0])
