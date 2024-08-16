@@ -1,5 +1,5 @@
 import React, { useCallback, useContext, useState } from "react"
-import { GraphMode } from "../lib/types"
+import { GraphMode, Translation } from "../lib/types"
 
 const STORAGE_KEY = "SPINOZA_IO_STORAGE"
 
@@ -23,6 +23,7 @@ type Storage = {
     // in react mapped lists:
     createdAt: number
   }>
+  lang: Translation
 }
 
 const initStorage: Storage = {
@@ -30,6 +31,7 @@ const initStorage: Storage = {
   favorites: {},
   notes: {},
   history: [],
+  lang: "en",
 }
 
 const StorageContext = React.createContext<{
@@ -42,6 +44,7 @@ const StorageContext = React.createContext<{
   clearNote: (n: string, idx: number) => void
   pushHistory: (mode: GraphMode, inputNodes: string[]) => void
   removeHistory: (idx: number) => void
+  setLangStorage: (lang: Translation) => void
 } | null>(null as any)
 
 function saveStorage(payload: Storage) {
@@ -182,6 +185,18 @@ export const StorageProvider: React.FC<{
     [handleStorage]
   )
 
+  const setLangStorage = useCallback(
+    (lang: Translation) => {
+      handleStorage((prev) => {
+        return {
+          ...prev,
+          lang,
+        }
+      })
+    },
+    [handleStorage]
+  )
+
   return (
     <StorageContext.Provider
       value={{
@@ -194,6 +209,7 @@ export const StorageProvider: React.FC<{
         clearNote,
         pushHistory,
         removeHistory,
+        setLangStorage,
       }}
     >
       {children}

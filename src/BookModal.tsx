@@ -23,6 +23,7 @@ import { EntryMenu } from "./EntryMenu"
 import { formatDate, usePrevious } from "./lib/utils"
 import { logAnalytics } from "./lib/analytics"
 import { isMobile } from "react-device-detect"
+import { Translations } from "./Translations"
 import { book } from "./lib/book"
 import cs from "clsx"
 
@@ -429,7 +430,7 @@ export const BookModal = () => {
                     data-demo="entry-proofs"
                     className="book-entry-proof-group"
                   >
-                    <p className="book-proofs-label">proved via:</p>
+                    <p className="book-proofs-label">depends on:</p>
                     {parents.map((proof, idx, list) => (
                       <React.Fragment key={proof}>
                         <Tooltip title="jump to entry">
@@ -446,6 +447,7 @@ export const BookModal = () => {
                   </div>
                 )}
               </div>
+              <Translations />
             </div>
           </div>
           <div className="book-content-col-right">

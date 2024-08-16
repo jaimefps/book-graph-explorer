@@ -185,6 +185,7 @@
   gap: 0.5rem;
   width: 100%;
   max-width: 525px;
+  position: relative;
 }
 .book-entry-button-group {
   display: none;
@@ -318,7 +319,7 @@
   }
   .book-entry-content-text {
     font-size: 1rem;
-    padding: 2rem 1.5rem;
+    padding: 2.2rem;
     border-radius: 16px;
   }
   .book-pagination-icon {
