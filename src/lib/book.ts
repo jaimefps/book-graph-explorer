@@ -1022,12 +1022,13 @@ export const book = [
       proof: ["e1p16", "e1p32cor1", "e1p32cor2", "e1p21", "e1p22", "e1p23"],
     },
   ],
+  // español: p.56
   [
     "e2pref",
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Paso ahora a explicar aquellas cosas que han debido seguirse necesariamente de la esencia de Dios, o sea, del Ser eterno e infinito. Pero no las explicaré todas, pues hemos demostrado en la Proposición 16 de la Parte I que de aquélla debían seguirse infinitas cosas de infinitos modos, sino sólo las que pueden llevarnos, como de la mano, al conocimiento del alma humana y de su suprema felicida.`,
         la: ``,
       },
       proof: ["e1p16"],
@@ -1038,7 +1039,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Entiendo por cuerpo un modo que expresa de cierta y determinada manera la esencia de Dios, en cuanto se la considera como una cosa extensa; ver el Corolario de la Proposición 25 de la Parte I.`,
         la: ``,
       },
       proof: [],
@@ -1052,7 +1053,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Digo que pertenece a la esencia de una cosa aquello dado lo cual la cosa resulta necesariamente dada, y quitado lo cual la cosa necesariamente no se da; o sea, aquello sin lo cual la cosa —y viceversa, aquello que sin la cosa— no puede ni ser ni concebirse.`,
         la: ``,
       },
       proof: [],
@@ -1063,7 +1064,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Entiendo por idea un concepto del alma, que el alma forma por ser una cosa pensante. Explicación: Digo concepto, más bien que percepción, porque la palabra «percepción» parece indicar que el alma padece por obra del objeto; en cambio, «concepto» parece expresar una acción del alma.`,
         la: ``,
       },
       proof: [],
@@ -1074,7 +1075,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Entiendo por idea adecuada una idea que, en cuanto considerada en sí misma, sin relación al objeto, posee todas las propiedades o denominaciones intrínsecas de una idea verdadera. Explicación: Digo «intrínsecas» para excluir algo extrínseco, a saber: la conformidad de la idea con lo ideado por ella.`,
         la: ``,
       },
       proof: [],
@@ -1085,7 +1086,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La duración es una continuación indefinida de la existencia. Explicación: Digo «indefinida», porque no puede ser limitada en modo alguno por la naturaleza misma de la cosa existente, ni tampoco por la causa eficiente, la cual, en efecto, da necesariamente existencia a la cosa, pero no se la quita.`,
         la: ``,
       },
       proof: [],
@@ -1096,7 +1097,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Por realidad entiendo lo mismo que por perfección.`,
         la: ``,
       },
       proof: [],
@@ -1107,7 +1108,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Entiendo por cosas singulares las cosas que son finitas y tienen una existencia limitada; y si varios individuos cooperan a una sola acción de tal manera que todos sean a la vez causa de un solo efecto, los considero a todos ellos, en este respecto, como una sola cosa singular.`,
         la: ``,
       },
       proof: [],
@@ -1118,7 +1119,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La esencia del hombre no implica la existencia necesaria, esto es: en virtud del orden de la naturaleza, tanto puede ocurrir que este o aquel hombre exista como que no exista.`,
         la: ``,
       },
       proof: [],
@@ -1129,7 +1130,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El hombre piensa.`,
         la: ``,
       },
       proof: [],
@@ -1140,7 +1141,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Los modos de pensar, como el amor, el deseo o cualquier otro de los que son denominados «afectos del ánimo», no se dan si no se da en el mismo individuo la idea de la cosa amada, deseada, etc. Pero puede darse una idea sin que se dé ningún otro modo de pensar.`,
         la: ``,
       },
       proof: [],
@@ -1151,7 +1152,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Tenemos conciencia de que un cuerpo es afectado de muchas maneras.`,
         la: ``,
       },
       proof: [],
@@ -1162,7 +1163,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `No percibimos ni tenemos conciencia de ninguna cosa singular más que los cuerpos y los modos de pensar. Ver los Postulados que siguen a la Proposición 13.`,
         la: ``,
       },
       proof: [],
@@ -1176,7 +1177,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El Pensamiento es un atributo de Dios, o sea, Dios es una cosa pensante. Demostración: Los pensamientos singulares, o sea, este o aquel pensamiento, son modos que expresan la naturaleza de Dios de cierta y determinada manera (por el Corolario de la Proposición 25 de la Parte I). Por consiguiente, compete a Dios (por la Definición 5 de la Parte I) un atributo cuyo concepto implican todos los pensamientos singulares, y por medio del cual son asimismo concebidos. Es, pues, el Pensamiento uno de los infinitos atributos de Dios, que expresa la eterna e infinita esencia de Dios (ver Definición 5 de la Parte I), o sea, Dios es una cosa pensante. Q.E.D.`,
         la: ``,
       },
       proof: ["e1p25cor", "e1def5", "e1def6"],
@@ -1187,7 +1188,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Esta Proposición es también evidente en virtud del hecho de que nosotros podemos concebir un ser pensante infinito. Pues cuantas más cosas puede pensar un ser pensante, tanta más realidad o perfección concebimos que contiene; por consiguiente, un ser que puede pensar infinitas cosas de infinitos modos, es, por virtud del pensamiento, necesariamente infinito. Y siendo así que concebimos un ser infinito fijándonos en el solo pensamiento, es entonces el Pensamiento uno de los infinitos atributos de Dios, como pretendíamos.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -1199,7 +1200,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La Extensión es un atributo de Dios, o sea, Dios es una cosa extensa. Demostración: La demostración de esta Proposición procede del mismo modo que la de la anterior.`,
         la: ``,
       },
       // If the proof is the same as the previous prop, we can just say that the previous prop
@@ -1212,7 +1213,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Hay en Dios necesariamente una idea, tanto de su esencia, como de todo lo que se sigue necesariamente de esa esencia. Demostración: En efecto: Dios (por la Proposición 1 de esta Parte) puede pensar infinitas cosas de infinitos modos, o (lo que es lo mismo, por la Proposición 16 de la Parte I) puede formar una idea de su esencia y de todo lo que necesariamente se sigue de ella. Ahora bien, todo lo que está en la potestad de Dios es necesariamente (por la Proposición 35 de la Parte I); por consiguiente, hay necesariamente tal idea, y (por la Proposición 15 de la Parte I) no la hay sino en Dios. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p1", "e1p16", "e1p35", "e1p15"],
@@ -1223,7 +1224,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: El vulgo entiende por potencia de Dios una voluntad libre y un derecho sobre todas las cosas que existen, y que son, por ello, comúnmente consideradas contingentes. Dicen, en efecto, que Dios tiene la potestad de destruirlo todo y reducirlo a la nada. Y comparan, además, muy frecuentemente la potencia de Dios con la de los reyes. Pero esto lo hemos refutado en los Corolarios 1 y 2 de la Proposición 32 de la Parte I, y, en la Proposición 16 de la Parte I, hemos mostrado que Dios actúa con la misma necesidad con que se entiende a sí mismo; esto es, así como en virtud de la necesidad de la divina naturaleza se sigue (según todos afirman unánimemente) que Dios se entiende a sí mismo, con la misma necesidad se sigue también que Dios obra infinitas cosas de infinitos modos. Además, en la Proposición 34 de la Parte I hemos mostrado que la potencia de Dios no es otra cosa que la esencia activa de Dios, y, por tanto, nos es tan imposible concebir que Dios no actúa como que Dios no existe. Por lo demás, si me pluguiera proseguir con este tema, podría mostrar también aquí que esa potencia que el vulgo se imagina haber en Dios no sólo es humana (lo que muestra que Dios es concebido por el vulgo como un hombre, o a semejanza de un hombre), sino que implica, además, impotencia. Pero no quiero reiterar tantas veces el mismo discurso. Sólo ruego al lector, una y otra vez, que sopese repetidamente lo que se ha dicho sobre este tema en la primera parte, desde la Proposición 16 hasta el final. Pues nadie podrá percibir rectamente lo que pretendo, a no ser que se guarde muy bien de confundir la potencia de Dios con la humana potencia, o derecho, de los reyes.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -1235,7 +1236,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La idea de Dios, de la que se siguen infinitas cosas de infinitos modos, sólo puede ser única. Demostración: El entendimiento infinito sólo comprende los atributos de Dios y sus afecciones (por la Proposición 30 de la Parte I). Ahora bien: Dios es único (por el Corolario 1 de la Proposición 14 de la Parte I). Por consiguiente, la idea de Dios, de la que se siguen infinitas cosas de infinitos modos, sólo puede ser única. Q.E.D.`,
         la: ``,
       },
       proof: ["e1p30", "e1p14cor1"],
@@ -1246,7 +1247,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El ser formal de las ideas reconoce como causa a Dios, en cuanto a éste se le considera sólo como cosa pensante, y no en cuanto es explicado por otro atributo. Esto es, ni las ideas de los atributos de Dios ni las de las cosas singulares reconocen como causa efíciente suya a las cosas ideadas por ellas, o sea, a las cosas percibidas, sino a Dios mismo, en cuanto que es cosa pensante. Demostración: Es evidente sin duda, por la Proposición 3 de esta Parte. En ella concluíamos, efectivamente, que Dios puede formar una idea de su esencia y de todo lo que se sigue necesariamente de ella, basándonos sólo en el hecho de que Dios es cosa pensante, y no en el hecho de que sea el objeto de su propia idea. Por lo cual, el ser formal de las ideas reconoce como causa a Dios, en cuanto que éste es cosa pensante. Pero también se demuestra de esta otra manera: el ser formal de las ideas es un modo de pensar (como es por sí notorio), esto es (por el Corolario de la Proposición 25 de la Parte I), un modo que expresa de cierta manera la naturaleza de Dios, en cuanto que Éste es cosa pensante, y así (por la Proposición 10 de la Parte I) no implica el concepto de ningún otro atributo de Dios, y, por consiguiente (por el Axioma 4 de la Parte I), no es efecto de ningún otro atributo que el Pensamiento; luego el ser formal de las ideas reconoce como causa a Dios, en cuanto a Éste se lo considera sólo como cosa pensante, etc. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p3", "e1p25cor", "e1p10", "e1ax4"],
@@ -1257,7 +1258,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Los modos de un atributo cualquiera tienen como causa a Dios sólo en cuanto se lo considera desde el atributo del que son modos, y no en cuanto se lo considera desde algún otro atributo. Demostración: En efecto, cada atributo se concibe por sí, prescindiendo de cualquier otro (por la Proposición 10 de la Parte I). Por lo cual, los modos de cada atributo implican el concepto de su atributo, pero no el de otro; y así (por el Axioma 4 de la Parte I), tienen como causa a Dios sólo en cuanto se lo considera desde el atributo del que son modos, y no en cuanto se lo considera desde algún otro atributo. Q.E.D.`,
         la: ``,
       },
       proof: ["e1p10", "e1ax4"],
@@ -1268,7 +1269,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: Se sigue de aquí que el ser formal de las cosas que no son modos de pensar no se sigue de la naturaleza divina en virtud de que ésta conozca previamente esas cosas, sino que las cosas sobre las que versan las ideas se derivan y concluyen de sus atributos de la misma manera, y con la misma necesidad con la que hemos mostrado que derivan las ideas del atributo del Pensamiento.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -1280,7 +1281,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El orden y conexión de las ideas es el mismo que el orden y conexión de las cosas. Demostración: Es evidente por el Axioma 4 de la Parte I. Pues la idea de cualquier cosa causada depende del conocimiento de la causa cuyo efecto es.`,
         la: ``,
       },
       proof: ["e1ax4"],
@@ -1291,7 +1292,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: Se sigue de aquí que la potencia de pensar de Dios es igual a su potencia actual de obrar. Esto es: todo cuanto se sigue formalmente de la infinita naturaleza de Dios, se sigue en él objetivamente, a partir de la idea de Dios, en el mismo orden y con la misma conexión.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -1303,15 +1304,11 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Antes de seguir adelante, debemos traer a la memoria aquí lo que más arriba hemos mostrado, a saber: que todo cuanto puede ser percibido por el entendimiento infinito como constitutivo de la esencia de una substancia pertenece sólo a una única substancia, y, consiguientemente, que la substancia pensante y la substancia extensa son una sola y misma substancia, aprehendida ya desde un atributo, ya desde otro. Así también, un modo de la extensión y la idea de dicho modo son una sola y misma cosa, pero expresada de dos maneras. Esto parecen haberlo visto ciertos hebreos como al través de la niebla: me refiero a quienes afirman que Dios, el entendimiento de Dios, y las cosas por él entendidas son todo uno y lo mismo. Por ejemplo, un círculo existente en la naturaleza, y la idea de ese círculo existente, que también es en Dios, son una sola y misma cosa, que se explica por medio de atributos distintos, y, por eso, ya concibamos la naturaleza desde el atributo de la Extensión, ya desde el atributo del Pensamiento, ya desde otro cualquiera, hallaremos un solo y mismo orden, o sea, una sola y misma conexión de causas, esto es: hallaremos las mismas cosas siguiéndose unas de otras. Y si he dicho que Dios es causa, por ejemplo, de la idea de círculo sólo en cuanto que es cosa pensante, y del círculo mismo sólo en cuanto que es cosa extensa, ello se ha debido a que el ser formal de la idea del círculo no puede percibirse sino por medio de otro modo de pensar, que desempeña el papel de su causa próxima, y éste a su vez por medio de otro, y así hasta el infinito; de manera que, en tanto se consideren las cosas como modos de pensar, debemos explicar el orden de la naturaleza entera, o sea, la conexión de las causas, por el solo atributo del Pensamiento, y en tanto se consideren como modos de la Extensión, el orden de la naturaleza entera debe asimismo explicarse por el solo atributo de la Extensión, y lo mismo entiendo respecto de los otros atributos. Por lo cual, Dios es realmente causa de las cosas tal como son en sí, en cuanto que consta de infinitos atributos. Y por el momento no puedo explicar esto más claramente.`,
         la: ``,
       },
       // "explanation" must include parent as proof
       proof: ["e2p7"],
-      // Maimonides? Anything concrete we can reference here?
-      see: [
-        "Jews who maintained that God, God's intellect, and the things understood by God are identical",
-      ],
     },
   ],
   [
@@ -1319,7 +1316,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Las ideas de las cosas singulares —o sea, de los modos— no existentes deben estar comprendidas en la idea infinita de Dios, tal como las esencias formales de las cosas singulares, o sea, de los modos, están contenidas en los atributos de Dios. Demostración: Esta Proposición es evidente en virtud de la anterior, pero se entiende con mayor claridad por el Escolio que precede.`,
         la: ``,
       },
       proof: ["e2p7", "e2p7exp"],
@@ -1330,7 +1327,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: De aquí se sigue que, mientras las cosas singulares existen sólo en la medida en que están comprendidas en los atributos de Dios, su ser objetivo, o sea, sus ideas, existen sólo en la medida en que existe la idea infinita de Dios, y cuando se dice que las cosas singulares existen, no sólo en la medida en que están comprendidas en los atributos de Dios, sino cuenta habida de su duración, entonces sus ideas implican también esa existencia, atendiendo a la cual se dice que duran.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -1342,7 +1339,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Si, en orden a una más amplia explicación de este punto, alguien desease un ejemplo, ninguno podré darle que explique adecuadamente la cuestión de que hablo aquí, toda vez que es única; procuraré, con todo, ilustrar este asunto lo mejor que pueda. Como se sabe, el círculo posee una naturaleza tal que son iguales entre sí los rectángulos formados por los segmentos de cada par de líneas rectas que se cortan entre sí dentro de dicho círculo!?%!; por lo cual se contienen en el círculo infinitos rectángulos iguales entre sí; pero ninguno de ellos puede decirse que exista sino en cuanto que existe el círculo, ni tampoco puede decirse que exista la idea de ninguno de esos rectángulos sino en cuanto que está comprendida en la idea del círculo. Concíbase ahora que, de esos infinitos rectángulos, sólo dos existen, a saber, E y D. Ciertamente, sus ideas existen ahora no ya sólo en cuanto comprendidas en la idea del círculo, sino también en cuanto que implican la existencia de esos rectángulos, y por ello se distinguen de las demás ideas de los otros rectángulos.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -1354,7 +1351,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La idea de una cosa singular existente en acto tiene como causa a Dios no en cuanto es infinito, sino en cuanto se lo considera afectado por la idea de otra cosa singular existente en acto, de la que Dios es también causa en cuanto afectado por una tercera, y así hasta el infinito. Demostración: La idea de una cosa singular existente en acto es un modo singular de pensar y distinto de los demás (por el Corolario y el Escolio de la Proposición 8 de esta Parte); y así (por la Proposición 6 de esta Parte), tiene como causa a Dios en cuanto es sólo cosa pensante. Pero no (por la Proposición 28 de la Parte I) en cuanto es cosa pensante en términos absolutos, sino en cuanto se lo considera afectado por otro modo de pensar, y de éste es Dios también causa en cuanto afectado por otro, y así hasta el infinito. Ahora bien: el orden y conexión de las ideas (por la Proposición 7 de esta Parte) es el mismo que el orden y conexión de las causas; por consiguiente, de la idea de una cosa singular es causa otra idea, o sea, Dios en cuanto se lo considera afectado por otra idea, y también de ésta en cuanto es afectado por otra, y así hasta el infinito. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p8cor", "e2p8exp", "e2p6", "e1p28", "e2p7"],
@@ -1365,19 +1362,19 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: Hay en Dios conocimiento de todo cuanto ocurre en el objeto singular de una idea cualquiera sólo en cuanto Dios tiene la idea de ese objeto. Demostración: Hay en Dios una idea de todo cuanto ocurre en el objeto de una idea cualquiera (por la Proposición 3 de esta Parte), no en cuanto que es infinito, sino en cuanto se lo considera afectado por otra idea de una cosa singular (por la Proposición anterior); ahora bien (por la Proposición 7 de esta Parte), el orden y conexión de las ideas es el mismo que el orden y conexión de las cosas; por consiguiente, habrá en Dios conocimiento de lo que ocurre en un objeto singular sólo en cuanto tiene la idea de ese objeto. Q.E.D.`,
         la: ``,
       },
       // "corollary" must include parent as proof
-      proof: ["e2p9", "e2p3", "e2p8", "e2p7"],
+      proof: ["e2p9", "e2p3", "e2p7"],
     },
   ],
   [
     "e2p10",
     {
       text: {
-        en: "",
-        es: ``,
+        en: ``,
+        es: `A la esencia del hombre no pertenece el ser de la substancia, o sea, no es una substancia lo que constituye la forma del hombre. Demostración: En efecto: el ser de la substancia implica la existencia necesaria (por la Proposición 7 de la Parte I). Así pues, si a la esencia del hombre perteneciese el ser de la substancia, dada la substancia, se daría necesariamente el hombre (por la Definición 2 de esta Parte), y, consiguiente-mente, el hombre existiría de un modo necesario, lo que (por el Axioma 1 de esta Parte) es absurdo. Por consiguiente, etc. Q.E.D.`,
         la: ``,
       },
       // "explanation"#1 says that this proposition can also
@@ -1390,11 +1387,11 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Esta Proposición se demuestra también a partir de la Proposición 5 de la Parte I, a saber: que no hay dos substancias de la misma naturaleza. Pero, dado que pueden existir varios hombres, entonces no es el ser de la substancia lo que constituye la forma del hombre. Esta Proposición es evidente, además, en virtud de las demás propiedades de la substancia, a saber: que la substancia es, por naturaleza, infinita, inmutable, indivisible, etc., como todos pueden ver fácilmente.`,
         la: ``,
       },
       // Spinoza's wording suggests that e1p5 is more a member of the parent proposition,
-      // but we still rely on it by the transitive dependency we have on the parent node:
+      // but we still rely on it by the transitive dependency we have on the parent node.
       // "explanation" must include parent as proof
       proof: ["e2p10"],
     },
@@ -1404,23 +1401,23 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: De aquí se sigue que la esencia del hombre está constituida por ciertas modificaciones de los atributos de Dios. Demostración: Porque el ser de la substancia (por la Proposición anterior) no pertenece a la esencia del hombre. Por consiguiente, ésta es algo (por la Proposición 15 de la Parte I) que es en Dios y que no puede ser ni concebirse sin Dios, o sea (por el Corolario de la Proposición 25 de la Parte 1), es una afección o modo que expresa la naturaleza de Dios de cierta y determinada manera.`,
         la: ``,
       },
       // "corollary" must include parent as proof
-      proof: ["e2p10", "e2p9", "e1p15", "e1p25cor"],
+      proof: ["e2p10", "e1p15", "e1p25cor"],
     },
   ],
   [
     "e2p10exp2",
     {
       text: {
-        en: "",
-        es: ``,
+        en: ``,
+        es: `Escolio: Todos deben conceder, en verdad, que sin Dios nada puede ser ni concebirse. Pues todos reconocen que Dios es la única causa de todas las cosas, y tanto de su esencia como de su existencia; esto es, Dios es causa de las cosas no sólo según el devenir, como dicen, sino también según el ser. Sin embargo, muchos dicen que a la esencia de una cosa pertenece aquello sin lo cual esa cosa no puede ser ni concebirse; y, por tanto, o bien creen que la naturaleza de Dios pertenece a la esencia de las cosas creadas, o bien que las cosas creadas pueden ser y concebirse sin Dios, o, lo que es más cierto, no son lo bastante consecuentes consigo mismos. Y la causa de esto ha sido, creo, que no se han atenido al orden del filosofar. Pues han creído que la naturaleza divina, sobre la que debían reflexionar antes que nada, ya que es prioritaria tanto en el orden del conocimiento como en el de la naturaleza, era la última en el orden del conocimiento, y que las cosas llamadas objetos de los sentidos eran anteriores a todo lo demás. De ello ha resultado que, al considerar las cosas de la naturaleza, han pensado en todo menos en la naturaleza divina, y, al intentar más tarde considerar ésta, no han podido valerse de aquellas primeras ficciones suyas sobre las que habían construido el conocimiento de las cosas de la naturaleza, dado que de nada les servían para conocer la naturaleza divina. Y así no es de extrañar que hayan incurrido en contradicciones una y otra vez. Pero dejo a un lado esto, pues mi intención ha sido sólo la de exponer la causa por la que no he dicho que pertenezca a la esencia de una cosa aquello sin lo cual esa cosa no puede ser ni concebirse; ya que, evidentemente, las cosas singulares no pueden ser ni concebirse sin Dios, y, sin embargo, Dios no pertenece a su esencia. He dicho, en cambio, que constituye necesariamente la esencia de una cosa aquello dado lo cual se da la cosa, y suprimido lo cual la cosa no se da. O sea, aquello sin lo cual la cosa —y viceversa, aquello que sin la cosa— no puede ser ni concebirse.`,
         la: ``,
       },
       // "explanation" must include parent as proof
-      proof: ["e2p10", "e2def2"],
+      proof: ["e2p10"],
     },
   ],
   [
@@ -1428,7 +1425,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Lo primero que constituye el ser actual del alma humana no es más que la idea de una cosa singular existente en acto. Demostración: La esencia del hombre (por el Corolario de la Proposición anterior) está constituida por ciertos modos de los atributos de Dios, a saber (por el Axioma 2 de esta Parte): por modos de pensar, de todos los cuales (por el Axioma 3 de esta Parte) es la idea, por naturaleza, el primero y, dada ella, los restantes modos (es decir, aquellos a quienes la idea es anterior por naturaleza) deben darse en el mismo individuo (por el Axioma 3 de esta Parte). Y así, la idea es lo primero que constituye el ser del alma humana. Pero no la idea de una cosa inexistente, pues en ese caso (por el Corolario de la Proposición 8 de esta Parte) no podría decirse que existe la idea misma. Se tratará, pues, de la idea de una cosa existente en acto. Pero no de una cosa infinita, ya que una cosa infinita (por las Proposiciones 21 y 22 de la Parte 1) debe existir siempre necesariamente; ahora bien, esto es absurdo (por el Axioma 1 de esta Parte); y, por consiguiente, lo primero que constituye el ser actual del alma humana es la idea de una cosa singular existente en acto. Q.E.D.`,
         la: ``,
       },
       proof: [
@@ -1447,7 +1444,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: De aquí se sigue que el alma humana es una parte del entendimiento infinito de Dios; y, por ende, cuando decimos que el alma humana percibe esto o aquello, no decimos otra cosa sino que Dios (no en cuanto que es infinito, sino en cuanto que se explica a través de la naturaleza del alma humana, o sea, en cuanto constituye la esencia del alma humana) tiene esta O aquella idea. Y cuando decimos que Dios tiene esta O aquella idea, no sólo en cuanto constituye la naturaleza del alma humana, sino en cuanto que tiene también, a la vez que la del alma humana, la idea de otra cosa, entonces decimos que el alma humana percibe esa cosa de un modo parcial o inadecuado.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -1459,7 +1456,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Aquí, sin duda, los lectores quedarán perplejos, y les vendrán a las mientes muchas cuestiones dificultosas; por tal motivo, les ruego que avancen conmigo a paso lento y que no se pronuncien sobre esto hasta que no terminen de leerlo todo.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -1471,7 +1468,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Todo cuanto acaece en el objeto de la idea que constituye el alma humana debe ser percibido por el alma humana o, lo que es lo mismo, habrá necesariamente una idea de ello en el alma. Es decir: si el objeto de la idea que constituye el alma humana es un cuerpo, nada podrá acaecer en ese cuerpo que no sea percibido por el alma. Demostración: En efecto, hay necesariamente (por el Corolario de la Proposición 9 de esta Parte) un conocimiento de Dios de todo lo que acaece en el objeto de cualquier idea, en cuanto se considera a Dios como afectado por la idea de dicho objeto, esto es (por la Proposición 11 de esta Parte), en cuanto constituye el alma de alguna cosa. Así pues, hay necesariamente un conocimiento en Dios de todo lo que acaece en el objeto de la idea que constituye el alma humana, en cuanto Dios constituye la naturaleza del alma humana, esto es (por el Corolario de la Proposición 11 de esta Parte), habrá necesariamente un conocimiento de ese objeto en el alma, o, lo que es lo mismo, el alma lo percibe. Q.E.D.`,
         la: ``,
       },
       // e2p12exp says that e2p7
@@ -1484,7 +1481,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Esta Proposición es también evidente, y se entiende con mayor claridad, por el Escolio de la Proposición 7 de esta Parte: véase.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -1496,18 +1493,37 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El objeto de la idea que constituye el alma humana es un cuerpo, o sea, cierto modo de la Extensión existente en acto, y no Otra cosa. Demostración: En efecto: si un cuerpo no fuese el objeto del alma humana, las ideas de las afecciones de tal cuerpo no se darían en Dios (por el Corolario de la Proposición 9 de esta parte) en cuanto constituye nuestra alma, sino en cuanto constituye el alma de otra cosa; esto es (por el Corolario de la Proposición 11 de esta Parte), no habría en nuestra alma ideas de las afecciones de un cuerpo. Ahora bien (por el Axioma 4 de esta parte), tenemos ideas de las afecciones de un cuerpo. Luego el objeto de la idea que constituye el alma humana es un cuerpo, y (por la Proposición 11 de esta Parte) existente en acto. Por otra parte, si hubiese también otro objeto del alma además de un cuerpo, dado que nada existe (por la Proposición 36 de la Parte I) de lo que no se siga un efecto, debería haber necesariamente en nuestra alma (por la Proposición 12 de esta Parte) una idea de ese efecto. Ahora bien (por el Axioma 5 de esta Parte), mo hay idea alguna de él. Por consiguiente, el objeto de nuestra alma es un cuerpo existente, y no otra cosa. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2p9cor", "e2p11cor", "e2ax4", "e2p11", "e1p26", "e1ax5"],
+      proof: [
+        "e2p9cor",
+        "e2p11cor",
+        "e2ax4",
+        "e2p11",
+        "e1p36",
+        "e2p12",
+        "e2ax5",
+      ],
+    },
+  ],
+  [
+    "e2p13cor",
+    {
+      text: {
+        en: ``,
+        es: `Corolario: De aquí se sigue que el hombre consta de un alma y cuerpo, y que el cuerpo humano existe tal como lo sentimos.`,
+        la: ``,
+      },
+      proof: [],
     },
   ],
   [
     "e2p13exp",
     {
       text: {
-        en: "",
-        es: ``,
+        en: ``,
+        es: `Escolio: A partir de lo dicho, no sólo entendemos que el alma humana está unida al cuerpo, sino también lo que debe entenderse por unión de alma y cuerpo. Sin embargo, nadie podrá entenderla adecuadamente, o sea, distintamente, si no conoce primero adecuadamente la naturaleza de nuestro cuerpo. Pues lo que hasta aquí hemos mostrado es del todo común, y no se refiere más a los hombres que a los otros individuos, todos los cuales, aunque en diversos grados, están animados. De cada cosa hay en Dios necesariamente una idea, de la cual Dios es causa del mismo modo que lo es de la idea del cuerpo humano, y, por ello, todo cuanto hemos dicho acerca de la idea del cuerpo humano debe decirse necesariamente acerca de la idea de cualquier cosa. No obstante, tampoco podemos negar que las ideas difieren entre sí como los objetos mismos, y que una es más excelente y contiene más realidad que otra según que su objeto sea más excelente y contenga más realidad que el de esa otra; y, por ello, para determinar qué es lo que separa al alma humana de las demás y en qué las aventaja, nos es necesario, como hemos dicho, conocer la naturaleza de su objeto, esto es, del cuerpo humano. Pero ni puedo explicarla aquí, ni ello es preciso para lo que quiero demostrar. Con todo, diré en general que, cuanto más apto es un cuerpo que los demás para obrar o padecer muchas cosas a la vez, tanto más apta es su alma que las demás para percibir muchas cosas a la vez; y que cuanto más dependen las acciones de un cuerpo de ese solo cuerpo, y cuanto menos cooperan otros cuerpos con él en la acción, tanto más apta es su alma para entender distintamente. Y a partir de esto podemos conocer la excelencia de un alma sobre las demás, y también ver la causa por la que no tenemos de nuestro cuerpo sino un conocimiento muy confuso, y otras muchas cosas que deduciré de ello en lo que sigue. Por cuya causa he creído que merecía la pena explicar y demostrar estos mismos temas más cuidadosamente, para lo cual es necesario sentar previamente algo acerca de la naturaleza de los cuerpos.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -1519,7 +1535,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Todo cuerpo, o se mueve, o está en reposo.`,
         la: ``,
       },
       proof: [],
@@ -1530,7 +1546,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Cada cuerpo se mueve, ya más lentamente, ya más rápidamente.`,
         la: ``,
       },
       proof: [],
@@ -1541,7 +1557,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Los cuerpos se distinguen entre sí en razón del movimiento y el reposo, de la rapidez y la lentitud, y no en razón de la substancia. Demostración: Supongo que la primera parte de este Lema es evidente por sí misma. Y, tocante a que los cuerpos no se distinguen por razón de la substancia, ello es evidente tanto por la Proposición 5 como por la 8 de la Parte I. Pero es aún más claro por lo dicho en el Escolio de la Proposición 15 de la Parte 1.`,
         la: ``,
       },
       proof: ["e1p5", "e1p8", "e1p15exp"],
@@ -1552,7 +1568,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Todos los cuerpos convienen en ciertas cosas. Demostración: En efecto: todos los cuerpos convienen en el hecho de que implican el concepto de un solo y mismo atributo (por la Definición 1 de esta Parte). Además, en que pueden moverse más lenta o más rápidamente, y, en términos absolutos, en que pueden moverse o estar en reposo.`,
         la: ``,
       },
       proof: ["e2def1"],
@@ -1563,7 +1579,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Un cuerpo en movimiento o en reposo ha debido ser determinado al movimiento o al reposo por otro cuerpo, el cual ha sido también determinado al movimiento o al reposo por otro, y éste a Su vez por otro, y así hasta el infinito. Demostración: Los cuerpos (por la Definición 1 de esta Parte) son cosas singulares, que (por el Lema 1) se distinguen entre sí en razón del movimiento y el reposo; y así (por la Proposición 28 de la Parte 1), cada uno de ellos ha debido ser determinado necesariamente al movimiento o al reposo por otra cosa singular, a saber (por la Proposición 6 de esta Parte), por otro cuerpo, el cual (por el Axioma 1) también se mueve o está en reposo. Ahora bien, éste (por la misma razón) tampoco ha podido moverse o estar en reposo si no hubiera sido determinado por otro a dichos movimiento o reposo, y éste a su vez (por la misma razón) por otro, y así hasta el infinito. Q.E.D.`,
         la: ``,
       },
       proof: ["e2def1", "e2p13lem1", "e1p28", "e2p6", "e2ax1*"],
@@ -1574,7 +1590,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: Se sigue de aquí que un cuerpo en movimiento se mueve hasta que otro cuerpo lo determina al reposo; y, asimismo, que un cuerpo en reposo permanece en él hasta que otro lo determina al movimiento. Ello es también notorio por sí. En efecto, cuando supongo que un cuerpo, por ejemplo A, está en reposo, y no tengo en cuenta otros cuerpos en movimiento, nada podré decir de ese cuerpo A sino que está en reposo. Si ocurre después que el cuerpo A se mueve, ello no ha podido provenir, ciertamente, del hecho de que estuviera en reposo, pues de tal hecho no podía seguirse sino que el cuerpo A estaba en reposo. Si, por contra, se supone que A se mueve, siempre que nos fijemos sólo en A, nada podremos afirmar de él sino que se mueve. Si ocurre después que A esté en reposo, ello tampoco ha podido provenir del movimiento que tenía, pues de dicho movimiento sólo podía seguirse que A se movía; así pues, ello acontece en virtud de una cosa que no estaba en A, a saber, una causa exterior, en cuya virtud ha sido determinado al reposo.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -1586,7 +1602,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Todas las maneras en las que un cuerpo es afectado por otro se siguen de la naturaleza del cuerpo afectado y, a la vez, de la naturaleza del cuerpo que lo afecta; de suerte que un solo y mismo cuerpo es movido de diversas maneras según la diversidad de la naturaleza de los cuerpos que lo mueven, y, por contra, cuerpos distintos son movidos de diversas maneras por un solo y mismo cuerpo.`,
         la: ``,
       },
       proof: [],
@@ -1597,7 +1613,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Cuando un cuerpo en movimiento choca contra otro en reposo al que no puede mover, es reflejado de modo que sigue moviéndose, y el ángulo que forma con la superficie del cuerpo en reposo contra el que chocó, la línea del movimiento de reflexión, será igual al ángulo que forma la línea del movimiento de incidencia con esa superficie. Esto por lo que se refiere a los cuerpos más simples, a saber, los que sólo se distinguen entre sí por el movimiento y el reposo, la rapidez y la lentitud; pasemos ahora a los cuerpos compuestos.`,
         la: ``,
       },
       proof: [],
@@ -1608,7 +1624,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Cuando ciertos cuerpos, de igual o distinta magnitud, son compelidos por los demás cuerpos de tal modo que se aplican unos contra otros, o bien —si es que se mueven con igual o distinto grado de velocidad— de modo tal que se comuniquen unos a otros sus movimientos según una cierta relación, diremos que esos cuerpos están unidos entre sí y que todos juntos componen un solo cuerpo, o sea, un individuo que se distingue de los demás por medio de dicha unión de cuerpos.`,
         la: ``,
       },
       proof: [],
@@ -1619,7 +1635,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Según sean mayores o menores las superficies por medio de las cuales se aplican unas contra otras las partes de un individuo, o sea, de un cuerpo compuesto, con mayor o menor facilidad —respectivamente— pueden ser compelidas a cambiar de sitio y, consiguientemente, con mayor o menor facilidad puede sobrevenir que ese individuo revista otra figura. Y, por ello, llamaré duros a los cuerpos cuyas partes se aplican unas a otras, por medio de superficies grandes; blandos, en cambio, a aquellos cuyas partes se aplican mediante superficies pequeñas; y fluidos, por último, a aquellos cuyas partes se mueven unas entre otras.`,
         la: ``,
       },
       proof: [],
@@ -1630,7 +1646,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Si de un cuerpo o individuo compuesto de varios cuerpos se separan ciertos cuerpos, y a la vez Otros tantos de la misma naturaleza ocupan el lugar de aquéllos, ese individuo conservará su naturaleza tal y como era antes, sin cambio alguno en su forma. Demostración: En efecto, los cuerpos (por el Lema 1) no se distinguen en razón de la substancia, sino que aquello que constituye la forma de un individuo consiste en una unión de cuerpos (por la Definición anterior). Ahora bien, esta unión (por hipótesis) se conserva aun cuando se produzca un continuo cambio de cuerpos; por consiguiente, el individuo conservará su naturaleza tal y como era antes, tanto respecto de la substancia como respecto del modo. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p13lem1", "e2def1*"],
@@ -1641,7 +1657,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Si las partes componentes de un individuo se vuelven mayores o menores, en proporción tal, sin embargo, que conserven entre sí, como antes, la misma relación de reposo y movimiento, ese individuo conservará igualmente su naturaleza tal como era antes, sin cambio alguno en su forma. Demostración: Es la misma que la del Lema anterior.`,
         la: ``,
       },
       // if the proof is the same, then we
@@ -1654,11 +1670,12 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Si ciertos cuerpos, que componen un individuo, son compelidos a cambiar el sentido de sus movimientos, pero de manera tal que puedan continuar moviéndose y comunicándose entre sí sus movimientos según la misma relación que antes, ese individuo conservará asimismo su naturaleza, sin cambio alguno en su forma.`,
         la: ``,
       },
       // "self-evident"
       proof: [],
+      see: ["e2p13lem4"],
     },
   ],
   [
@@ -1666,7 +1683,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Un individuo así compuesto conserva, además, su naturaleza, ya se mueva todo él, ya esté en reposo, ya se mueva en un sentido, ya en otro, con tal que cada parte conserve su movimiento y lo comunique a las demás como antes. Demostración: Es evidente en virtud de la definición de individuo: véasela antes del Lema IV.`,
         la: ``,
       },
       proof: ["e2def1*"],
@@ -1677,7 +1694,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Por lo dicho, vemos, pues, cómo un individuo compuesto puede ser afectado de muchas maneras, conservando, no obstante, su naturaleza. Y hasta ahora hemos concebido un individuo que no se compone sino de cuerpos que sólo se distinguen entre sí por el movimiento y el reposo, la rapidez y la lentitud, esto es, que se compone de los cuerpos más simples. Si ahora concebimos otro, compuesto de varios individuos de distinta naturaleza, hallaremos que puede ser afectado de muchas otras maneras, conservando, no obstante, su naturaleza. En efecto, supuesto que Cada una de sus partes está compuesta de varios cuerpos, Cada parte podrá (por el Lema anterior), sin cambio alguno de su naturaleza, moverse más lenta o más rápidamente, y, por consiguiente, comunicar sus movimientos a las otras más aprisa o más despacio. Si concebimos, además, un tercer género de individuos, compuesto de individuos del segundo género, hallaremos que puede ser afectado de otras muchas maneras, sin cambio alguno en su forma. Y si continuamos así hasta el infinito, concebiremos fácilmente que toda la naturaleza es un solo individuo, cuyas partes —esto es, todos los cuerpos— varían de infinitas maneras, sin cambio alguno del individuo total. Y si hubiera sido mi intención tratar expresamente acerca del cuerpo, habría debido explicar y demostrar estas cosas de un modo más prolijo. Pero ya he dicho que ahora pretendo otra cosa, y que, si he traído a cuento estos temas, ha sido sólo porque a partir de ellos puedo deducir fácilmente lo que he decidido demostrar.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -1689,7 +1706,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El cuerpo humano se compone de muchísimos individuos (de diversa naturaleza), cada uno de los cuales es muy compuesto.`,
         la: ``,
       },
       proof: [],
@@ -1700,7 +1717,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Algunos de los individuos que componen el cuerpo humano son fluidos; otros, blandos, y otros, en fin, duros.`,
         la: ``,
       },
       proof: [],
@@ -1711,7 +1728,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Los individuos que componen el cuerpo humano (y, por consiguiente, el cuerpo humano mismo) son afectados de muchísimas maneras por los cuerpos exteriores.`,
         la: ``,
       },
       proof: [],
@@ -1722,7 +1739,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El cuerpo humano necesita, para conservarse, de muchísimos otros cuerpos, y es como si éstos lo regenerasen continuamente.`,
         la: ``,
       },
       proof: [],
@@ -1733,7 +1750,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Cuando una parte fluida del cuerpo humano es determinada por un cuerpo externo a chocar frecuentemente con otra parte blanda, altera la superficie de ésta y le imprime una suerte de vestigios del cuerpo externo que la impulsa.`,
         la: ``,
       },
       proof: [],
@@ -1744,7 +1761,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El cuerpo humano puede mover y disponer los cuerpos exteriores de muchísimas maneras.`,
         la: ``,
       },
       proof: [],
@@ -1755,7 +1772,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El alma humana es apta para percibir muchísimas cosas, y tanto más apta cuanto de más maneras pueda estar dispuesto su Cuerpo. Demostración: En efecto: el cuerpo humano (por los Postulados 3 y 6) es afectado de muchísimas maneras por los cuerpos exteriores, y está dispuesto para afectar los cuerpos exteriores de muchísimas maneras. Ahora bien, todas las cosas que acontecen en el cuerpo humano (por la Proposición 12 de esta Parte) deben ser percibidas por el alma humana. Luego el alma humana es apta para percibir muchísimas cosas, y tanto más apta, etc. Q.E.D.`,
         la: ``,
       },
       proof: ["e2post3", "e2post6", "e2p12"],
@@ -1766,7 +1783,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La idea que constituye el ser formal del alma humana no es simple, sino compuesta de muchísimas ideas. Demostración: La idea que constituye el ser formal del alma humana es la idea del cuerpo (por la Proposición 13 de esta Parte), el cual (por el Postulado 1) se compone de muchísimos individuos muy compuestos. Ahora bien: hay necesariamente (por el Corolario de la Proposición 8 de esta Parte) una idea en Dios de cada individuo componente de un cuerpo. Luego (por la Proposición 7 de esta Parte) la idea del cuerpo humano está compuesta de esas numerosísimas ideas de sus partes componentes. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p13", "e2post1", "e2p8cor", "e2p7"],
@@ -1777,7 +1794,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `La idea de la afección, cualquiera que ésta sea, en cuya virtud el cuerpo humano es afectado por los cuerpos exteriores, debe implicar la naturaleza del cuerpo humano y, a un tiempo, la del cuerpo exterior. Demostración: En efecto, todas las maneras en que un cuerpo es afectado se siguen de la naturaleza de ese cuerpo afectado, y, a la vez, de la naturaleza del cuerpo que lo afecta (por el Axioma 1 que sigue al Corolario del Lema 3); por eso, la idea de aquéllas implica necesariamente (por el Axioma 4 de la Parte I) la naturaleza de ambos cuerpos; y, de esta suerte, la idea de la afección, cualquiera que ésta sea, en cuya virtud el cuerpo humano es afectado por un cuerpo externo, implica la naturaleza del cuerpo humano y la del cuerpo externo. Q.E.D.`,
         la: ``,
       },
       proof: ["e2ax1**", "e1ax4"],
@@ -1788,7 +1805,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `De aquí se sigue, primero: que el alma humana percibe, junto con la naturaleza de su propio cuerpo, la de muchísimos otros.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -1800,7 +1817,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Se sigue, segundo: que las ideas que tenemos de los cuerpos exteriores revelan más bien la constitución de nuestro propio cuerpo que la naturaleza de los cuerpos exteriores; lo que ya he explicado con muchos ejemplos en el Apéndice de la Parte primera.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -1812,7 +1829,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Si el cuerpo humano experimenta una afección que implica la naturaleza de algún cuerpo exterior, el alma humana considerará dicho cuerpo exterior como existente en acto, O como algo que le está presente, hasta que el cuerpo experimente una afección que excluya la existencia o presencia de ese cuerpo. Demostración: Ello es evidente. Pues mientras el cuerpo humano sea afectado de tal suerte, el alma humana (por la Proposición 12 de esta Parte) considerará esa afección del cuerpo; esto es (por la Proposición anterior), tendrá la idea de un modo existente en acto que implica la naturaleza de un cuerpo exterior; es decir, una idea que no excluye la existencia o presencia de la naturaleza de un cuerpo exterior, sino que la afirma. Y así, el alma (por el Corolario 1 de la Proposición anterior) considerará ese cuerpo exterior como existente en acto, o como presente, hasta que el cuerpo experimente una afección, etc. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p12", "e2p16", "e2p16cor1"],
@@ -1823,7 +1840,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Corolario: El alma podrá considerar como si estuviesen presentes aquellos cuerpos exteriores por los que el cuerpo humano ha sido afectado alguna vez, aunque los tales no existan ni estén presentes. Demostración: Siempre que los cuerpos exteriores determinan a las partes fluidas del cuerpo humano a chocar frecuentemente contra las blandas, cambian (por el Postulado 5) las superficies de éstas, de donde resulta (ver el Axioma 2, que sigue al Corolario del Lema 3) que aquéllas son reflejadas de manera distinta a como solían serlo antes, y resulta también que cuando, más tarde, esas partes fluidas encuentran en su espontáneo movimiento las nuevas superficies, son reflejadas de la misma manera que cuando eran empujadas hacia esas superficies por los cuerpos exteriores, y, consiguientemente, resulta que afectan al cuerpo humano —+en tanto que siguen moviéndose, reflejadas de ese modo — de la misma manera, afección de la que el alma (por la Proposición 12 de esta Parte) formará una idea; esto es (por la Proposición 17 de esta Parte), que el alma considerará de nuevo el cuerpo exterior como presente, y ello tantas veces cuantas las partes fluidas del cuerpo humano encuentren, en su espontáneo movimiento, las mismas superficies. Por lo cual, aunque no existan ya los cuerpos exteriores por los que el cuerpo humano ha sido afectado alguna vez, el alma los considerará como presentes, sin embargo, tantas veces cuantas se repita esa acción del cuerpo. Q.E.D.`,
         la: ``,
       },
       // "corollary" must include parent as proof
@@ -1835,13 +1852,11 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: Vemos, pues, que puede ocurrir que consideremos como presentes cosas que no existen, lo que sucede a menudo. Y puede suceder que esto acontezca por otras causas; pero aquí me basta haber mostrado una por la que puedo explicar la cuestión como si la hubiera demostrado por su verdadera causa. Con todo, no creo haberme alejado mucho de la verdad, supuesto que todos los postulados que aquí he admitido apenas contienen cosa alguna que no conste por la experiencia, de la cual no nos está permitido dudar una vez que hemos mostrado que el cuerpo humano existe tal y como lo sentimos (ver el Corolario que sigue a la Proposición 13 de esta Parte). Además (por el Corolario anterior y el Corolario 2 de la Proposición 16 de esta Parte), entendemos claramente cuál es la diferencia entre, por ejemplo, la idea de Pedro, que constituye la esencia del alma del propio Pedro, y la idea del mismo Pedro que existe en otro hombre, pongamos Pablo. En efecto, la primera representa directamente la esencia del cuerpo del propio Pedro, y no implica existencia sino mientras Pedro existe; en cambio, la segunda revela más bien la constitución del cuerpo de Pablo que la naturaleza de Pedro, y, por tanto, mientras dure esa constitución del cuerpo de Pablo, su alma considerará a Pedro, aunque éste ya no exista, como algo que le está presente. Además, y sirviéndonos de términos usuales, llamaremos «imágenes» de las cosas a las afecciones del cuerpo humano cuyas ideas nos representan los cuerpos exteriores como si nos estuvieran presentes, aunque no reproduzcan las figuras de las cosas. Y cuando el alma considere los cuerpos de esa manera, diremos que los «imagina». Y en este punto, para comenzar a indicar qué es el error, quisiera que notarais que las imaginaciones del alma, en sí mismas consideradas, no contienen error alguno; o sea, que el alma no yerra por el hecho de imaginar, sino sólo en cuanto se la considera carente de una idea que excluya la existencia de aquellas cosas que imagina estarle presentes. Pues si el alma, al tiempo que imagina como presentes cosas que no existen, supiese que realmente no existen, atribuiría sin duda esa potencia imaginativa a una virtud, y no a un vicio, de su naturaleza; sobre todo si esa facultad de imaginar dependiese de su sola naturaleza, esto es (por la Definición 7 de la Parte 1), si esa facultad de imaginar que el alma posee fuese libre.`,
         la: ``,
       },
       // "explanation" must include parent as proof.
-      // Assuming that e2p13lem3cor is what was
-      // meant by "(Coroll. after II. xiii.)"
-      proof: ["e2p17", "e2p13lem3cor", "e2p7cor", "e2p16cor2", "e1def7"],
+      proof: ["e2p17", "e2p13cor", "e2p17cor", "e2p16cor2", "e1def7"],
     },
   ],
   [
@@ -1849,7 +1864,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Si el cuerpo humano ha sido afectado una vez por dos o más cuerpos al mismo tiempo, cuando más tarde el alma imagine a uno de ellos, recordará inmediatamente también a los Otros. Demostración: El alma (por el Corolario anterior) imagina un cuerpo por la siguiente causa, a saber: porque el cuerpo humano es afectado y dispuesto, por obra de los vestigios de un cuerpo externo, de la misma manera que lo fue cuando ciertas de sus partes fueron impulsadas por ese mismo cuerpo exterior. Ahora bien: el cuerpo humano (por hipótesis) ha sido dispuesto de tal modo que el alma imagine dos cuerpos al mismo tiempo; luego así los imaginará en adelante, y, en cuanto imagine uno de los dos, recordará inmediatamente el otro. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p17cor"],
@@ -1860,7 +1875,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Escolio: En virtud de esto, entendemos claramente qué es la memoria. En efecto, no es otra cosa que cierta concatenación de ideas que implican la naturaleza de las cosas que están fuera del cuerpo humano, y que se produce en el alma según el orden y concatenación de las afecciones del cuerpo humano. Digo, primero, que se trata de una concatenación sólo de aquellas ideas que implican la naturaleza de las cosas que están fuera del cuerpo humano, y no de aquellas ideas que explican la naturaleza de esas mismas cosas. Se trata, efectivamente (por la Proposición 16 de esta Parte), de ideas de las afecciones del cuerpo humano que implican tanto la naturaleza de éste como la de los cuerpos exteriores. Digo, segundo, que esa concatenación se produce según el orden y concatenación de las afecciones del cuerpo humano, con el fin de distinguirla de la concatenación de ideas que se produce según el orden del entendimiento, mediante el cual el alma percibe las cosas por sus primeras causas, y que es el mismo en todos los hombres. Y según esto entendemos claramente, además, por qué el alma pasa inmediatamente del pensamiento de una cosa al de otra que no tiene ninguna semejanza con la primera. Por ejemplo, del pensamiento del vocablo pomum, un romano pasará inmediatamente al pensamiento de un fruto que no tiene ninguna semejanza con ese sonido articulado, ni nada de común, sino que el cuerpo de ese mismo hombre ha sido a menudo afectado por las dos cosas, esto es, que dicho hombre ha oído a menudo la voz pomum mientras veía el mismo fruto y, de este modo, cada cual pasa de un pensamiento a otro según hayan sido ordenadas las imágenes de las cosas por la costumbre, en los respectivos cuerpos. Un soldado, por ejemplo, al ver sobre la arena las huellas de un caballo, pasará inmediatamente del pensamiento del caballo al de un jinete, y de ahí al de la guerra, etc. Pero un campesino pasará del pensamiento del caballo al de un arado, un campo, etc.; y así Cada uno pasará de un pensamiento a tal o cual otro, según se haya acostumbrado a unir y concatenar las imágenes de las cosas de tal o cual manera.`,
         la: ``,
       },
       // "explanation" must include parent as proof
@@ -1872,10 +1887,19 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `El alma humana no conoce el cuerpo humano mismo, ni sabe que éste existe, sino por las ideas de las afecciones de que es afectado el cuerpo. Demostración: En efecto, el alma humana es la misma idea o conocimiento del cuerpo humano (por la Proposición 13 de esta Parte), cuya idea (por la Proposición 9 de esta Parte) se da en Dios en cuanto se le considera afectado por otra idea de una cosa singular; o sea, puesto que el cuerpo humano (por el Postulado 4) necesita de muchísimos cuerpos, por los cuales es como continuamente regenerado, y puesto que el orden y conexión de las ideas es el mismo (por la Proposición 7 de esta Parte) que el orden y conexión de las causas, dicha idea se dará en Dios en cuanto se le considera afectado por las ideas de muchísimas cosas singulares. Así, pues, Dios tiene la idea del cuerpo humano, o sea, conoce el cuerpo humano, en cuanto es afectado por otras muchísimas ideas, y no en cuanto constituye la naturaleza del alma humana, esto es (por el Corolario de la Proposición 11 de esta Parte), el alma humana no conoce el cuerpo humano. Pero las ideas de las afecciones del cuerpo se dan en Dios en cuanto constituye la naturaleza del alma humana, o sea, el alma humana percibe esas afecciones (por la Proposición 12 de esta Parte), y, consiguientemente (por la Proposición 16 de esta Parte), percibe el cuerpo humano mismo, y ello (por la Proposición 17 de esta Parte) como existente en acto; por consiguiente, sólo en ese sentido percibe el alma humana el cuerpo humano mismo. Q.E.D.`,
         la: ``,
       },
-      proof: ["e2p13", "e2p9", "e2post4", "e2p7", "e2p11cor", "e2p12", "e2p16"],
+      proof: [
+        "e2p13",
+        "e2p9",
+        "e2post4",
+        "e2p7",
+        "e2p11cor",
+        "e2p12",
+        "e2p16",
+        "e2p17",
+      ],
     },
   ],
   [
@@ -1883,12 +1907,13 @@ export const book = [
     {
       text: {
         en: ``,
-        es: ``,
+        es: `Se da también en Dios una idea o conocimiento del alma humana, cuya idea se sigue en Dios y se refiere a Dios de la misma manera que la idea o conocimiento del cuerpo humano. Demostración: El Pensamiento es un atributo de Dios (por la Proposición 1 de esta Parte); y así debe darse necesariamente en Dios una idea, tanto de Él mismo cuanto de todas sus afecciones; y, por consiguiente (por la Proposición 11 de esta Parte), debe darse también en Dios, necesariamente, una idea del alma humana. Además, no se sigue que esta idea o conocimiento del alma se dé en Dios en cuanto es infinito, sino en cuanto es afectado por otra idea de una cosa singular (por la Proposición 9 de esta Parte). Ahora bien, el orden y conexión de las ideas es el mismo que el orden y conexión de las causas (por la Proposición 7 de esta Parte); luego esta idea o conocimiento del alma se sigue en Dios, y se refiere a Dios, del mismo modo que la idea o conocimiento del cuerpo. Q.E.D.`,
         la: ``,
       },
       proof: ["e2p1", "e2p3", "e2p11", "e2p9", "e2p7"],
     },
   ],
+  // continue from here
   [
     "e2p21",
     {
@@ -2439,7 +2464,7 @@ export const book = [
     "e2p48exp",
     {
       text: {
-        en: "",
+        en: ``,
         es: ``,
         la: ``,
       },
@@ -2491,7 +2516,6 @@ export const book = [
         "e2p35exp",
         "e2p47exp",
       ],
-      see: ["Buridan's ass", "suicide and madness", "e3"],
     },
   ],
   [
@@ -2503,7 +2527,6 @@ export const book = [
         la: ``,
       },
       proof: [],
-      see: ["Descartes"],
     },
   ],
   [
