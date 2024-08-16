@@ -12,12 +12,13 @@ import { formatDate } from "./lib/utils"
 import React, { useState } from "react"
 import { book } from "./lib/book"
 import cs from "clsx"
+import { DeleteForever } from "@mui/icons-material"
 
 const History: React.FC<{
   show: boolean
   hide: () => void
 }> = ({ show, hide }) => {
-  const { storage } = useStorageContext()
+  const { storage, removeHistory } = useStorageContext()
   const { setMode, setInputNodes } = useExploreContext()
   return (
     <div
@@ -32,7 +33,7 @@ const History: React.FC<{
         </IconButton>
       </div>
       <div className="history-drawer-list">
-        {storage.history?.map((el) => (
+        {storage.history?.map((el, idx) => (
           <button
             key={el.createdAt}
             className="history-item"
@@ -43,24 +44,48 @@ const History: React.FC<{
               setMode(el.mode)
             }}
           >
-            <div>
-              <b>{el.mode}</b>
+            <div className="history-item-col-left">
+              <div>
+                <b>{el.mode}</b>
+              </div>
+              <div>
+                <i>{el.inputNodes[0]}</i>{" "}
+                {el.mode === "connection" && (
+                  <>
+                    - <i>{el.inputNodes[1]}</i>
+                  </>
+                )}
+              </div>
+              <div
+                style={{
+                  fontSize: "0.7rem",
+                  color: "darkseagreen",
+                }}
+              >
+                {formatDate(el.createdAt)}
+              </div>
             </div>
-            <div>
-              <i>{el.inputNodes[0]}</i>{" "}
-              {el.mode === "connection" && (
-                <>
-                  - <i>{el.inputNodes[1]}</i>
-                </>
-              )}
-            </div>
-            <div
-              style={{
-                fontSize: "0.7rem",
-                color: "darkseagreen",
-              }}
-            >
-              {formatDate(el.createdAt)}
+            <div className="history-item-col-right">
+              <IconButton
+                size="small"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  logAnalytics("remove-history")
+                  removeHistory(idx)
+                }}
+              >
+                <DeleteForever
+                  fontSize="small"
+                  sx={{
+                    color: "beige",
+                    border: "1px solid beige",
+                    borderRadius: "50%",
+                    padding: "2px",
+                    ":focus": { opacity: 0.5 },
+                    ":hover": { opacity: 0.5 },
+                  }}
+                />
+              </IconButton>
             </div>
           </button>
         ))}
@@ -78,21 +103,23 @@ export const ModePicker: React.FC<{
   const openBookWith = storage.bookmark ?? book[0][0]
   return (
     <div className="mode-picker">
-      <Tooltip title="history">
-        <span className="history-open-button">
-          <IconButton
-            size="small"
-            disabled={!storage.history?.length}
-            onClick={() => setShowHistory(true)}
-            sx={{
-              color: "darkseagreen",
-              background: "darkslategray",
-            }}
-          >
-            <HistoryIcon fontSize="small" />
-          </IconButton>
-        </span>
-      </Tooltip>
+      <span className="history-open-button">
+        <IconButton
+          size="small"
+          disabled={!storage.history?.length}
+          onClick={() => setShowHistory(true)}
+          sx={{
+            borderRadius: 4,
+            color: "darkseagreen",
+            background: "darkslategray",
+            padding: "4px 12px",
+            gap: "0.5rem",
+          }}
+        >
+          <span style={{ fontSize: "1rem" }}>history</span>{" "}
+          <HistoryIcon fontSize="medium" />
+        </IconButton>
+      </span>
       <h2 className="mode-picker-header">
         What do you want to explore in the Ethics?
       </h2>

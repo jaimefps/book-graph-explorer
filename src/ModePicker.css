@@ -118,12 +118,23 @@
   color: beige;
   border-radius: 4px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   gap: 0.2rem;
 }
 .history-item:focus,
 .history-item:hover {
-  opacity: 0.8;
+  opacity: 0.9;
+}
+.history-item-col-left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.history-item-col-right {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
 }
 @media (max-width: 625px) {
   .history-open-button {
