@@ -119,7 +119,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Por Dios entiendo un ser absolutamente infinito, esto es, una substancia que consta de infinitos atributos, cada uno de los cuales expresa una esencia eterna e infinita. EXPLICACIÓN: Digo absolutamente infinito, y no en su género; pues de aquello que es meramente infinito en su género podemos negar infinitos atributos, mientras que a la esencia de lo que es absolutamente infinito pertenece todo cuanto expresa su esencia, y no implica negación alguna.`,
+        es: `Por Dios entiendo un ser absolutamente infinito, esto es, una substancia que consta de infinitos atributos, cada uno de los cuales expresa una esencia eterna e infinita. Explicación: Digo absolutamente infinito, y no en su género; pues de aquello que es meramente infinito en su género podemos negar infinitos atributos, mientras que a la esencia de lo que es absolutamente infinito pertenece todo cuanto expresa su esencia, y no implica negación alguna.`,
         la: ``,
       },
       proof: [],
@@ -141,7 +141,7 @@ export const book = [
     {
       text: {
         en: ``,
-        es: `Por eternidad entiendo la existencia misma, en cuanto se la concibe como siguiéndose necesariamente de la sola definición de una cosa eterna. EXPLICACIÓN: En efecto, tal existencia se concibe como una verdad eterna, como si se tratase de la esencia de la cosa, y por eso no puede explicarse por la duración o el tiempo, aunque se piense la duración como careciendo de principio y fin.`,
+        es: `Por eternidad entiendo la existencia misma, en cuanto se la concibe como siguiéndose necesariamente de la sola definición de una cosa eterna. Explicación: En efecto, tal existencia se concibe como una verdad eterna, como si se tratase de la esencia de la cosa, y por eso no puede explicarse por la duración o el tiempo, aunque se piense la duración como careciendo de principio y fin.`,
         la: ``,
       },
       proof: [],

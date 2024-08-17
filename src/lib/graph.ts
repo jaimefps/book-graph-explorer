@@ -98,7 +98,7 @@ class Graph {
           label: curr,
           ...(shouldHighlight ? { target: shouldHighlight } : {}),
         },
-        selected: shouldHighlight,
+        // selected: shouldHighlight,
       })
       const parents = graph.getParents(curr)
       for (const parent of parents) {
@@ -130,7 +130,7 @@ class Graph {
           label: curr,
           ...(shouldHighlight ? { target: shouldHighlight } : {}),
         },
-        selected: shouldHighlight,
+        // selected: shouldHighlight,
       })
       const children = graph.getChildren(curr)
       for (const child of children) {
@@ -162,7 +162,7 @@ class Graph {
           label: curr,
           ...(shouldHighlight ? { target: shouldHighlight } : {}),
         },
-        selected: shouldHighlight,
+        // selected: shouldHighlight,
       })
       // "connection" has descendants,
       // not the "parents" like usual:
