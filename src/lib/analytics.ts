@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app"
 import { getAnalytics, logEvent } from "firebase/analytics"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAV3mstrd2fFqePNw9RKvCP3d-M5U2_dFk",
-  authDomain: "deckbuilder-io.firebaseapp.com",
-  projectId: "deckbuilder-io",
-  storageBucket: "deckbuilder-io.appspot.com",
-  messagingSenderId: "129183493208",
-  appId: "1:129183493208:web:13c7beb00116adb677ee2d",
-  measurementId: "G-L484JMLEY4",
+  apiKey: "AIzaSyAOe62FSR6GEtVVEGPOercViAw3F76M8Ng",
+  authDomain: "ethics-io.firebaseapp.com",
+  projectId: "ethics-io",
+  storageBucket: "ethics-io.appspot.com",
+  messagingSenderId: "226845767166",
+  appId: "1:226845767166:web:c70ed90f1454c6e54c3caf",
+  measurementId: "G-PY8MVB11H9",
 }
 
 const app = initializeApp(firebaseConfig)
