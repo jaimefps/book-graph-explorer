@@ -115,6 +115,14 @@ export const ModePicker: React.FC<{
             background: "darkslategray",
             padding: "4px 12px",
             gap: "0.5rem",
+            ":hover": {
+              background: "darkslategray",
+              opacity: 0.7,
+            },
+            ":focus": {
+              background: "darkslategray",
+              opacity: 0.7,
+            },
           }}
         >
           <span style={{ fontSize: "1rem" }}>history</span>{" "}

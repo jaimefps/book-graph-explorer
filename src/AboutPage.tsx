@@ -228,7 +228,7 @@ export const AboutPage = () => {
           {" "}
           <Button
             variant="outlined"
-            className="about-tab"
+            className="about-tab spinoza"
             onClick={() => navigate("/about/spinoza")}
           >
             Who was Spinoza?

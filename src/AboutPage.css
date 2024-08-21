@@ -14,6 +14,7 @@
   padding: 0 2rem;
 }
 .about-tab {
+  flex: 1 !important;
   border-color: darkseagreen !important;
   color: darkseagreen !important;
   text-transform: none !important;
@@ -166,6 +167,9 @@
     font-size: 0.8rem !important;
     padding: 0 0.5rem !important;
     height: 1.8rem !important;
+  }
+  .about-tab.spinoza {
+    font-size: 0.6rem !important;
   }
   .about-content {
     padding: 1rem;

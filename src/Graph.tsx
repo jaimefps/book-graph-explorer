@@ -275,8 +275,8 @@ export const Graph = () => {
       <CytoscapeComponent
         elements={withColorEdges}
         cy={(cy) => (cyRef.current = cy)}
-        maxZoom={0.9}
-        minZoom={0.1}
+        // maxZoom={0.9}
+        // minZoom={0.1}
         layout={{
           name: "breadthfirst",
           avoidOverlap: true,
@@ -328,8 +328,8 @@ export const Graph = () => {
           // {
           //   selector: "edge[exit]",
           //   style: {
-          //     "line-color": "lightblue",
-          //     "target-arrow-color": "lightblue",
+          //     "line-color": "yellow",
+          //     "target-arrow-color": "yellow",
           //   },
           // },
         ]}

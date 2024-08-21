@@ -36,7 +36,7 @@
 
 .mode-picker-button:hover,
 .mode-picker-button:focus {
-  opacity: 0.8;
+  box-shadow: 0px 0px 0px 2px white;
 }
 
 .mode-picker-button-label {
