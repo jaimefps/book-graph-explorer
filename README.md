@@ -6,4 +6,4 @@ Unfortunately, E. Curley has not given me permission to use his great English tr
 
 ![landing](./src/assets/sample-landing.png)
 ![graph](./src/assets/sample-graph.png)
-![book](./src/assets/sample-book.png)
+![reader](./src/assets/sample-reader.png)
